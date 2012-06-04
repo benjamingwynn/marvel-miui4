@@ -1,0 +1,1123 @@
+--------- beginning of /dev/log/main
+I/cm      (   79): Welcome to Android 4.0.4 / CyanogenMod-9.0.0-RC0-marvel-UNOFFICIAL 
+I/cm      (   80):                                                 _  
+I/cm      (   81):  __ __ _ ___  _ _  __  ___  __ _ _  _  _  __  __)) 
+I/cm      (   82): ((_ \(/'((_( ((\( ((_)((_( (('((\( ((`1( ((_)((_(  
+I/cm      (   83):      ))                 _)) 
+I/cm      (   84):   
+I/DEBUG   (   89): debuggerd: Jun  1 2012 20:39:36
+D/AK8975  (   98): AK8975 daemon 1.1.0 Start
+D/AK8975  (   98): (Library version : 1.2.1.1125)
+--------- beginning of /dev/log/system
+I/Vold    (   87): Vold 2.1 (the revenge) firing up
+I/Netd    (   88): Netd 1.0 starting
+D/Vold    (   87): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    (   87): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+D/DirectVolume(   87): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 1, PARTN 1
+D/Vold    (   87): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+I/        (   93): ServiceManager: 0x18910
+D/AndroidRuntime(   92): 
+D/AndroidRuntime(   92): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(   92): CheckJNI is OFF
+I/SurfaceFlinger(   91): SurfaceFlinger is starting
+I/SurfaceFlinger(   91): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/msm7x27.gralloc(   91): We support 3 buffers
+I/msm7x27.gralloc(   91): using (fd=12)
+I/msm7x27.gralloc(   91): id           = msmfb
+I/msm7x27.gralloc(   91): xres         = 320 px
+I/msm7x27.gralloc(   91): yres         = 480 px
+I/msm7x27.gralloc(   91): xres_virtual = 320 px
+I/msm7x27.gralloc(   91): yres_virtual = 1440 px
+I/msm7x27.gralloc(   91): bpp          = 32
+I/msm7x27.gralloc(   91): r            =  0:8
+I/msm7x27.gralloc(   91): g            =  8:8
+I/msm7x27.gralloc(   91): b            = 16:8
+I/msm7x27.gralloc(   91): width        = 51 mm (159.372543 dpi)
+I/msm7x27.gralloc(   91): height       = 76 mm (160.421051 dpi)
+I/msm7x27.gralloc(   91): refresh rate = 0.00 Hz
+D/CALCFPS (   91): DEBUG_CALC_FPS: 0
+D/CALCFPS (   91): period: 10
+D/CALCFPS (   91): ignorethresh_us: 500000
+D/CALCFPS (   91): DEBUG_CALC_FPS: 0
+D/CALCFPS (   91): period: 10
+D/CALCFPS (   91): ignorethresh_us: 500000
+D/FramebufferNativeWindow(   91): mNumBuffers = 3
+D/libEGL  (   91): loaded /system/lib/egl/libGLES_android.so
+D/libEGL  (   91): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  (   91): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  (   91): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/SurfaceFlinger(   91): EGL informations:
+I/SurfaceFlinger(   91): # of configs : 44
+I/SurfaceFlinger(   91): vendor    : Android
+I/SurfaceFlinger(   91): version   : 1.4 Android META-EGL
+I/SurfaceFlinger(   91): extensions: EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_base EGL_KHR_fence_sync EGL_ANDROID_image_native_buffer EGL_ANDROID_image_native_buffer EGL_ANDROID_get_render_buffer 
+I/SurfaceFlinger(   91): Client API: OpenGL ES
+I/SurfaceFlinger(   91): EGLSurface: 8-8-8-8, config=0x3
+I/SurfaceFlinger(   91): OpenGL informations:
+I/SurfaceFlinger(   91): vendor    : Qualcomm
+I/SurfaceFlinger(   91): renderer  : Adreno (TM) 200
+I/SurfaceFlinger(   91): version   : OpenGL ES-CM 1.1
+I/SurfaceFlinger(   91): extensions: GL_AMD_compressed_ATC_texture GL_AMD_performance_monitor GL_APPLE_texture_2D_limited_npot GL_ARB_vertex_buffer_object GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_type_2_10_10_10_REV GL_OES_blend_equation_separate GL_OES_blend_func_separate GL_OES_blend_subtract GL_OES_compressed_ETC1_RGB8_texture GL_OES_compressed_paletted_texture GL_OES_depth_texture GL_OES_depth24 GL_OES_draw_texture GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_framebuffer_object GL_OES_matrix_palette GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_read_format GL_OES_rgb8_rgba8 GL_OES_stencil_wrap GL_OES_texture_cube_map GL_OES_texture_env_crossbar GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_texture_mirrored_repeat GL_QCOM_binning_control GL_QCOM_extended_get GL_QCOM_tiled_rendering GL_AMD_compressed_3DC_texture 
+I/SurfaceFlinger(   91): GL_MAX_TEXTURE_SIZE = 4096
+I/SurfaceFlinger(   91): GL_MAX_VIEWPORT_DIMS = 4096 x 4096
+I/SurfaceFlinger(   91): flags = 00000000
+D/CALCFPS (   91): DEBUG_CALC_FPS: 0
+D/CALCFPS (   91): period: 10
+D/CALCFPS (   91): ignorethresh_us: 500000
+I/        (   94): ServiceManager: 0xf958
+I/HTC Acoustic(   94): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(   94): deonvvv gingerbread test.
+I/HTC Acoustic(   94): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(   94): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(   94): read_audio_para_from_file success.
+E/HTC Acoustic(   94): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(   94): open /system/etc/AudioPara4.csv success.
+D/libEGL  (  142): loaded /system/lib/egl/libGLES_android.so
+D/libEGL  (  142): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  (  142): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  (  142): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/HTC Acoustic(   94): acoustic table version: MAL_Gerenic_20110509
+D/memalloc(   91): init_pmem_area: Initializing pmem area
+D/memalloc(   91): init_pmem_area_locked: Opening master pmem FD
+D/memalloc(   91): init_pmem_area_locked: Total pmem size: 16777216
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41504000 size:614400 offset:0 fd:26
+D/memalloc(  142): /dev/pmem: Mapped buffer base:0x408f4000 size:614400 offset:0 fd:16
+I/HTC Acoustic(   94): read_audio_para_from_file success.
+I/HTC Acoustic(   94): get_audpp_filter
+I/HTC Acoustic(   94): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(   94): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(   94): set mbadrc filter error.
+I/HTC Acoustic(   94): failed to set audpp parameters, exiting.
+I/HTC Acoustic(   94): get_audpre_filter
+I/HTC Acoustic(   94): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(   94): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(   94): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(   94): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(   94): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(   94): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(   94): BT MATCH BT
+D/AudioHardwareMSM72XX(   94): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(   94): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(   94): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(   94): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(   94): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(   94): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(   94): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(   94): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(   94): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(   94): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(   94): BT MATCH CURRENT
+I/AudioFlinger(   94): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(   94): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(   94): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(   94): setMode(NORMAL)
+I/AudioHardwareMSM72XX(   94): Set master volume to 5.
+I/CameraService(   94): CameraService started (pid=94)
+I/AudioFlinger(   94): AudioFlinger's thread 0x16fd8 ready to run
+W/AudioFlinger(   94): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(   94): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(   94): set output routing 2
+I/AudioHardwareMSM72XX(   94): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(   94): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(   94): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(   94): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(   94): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41504000 size:614400 offset:614400 fd:29
+D/memalloc(  142): /dev/pmem: Mapped buffer base:0x40ef8000 size:1228800 offset:614400 fd:20
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41504000 size:614400 offset:1228800 fd:32
+D/memalloc(  142): /dev/pmem: Mapped buffer base:0x411e0000 size:1843200 offset:1228800 fd:23
+D/dalvikvm(   92): DexOpt: --- BEGIN 'core.jar' (bootstrap=1) ---
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/Object;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/Class;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/ref/Reference;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/ref/ReferenceQueue;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/ref/FinalizerReference;
+D/dalvikvm(  154): DexOpt: load 448ms, verify+opt 5214ms
+D/dalvikvm(   92): DexOpt: --- END 'core.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/core.jar': unzip in 1456ms, rewrite 7046ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'core-junit.jar' (bootstrap=1) ---
+D/dalvikvm(  155): DexOpt: load 10ms, verify+opt 83ms
+D/dalvikvm(   92): DexOpt: --- END 'core-junit.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/core-junit.jar': unzip in 27ms, rewrite 218ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'bouncycastle.jar' (bootstrap=1) ---
+D/dalvikvm(  156): DexOpt: load 130ms, verify+opt 1720ms
+D/dalvikvm(   92): DexOpt: --- END 'bouncycastle.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/bouncycastle.jar': unzip in 315ms, rewrite 2465ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'ext.jar' (bootstrap=1) ---
+D/dalvikvm(  159): DexOpt: load 242ms, verify+opt 2817ms
+D/dalvikvm(   92): DexOpt: --- END 'ext.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/ext.jar': unzip in 492ms, rewrite 3865ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'framework.jar' (bootstrap=1) ---
+D/dalvikvm(  160): Note: class Landroid/opengl/GLWrapperBase; has 250 unimplemented (abstract) methods
+D/dalvikvm(  160): DexOpt: couldn't find static field Landroid/os/SystemProperties;.QCOM_HARDWARE
+D/dalvikvm(  160): DexOpt: load 1169ms, verify+opt 10524ms
+D/dalvikvm(   92): DexOpt: --- END 'framework.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/framework.jar': unzip in 3388ms, rewrite 14345ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'android.policy.jar' (bootstrap=1) ---
+D/dalvikvm(  161): DexOpt: load 88ms, verify+opt 366ms
+D/dalvikvm(   92): DexOpt: --- END 'android.policy.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/android.policy.jar': unzip in 65ms, rewrite 631ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'services.jar' (bootstrap=1) ---
+D/dalvikvm(  162): DexOpt: load 131ms, verify+opt 2958ms
+D/dalvikvm(   92): DexOpt: --- END 'services.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/services.jar': unzip in 492ms, rewrite 3606ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'apache-xml.jar' (bootstrap=1) ---
+D/dalvikvm(  163): DexOpt: load 143ms, verify+opt 1225ms
+D/dalvikvm(   92): DexOpt: --- END 'apache-xml.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/apache-xml.jar': unzip in 323ms, rewrite 1813ms
+D/dalvikvm(   92): DexOpt: --- BEGIN 'filterfw.jar' (bootstrap=1) ---
+D/dalvikvm(  164): DexOpt: load 39ms, verify+opt 283ms
+D/dalvikvm(   92): DexOpt: --- END 'filterfw.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/filterfw.jar': unzip in 67ms, rewrite 501ms
+I/SamplingProfilerIntegration(   92): Profiling disabled.
+I/Zygote  (   92): Preloading classes...
+D/dalvikvm(   92): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 0ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 0ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
+D/TextLayoutCache(   92): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (   92): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(   92): register_android_mtp_MtpDevice
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(   92): native_init
+E/MediaProfilesJNI(   92): After native_init lock
+E/MediaProfilesJNI(   92): Guru : native_init profiles
+E/MediaProfiles(   92): getInstance
+E/MediaProfiles(   92): Guru :Else 1
+E/MediaProfiles(   92): Guru : quality = 0, index = 1
+E/MediaProfiles(   92): Guru : quality = 1, index = 0
+E/MediaProfiles(   92): Guru : quality = 0, index = 1
+E/MediaProfiles(   92): Guru : quality = 1, index = 0
+E/MediaProfiles(   92): getInstance 10be20
+E/MediaProfilesJNI(   92): retun sProfiles
+E/MediaProfilesJNI(   92): native_init
+E/MediaProfilesJNI(   92): After native_init lock
+E/MediaProfilesJNI(   92): retun sProfiles
+W/Zygote  (   92): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (   92): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(   92): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 4ms+1ms
+V/MediaProfilesJNI(   92): native_get_num_video_decoders
+V/MediaProfilesJNI(   92): native_get_video_decoder_type: 0
+D/dalvikvm(   92): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+3ms
+D/dalvikvm(   92): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+7ms
+D/dalvikvm(   92): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+4ms
+W/Zygote  (   92): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (   92): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(   92): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 3ms+3ms
+D/dalvikvm(   92): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+3ms
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.contentScrollTo
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0034
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.setupViewport
+W/dalvikvm(   92): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0208
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.setupViewport
+W/dalvikvm(   92): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x02ff
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.viewSizeChanged
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0052
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.webkitDraw
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x002b
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.contentDraw
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x002e
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$1402, referenced from method android.webkit.WebViewCore.destroy
+W/dalvikvm(   92): VFY: unable to resolve static method 38704: Landroid/webkit/WebViewCore$EventHub;.access$1402 (Landroid/webkit/WebViewCore$EventHub;Z)Z
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0006
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.layersDraw
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0013
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8600, referenced from method android.webkit.WebViewCore.removeMessages
+W/dalvikvm(   92): VFY: unable to resolve static method 38721: Landroid/webkit/WebViewCore$EventHub;.access$8600 (Landroid/webkit/WebViewCore$EventHub;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.removeMessages
+W/dalvikvm(   92): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0008
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0008
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(   92): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8300, referenced from method android.webkit.WebViewCore.sendMessageAtFrontOfQueue
+W/dalvikvm(   92): VFY: unable to resolve static method 38718: Landroid/webkit/WebViewCore$EventHub;.access$8300 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore$EventHub.access$8400, referenced from method android.webkit.WebViewCore.sendMessageDelayed
+W/dalvikvm(   92): VFY: unable to resolve static method 38719: Landroid/webkit/WebViewCore$EventHub;.access$8400 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;J)V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(   92): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.cancelTouch
+W/dalvikvm(   92): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x001b
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.doFling
+W/dalvikvm(   92): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0084
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.handleTouchEventCommon
+W/dalvikvm(   92): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0947
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.stopTouch
+W/dalvikvm(   92): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x0017
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.computeScroll
+W/dalvikvm(   92): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x006c
+I/dalvikvm(   92): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.selectionDone
+W/dalvikvm(   92): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(   92): VFY: replacing opcode 0x71 at 0x000f
+D/dalvikvm(   92): GC_EXPLICIT freed 26K, 35% free 1687K/2560K, paused 8ms+3ms
+W/Zygote  (   92): Class not found for preloading: android.widget.EdgeGlow
+D/dalvikvm(   92): GC_EXPLICIT freed 25K, 33% free 1715K/2560K, paused 3ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 71K, 32% free 1759K/2560K, paused 3ms+3ms
+E/PhonePolicy(   92): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+D/dalvikvm(   92): GC_EXPLICIT freed 33K, 31% free 1780K/2560K, paused 3ms+3ms
+D/dalvikvm(   92): GC_EXPLICIT freed 28K, 30% free 1809K/2560K, paused 3ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 26K, 29% free 1839K/2560K, paused 3ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 32K, 28% free 1865K/2560K, paused 8ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 31K, 27% free 1893K/2560K, paused 3ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 71K, 24% free 1948K/2560K, paused 3ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 39K, 24% free 1964K/2560K, paused 4ms+4ms
+I/System  (   92): Loaded time zone names for  in 1089ms (1077ms in ICU)
+I/System  (   92): Loaded time zone names for en_US in 788ms (775ms in ICU)
+D/dalvikvm(   92): GC_EXPLICIT freed 324K, 19% free 2081K/2560K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 41K, 17% free 2143K/2560K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 51K, 16% free 2174K/2560K, paused 3ms+3ms
+D/dalvikvm(   92): GC_EXPLICIT freed 28K, 14% free 2206K/2560K, paused 3ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 37K, 14% free 2222K/2560K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 32K, 13% free 2245K/2560K, paused 4ms+4ms
+I/Zygote  (   92): ...preloaded 2297 classes in 6309ms.
+D/dalvikvm(   92): GC_EXPLICIT freed 22K, 13% free 2249K/2560K, paused 4ms+4ms
+I/Zygote  (   92): Preloading resources...
+D/dalvikvm(   92): GC_EXPLICIT freed 2K, 10% free 2305K/2560K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 1K, 8% free 2356K/2560K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 3K, 7% free 2403K/2560K, paused 8ms+9ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 7% free 2450K/2627K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 8% free 2498K/2691K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 6% free 2548K/2691K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 6% free 2595K/2755K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 5% free 2640K/2755K, paused 5ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 5% free 2690K/2819K, paused 8ms+9ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 6% free 2739K/2883K, paused 4ms+6ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 6% free 2800K/2947K, paused 8ms+8ms
+D/dalvikvm(   92): GC_EXPLICIT freed 2K, 4% free 2849K/2947K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 4% free 2896K/3011K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 7K, 5% free 2944K/3075K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 7K, 3% free 2987K/3075K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 4% free 3035K/3139K, paused 5ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 8K, 2% free 3079K/3139K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 10K, 2% free 3162K/3203K, paused 5ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 6K, 2% free 3207K/3267K, paused 7ms+10ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 3% free 3257K/3331K, paused 5ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 1% free 3304K/3331K, paused 4ms+8ms
+D/dalvikvm(   92): GC_EXPLICIT freed 6K, 1% free 3380K/3395K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 3% free 3695K/3779K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 7K, 1% free 3747K/3779K, paused 5ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 2K, 2% free 3798K/3843K, paused 4ms+9ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 2% free 3847K/3907K, paused 7ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 1% free 4021K/4035K, paused 6ms+10ms
+D/dalvikvm(   92): GC_EXPLICIT freed 3K, 1% free 4067K/4099K, paused 4ms+4ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 3% free 5127K/5251K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 4% free 6148K/6339K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 3% free 6197K/6339K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 8K, 2% free 6241K/6339K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 7K, 1% free 6289K/6339K, paused 4ms+9ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 2% free 6337K/6403K, paused 8ms+7ms
+D/dalvikvm(   92): GC_EXPLICIT freed 2K, 1% free 6388K/6403K, paused 4ms+7ms
+D/dalvikvm(   92): GC_EXPLICIT freed 5K, 1% free 6436K/6467K, paused 8ms+6ms
+D/dalvikvm(   92): GC_EXPLICIT freed 7K, 1% free 6497K/6531K, paused 4ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed 4K, 1% free 6562K/6595K, paused 4ms+5ms
+I/Zygote  (   92): ...preloaded 379 resources in 3442ms.
+D/dalvikvm(   92): GC_EXPLICIT freed 20K, 1% free 6596K/6659K, paused 6ms+6ms
+I/Zygote  (   92): ...preloaded 31 resources in 98ms.
+D/dalvikvm(   92): GC_EXPLICIT freed 14K, 1% free 6600K/6659K, paused 4ms+10ms
+D/dalvikvm(   92): GC_EXPLICIT freed 6K, 1% free 6593K/6659K, paused 5ms+5ms
+D/dalvikvm(   92): GC_EXPLICIT freed <1K, 1% free 6593K/6659K, paused 5ms+5ms
+I/dalvikvm(   92): System server process 168 has been created
+I/Zygote  (   92): Accepting command socket connections
+E/dalvikvm(  168): ERROR: couldn't find native method
+E/dalvikvm(  168): Requested: Lcom/android/server/wm/InputManager;.nativeSetKeyLayout:(Ljava/lang/String;Ljava/lang/String;)V
+E/JNIHelp (  168): RegisterNatives failed for 'com/android/server/wm/InputManager', aborting
+F/libc    (  168): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   89): pid: 168, tid: 168  >>> system_server <<<
+I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
+I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 505bfb2e  r7 bead3778
+I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce1c  fp fffffe50
+I/DEBUG   (   89):  ip ffffffff  sp bead3740  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  3fe99999a0000000  d1  3ff0000000000000
+I/DEBUG   (   89):  d2  bebbbc6c1a570a20  d3  3f1155e54e7e8408
+I/DEBUG   (   89):  d4  bfb1be5a93a83e1d  d5  4000000000000000
+I/DEBUG   (   89):  d6  4ace0b8000000000  d7  000000634e20f8fc
+I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   89):  scr 80000012
+I/DEBUG   (   89): 
+I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
+I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around pc:
+I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
+I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
+I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
+I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
+I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around lr:
+I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
+I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
+I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
+I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
+I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
+I/DEBUG   (   89): 
+I/DEBUG   (   89): memory map around addr deadbaad:
+I/DEBUG   (   89): beab3000-bead4000 [stack]
+I/DEBUG   (   89): (no map for address)
+I/DEBUG   (   89): (no map above)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): stack:
+I/DEBUG   (   89):     bead3700  00000000  
+I/DEBUG   (   89):     bead3704  89d01c76  
+I/DEBUG   (   89):     bead3708  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     bead370c  4006d85c  
+I/DEBUG   (   89):     bead3710  00000000  
+I/DEBUG   (   89):     bead3714  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     bead3718  505c05af  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead371c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     bead3720  ffffffff  
+I/DEBUG   (   89):     bead3724  00000000  
+I/DEBUG   (   89):     bead3728  00000000  
+I/DEBUG   (   89):     bead372c  505bfb2e  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead3730  bead3778  [stack]
+I/DEBUG   (   89):     bead3734  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     bead3738  df0027ad  
+I/DEBUG   (   89):     bead373c  00000000  
+I/DEBUG   (   89): #00 bead3740  00000018  
+I/DEBUG   (   89):     bead3744  00000100  
+I/DEBUG   (   89):     bead3748  505ba089  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead374c  89d01c76  
+I/DEBUG   (   89):     bead3750  410e1b48  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     bead3754  fffffbdf  
+I/DEBUG   (   89):     bead3758  0000f2c0  [heap]
+I/DEBUG   (   89):     bead375c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bead3760  0000f2c0  [heap]
+I/DEBUG   (   89):     bead3764  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 bead3768  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bead376c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     bead3770  505c295c  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead3774  00000019  
+I/DEBUG   (   89):     bead3778  0000f2c0  [heap]
+I/DEBUG   (   89):     bead377c  a0700025  
+I/DEBUG   (   89):     bead3780  505bf6fc  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead3784  505bf265  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead3788  0000f2c0  [heap]
+I/DEBUG   (   89):     bead378c  00012828  [heap]
+I/DEBUG   (   89):     bead3790  00000000  
+I/DEBUG   (   89):     bead3794  505bac63  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead3798  00012b80  [heap]
+I/DEBUG   (   89):     bead379c  505bf265  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     bead37a0  0021c4b8  [heap]
+I/DEBUG   (   89):     bead37a4  00012828  [heap]
+I/DEBUG   (   89):     bead37a8  00000000  
+I/DEBUG   (   89):     bead37ac  505bf2a5  /system/lib/libandroid_servers.so
+D/Zygote  (   92): Process 168 terminated by signal (11)
+I/Zygote  (   92): Exit zygote because system server (168) has terminated
+I/ServiceManager(   86): service 'media.audio_flinger' died
+I/ServiceManager(   86): service 'media.player' died
+I/ServiceManager(   86): service 'media.camera' died
+I/ServiceManager(   86): service 'media.audio_policy' died
+I/Netd    (  182): Netd 1.0 starting
+D/AndroidRuntime(  181): 
+D/AndroidRuntime(  181): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  181): CheckJNI is OFF
+I/        (  183): ServiceManager: 0xf958
+I/HTC Acoustic(  183): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  183): deonvvv gingerbread test.
+I/HTC Acoustic(  183): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  183): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  183): read_audio_para_from_file success.
+E/HTC Acoustic(  183): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  183): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  183): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  183): read_audio_para_from_file success.
+I/HTC Acoustic(  183): get_audpp_filter
+I/HTC Acoustic(  183): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  183): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  183): set mbadrc filter error.
+I/HTC Acoustic(  183): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  183): get_audpre_filter
+I/HTC Acoustic(  183): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  183): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  183): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  183): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  183): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  183): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  183): BT MATCH BT
+D/AudioHardwareMSM72XX(  183): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  183): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  183): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  183): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  183): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  183): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  183): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  183): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  183): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  183): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  183): BT MATCH CURRENT
+I/AudioFlinger(  183): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  183): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  183): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  183): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  183): Set master volume to 5.
+I/CameraService(  183): CameraService started (pid=183)
+I/AudioFlinger(  183): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  183): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  183): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  183): set output routing 2
+I/AudioHardwareMSM72XX(  183): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  183): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  183): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  183): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  183): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/SamplingProfilerIntegration(  181): Profiling disabled.
+I/Zygote  (  181): Preloading classes...
+D/dalvikvm(  181): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(  181): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
+D/dalvikvm(  181): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 0ms+1ms
+D/dalvikvm(  181): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 0ms+1ms
+D/dalvikvm(  181): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+2ms
+D/dalvikvm(  181): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 2ms+2ms
+D/TextLayoutCache(  181): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  181): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  181): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  181): register_android_mtp_MtpDevice
+I/dalvikvm(  181): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  181): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  181): native_init
+E/MediaProfilesJNI(  181): After native_init lock
+E/MediaProfilesJNI(  181): Guru : native_init profiles
+E/MediaProfiles(  181): getInstance
+E/MediaProfiles(  181): Guru :Else 1
+E/MediaProfiles(  181): Guru : quality = 0, index = 1
+E/MediaProfiles(  181): Guru : quality = 1, index = 0
+E/MediaProfiles(  181): Guru : quality = 0, index = 1
+E/MediaProfiles(  181): Guru : quality = 1, index = 0
+E/MediaProfiles(  181): getInstance e1cf0
+E/MediaProfilesJNI(  181): retun sProfiles
+E/MediaProfilesJNI(  181): native_init
+E/MediaProfilesJNI(  181): After native_init lock
+E/MediaProfilesJNI(  181): retun sProfiles
+W/Zygote  (  181): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  181): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  181): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 2ms+2ms
+V/MediaProfilesJNI(  181): native_get_num_video_decoders
+V/MediaProfilesJNI(  181): native_get_video_decoder_type: 0
+D/dalvikvm(  181): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+6ms
+D/dalvikvm(  181): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+3ms
+D/dalvikvm(  181): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+3ms
+D/dalvikvm(  181): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+3ms
+W/Zygote  (  181): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  181): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  181): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 6ms+3ms
+D/dalvikvm(  181): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 4ms+3ms
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.contentScrollTo
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0034
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.setupViewport
+W/dalvikvm(  181): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0208
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.setupViewport
+W/dalvikvm(  181): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x02ff
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.viewSizeChanged
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0052
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.webkitDraw
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x002b
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.contentDraw
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x002e
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$1402, referenced from method android.webkit.WebViewCore.destroy
+W/dalvikvm(  181): VFY: unable to resolve static method 38704: Landroid/webkit/WebViewCore$EventHub;.access$1402 (Landroid/webkit/WebViewCore$EventHub;Z)Z
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0006
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.layersDraw
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0013
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8600, referenced from method android.webkit.WebViewCore.removeMessages
+W/dalvikvm(  181): VFY: unable to resolve static method 38721: Landroid/webkit/WebViewCore$EventHub;.access$8600 (Landroid/webkit/WebViewCore$EventHub;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.removeMessages
+W/dalvikvm(  181): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0008
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0008
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  181): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8300, referenced from method android.webkit.WebViewCore.sendMessageAtFrontOfQueue
+W/dalvikvm(  181): VFY: unable to resolve static method 38718: Landroid/webkit/WebViewCore$EventHub;.access$8300 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore$EventHub.access$8400, referenced from method android.webkit.WebViewCore.sendMessageDelayed
+W/dalvikvm(  181): VFY: unable to resolve static method 38719: Landroid/webkit/WebViewCore$EventHub;.access$8400 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;J)V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  181): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  181): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.cancelTouch
+W/dalvikvm(  181): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x001b
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.doFling
+W/dalvikvm(  181): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0084
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.handleTouchEventCommon
+W/dalvikvm(  181): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0947
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.stopTouch
+W/dalvikvm(  181): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x0017
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.computeScroll
+W/dalvikvm(  181): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x006c
+I/dalvikvm(  181): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.selectionDone
+W/dalvikvm(  181): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  181): VFY: replacing opcode 0x71 at 0x000f
+D/dalvikvm(  181): GC_EXPLICIT freed 26K, 35% free 1687K/2560K, paused 3ms+3ms
+W/Zygote  (  181): Class not found for preloading: android.widget.EdgeGlow
+D/dalvikvm(  181): GC_EXPLICIT freed 25K, 33% free 1715K/2560K, paused 3ms+3ms
+D/dalvikvm(  181): GC_EXPLICIT freed 71K, 32% free 1759K/2560K, paused 3ms+4ms
+E/PhonePolicy(  181): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+D/dalvikvm(  181): GC_EXPLICIT freed 33K, 31% free 1780K/2560K, paused 3ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 28K, 30% free 1809K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 26K, 29% free 1839K/2560K, paused 3ms+3ms
+D/dalvikvm(  181): GC_EXPLICIT freed 32K, 28% free 1865K/2560K, paused 8ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 31K, 27% free 1893K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 71K, 24% free 1948K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 39K, 24% free 1964K/2560K, paused 4ms+4ms
+I/System  (  181): Loaded time zone names for  in 1008ms (993ms in ICU)
+I/System  (  181): Loaded time zone names for en_US in 761ms (749ms in ICU)
+D/dalvikvm(  181): GC_EXPLICIT freed 324K, 19% free 2081K/2560K, paused 3ms+3ms
+D/dalvikvm(  181): GC_EXPLICIT freed 41K, 17% free 2143K/2560K, paused 7ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 51K, 16% free 2174K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 28K, 14% free 2206K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 37K, 14% free 2222K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 32K, 13% free 2245K/2560K, paused 4ms+5ms
+I/Zygote  (  181): ...preloaded 2297 classes in 5424ms.
+D/dalvikvm(  181): GC_EXPLICIT freed 22K, 13% free 2249K/2560K, paused 5ms+4ms
+I/Zygote  (  181): Preloading resources...
+D/dalvikvm(  181): GC_EXPLICIT freed 2K, 10% free 2305K/2560K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 1K, 8% free 2356K/2560K, paused 8ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 3K, 7% free 2403K/2560K, paused 5ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 7% free 2450K/2627K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 8% free 2498K/2691K, paused 5ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 6% free 2548K/2691K, paused 5ms+8ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 6% free 2595K/2755K, paused 5ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 5% free 2640K/2755K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 5% free 2690K/2819K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 6% free 2739K/2883K, paused 5ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 6% free 2800K/2947K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 2K, 4% free 2849K/2947K, paused 8ms+8ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 4% free 2896K/3011K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 7K, 5% free 2943K/3075K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 7K, 3% free 2987K/3075K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 4% free 3035K/3139K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 8K, 2% free 3079K/3139K, paused 5ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 10K, 2% free 3162K/3203K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 6K, 2% free 3206K/3267K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 3% free 3257K/3331K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 1% free 3304K/3331K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 6K, 1% free 3380K/3395K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 3% free 3695K/3779K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 7K, 1% free 3747K/3779K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 2K, 2% free 3798K/3843K, paused 5ms+6ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 2% free 3847K/3907K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 1% free 4021K/4035K, paused 6ms+9ms
+D/dalvikvm(  181): GC_EXPLICIT freed 3K, 1% free 4067K/4099K, paused 4ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 3% free 5127K/5251K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 4% free 6148K/6339K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 3% free 6197K/6339K, paused 4ms+9ms
+D/dalvikvm(  181): GC_EXPLICIT freed 8K, 2% free 6242K/6339K, paused 8ms+7ms
+D/dalvikvm(  181): GC_EXPLICIT freed 7K, 1% free 6289K/6339K, paused 8ms+8ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 2% free 6337K/6403K, paused 4ms+9ms
+D/dalvikvm(  181): GC_EXPLICIT freed 2K, 1% free 6388K/6403K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 5K, 1% free 6437K/6467K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 7K, 1% free 6497K/6531K, paused 4ms+10ms
+D/dalvikvm(  181): GC_EXPLICIT freed 4K, 1% free 6562K/6595K, paused 4ms+6ms
+I/Zygote  (  181): ...preloaded 379 resources in 3295ms.
+D/dalvikvm(  181): GC_EXPLICIT freed 20K, 1% free 6596K/6659K, paused 5ms+6ms
+I/Zygote  (  181): ...preloaded 31 resources in 95ms.
+D/dalvikvm(  181): GC_EXPLICIT freed 14K, 1% free 6600K/6659K, paused 4ms+5ms
+D/dalvikvm(  181): GC_EXPLICIT freed 6K, 1% free 6593K/6659K, paused 10ms+4ms
+D/dalvikvm(  181): GC_EXPLICIT freed <1K, 1% free 6593K/6659K, paused 4ms+5ms
+I/dalvikvm(  181): System server process 209 has been created
+I/Zygote  (  181): Accepting command socket connections
+E/dalvikvm(  209): ERROR: couldn't find native method
+E/dalvikvm(  209): Requested: Lcom/android/server/wm/InputManager;.nativeSetKeyLayout:(Ljava/lang/String;Ljava/lang/String;)V
+E/JNIHelp (  209): RegisterNatives failed for 'com/android/server/wm/InputManager', aborting
+F/libc    (  209): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   89): pid: 209, tid: 209  >>> system_server <<<
+I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
+I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 506ebb2e  r7 beea3778
+I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce1c  fp fffffe50
+I/DEBUG   (   89):  ip ffffffff  sp beea3740  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  3fe99999a0000000  d1  3ff0000000000000
+I/DEBUG   (   89):  d2  bebbbc6c1a570a20  d3  3f1155e54e7e8408
+I/DEBUG   (   89):  d4  bfb1be5a93a83e1d  d5  4000000000000000
+I/DEBUG   (   89):  d6  4ace0c6000000000  d7  000000634e20f9ab
+I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   89):  scr 80000012
+I/DEBUG   (   89): 
+I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
+I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around pc:
+I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
+I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
+I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
+I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
+I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around lr:
+I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
+I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
+I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
+I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
+I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
+I/DEBUG   (   89): 
+I/DEBUG   (   89): memory map around addr deadbaad:
+I/DEBUG   (   89): bee83000-beea4000 [stack]
+I/DEBUG   (   89): (no map for address)
+I/DEBUG   (   89): (no map above)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): stack:
+I/DEBUG   (   89):     beea3700  00000000  
+I/DEBUG   (   89):     beea3704  7c3dc13b  
+I/DEBUG   (   89):     beea3708  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     beea370c  4006d85c  
+I/DEBUG   (   89):     beea3710  00000000  
+I/DEBUG   (   89):     beea3714  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     beea3718  506ec5af  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea371c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     beea3720  ffffffff  
+I/DEBUG   (   89):     beea3724  00000000  
+I/DEBUG   (   89):     beea3728  00000000  
+I/DEBUG   (   89):     beea372c  506ebb2e  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea3730  beea3778  [stack]
+I/DEBUG   (   89):     beea3734  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     beea3738  df0027ad  
+I/DEBUG   (   89):     beea373c  00000000  
+I/DEBUG   (   89): #00 beea3740  00000018  
+I/DEBUG   (   89):     beea3744  00000100  
+I/DEBUG   (   89):     beea3748  506e6089  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea374c  7c3dc13b  
+I/DEBUG   (   89):     beea3750  410e1c48  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     beea3754  fffffbdf  
+I/DEBUG   (   89):     beea3758  0000f2c0  [heap]
+I/DEBUG   (   89):     beea375c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beea3760  0000f2c0  [heap]
+I/DEBUG   (   89):     beea3764  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 beea3768  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beea376c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     beea3770  506ee95c  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea3774  00000019  
+I/DEBUG   (   89):     beea3778  0000f2c0  [heap]
+I/DEBUG   (   89):     beea377c  a0700025  
+I/DEBUG   (   89):     beea3780  506eb6fc  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea3784  506eb265  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea3788  0000f2c0  [heap]
+I/DEBUG   (   89):     beea378c  00012828  [heap]
+I/DEBUG   (   89):     beea3790  00000000  
+I/DEBUG   (   89):     beea3794  506e6c63  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea3798  00012b80  [heap]
+I/DEBUG   (   89):     beea379c  506eb265  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     beea37a0  00140978  [heap]
+I/DEBUG   (   89):     beea37a4  00012828  [heap]
+I/DEBUG   (   89):     beea37a8  00000000  
+I/DEBUG   (   89):     beea37ac  506eb2a5  /system/lib/libandroid_servers.so
+D/Zygote  (  181): Process 209 terminated by signal (11)
+I/Zygote  (  181): Exit zygote because system server (209) has terminated
+I/ServiceManager(   86): service 'media.audio_flinger' died
+I/ServiceManager(   86): service 'media.player' died
+I/ServiceManager(   86): service 'media.camera' died
+I/ServiceManager(   86): service 'media.audio_policy' died
+I/Netd    (  224): Netd 1.0 starting
+D/AndroidRuntime(  223): 
+D/AndroidRuntime(  223): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  223): CheckJNI is OFF
+I/        (  225): ServiceManager: 0xf958
+I/HTC Acoustic(  225): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  225): deonvvv gingerbread test.
+I/HTC Acoustic(  225): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  225): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  225): read_audio_para_from_file success.
+E/HTC Acoustic(  225): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  225): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  225): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  225): read_audio_para_from_file success.
+I/HTC Acoustic(  225): get_audpp_filter
+I/HTC Acoustic(  225): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  225): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  225): set mbadrc filter error.
+I/HTC Acoustic(  225): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  225): get_audpre_filter
+I/HTC Acoustic(  225): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  225): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  225): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  225): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  225): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  225): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  225): BT MATCH BT
+D/AudioHardwareMSM72XX(  225): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  225): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  225): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  225): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  225): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  225): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  225): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  225): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  225): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  225): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  225): BT MATCH CURRENT
+I/AudioFlinger(  225): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  225): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  225): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  225): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  225): Set master volume to 5.
+I/CameraService(  225): CameraService started (pid=225)
+I/AudioFlinger(  225): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  225): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  225): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  225): set output routing 2
+I/AudioHardwareMSM72XX(  225): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  225): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  225): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  225): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  225): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/SamplingProfilerIntegration(  223): Profiling disabled.
+I/Zygote  (  223): Preloading classes...
+D/dalvikvm(  223): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+2ms
+D/dalvikvm(  223): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+2ms
+D/dalvikvm(  223): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
+D/dalvikvm(  223): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  223): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+2ms
+D/dalvikvm(  223): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+2ms
+D/TextLayoutCache(  223): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  223): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  223): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  223): register_android_mtp_MtpDevice
+I/dalvikvm(  223): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  223): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  223): native_init
+E/MediaProfilesJNI(  223): After native_init lock
+E/MediaProfilesJNI(  223): Guru : native_init profiles
+E/MediaProfiles(  223): getInstance
+E/MediaProfiles(  223): Guru :Else 1
+E/MediaProfiles(  223): Guru : quality = 0, index = 1
+E/MediaProfiles(  223): Guru : quality = 1, index = 0
+E/MediaProfiles(  223): Guru : quality = 0, index = 1
+E/MediaProfiles(  223): Guru : quality = 1, index = 0
+E/MediaProfiles(  223): getInstance e1d40
+E/MediaProfilesJNI(  223): retun sProfiles
+E/MediaProfilesJNI(  223): native_init
+E/MediaProfilesJNI(  223): After native_init lock
+E/MediaProfilesJNI(  223): retun sProfiles
+W/Zygote  (  223): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  223): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  223): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+2ms
+V/MediaProfilesJNI(  223): native_get_num_video_decoders
+V/MediaProfilesJNI(  223): native_get_video_decoder_type: 0
+D/dalvikvm(  223): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 2ms+2ms
+D/dalvikvm(  223): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+2ms
+D/dalvikvm(  223): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(  223): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+3ms
+D/dalvikvm(  223): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 2ms+4ms
+W/Zygote  (  223): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  223): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  223): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 3ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+4ms
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.contentScrollTo
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0034
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.setupViewport
+W/dalvikvm(  223): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0208
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.setupViewport
+W/dalvikvm(  223): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x02ff
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.viewSizeChanged
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0052
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.webkitDraw
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x002b
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.contentDraw
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x002e
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$1402, referenced from method android.webkit.WebViewCore.destroy
+W/dalvikvm(  223): VFY: unable to resolve static method 38704: Landroid/webkit/WebViewCore$EventHub;.access$1402 (Landroid/webkit/WebViewCore$EventHub;Z)Z
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0006
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.layersDraw
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0013
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8600, referenced from method android.webkit.WebViewCore.removeMessages
+W/dalvikvm(  223): VFY: unable to resolve static method 38721: Landroid/webkit/WebViewCore$EventHub;.access$8600 (Landroid/webkit/WebViewCore$EventHub;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8500, referenced from method android.webkit.WebViewCore.removeMessages
+W/dalvikvm(  223): VFY: unable to resolve static method 38720: Landroid/webkit/WebViewCore$EventHub;.access$8500 (Landroid/webkit/WebViewCore$EventHub;I)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0008
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0008
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8200, referenced from method android.webkit.WebViewCore.sendMessage
+W/dalvikvm(  223): VFY: unable to resolve static method 38717: Landroid/webkit/WebViewCore$EventHub;.access$8200 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0002
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8300, referenced from method android.webkit.WebViewCore.sendMessageAtFrontOfQueue
+W/dalvikvm(  223): VFY: unable to resolve static method 38718: Landroid/webkit/WebViewCore$EventHub;.access$8300 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore$EventHub.access$8400, referenced from method android.webkit.WebViewCore.sendMessageDelayed
+W/dalvikvm(  223): VFY: unable to resolve static method 38719: Landroid/webkit/WebViewCore$EventHub;.access$8400 (Landroid/webkit/WebViewCore$EventHub;Landroid/os/Message;J)V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm(  223): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  223): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.cancelTouch
+W/dalvikvm(  223): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x001b
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.doFling
+W/dalvikvm(  223): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0084
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.handleTouchEventCommon
+W/dalvikvm(  223): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0947
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.stopTouch
+W/dalvikvm(  223): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x0017
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.computeScroll
+W/dalvikvm(  223): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x006c
+I/dalvikvm(  223): Could not find method android.webkit.WebViewCore.resumePriority, referenced from method android.webkit.WebView.selectionDone
+W/dalvikvm(  223): VFY: unable to resolve static method 39007: Landroid/webkit/WebViewCore;.resumePriority ()V
+D/dalvikvm(  223): VFY: replacing opcode 0x71 at 0x000f
+D/dalvikvm(  223): GC_EXPLICIT freed 26K, 35% free 1687K/2560K, paused 3ms+3ms
+W/Zygote  (  223): Class not found for preloading: android.widget.EdgeGlow
+D/dalvikvm(  223): GC_EXPLICIT freed 25K, 33% free 1715K/2560K, paused 3ms+3ms
+D/dalvikvm(  223): GC_EXPLICIT freed 71K, 32% free 1759K/2560K, paused 3ms+4ms
+E/PhonePolicy(  223): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+D/dalvikvm(  223): GC_EXPLICIT freed 33K, 31% free 1780K/2560K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 28K, 30% free 1809K/2560K, paused 3ms+3ms
+D/dalvikvm(  223): GC_EXPLICIT freed 26K, 29% free 1839K/2560K, paused 4ms+7ms
+D/dalvikvm(  223): GC_EXPLICIT freed 32K, 28% free 1865K/2560K, paused 3ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 31K, 27% free 1893K/2560K, paused 3ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 71K, 24% free 1948K/2560K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 39K, 24% free 1964K/2560K, paused 3ms+4ms
+I/System  (  223): Loaded time zone names for  in 1017ms (1001ms in ICU)
+I/System  (  223): Loaded time zone names for en_US in 763ms (751ms in ICU)
+D/dalvikvm(  223): GC_EXPLICIT freed 324K, 19% free 2081K/2560K, paused 3ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 41K, 17% free 2143K/2560K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 51K, 16% free 2174K/2560K, paused 4ms+3ms
+D/dalvikvm(  223): GC_EXPLICIT freed 28K, 14% free 2206K/2560K, paused 3ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 37K, 14% free 2222K/2560K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 32K, 13% free 2245K/2560K, paused 4ms+4ms
+I/Zygote  (  223): ...preloaded 2297 classes in 5428ms.
+D/dalvikvm(  223): GC_EXPLICIT freed 22K, 13% free 2249K/2560K, paused 4ms+4ms
+I/Zygote  (  223): Preloading resources...
+D/dalvikvm(  223): GC_EXPLICIT freed 2K, 10% free 2305K/2560K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 1K, 8% free 2356K/2560K, paused 6ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 3K, 7% free 2403K/2560K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 7% free 2450K/2627K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 8% free 2498K/2691K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 6% free 2548K/2691K, paused 7ms+9ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 6% free 2595K/2755K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 5% free 2640K/2755K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 5% free 2690K/2819K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 6% free 2739K/2883K, paused 5ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 6% free 2800K/2947K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 2K, 4% free 2849K/2947K, paused 6ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 4% free 2896K/3011K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 7K, 5% free 2944K/3075K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 7K, 3% free 2987K/3075K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 4% free 3035K/3139K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 8K, 2% free 3079K/3139K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 10K, 2% free 3162K/3203K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 6K, 2% free 3207K/3267K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 3% free 3257K/3331K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 1% free 3304K/3331K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 6K, 1% free 3380K/3395K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 3% free 3695K/3779K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 7K, 1% free 3747K/3779K, paused 4ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 2K, 2% free 3798K/3843K, paused 5ms+4ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 2% free 3847K/3907K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 1% free 4021K/4035K, paused 8ms+10ms
+D/dalvikvm(  223): GC_EXPLICIT freed 3K, 1% free 4067K/4099K, paused 5ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 3% free 5127K/5251K, paused 5ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 4% free 6148K/6339K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 3% free 6197K/6339K, paused 4ms+8ms
+D/dalvikvm(  223): GC_EXPLICIT freed 8K, 2% free 6241K/6339K, paused 8ms+8ms
+D/dalvikvm(  223): GC_EXPLICIT freed 7K, 1% free 6289K/6339K, paused 8ms+8ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 2% free 6337K/6403K, paused 5ms+9ms
+D/dalvikvm(  223): GC_EXPLICIT freed 2K, 1% free 6388K/6403K, paused 5ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 5K, 1% free 6436K/6467K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 7K, 1% free 6497K/6531K, paused 4ms+10ms
+D/dalvikvm(  223): GC_EXPLICIT freed 4K, 1% free 6562K/6595K, paused 5ms+6ms
+I/Zygote  (  223): ...preloaded 379 resources in 3292ms.
+D/dalvikvm(  223): GC_EXPLICIT freed 20K, 1% free 6596K/6659K, paused 5ms+5ms
+I/Zygote  (  223): ...preloaded 31 resources in 96ms.
+D/dalvikvm(  223): GC_EXPLICIT freed 14K, 1% free 6600K/6659K, paused 4ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed 6K, 1% free 6593K/6659K, paused 7ms+5ms
+D/dalvikvm(  223): GC_EXPLICIT freed <1K, 1% free 6593K/6659K, paused 4ms+5ms
+I/dalvikvm(  223): System server process 251 has been created
+I/Zygote  (  223): Accepting command socket connections
+E/dalvikvm(  251): ERROR: couldn't find native method
+E/dalvikvm(  251): Requested: Lcom/android/server/wm/InputManager;.nativeSetKeyLayout:(Ljava/lang/String;Ljava/lang/String;)V
+E/JNIHelp (  251): RegisterNatives failed for 'com/android/server/wm/InputManager', aborting
+F/libc    (  251): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   89): pid: 251, tid: 251  >>> system_server <<<
+I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
+I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 504ebb2e  r7 be8fd778
+I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce1c  fp fffffe50
+I/DEBUG   (   89):  ip ffffffff  sp be8fd740  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  3fe99999a0000000  d1  3ff0000000000000
+I/DEBUG   (   89):  d2  bebbbc6c1a570a20  d3  3f1155e54e7e8408
+I/DEBUG   (   89):  d4  bfb1be5a93a83e1d  d5  4000000000000000
+I/DEBUG   (   89):  d6  4ace0ba000000000  d7  000000634e20f915
+I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   89):  scr 80000012
+I/DEBUG   (   89): 
+I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
+I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around pc:
+I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
+I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
+I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
+I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
+I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around lr:
+I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
+I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
+I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
+I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
+I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
+I/DEBUG   (   89): 
+I/DEBUG   (   89): memory map around addr deadbaad:
+I/DEBUG   (   89): be8dd000-be8fe000 [stack]
+I/DEBUG   (   89): (no map for address)
+I/DEBUG   (   89): (no map above)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): stack:
+I/DEBUG   (   89):     be8fd700  00000000  
+I/DEBUG   (   89):     be8fd704  805d5f94  
+I/DEBUG   (   89):     be8fd708  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     be8fd70c  4006d85c  
+I/DEBUG   (   89):     be8fd710  00000000  
+I/DEBUG   (   89):     be8fd714  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     be8fd718  504ec5af  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd71c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     be8fd720  ffffffff  
+I/DEBUG   (   89):     be8fd724  00000000  
+I/DEBUG   (   89):     be8fd728  00000000  
+I/DEBUG   (   89):     be8fd72c  504ebb2e  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd730  be8fd778  [stack]
+I/DEBUG   (   89):     be8fd734  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     be8fd738  df0027ad  
+I/DEBUG   (   89):     be8fd73c  00000000  
+I/DEBUG   (   89): #00 be8fd740  00000018  
+I/DEBUG   (   89):     be8fd744  00000100  
+I/DEBUG   (   89):     be8fd748  504e6089  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd74c  805d5f94  
+I/DEBUG   (   89):     be8fd750  410e1b48  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     be8fd754  fffffbdf  
+I/DEBUG   (   89):     be8fd758  0000f2c0  [heap]
+I/DEBUG   (   89):     be8fd75c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be8fd760  0000f2c0  [heap]
+I/DEBUG   (   89):     be8fd764  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 be8fd768  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be8fd76c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     be8fd770  504ee95c  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd774  00000019  
+I/DEBUG   (   89):     be8fd778  0000f2c0  [heap]
+I/DEBUG   (   89):     be8fd77c  a0700025  
+I/DEBUG   (   89):     be8fd780  504eb6fc  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd784  504eb265  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd788  0000f2c0  [heap]
+I/DEBUG   (   89):     be8fd78c  00012828  [heap]
+I/DEBUG   (   89):     be8fd790  00000000  
+I/DEBUG   (   89):     be8fd794  504e6c63  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd798  00012b80  [heap]
+I/DEBUG   (   89):     be8fd79c  504eb265  /system/lib/libandroid_servers.so
+I/DEBUG   (   89):     be8fd7a0  001f2378  [heap]
+I/DEBUG   (   89):     be8fd7a4  00012828  [heap]
+I/DEBUG   (   89):     be8fd7a8  00000000  
+I/DEBUG   (   89):     be8fd7ac  504eb2a5  /system/lib/libandroid_servers.so

@@ -1,0 +1,53 @@
+Here is written what's changed (a blank line represents a new build/logcat to come)
+
+first build: source = CM9 alpha 2
+replaced Media and App folder with MIUI sources
+added stuff from etc from MIUI sources
+added framework-miui.res.apk, miui-framework.jar and framework.jar from MIUI
+added content-types.properties and liblbesec.so
+added busybox, invoke-as and su
+added some stuff from gapps.zip (maps, quicksearchbox, market, …)
+
+replaced MIUI services.jar
+
+replaced AssetManger.smali in android/content/res of framework.jar
+
+replaced Gles20canvas.smali in android/view of framework.jar
+
+replaced Power.smali in android/os of framework.jar
+
+added packageredirectionmap.smali (2 files) in android/content.res of framework.jar
+replaced WifiNative.smali in android/net/wifi of framework.jar
+
+replaced Camera.smali in android/hardware of framework.jar
+added Performance.smali from org/codeaurora of framework.jar
+
+replaced BluetoothA2dpService.smali (2 files) in android/server of framework.jar
+
+replaced MediaRecorder.smali in android/media of framework.jar
+
+replaced WebviewCore.smali (5 files) in android/webkit of framework.jar
+undone previous change (only 1 file change)
+
+undone replacing smalls, now its time to edit smalls
+added this to WebviewCore.smali
+
+.method static synthetic access$800()I
+    .registers 1
+
+    .prologue
+    .line 60
+    invoke-static {}, Landroid/webkit/WebViewCore;->nativeGetTextureGeneratorThreadID()I
+
+    move-result v0
+
+    return v0
+.end method
+
+
+
+
+
+
+
+
