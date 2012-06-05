@@ -47,8 +47,7 @@ changed .line 60 to .line 55 and added:
 replaced inputmanager.smali (4 files) in android/server/vm of services.jar
 
 UPDATE: FROM NOW CHARGING LED WORKS
-
-
+as seen in logcat10 replacing smalis gives errors, so lets mod them
 
 
 
