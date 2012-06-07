@@ -44,8 +44,11 @@ D/CALCFPS (   91): ignorethresh_us: 500000
 D/FramebufferNativeWindow(   91): mNumBuffers = 3
 D/libEGL  (   91): loaded /system/lib/egl/libGLES_android.so
 D/libEGL  (   91): loaded /system/lib/egl/libEGL_adreno200.so
+I/dalvikvm(   92): DexOpt: source file mod time mismatch (409439a8 vs 40c77183)
+D/dalvikvm(   92): ODEX file is stale or bad; removing and retrying (/data/dalvik-cache/system@framework@framework.jar@classes.dex)
 D/libEGL  (   91): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
 D/libEGL  (   91): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/        (   94): ServiceManager: 0xf958
 I/SurfaceFlinger(   91): EGL informations:
 I/SurfaceFlinger(   91): # of configs : 44
 I/SurfaceFlinger(   91): vendor    : Android
@@ -64,24 +67,14 @@ I/SurfaceFlinger(   91): flags = 00000000
 D/CALCFPS (   91): DEBUG_CALC_FPS: 0
 D/CALCFPS (   91): period: 10
 D/CALCFPS (   91): ignorethresh_us: 500000
-I/        (   94): ServiceManager: 0xf958
 I/HTC Acoustic(   94): libhtc_acoustic.so version 2.0.0.6.
 I/HTC Acoustic(   94): deonvvv gingerbread test.
 I/HTC Acoustic(   94): open /system/etc/AudioPara4_WB.csv success.
 I/HTC Acoustic(   94): acoustic table version: MAL_WB_20110217
-D/libEGL  (  144): loaded /system/lib/egl/libGLES_android.so
-D/libEGL  (  144): loaded /system/lib/egl/libEGL_adreno200.so
 I/HTC Acoustic(   94): read_audio_para_from_file success.
 E/HTC Acoustic(   94): Fail to open /system/etc/AudioPara_ALL.csv -1.
 I/HTC Acoustic(   94): open /system/etc/AudioPara4.csv success.
-D/libEGL  (  144): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
-D/libEGL  (  144): loaded /system/lib/egl/libGLESv2_adreno200.so
 I/HTC Acoustic(   94): acoustic table version: MAL_Gerenic_20110509
-D/memalloc(   91): init_pmem_area: Initializing pmem area
-D/memalloc(   91): init_pmem_area_locked: Opening master pmem FD
-D/memalloc(   91): init_pmem_area_locked: Total pmem size: 16777216
-D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41504000 size:614400 offset:0 fd:26
-D/memalloc(  144): /dev/pmem: Mapped buffer base:0x407f0000 size:614400 offset:0 fd:16
 I/HTC Acoustic(   94): read_audio_para_from_file success.
 I/HTC Acoustic(   94): get_audpp_filter
 I/HTC Acoustic(   94): open /system/etc/AudioFilter.csv success.
@@ -113,31 +106,73 @@ I/AudioFlinger(   94): Loaded a2dp audio interface from A2DP Audio HW HAL (audio
 D/AudioHardwareInterface(   94): setMode(NORMAL)
 I/AudioHardwareMSM72XX(   94): Set master volume to 5.
 I/CameraService(   94): CameraService started (pid=94)
+D/libEGL  (  145): loaded /system/lib/egl/libGLES_android.so
 I/AudioFlinger(   94): AudioFlinger's thread 0x16fd8 ready to run
 W/AudioFlinger(   94): Thread AudioOut_1 cannot connect to the power manager service
 V/AudioHardwareMSM72XX(   94): AudioStreamOutMSM72xx::setParameters() routing=2
+D/libEGL  (  145): loaded /system/lib/egl/libEGL_adreno200.so
 V/AudioHardwareMSM72XX(   94): set output routing 2
+D/libEGL  (  145): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
 I/AudioHardwareMSM72XX(   94): Routing audio to Speakerphone
 V/AudioHardwareMSM72XX(   94): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
 D/AudioHardwareMSM72XX(   94): setVoiceVolume(1.000000)
 I/AudioHardwareMSM72XX(   94): Setting in-call volume to 5 (available range is 0 to 5)
 I/AudioPolicyService(   94): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41504000 size:614400 offset:614400 fd:29
-D/memalloc(  144): /dev/pmem: Mapped buffer base:0x40df8000 size:1228800 offset:614400 fd:20
-D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41504000 size:614400 offset:1228800 fd:32
-D/memalloc(  144): /dev/pmem: Mapped buffer base:0x410e0000 size:1843200 offset:1228800 fd:23
+D/libEGL  (  145): loaded /system/lib/egl/libGLESv2_adreno200.so
+D/memalloc(   91): init_pmem_area: Initializing pmem area
+D/memalloc(   91): init_pmem_area_locked: Opening master pmem FD
+D/memalloc(   91): init_pmem_area_locked: Total pmem size: 16777216
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:0 fd:26
+D/memalloc(  145): /dev/pmem: Mapped buffer base:0x408f4000 size:614400 offset:0 fd:16
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:614400 fd:29
+D/memalloc(  145): /dev/pmem: Mapped buffer base:0x40ef8000 size:1228800 offset:614400 fd:20
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:1228800 fd:32
+D/memalloc(  145): /dev/pmem: Mapped buffer base:0x411e0000 size:1843200 offset:1228800 fd:23
+D/dalvikvm(   92): DexOpt: --- BEGIN 'framework.jar' (bootstrap=1) ---
+D/dalvikvm(  155): Note: class Landroid/opengl/GLWrapperBase; has 250 unimplemented (abstract) methods
+D/dalvikvm(  155): DexOpt: load 2264ms, verify+opt 14197ms
+D/dalvikvm(   92): DexOpt: --- END 'framework.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/framework.jar': unzip in 3958ms, rewrite 21067ms
+I/dalvikvm(   92): DexOpt: mismatch dep signature for '/data/dalvik-cache/system@framework@framework.jar@classes.dex'
+D/dalvikvm(   92): ODEX file is stale or bad; removing and retrying (/data/dalvik-cache/system@framework@android.policy.jar@classes.dex)
+D/dalvikvm(   92): DexOpt: --- BEGIN 'android.policy.jar' (bootstrap=1) ---
+D/dalvikvm(  157): DexOpt: load 122ms, verify+opt 759ms
+D/dalvikvm(   92): DexOpt: --- END 'android.policy.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/android.policy.jar': unzip in 136ms, rewrite 1161ms
+I/dalvikvm(   92): DexOpt: mismatch dep signature for '/data/dalvik-cache/system@framework@framework.jar@classes.dex'
+D/dalvikvm(   92): ODEX file is stale or bad; removing and retrying (/data/dalvik-cache/system@framework@services.jar@classes.dex)
+D/dalvikvm(   92): DexOpt: --- BEGIN 'services.jar' (bootstrap=1) ---
+D/dalvikvm(  158): DexOpt: load 130ms, verify+opt 2945ms
+D/dalvikvm(   92): DexOpt: --- END 'services.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/services.jar': unzip in 496ms, rewrite 3692ms
+I/dalvikvm(   92): DexOpt: mismatch dep signature for '/data/dalvik-cache/system@framework@framework.jar@classes.dex'
+D/dalvikvm(   92): ODEX file is stale or bad; removing and retrying (/data/dalvik-cache/system@framework@apache-xml.jar@classes.dex)
+D/dalvikvm(   92): DexOpt: --- BEGIN 'apache-xml.jar' (bootstrap=1) ---
+D/dalvikvm(  159): DexOpt: load 142ms, verify+opt 1223ms
+D/dalvikvm(   92): DexOpt: --- END 'apache-xml.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/apache-xml.jar': unzip in 328ms, rewrite 1826ms
+I/dalvikvm(   92): DexOpt: mismatch dep signature for '/data/dalvik-cache/system@framework@framework.jar@classes.dex'
+D/dalvikvm(   92): ODEX file is stale or bad; removing and retrying (/data/dalvik-cache/system@framework@filterfw.jar@classes.dex)
+D/dalvikvm(   92): DexOpt: --- BEGIN 'filterfw.jar' (bootstrap=1) ---
+D/dalvikvm(  160): DexOpt: load 39ms, verify+opt 280ms
+D/dalvikvm(   92): DexOpt: --- END 'filterfw.jar' (success) ---
+D/dalvikvm(   92): DEX prep '/system/framework/filterfw.jar': unzip in 68ms, rewrite 502ms
+W/dalvikvm(   92): VFY: unable to find class referenced in signature (Landroid/content/res/PackageRedirectionMap;)
+I/dalvikvm(   92): Could not find method android.content.res.PackageRedirectionMap.getPackageId, referenced from method android.content.res.AssetManager.addRedirections
+W/dalvikvm(   92): VFY: unable to resolve virtual method 9334: Landroid/content/res/PackageRedirectionMap;.getPackageId ()I
+D/dalvikvm(   92): VFY: replacing opcode 0x6e at 0x000e
 E/dalvikvm(   92): ERROR: couldn't find native method
-E/dalvikvm(   92): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (   92): RegisterNatives failed for 'android/content/res/AssetManager', aborting
+E/dalvikvm(   92): Requested: Landroid/view/GLES20Canvas;.nStartTileRendering:(IIIII)V
+E/JNIHelp (   92): RegisterNatives failed for 'android/view/GLES20Canvas', aborting
 F/libc    (   92): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
 I/DEBUG   (   89): pid: 92, tid: 92  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bec78a68
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401b9167  r7 beaf5a78
 I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bec78a30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  ip ffffffff  sp beaf5a40  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
 I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
 I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
 I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
@@ -166,124 +201,128 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bec58000-bec79000 [stack]
+I/DEBUG   (   89): bead5000-beaf6000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bec789f0  00000000  
-I/DEBUG   (   89):     bec789f4  8ea40055  
-I/DEBUG   (   89):     bec789f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bec789fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bec78a00  00000000  
-I/DEBUG   (   89):     bec78a04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bec78a08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bec78a10  ffffffff  
-I/DEBUG   (   89):     bec78a14  00000000  
-I/DEBUG   (   89):     bec78a18  00000000  
-I/DEBUG   (   89):     bec78a1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a20  bec78a68  [stack]
-I/DEBUG   (   89):     bec78a24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bec78a28  df0027ad  
-I/DEBUG   (   89):     bec78a2c  00000000  
-I/DEBUG   (   89): #00 bec78a30  0000002d  
-I/DEBUG   (   89):     bec78a34  00000100  
-I/DEBUG   (   89):     bec78a38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a3c  8ea40055  
-I/DEBUG   (   89):     bec78a40  bec78a74  [stack]
-I/DEBUG   (   89):     bec78a44  fffffbdf  
-I/DEBUG   (   89):     bec78a48  0000f2c0  [heap]
-I/DEBUG   (   89):     bec78a4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bec78a50  0000f2c0  [heap]
-I/DEBUG   (   89):     bec78a54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bec78a58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bec78a5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bec78a60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a64  00000036  
-I/DEBUG   (   89):     bec78a68  0000f2c0  [heap]
-I/DEBUG   (   89):     bec78a6c  1d200031  
-I/DEBUG   (   89):     bec78a70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bec78a74  0000f2c0  [heap]
-I/DEBUG   (   89):     bec78a78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a88  0000f2c0  [heap]
-I/DEBUG   (   89):     bec78a8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec78a90  0000f2c0  [heap]
-I/DEBUG   (   89):     bec78a94  1d200025  
-I/DEBUG   (   89):     bec78a98  00000001  
-I/DEBUG   (   89):     bec78a9c  401cc850  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a00  00000006  
+I/DEBUG   (   89):     beaf5a04  b5fa21dd  
+I/DEBUG   (   89):     beaf5a08  40068720  /system/lib/libc.so
+I/DEBUG   (   89):     beaf5a0c  400686b0  /system/lib/libc.so
+I/DEBUG   (   89):     beaf5a10  00000000  
+I/DEBUG   (   89):     beaf5a14  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     beaf5a18  401b4507  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a1c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     beaf5a20  ffffffff  
+I/DEBUG   (   89):     beaf5a24  00000000  
+I/DEBUG   (   89):     beaf5a28  00000000  
+I/DEBUG   (   89):     beaf5a2c  401b9167  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a30  beaf5a78  [stack]
+I/DEBUG   (   89):     beaf5a34  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     beaf5a38  df0027ad  
+I/DEBUG   (   89):     beaf5a3c  00000000  
+I/DEBUG   (   89): #00 beaf5a40  0000000c  
+I/DEBUG   (   89):     beaf5a44  00000100  
+I/DEBUG   (   89):     beaf5a48  40188b71  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a4c  b5fa21dd  
+I/DEBUG   (   89):     beaf5a50  1d200099  
+I/DEBUG   (   89):     beaf5a54  fffffbdf  
+I/DEBUG   (   89):     beaf5a58  0000f2c0  [heap]
+I/DEBUG   (   89):     beaf5a5c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beaf5a60  0000f2c0  [heap]
+I/DEBUG   (   89):     beaf5a64  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 beaf5a68  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beaf5a6c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     beaf5a70  401d217c  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a74  0000004f  
+I/DEBUG   (   89):     beaf5a78  0000f2c0  [heap]
+I/DEBUG   (   89):     beaf5a7c  1d20009d  
+I/DEBUG   (   89):     beaf5a80  401b33a8  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a84  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beaf5a88  0000f2c0  [heap]
+I/DEBUG   (   89):     beaf5a8c  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a90  00000001  
+I/DEBUG   (   89):     beaf5a94  40175877  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5a98  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beaf5a9c  4018823d  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5aa0  401cc888  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5aa4  0000f2c0  [heap]
+I/DEBUG   (   89):     beaf5aa8  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beaf5aac  40175979  /system/lib/libandroid_runtime.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  159): Netd 1.0 starting
-D/AndroidRuntime(  158): 
-D/AndroidRuntime(  158): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  158): CheckJNI is OFF
-I/        (  160): ServiceManager: 0xf958
-I/HTC Acoustic(  160): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  160): deonvvv gingerbread test.
-I/HTC Acoustic(  160): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  160): acoustic table version: MAL_WB_20110217
-E/dalvikvm(  158): ERROR: couldn't find native method
-I/HTC Acoustic(  160): read_audio_para_from_file success.
-E/HTC Acoustic(  160): Fail to open /system/etc/AudioPara_ALL.csv -1.
-E/dalvikvm(  158): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-I/HTC Acoustic(  160): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  160): acoustic table version: MAL_Gerenic_20110509
-E/JNIHelp (  158): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  158): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/HTC Acoustic(  160): read_audio_para_from_file success.
-I/HTC Acoustic(  160): get_audpp_filter
-I/HTC Acoustic(  160): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  160): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  160): set mbadrc filter error.
-I/HTC Acoustic(  160): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  160): get_audpre_filter
-I/HTC Acoustic(  160): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  160): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  160): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  160): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  160): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  160): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  160): BT MATCH BT
-D/AudioHardwareMSM72XX(  160): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  160): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  160): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  160): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  160): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  160): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  160): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  160): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  160): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  160): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  160): BT MATCH CURRENT
-I/AudioFlinger(  160): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  160): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  160): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  160): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  160): Set master volume to 5.
-I/CameraService(  160): CameraService started (pid=160)
-I/AudioFlinger(  160): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  160): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  160): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  160): set output routing 2
-I/AudioHardwareMSM72XX(  160): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  160): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  160): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  160): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  160): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/Netd    (  165): Netd 1.0 starting
+D/AndroidRuntime(  164): 
+D/AndroidRuntime(  164): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  164): CheckJNI is OFF
+I/        (  166): ServiceManager: 0xf958
+I/HTC Acoustic(  166): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  166): deonvvv gingerbread test.
+I/HTC Acoustic(  166): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  166): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  166): read_audio_para_from_file success.
+E/HTC Acoustic(  166): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  166): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  166): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  166): read_audio_para_from_file success.
+I/HTC Acoustic(  166): get_audpp_filter
+I/HTC Acoustic(  166): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  166): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  166): set mbadrc filter error.
+I/HTC Acoustic(  166): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  166): get_audpre_filter
+I/HTC Acoustic(  166): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  166): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  166): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  166): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  166): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  166): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  166): BT MATCH BT
+D/AudioHardwareMSM72XX(  166): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  166): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  166): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  166): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  166): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  166): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  166): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  166): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  166): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  166): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  166): BT MATCH CURRENT
+I/AudioFlinger(  166): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  166): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  166): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+W/dalvikvm(  164): VFY: unable to find class referenced in signature (Landroid/content/res/PackageRedirectionMap;)
+D/AudioHardwareInterface(  166): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  166): Set master volume to 5.
+I/dalvikvm(  164): Could not find method android.content.res.PackageRedirectionMap.getPackageId, referenced from method android.content.res.AssetManager.addRedirections
+W/dalvikvm(  164): VFY: unable to resolve virtual method 9334: Landroid/content/res/PackageRedirectionMap;.getPackageId ()I
+D/dalvikvm(  164): VFY: replacing opcode 0x6e at 0x000e
+I/CameraService(  166): CameraService started (pid=166)
+I/AudioFlinger(  166): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  166): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  166): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  166): set output routing 2
+I/AudioHardwareMSM72XX(  166): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  166): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  166): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  166): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  166): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/dalvikvm(  164): ERROR: couldn't find native method
+E/dalvikvm(  164): Requested: Landroid/view/GLES20Canvas;.nStartTileRendering:(IIIII)V
+E/JNIHelp (  164): RegisterNatives failed for 'android/view/GLES20Canvas', aborting
+F/libc    (  164): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 158, tid: 158  >>> zygote <<<
+I/DEBUG   (   89): pid: 164, tid: 164  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bec81a68
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401b9167  r7 be885a78
 I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bec81a30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  ip ffffffff  sp be885a40  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
 I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
 I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
 I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
@@ -312,124 +351,128 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bec61000-bec82000 [stack]
+I/DEBUG   (   89): be865000-be886000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bec819f0  00000000  
-I/DEBUG   (   89):     bec819f4  4b9ac37f  /dev/ashmem/dalvik-card-table (deleted)
-I/DEBUG   (   89):     bec819f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bec819fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bec81a00  00000000  
-I/DEBUG   (   89):     bec81a04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bec81a08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bec81a10  ffffffff  
-I/DEBUG   (   89):     bec81a14  00000000  
-I/DEBUG   (   89):     bec81a18  00000000  
-I/DEBUG   (   89):     bec81a1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a20  bec81a68  [stack]
-I/DEBUG   (   89):     bec81a24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bec81a28  df0027ad  
-I/DEBUG   (   89):     bec81a2c  00000000  
-I/DEBUG   (   89): #00 bec81a30  0000002d  
-I/DEBUG   (   89):     bec81a34  00000100  
-I/DEBUG   (   89):     bec81a38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a3c  4b9ac37f  /dev/ashmem/dalvik-card-table (deleted)
-I/DEBUG   (   89):     bec81a40  bec81a74  [stack]
-I/DEBUG   (   89):     bec81a44  fffffbdf  
-I/DEBUG   (   89):     bec81a48  0000f2c0  [heap]
-I/DEBUG   (   89):     bec81a4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bec81a50  0000f2c0  [heap]
-I/DEBUG   (   89):     bec81a54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bec81a58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bec81a5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bec81a60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a64  00000036  
-I/DEBUG   (   89):     bec81a68  0000f2c0  [heap]
-I/DEBUG   (   89):     bec81a6c  1d200031  
-I/DEBUG   (   89):     bec81a70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bec81a74  0000f2c0  [heap]
-I/DEBUG   (   89):     bec81a78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a88  0000f2c0  [heap]
-I/DEBUG   (   89):     bec81a8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bec81a90  0000f2c0  [heap]
-I/DEBUG   (   89):     bec81a94  1d200025  
-I/DEBUG   (   89):     bec81a98  00000001  
-I/DEBUG   (   89):     bec81a9c  401cc850  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a00  00000006  
+I/DEBUG   (   89):     be885a04  8338598e  
+I/DEBUG   (   89):     be885a08  40068720  /system/lib/libc.so
+I/DEBUG   (   89):     be885a0c  400686b0  /system/lib/libc.so
+I/DEBUG   (   89):     be885a10  00000000  
+I/DEBUG   (   89):     be885a14  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     be885a18  401b4507  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a1c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     be885a20  ffffffff  
+I/DEBUG   (   89):     be885a24  00000000  
+I/DEBUG   (   89):     be885a28  00000000  
+I/DEBUG   (   89):     be885a2c  401b9167  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a30  be885a78  [stack]
+I/DEBUG   (   89):     be885a34  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     be885a38  df0027ad  
+I/DEBUG   (   89):     be885a3c  00000000  
+I/DEBUG   (   89): #00 be885a40  0000000c  
+I/DEBUG   (   89):     be885a44  00000100  
+I/DEBUG   (   89):     be885a48  40188b71  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a4c  8338598e  
+I/DEBUG   (   89):     be885a50  1d200099  
+I/DEBUG   (   89):     be885a54  fffffbdf  
+I/DEBUG   (   89):     be885a58  0000f2c0  [heap]
+I/DEBUG   (   89):     be885a5c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be885a60  0000f2c0  [heap]
+I/DEBUG   (   89):     be885a64  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 be885a68  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be885a6c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     be885a70  401d217c  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a74  0000004f  
+I/DEBUG   (   89):     be885a78  0000f2c0  [heap]
+I/DEBUG   (   89):     be885a7c  1d20009d  
+I/DEBUG   (   89):     be885a80  401b33a8  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a84  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be885a88  0000f2c0  [heap]
+I/DEBUG   (   89):     be885a8c  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a90  00000001  
+I/DEBUG   (   89):     be885a94  40175877  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885a98  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be885a9c  4018823d  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885aa0  401cc888  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885aa4  0000f2c0  [heap]
+I/DEBUG   (   89):     be885aa8  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     be885aac  40175979  /system/lib/libandroid_runtime.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  186): Netd 1.0 starting
-D/AndroidRuntime(  187): 
-D/AndroidRuntime(  187): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  187): CheckJNI is OFF
-I/        (  188): ServiceManager: 0xf958
-I/HTC Acoustic(  188): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  188): deonvvv gingerbread test.
-I/HTC Acoustic(  188): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  188): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  188): read_audio_para_from_file success.
-E/dalvikvm(  187): ERROR: couldn't find native method
-E/dalvikvm(  187): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (  187): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  187): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-E/HTC Acoustic(  188): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  188): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  188): acoustic table version: MAL_Gerenic_20110509
-I/HTC Acoustic(  188): read_audio_para_from_file success.
-I/HTC Acoustic(  188): get_audpp_filter
-I/HTC Acoustic(  188): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  188): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  188): set mbadrc filter error.
-I/HTC Acoustic(  188): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  188): get_audpre_filter
-I/HTC Acoustic(  188): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  188): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  188): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  188): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  188): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  188): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  188): BT MATCH BT
-D/AudioHardwareMSM72XX(  188): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  188): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  188): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  188): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  188): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  188): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  188): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  188): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  188): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  188): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  188): BT MATCH CURRENT
-I/AudioFlinger(  188): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  188): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  188): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  188): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  188): Set master volume to 5.
-I/CameraService(  188): CameraService started (pid=188)
-I/AudioFlinger(  188): AudioFlinger's thread 0x16fd8 ready to run
-W/AudioFlinger(  188): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  188): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  188): set output routing 2
-I/AudioHardwareMSM72XX(  188): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  188): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  188): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  188): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  188): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/Netd    (  192): Netd 1.0 starting
+D/AndroidRuntime(  193): 
+D/AndroidRuntime(  193): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  193): CheckJNI is OFF
+I/        (  194): ServiceManager: 0xf958
+I/HTC Acoustic(  194): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  194): deonvvv gingerbread test.
+I/HTC Acoustic(  194): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  194): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  194): read_audio_para_from_file success.
+E/HTC Acoustic(  194): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  194): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  194): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  194): read_audio_para_from_file success.
+W/dalvikvm(  193): VFY: unable to find class referenced in signature (Landroid/content/res/PackageRedirectionMap;)
+I/dalvikvm(  193): Could not find method android.content.res.PackageRedirectionMap.getPackageId, referenced from method android.content.res.AssetManager.addRedirections
+W/dalvikvm(  193): VFY: unable to resolve virtual method 9334: Landroid/content/res/PackageRedirectionMap;.getPackageId ()I
+I/HTC Acoustic(  194): get_audpp_filter
+I/HTC Acoustic(  194): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  194): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  194): set mbadrc filter error.
+I/HTC Acoustic(  194): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  194): get_audpre_filter
+I/HTC Acoustic(  194): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  194): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  194): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  194): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  194): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  194): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  194): BT MATCH BT
+D/AudioHardwareMSM72XX(  194): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  194): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  194): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  194): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  194): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  194): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  194): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  194): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  194): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  194): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  194): BT MATCH CURRENT
+I/AudioFlinger(  194): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  194): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  194): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  194): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  194): Set master volume to 5.
+D/dalvikvm(  193): VFY: replacing opcode 0x6e at 0x000e
+I/CameraService(  194): CameraService started (pid=194)
+I/AudioFlinger(  194): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  194): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  194): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  194): set output routing 2
+I/AudioHardwareMSM72XX(  194): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  194): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  194): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  194): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  194): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/dalvikvm(  193): ERROR: couldn't find native method
+E/dalvikvm(  193): Requested: Landroid/view/GLES20Canvas;.nStartTileRendering:(IIIII)V
+E/JNIHelp (  193): RegisterNatives failed for 'android/view/GLES20Canvas', aborting
+F/libc    (  193): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 187, tid: 187  >>> zygote <<<
+I/DEBUG   (   89): pid: 193, tid: 193  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bef18a68
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401b9167  r7 bea87a78
 I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bef18a30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  ip ffffffff  sp bea87a40  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
 I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
 I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
 I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
@@ -458,124 +501,128 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): beef8000-bef19000 [stack]
+I/DEBUG   (   89): bea67000-bea88000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bef189f0  00000000  
-I/DEBUG   (   89):     bef189f4  5f838cea  
-I/DEBUG   (   89):     bef189f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bef189fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bef18a00  00000000  
-I/DEBUG   (   89):     bef18a04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bef18a08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bef18a10  ffffffff  
-I/DEBUG   (   89):     bef18a14  00000000  
-I/DEBUG   (   89):     bef18a18  00000000  
-I/DEBUG   (   89):     bef18a1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a20  bef18a68  [stack]
-I/DEBUG   (   89):     bef18a24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bef18a28  df0027ad  
-I/DEBUG   (   89):     bef18a2c  00000000  
-I/DEBUG   (   89): #00 bef18a30  0000002d  
-I/DEBUG   (   89):     bef18a34  00000100  
-I/DEBUG   (   89):     bef18a38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a3c  5f838cea  
-I/DEBUG   (   89):     bef18a40  bef18a74  [stack]
-I/DEBUG   (   89):     bef18a44  fffffbdf  
-I/DEBUG   (   89):     bef18a48  0000f2c0  [heap]
-I/DEBUG   (   89):     bef18a4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef18a50  0000f2c0  [heap]
-I/DEBUG   (   89):     bef18a54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bef18a58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef18a5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bef18a60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a64  00000036  
-I/DEBUG   (   89):     bef18a68  0000f2c0  [heap]
-I/DEBUG   (   89):     bef18a6c  1d200031  
-I/DEBUG   (   89):     bef18a70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef18a74  0000f2c0  [heap]
-I/DEBUG   (   89):     bef18a78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a88  0000f2c0  [heap]
-I/DEBUG   (   89):     bef18a8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef18a90  0000f2c0  [heap]
-I/DEBUG   (   89):     bef18a94  1d200025  
-I/DEBUG   (   89):     bef18a98  00000001  
-I/DEBUG   (   89):     bef18a9c  401cc850  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a00  00000006  
+I/DEBUG   (   89):     bea87a04  cdbe6a53  
+I/DEBUG   (   89):     bea87a08  40068720  /system/lib/libc.so
+I/DEBUG   (   89):     bea87a0c  400686b0  /system/lib/libc.so
+I/DEBUG   (   89):     bea87a10  00000000  
+I/DEBUG   (   89):     bea87a14  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     bea87a18  401b4507  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a1c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     bea87a20  ffffffff  
+I/DEBUG   (   89):     bea87a24  00000000  
+I/DEBUG   (   89):     bea87a28  00000000  
+I/DEBUG   (   89):     bea87a2c  401b9167  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a30  bea87a78  [stack]
+I/DEBUG   (   89):     bea87a34  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     bea87a38  df0027ad  
+I/DEBUG   (   89):     bea87a3c  00000000  
+I/DEBUG   (   89): #00 bea87a40  0000000c  
+I/DEBUG   (   89):     bea87a44  00000100  
+I/DEBUG   (   89):     bea87a48  40188b71  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a4c  cdbe6a53  
+I/DEBUG   (   89):     bea87a50  1d200099  
+I/DEBUG   (   89):     bea87a54  fffffbdf  
+I/DEBUG   (   89):     bea87a58  0000f2c0  [heap]
+I/DEBUG   (   89):     bea87a5c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bea87a60  0000f2c0  [heap]
+I/DEBUG   (   89):     bea87a64  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 bea87a68  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bea87a6c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     bea87a70  401d217c  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a74  0000004f  
+I/DEBUG   (   89):     bea87a78  0000f2c0  [heap]
+I/DEBUG   (   89):     bea87a7c  1d20009d  
+I/DEBUG   (   89):     bea87a80  401b33a8  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a84  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bea87a88  0000f2c0  [heap]
+I/DEBUG   (   89):     bea87a8c  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a90  00000001  
+I/DEBUG   (   89):     bea87a94  40175877  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87a98  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bea87a9c  4018823d  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87aa0  401cc888  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87aa4  0000f2c0  [heap]
+I/DEBUG   (   89):     bea87aa8  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bea87aac  40175979  /system/lib/libandroid_runtime.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  214): Netd 1.0 starting
-D/AndroidRuntime(  215): 
-D/AndroidRuntime(  215): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  215): CheckJNI is OFF
-I/        (  216): ServiceManager: 0xf958
-I/HTC Acoustic(  216): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  216): deonvvv gingerbread test.
-I/HTC Acoustic(  216): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  216): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  216): read_audio_para_from_file success.
-E/dalvikvm(  215): ERROR: couldn't find native method
-E/HTC Acoustic(  216): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  216): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  216): acoustic table version: MAL_Gerenic_20110509
-E/dalvikvm(  215): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (  215): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  215): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/HTC Acoustic(  216): read_audio_para_from_file success.
-I/HTC Acoustic(  216): get_audpp_filter
-I/HTC Acoustic(  216): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  216): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  216): set mbadrc filter error.
-I/HTC Acoustic(  216): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  216): get_audpre_filter
-I/HTC Acoustic(  216): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  216): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  216): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  216): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  216): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  216): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  216): BT MATCH BT
-D/AudioHardwareMSM72XX(  216): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  216): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  216): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  216): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  216): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  216): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  216): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  216): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  216): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  216): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  216): BT MATCH CURRENT
-I/AudioFlinger(  216): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  216): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  216): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  216): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  216): Set master volume to 5.
-I/CameraService(  216): CameraService started (pid=216)
-I/AudioFlinger(  216): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  216): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  216): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  216): set output routing 2
-I/AudioHardwareMSM72XX(  216): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  216): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  216): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  216): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  216): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/Netd    (  220): Netd 1.0 starting
+D/AndroidRuntime(  221): 
+D/AndroidRuntime(  221): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  221): CheckJNI is OFF
+I/        (  222): ServiceManager: 0xf958
+I/HTC Acoustic(  222): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  222): deonvvv gingerbread test.
+I/HTC Acoustic(  222): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  222): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  222): read_audio_para_from_file success.
+E/HTC Acoustic(  222): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  222): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  222): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  222): read_audio_para_from_file success.
+I/HTC Acoustic(  222): get_audpp_filter
+I/HTC Acoustic(  222): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  222): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  222): set mbadrc filter error.
+I/HTC Acoustic(  222): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  222): get_audpre_filter
+I/HTC Acoustic(  222): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  222): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  222): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  222): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  222): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  222): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  222): BT MATCH BT
+D/AudioHardwareMSM72XX(  222): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  222): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  222): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  222): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  222): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  222): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  222): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  222): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  222): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  222): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  222): BT MATCH CURRENT
+I/AudioFlinger(  222): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  222): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  222): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  222): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  222): Set master volume to 5.
+I/CameraService(  222): CameraService started (pid=222)
+W/dalvikvm(  221): VFY: unable to find class referenced in signature (Landroid/content/res/PackageRedirectionMap;)
+I/dalvikvm(  221): Could not find method android.content.res.PackageRedirectionMap.getPackageId, referenced from method android.content.res.AssetManager.addRedirections
+W/dalvikvm(  221): VFY: unable to resolve virtual method 9334: Landroid/content/res/PackageRedirectionMap;.getPackageId ()I
+D/dalvikvm(  221): VFY: replacing opcode 0x6e at 0x000e
+I/AudioFlinger(  222): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  222): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  222): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  222): set output routing 2
+I/AudioHardwareMSM72XX(  222): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  222): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  222): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  222): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  222): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/dalvikvm(  221): ERROR: couldn't find native method
+E/dalvikvm(  221): Requested: Landroid/view/GLES20Canvas;.nStartTileRendering:(IIIII)V
+E/JNIHelp (  221): RegisterNatives failed for 'android/view/GLES20Canvas', aborting
+F/libc    (  221): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 215, tid: 215  >>> zygote <<<
+I/DEBUG   (   89): pid: 221, tid: 221  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bee6aa68
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401b9167  r7 bec34a78
 I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bee6aa30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  ip ffffffff  sp bec34a40  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
 I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
 I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
 I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
@@ -604,124 +651,128 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bee4a000-bee6b000 [stack]
+I/DEBUG   (   89): bec14000-bec35000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bee6a9f0  00000000  
-I/DEBUG   (   89):     bee6a9f4  bda9b63f  
-I/DEBUG   (   89):     bee6a9f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bee6a9fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bee6aa00  00000000  
-I/DEBUG   (   89):     bee6aa04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bee6aa08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bee6aa10  ffffffff  
-I/DEBUG   (   89):     bee6aa14  00000000  
-I/DEBUG   (   89):     bee6aa18  00000000  
-I/DEBUG   (   89):     bee6aa1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa20  bee6aa68  [stack]
-I/DEBUG   (   89):     bee6aa24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bee6aa28  df0027ad  
-I/DEBUG   (   89):     bee6aa2c  00000000  
-I/DEBUG   (   89): #00 bee6aa30  0000002d  
-I/DEBUG   (   89):     bee6aa34  00000100  
-I/DEBUG   (   89):     bee6aa38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa3c  bda9b63f  
-I/DEBUG   (   89):     bee6aa40  bee6aa74  [stack]
-I/DEBUG   (   89):     bee6aa44  fffffbdf  
-I/DEBUG   (   89):     bee6aa48  0000f2c0  [heap]
-I/DEBUG   (   89):     bee6aa4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bee6aa50  0000f2c0  [heap]
-I/DEBUG   (   89):     bee6aa54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bee6aa58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bee6aa5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bee6aa60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa64  00000036  
-I/DEBUG   (   89):     bee6aa68  0000f2c0  [heap]
-I/DEBUG   (   89):     bee6aa6c  1d200031  
-I/DEBUG   (   89):     bee6aa70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bee6aa74  0000f2c0  [heap]
-I/DEBUG   (   89):     bee6aa78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa88  0000f2c0  [heap]
-I/DEBUG   (   89):     bee6aa8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bee6aa90  0000f2c0  [heap]
-I/DEBUG   (   89):     bee6aa94  1d200025  
-I/DEBUG   (   89):     bee6aa98  00000001  
-I/DEBUG   (   89):     bee6aa9c  401cc850  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a00  00000006  
+I/DEBUG   (   89):     bec34a04  0f6858aa  
+I/DEBUG   (   89):     bec34a08  40068720  /system/lib/libc.so
+I/DEBUG   (   89):     bec34a0c  400686b0  /system/lib/libc.so
+I/DEBUG   (   89):     bec34a10  00000000  
+I/DEBUG   (   89):     bec34a14  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     bec34a18  401b4507  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a1c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     bec34a20  ffffffff  
+I/DEBUG   (   89):     bec34a24  00000000  
+I/DEBUG   (   89):     bec34a28  00000000  
+I/DEBUG   (   89):     bec34a2c  401b9167  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a30  bec34a78  [stack]
+I/DEBUG   (   89):     bec34a34  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     bec34a38  df0027ad  
+I/DEBUG   (   89):     bec34a3c  00000000  
+I/DEBUG   (   89): #00 bec34a40  0000000c  
+I/DEBUG   (   89):     bec34a44  00000100  
+I/DEBUG   (   89):     bec34a48  40188b71  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a4c  0f6858aa  
+I/DEBUG   (   89):     bec34a50  1d200099  
+I/DEBUG   (   89):     bec34a54  fffffbdf  
+I/DEBUG   (   89):     bec34a58  0000f2c0  [heap]
+I/DEBUG   (   89):     bec34a5c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec34a60  0000f2c0  [heap]
+I/DEBUG   (   89):     bec34a64  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 bec34a68  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec34a6c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     bec34a70  401d217c  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a74  0000004f  
+I/DEBUG   (   89):     bec34a78  0000f2c0  [heap]
+I/DEBUG   (   89):     bec34a7c  1d20009d  
+I/DEBUG   (   89):     bec34a80  401b33a8  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a84  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec34a88  0000f2c0  [heap]
+I/DEBUG   (   89):     bec34a8c  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a90  00000001  
+I/DEBUG   (   89):     bec34a94  40175877  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34a98  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec34a9c  4018823d  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34aa0  401cc888  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34aa4  0000f2c0  [heap]
+I/DEBUG   (   89):     bec34aa8  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     bec34aac  40175979  /system/lib/libandroid_runtime.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  242): Netd 1.0 starting
-D/AndroidRuntime(  243): 
-D/AndroidRuntime(  243): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  243): CheckJNI is OFF
-I/        (  244): ServiceManager: 0xf958
-I/HTC Acoustic(  244): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  244): deonvvv gingerbread test.
-I/HTC Acoustic(  244): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  244): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  244): read_audio_para_from_file success.
-E/HTC Acoustic(  244): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  244): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  244): acoustic table version: MAL_Gerenic_20110509
-E/dalvikvm(  243): ERROR: couldn't find native method
-E/dalvikvm(  243): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (  243): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  243): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/HTC Acoustic(  244): read_audio_para_from_file success.
-I/HTC Acoustic(  244): get_audpp_filter
-I/HTC Acoustic(  244): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  244): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  244): set mbadrc filter error.
-I/HTC Acoustic(  244): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  244): get_audpre_filter
-I/HTC Acoustic(  244): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  244): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  244): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  244): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  244): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  244): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  244): BT MATCH BT
-D/AudioHardwareMSM72XX(  244): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  244): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  244): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  244): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  244): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  244): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  244): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  244): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  244): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  244): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  244): BT MATCH CURRENT
-I/AudioFlinger(  244): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  244): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  244): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  244): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  244): Set master volume to 5.
-I/CameraService(  244): CameraService started (pid=244)
-I/AudioFlinger(  244): AudioFlinger's thread 0x16fd8 ready to run
-W/AudioFlinger(  244): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  244): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  244): set output routing 2
-I/AudioHardwareMSM72XX(  244): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  244): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  244): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  244): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  244): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/Netd    (  248): Netd 1.0 starting
+D/AndroidRuntime(  249): 
+D/AndroidRuntime(  249): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  249): CheckJNI is OFF
+I/        (  250): ServiceManager: 0xf958
+I/HTC Acoustic(  250): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  250): deonvvv gingerbread test.
+I/HTC Acoustic(  250): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  250): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  250): read_audio_para_from_file success.
+E/HTC Acoustic(  250): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  250): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  250): acoustic table version: MAL_Gerenic_20110509
+W/dalvikvm(  249): VFY: unable to find class referenced in signature (Landroid/content/res/PackageRedirectionMap;)
+I/dalvikvm(  249): Could not find method android.content.res.PackageRedirectionMap.getPackageId, referenced from method android.content.res.AssetManager.addRedirections
+W/dalvikvm(  249): VFY: unable to resolve virtual method 9334: Landroid/content/res/PackageRedirectionMap;.getPackageId ()I
+D/dalvikvm(  249): VFY: replacing opcode 0x6e at 0x000e
+I/HTC Acoustic(  250): read_audio_para_from_file success.
+I/HTC Acoustic(  250): get_audpp_filter
+I/HTC Acoustic(  250): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  250): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  250): set mbadrc filter error.
+I/HTC Acoustic(  250): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  250): get_audpre_filter
+I/HTC Acoustic(  250): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  250): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  250): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  250): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  250): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  250): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  250): BT MATCH BT
+D/AudioHardwareMSM72XX(  250): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  250): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  250): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  250): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  250): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  250): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  250): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  250): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  250): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  250): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  250): BT MATCH CURRENT
+I/AudioFlinger(  250): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  250): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  250): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  250): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  250): Set master volume to 5.
+I/CameraService(  250): CameraService started (pid=250)
+E/dalvikvm(  249): ERROR: couldn't find native method
+I/AudioFlinger(  250): AudioFlinger's thread 0x16fd8 ready to run
+W/AudioFlinger(  250): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  250): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  250): set output routing 2
+I/AudioHardwareMSM72XX(  250): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  250): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  250): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  250): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  250): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/dalvikvm(  249): Requested: Landroid/view/GLES20Canvas;.nStartTileRendering:(IIIII)V
+E/JNIHelp (  249): RegisterNatives failed for 'android/view/GLES20Canvas', aborting
+F/libc    (  249): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 243, tid: 243  >>> zygote <<<
+I/DEBUG   (   89): pid: 249, tid: 249  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bed3aa68
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401b9167  r7 beffea78
 I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bed3aa30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  ip ffffffff  sp beffea40  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
 I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
 I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
 I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
@@ -750,785 +801,55 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bed1a000-bed3b000 [stack]
+I/DEBUG   (   89): befde000-befff000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bed3a9f0  00000000  
-I/DEBUG   (   89):     bed3a9f4  5811f605  
-I/DEBUG   (   89):     bed3a9f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bed3a9fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bed3aa00  00000000  
-I/DEBUG   (   89):     bed3aa04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bed3aa08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bed3aa10  ffffffff  
-I/DEBUG   (   89):     bed3aa14  00000000  
-I/DEBUG   (   89):     bed3aa18  00000000  
-I/DEBUG   (   89):     bed3aa1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa20  bed3aa68  [stack]
-I/DEBUG   (   89):     bed3aa24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bed3aa28  df0027ad  
-I/DEBUG   (   89):     bed3aa2c  00000000  
-I/DEBUG   (   89): #00 bed3aa30  0000002d  
-I/DEBUG   (   89):     bed3aa34  00000100  
-I/DEBUG   (   89):     bed3aa38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa3c  5811f605  
-I/DEBUG   (   89):     bed3aa40  bed3aa74  [stack]
-I/DEBUG   (   89):     bed3aa44  fffffbdf  
-I/DEBUG   (   89):     bed3aa48  0000f2c0  [heap]
-I/DEBUG   (   89):     bed3aa4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bed3aa50  0000f2c0  [heap]
-I/DEBUG   (   89):     bed3aa54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bed3aa58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bed3aa5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bed3aa60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa64  00000036  
-I/DEBUG   (   89):     bed3aa68  0000f2c0  [heap]
-I/DEBUG   (   89):     bed3aa6c  1d200031  
-I/DEBUG   (   89):     bed3aa70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bed3aa74  0000f2c0  [heap]
-I/DEBUG   (   89):     bed3aa78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa88  0000f2c0  [heap]
-I/DEBUG   (   89):     bed3aa8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed3aa90  0000f2c0  [heap]
-I/DEBUG   (   89):     bed3aa94  1d200025  
-I/DEBUG   (   89):     bed3aa98  00000001  
-I/DEBUG   (   89):     bed3aa9c  401cc850  /system/lib/libandroid_runtime.so
-I/ServiceManager(   86): service 'media.audio_flinger' died
-I/ServiceManager(   86): service 'media.player' died
-I/ServiceManager(   86): service 'media.camera' died
-I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  270): Netd 1.0 starting
-D/AndroidRuntime(  271): 
-D/AndroidRuntime(  271): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  271): CheckJNI is OFF
-I/        (  272): ServiceManager: 0xf958
-I/HTC Acoustic(  272): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  272): deonvvv gingerbread test.
-I/HTC Acoustic(  272): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  272): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  272): read_audio_para_from_file success.
-E/HTC Acoustic(  272): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  272): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  272): acoustic table version: MAL_Gerenic_20110509
-I/HTC Acoustic(  272): read_audio_para_from_file success.
-E/dalvikvm(  271): ERROR: couldn't find native method
-E/dalvikvm(  271): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-I/HTC Acoustic(  272): get_audpp_filter
-I/HTC Acoustic(  272): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  272): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  272): set mbadrc filter error.
-I/HTC Acoustic(  272): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  272): get_audpre_filter
-I/HTC Acoustic(  272): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  272): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  272): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  272): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  272): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  272): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  272): BT MATCH BT
-D/AudioHardwareMSM72XX(  272): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  272): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  272): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  272): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  272): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  272): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  272): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  272): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  272): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  272): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  272): BT MATCH CURRENT
-E/JNIHelp (  271): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-I/AudioFlinger(  272): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-F/libc    (  271): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/AudioFlinger(  272): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  272): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  272): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  272): Set master volume to 5.
-I/CameraService(  272): CameraService started (pid=272)
-I/AudioFlinger(  272): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  272): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  272): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  272): set output routing 2
-I/AudioHardwareMSM72XX(  272): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  272): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  272): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  272): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  272): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 271, tid: 271  >>> zygote <<<
-I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
-I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bea5ca68
-I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bea5ca30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
-I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
-I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
-I/DEBUG   (   89):  d6  0000000000000000  d7  0000000000000000
-I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
-I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
-I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
-I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000000
-I/DEBUG   (   89): 
-I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
-I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around pc:
-I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
-I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
-I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
-I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
-I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around lr:
-I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
-I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
-I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
-I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
-I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
-I/DEBUG   (   89): 
-I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bea3c000-bea5d000 [stack]
-I/DEBUG   (   89): (no map for address)
-I/DEBUG   (   89): (no map above)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bea5c9f0  00000000  
-I/DEBUG   (   89):     bea5c9f4  75f946bf  
-I/DEBUG   (   89):     bea5c9f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bea5c9fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bea5ca00  00000000  
-I/DEBUG   (   89):     bea5ca04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bea5ca08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bea5ca10  ffffffff  
-I/DEBUG   (   89):     bea5ca14  00000000  
-I/DEBUG   (   89):     bea5ca18  00000000  
-I/DEBUG   (   89):     bea5ca1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca20  bea5ca68  [stack]
-I/DEBUG   (   89):     bea5ca24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bea5ca28  df0027ad  
-I/DEBUG   (   89):     bea5ca2c  00000000  
-I/DEBUG   (   89): #00 bea5ca30  0000002d  
-I/DEBUG   (   89):     bea5ca34  00000100  
-I/DEBUG   (   89):     bea5ca38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca3c  75f946bf  
-I/DEBUG   (   89):     bea5ca40  bea5ca74  [stack]
-I/DEBUG   (   89):     bea5ca44  fffffbdf  
-I/DEBUG   (   89):     bea5ca48  0000f2c0  [heap]
-I/DEBUG   (   89):     bea5ca4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bea5ca50  0000f2c0  [heap]
-I/DEBUG   (   89):     bea5ca54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bea5ca58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bea5ca5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bea5ca60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca64  00000036  
-I/DEBUG   (   89):     bea5ca68  0000f2c0  [heap]
-I/DEBUG   (   89):     bea5ca6c  1d200031  
-I/DEBUG   (   89):     bea5ca70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bea5ca74  0000f2c0  [heap]
-I/DEBUG   (   89):     bea5ca78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca88  0000f2c0  [heap]
-I/DEBUG   (   89):     bea5ca8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea5ca90  0000f2c0  [heap]
-I/DEBUG   (   89):     bea5ca94  1d200025  
-I/DEBUG   (   89):     bea5ca98  00000001  
-I/DEBUG   (   89):     bea5ca9c  401cc850  /system/lib/libandroid_runtime.so
-I/ServiceManager(   86): service 'media.audio_flinger' died
-I/ServiceManager(   86): service 'media.player' died
-I/ServiceManager(   86): service 'media.camera' died
-I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  298): Netd 1.0 starting
-D/AndroidRuntime(  299): 
-D/AndroidRuntime(  299): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  299): CheckJNI is OFF
-I/        (  300): ServiceManager: 0xf958
-I/HTC Acoustic(  300): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  300): deonvvv gingerbread test.
-I/HTC Acoustic(  300): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  300): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  300): read_audio_para_from_file success.
-E/HTC Acoustic(  300): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  300): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  300): acoustic table version: MAL_Gerenic_20110509
-E/dalvikvm(  299): ERROR: couldn't find native method
-E/dalvikvm(  299): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (  299): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-I/HTC Acoustic(  300): read_audio_para_from_file success.
-F/libc    (  299): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/HTC Acoustic(  300): get_audpp_filter
-I/HTC Acoustic(  300): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  300): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  300): set mbadrc filter error.
-I/HTC Acoustic(  300): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  300): get_audpre_filter
-I/HTC Acoustic(  300): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  300): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  300): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  300): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  300): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  300): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  300): BT MATCH BT
-D/AudioHardwareMSM72XX(  300): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  300): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  300): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  300): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  300): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  300): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  300): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  300): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  300): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  300): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  300): BT MATCH CURRENT
-I/AudioFlinger(  300): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  300): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  300): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  300): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  300): Set master volume to 5.
-I/CameraService(  300): CameraService started (pid=300)
-I/AudioFlinger(  300): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  300): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  300): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  300): set output routing 2
-I/AudioHardwareMSM72XX(  300): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  300): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  300): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  300): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  300): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 299, tid: 299  >>> zygote <<<
-I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
-I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bea4da68
-I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bea4da30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
-I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
-I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
-I/DEBUG   (   89):  d6  0000000000000000  d7  0000000000000000
-I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
-I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
-I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
-I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000000
-I/DEBUG   (   89): 
-I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
-I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around pc:
-I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
-I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
-I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
-I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
-I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around lr:
-I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
-I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
-I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
-I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
-I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
-I/DEBUG   (   89): 
-I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bea2d000-bea4e000 [stack]
-I/DEBUG   (   89): (no map for address)
-I/DEBUG   (   89): (no map above)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bea4d9f0  00000000  
-I/DEBUG   (   89):     bea4d9f4  ca01e41f  
-I/DEBUG   (   89):     bea4d9f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bea4d9fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bea4da00  00000000  
-I/DEBUG   (   89):     bea4da04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bea4da08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bea4da10  ffffffff  
-I/DEBUG   (   89):     bea4da14  00000000  
-I/DEBUG   (   89):     bea4da18  00000000  
-I/DEBUG   (   89):     bea4da1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da20  bea4da68  [stack]
-I/DEBUG   (   89):     bea4da24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bea4da28  df0027ad  
-I/DEBUG   (   89):     bea4da2c  00000000  
-I/DEBUG   (   89): #00 bea4da30  0000002d  
-I/DEBUG   (   89):     bea4da34  00000100  
-I/DEBUG   (   89):     bea4da38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da3c  ca01e41f  
-I/DEBUG   (   89):     bea4da40  bea4da74  [stack]
-I/DEBUG   (   89):     bea4da44  fffffbdf  
-I/DEBUG   (   89):     bea4da48  0000f2c0  [heap]
-I/DEBUG   (   89):     bea4da4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bea4da50  0000f2c0  [heap]
-I/DEBUG   (   89):     bea4da54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bea4da58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bea4da5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bea4da60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da64  00000036  
-I/DEBUG   (   89):     bea4da68  0000f2c0  [heap]
-I/DEBUG   (   89):     bea4da6c  1d200031  
-I/DEBUG   (   89):     bea4da70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bea4da74  0000f2c0  [heap]
-I/DEBUG   (   89):     bea4da78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da88  0000f2c0  [heap]
-I/DEBUG   (   89):     bea4da8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bea4da90  0000f2c0  [heap]
-I/DEBUG   (   89):     bea4da94  1d200025  
-I/DEBUG   (   89):     bea4da98  00000001  
-I/DEBUG   (   89):     bea4da9c  401cc850  /system/lib/libandroid_runtime.so
-I/ServiceManager(   86): service 'media.audio_flinger' died
-I/ServiceManager(   86): service 'media.player' died
-I/ServiceManager(   86): service 'media.camera' died
-I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  326): Netd 1.0 starting
-D/AndroidRuntime(  327): 
-D/AndroidRuntime(  327): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  327): CheckJNI is OFF
-I/        (  328): ServiceManager: 0xf958
-I/HTC Acoustic(  328): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  328): deonvvv gingerbread test.
-I/HTC Acoustic(  328): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  328): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  328): read_audio_para_from_file success.
-E/HTC Acoustic(  328): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  328): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  328): acoustic table version: MAL_Gerenic_20110509
-I/HTC Acoustic(  328): read_audio_para_from_file success.
-I/HTC Acoustic(  328): get_audpp_filter
-I/HTC Acoustic(  328): open /system/etc/AudioFilter.csv success.
-E/dalvikvm(  327): ERROR: couldn't find native method
-I/HTC Acoustic(  328): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  328): set mbadrc filter error.
-I/HTC Acoustic(  328): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  328): get_audpre_filter
-I/HTC Acoustic(  328): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  328): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  328): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  328): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  328): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  328): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  328): BT MATCH BT
-D/AudioHardwareMSM72XX(  328): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  328): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  328): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  328): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  328): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  328): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  328): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  328): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  328): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  328): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  328): BT MATCH CURRENT
-I/AudioFlinger(  328): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  328): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  328): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-E/dalvikvm(  327): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-D/AudioHardwareInterface(  328): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  328): Set master volume to 5.
-I/CameraService(  328): CameraService started (pid=328)
-E/JNIHelp (  327): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  327): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/AudioFlinger(  328): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  328): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  328): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  328): set output routing 2
-I/AudioHardwareMSM72XX(  328): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  328): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  328): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  328): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  328): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 327, tid: 327  >>> zygote <<<
-I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
-I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bedfda68
-I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bedfda30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
-I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
-I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
-I/DEBUG   (   89):  d6  0000000000000000  d7  0000000000000000
-I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
-I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
-I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
-I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000000
-I/DEBUG   (   89): 
-I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
-I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around pc:
-I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
-I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
-I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
-I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
-I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around lr:
-I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
-I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
-I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
-I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
-I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
-I/DEBUG   (   89): 
-I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): beddd000-bedfe000 [stack]
-I/DEBUG   (   89): (no map for address)
-I/DEBUG   (   89): (no map above)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bedfd9f0  00000000  
-I/DEBUG   (   89):     bedfd9f4  9122ac3b  
-I/DEBUG   (   89):     bedfd9f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bedfd9fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bedfda00  00000000  
-I/DEBUG   (   89):     bedfda04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bedfda08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bedfda10  ffffffff  
-I/DEBUG   (   89):     bedfda14  00000000  
-I/DEBUG   (   89):     bedfda18  00000000  
-I/DEBUG   (   89):     bedfda1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda20  bedfda68  [stack]
-I/DEBUG   (   89):     bedfda24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bedfda28  df0027ad  
-I/DEBUG   (   89):     bedfda2c  00000000  
-I/DEBUG   (   89): #00 bedfda30  0000002d  
-I/DEBUG   (   89):     bedfda34  00000100  
-I/DEBUG   (   89):     bedfda38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda3c  9122ac3b  
-I/DEBUG   (   89):     bedfda40  bedfda74  [stack]
-I/DEBUG   (   89):     bedfda44  fffffbdf  
-I/DEBUG   (   89):     bedfda48  0000f2c0  [heap]
-I/DEBUG   (   89):     bedfda4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bedfda50  0000f2c0  [heap]
-I/DEBUG   (   89):     bedfda54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bedfda58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bedfda5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bedfda60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda64  00000036  
-I/DEBUG   (   89):     bedfda68  0000f2c0  [heap]
-I/DEBUG   (   89):     bedfda6c  1d200031  
-I/DEBUG   (   89):     bedfda70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bedfda74  0000f2c0  [heap]
-I/DEBUG   (   89):     bedfda78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda88  0000f2c0  [heap]
-I/DEBUG   (   89):     bedfda8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bedfda90  0000f2c0  [heap]
-I/DEBUG   (   89):     bedfda94  1d200025  
-I/DEBUG   (   89):     bedfda98  00000001  
-I/DEBUG   (   89):     bedfda9c  401cc850  /system/lib/libandroid_runtime.so
-I/ServiceManager(   86): service 'media.audio_flinger' died
-I/ServiceManager(   86): service 'media.player' died
-I/ServiceManager(   86): service 'media.camera' died
-I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  354): Netd 1.0 starting
-D/AndroidRuntime(  355): 
-D/AndroidRuntime(  355): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  355): CheckJNI is OFF
-I/        (  356): ServiceManager: 0xf958
-I/HTC Acoustic(  356): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  356): deonvvv gingerbread test.
-I/HTC Acoustic(  356): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  356): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  356): read_audio_para_from_file success.
-E/HTC Acoustic(  356): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  356): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  356): acoustic table version: MAL_Gerenic_20110509
-E/dalvikvm(  355): ERROR: couldn't find native method
-E/dalvikvm(  355): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (  355): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  355): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/HTC Acoustic(  356): read_audio_para_from_file success.
-I/HTC Acoustic(  356): get_audpp_filter
-I/HTC Acoustic(  356): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  356): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  356): set mbadrc filter error.
-I/HTC Acoustic(  356): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  356): get_audpre_filter
-I/HTC Acoustic(  356): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  356): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  356): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  356): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  356): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  356): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  356): BT MATCH BT
-D/AudioHardwareMSM72XX(  356): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  356): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  356): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  356): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  356): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  356): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  356): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  356): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  356): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  356): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  356): BT MATCH CURRENT
-I/AudioFlinger(  356): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  356): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  356): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  356): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  356): Set master volume to 5.
-I/CameraService(  356): CameraService started (pid=356)
-I/AudioFlinger(  356): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  356): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  356): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  356): set output routing 2
-I/AudioHardwareMSM72XX(  356): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  356): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  356): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  356): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  356): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 355, tid: 355  >>> zygote <<<
-I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
-I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 be889a68
-I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp be889a30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
-I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
-I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
-I/DEBUG   (   89):  d6  0000000000000000  d7  0000000000000000
-I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
-I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
-I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
-I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000000
-I/DEBUG   (   89): 
-I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
-I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around pc:
-I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
-I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
-I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
-I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
-I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around lr:
-I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
-I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
-I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
-I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
-I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
-I/DEBUG   (   89): 
-I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): be869000-be88a000 [stack]
-I/DEBUG   (   89): (no map for address)
-I/DEBUG   (   89): (no map above)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     be8899f0  00000000  
-I/DEBUG   (   89):     be8899f4  5ba37ad5  
-I/DEBUG   (   89):     be8899f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     be8899fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     be889a00  00000000  
-I/DEBUG   (   89):     be889a04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     be889a08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     be889a10  ffffffff  
-I/DEBUG   (   89):     be889a14  00000000  
-I/DEBUG   (   89):     be889a18  00000000  
-I/DEBUG   (   89):     be889a1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a20  be889a68  [stack]
-I/DEBUG   (   89):     be889a24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     be889a28  df0027ad  
-I/DEBUG   (   89):     be889a2c  00000000  
-I/DEBUG   (   89): #00 be889a30  0000002d  
-I/DEBUG   (   89):     be889a34  00000100  
-I/DEBUG   (   89):     be889a38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a3c  5ba37ad5  
-I/DEBUG   (   89):     be889a40  be889a74  [stack]
-I/DEBUG   (   89):     be889a44  fffffbdf  
-I/DEBUG   (   89):     be889a48  0000f2c0  [heap]
-I/DEBUG   (   89):     be889a4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     be889a50  0000f2c0  [heap]
-I/DEBUG   (   89):     be889a54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 be889a58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     be889a5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     be889a60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a64  00000036  
-I/DEBUG   (   89):     be889a68  0000f2c0  [heap]
-I/DEBUG   (   89):     be889a6c  1d200031  
-I/DEBUG   (   89):     be889a70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     be889a74  0000f2c0  [heap]
-I/DEBUG   (   89):     be889a78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a88  0000f2c0  [heap]
-I/DEBUG   (   89):     be889a8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be889a90  0000f2c0  [heap]
-I/DEBUG   (   89):     be889a94  1d200025  
-I/DEBUG   (   89):     be889a98  00000001  
-I/DEBUG   (   89):     be889a9c  401cc850  /system/lib/libandroid_runtime.so
-I/ServiceManager(   86): service 'media.audio_flinger' died
-I/ServiceManager(   86): service 'media.player' died
-I/ServiceManager(   86): service 'media.camera' died
-I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  382): Netd 1.0 starting
-D/AndroidRuntime(  383): 
-D/AndroidRuntime(  383): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  383): CheckJNI is OFF
-I/        (  384): ServiceManager: 0xf958
-I/HTC Acoustic(  384): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  384): deonvvv gingerbread test.
-I/HTC Acoustic(  384): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  384): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  384): read_audio_para_from_file success.
-E/HTC Acoustic(  384): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  384): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  384): acoustic table version: MAL_Gerenic_20110509
-I/HTC Acoustic(  384): read_audio_para_from_file success.
-E/dalvikvm(  383): ERROR: couldn't find native method
-E/dalvikvm(  383): Requested: Landroid/content/res/AssetManager;.splitThemePackage:(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
-E/JNIHelp (  383): RegisterNatives failed for 'android/content/res/AssetManager', aborting
-F/libc    (  383): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
-I/HTC Acoustic(  384): get_audpp_filter
-I/HTC Acoustic(  384): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  384): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  384): set mbadrc filter error.
-I/HTC Acoustic(  384): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  384): get_audpre_filter
-I/HTC Acoustic(  384): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  384): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  384): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  384): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  384): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  384): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  384): BT MATCH BT
-D/AudioHardwareMSM72XX(  384): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  384): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  384): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  384): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  384): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  384): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  384): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  384): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  384): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  384): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  384): BT MATCH CURRENT
-I/AudioFlinger(  384): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  384): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  384): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  384): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  384): Set master volume to 5.
-I/CameraService(  384): CameraService started (pid=384)
-I/AudioFlinger(  384): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  384): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  384): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  384): set output routing 2
-I/AudioHardwareMSM72XX(  384): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  384): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  384): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  384): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  384): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 383, tid: 383  >>> zygote <<<
-I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
-I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 a0000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 401bc6f3  r7 bed7da68
-I/DEBUG   (   89):  r8 00000000  r9 00000000  10 00000000  fp 00000000
-I/DEBUG   (   89):  ip ffffffff  sp bed7da30  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  3f4000003f400000  d1  0000000000000000
-I/DEBUG   (   89):  d2  0000000000000000  d3  0000000000000000
-I/DEBUG   (   89):  d4  0000000000000000  d5  0000000000000000
-I/DEBUG   (   89):  d6  0000000000000000  d7  0000000000000000
-I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
-I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
-I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
-I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000000
-I/DEBUG   (   89): 
-I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
-I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around pc:
-I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
-I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
-I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
-I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
-I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
-I/DEBUG   (   89): 
-I/DEBUG   (   89): code around lr:
-I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
-I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
-I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
-I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
-I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
-I/DEBUG   (   89): 
-I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bed5d000-bed7e000 [stack]
-I/DEBUG   (   89): (no map for address)
-I/DEBUG   (   89): (no map above)
-I/DEBUG   (   89): 
-I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bed7d9f0  00000000  
-I/DEBUG   (   89):     bed7d9f4  7839ae1e  
-I/DEBUG   (   89):     bed7d9f8  40068720  /system/lib/libc.so
-I/DEBUG   (   89):     bed7d9fc  400686b0  /system/lib/libc.so
-I/DEBUG   (   89):     bed7da00  00000000  
-I/DEBUG   (   89):     bed7da04  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bed7da08  401bce09  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da0c  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bed7da10  ffffffff  
-I/DEBUG   (   89):     bed7da14  00000000  
-I/DEBUG   (   89):     bed7da18  00000000  
-I/DEBUG   (   89):     bed7da1c  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da20  bed7da68  [stack]
-I/DEBUG   (   89):     bed7da24  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bed7da28  df0027ad  
-I/DEBUG   (   89):     bed7da2c  00000000  
-I/DEBUG   (   89): #00 bed7da30  0000002d  
-I/DEBUG   (   89):     bed7da34  00000100  
-I/DEBUG   (   89):     bed7da38  4019180d  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da3c  7839ae1e  
-I/DEBUG   (   89):     bed7da40  bed7da74  [stack]
-I/DEBUG   (   89):     bed7da44  fffffbdf  
-I/DEBUG   (   89):     bed7da48  0000f2c0  [heap]
-I/DEBUG   (   89):     bed7da4c  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bed7da50  0000f2c0  [heap]
-I/DEBUG   (   89):     bed7da54  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bed7da58  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bed7da5c  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bed7da60  401d2f48  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da64  00000036  
-I/DEBUG   (   89):     bed7da68  0000f2c0  [heap]
-I/DEBUG   (   89):     bed7da6c  1d200031  
-I/DEBUG   (   89):     bed7da70  408c3ca8  /system/lib/libdvm.so
-I/DEBUG   (   89):     bed7da74  0000f2c0  [heap]
-I/DEBUG   (   89):     bed7da78  401bc6f3  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da7c  401d5de0  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da80  401b8e4b  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da84  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da88  0000f2c0  [heap]
-I/DEBUG   (   89):     bed7da8c  401904bb  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bed7da90  0000f2c0  [heap]
-I/DEBUG   (   89):     bed7da94  1d200025  
-I/DEBUG   (   89):     bed7da98  00000001  
-I/DEBUG   (   89):     bed7da9c  401cc850  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea00  00000006  
+I/DEBUG   (   89):     beffea04  cfa62a92  
+I/DEBUG   (   89):     beffea08  40068720  /system/lib/libc.so
+I/DEBUG   (   89):     beffea0c  400686b0  /system/lib/libc.so
+I/DEBUG   (   89):     beffea10  00000000  
+I/DEBUG   (   89):     beffea14  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     beffea18  401b4507  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea1c  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     beffea20  ffffffff  
+I/DEBUG   (   89):     beffea24  00000000  
+I/DEBUG   (   89):     beffea28  00000000  
+I/DEBUG   (   89):     beffea2c  401b9167  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea30  beffea78  [stack]
+I/DEBUG   (   89):     beffea34  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     beffea38  df0027ad  
+I/DEBUG   (   89):     beffea3c  00000000  
+I/DEBUG   (   89): #00 beffea40  0000000c  
+I/DEBUG   (   89):     beffea44  00000100  
+I/DEBUG   (   89):     beffea48  40188b71  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea4c  cfa62a92  
+I/DEBUG   (   89):     beffea50  1d200099  
+I/DEBUG   (   89):     beffea54  fffffbdf  
+I/DEBUG   (   89):     beffea58  0000f2c0  [heap]
+I/DEBUG   (   89):     beffea5c  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beffea60  0000f2c0  [heap]
+I/DEBUG   (   89):     beffea64  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 beffea68  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beffea6c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     beffea70  401d217c  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea74  0000004f  
+I/DEBUG   (   89):     beffea78  0000f2c0  [heap]
+I/DEBUG   (   89):     beffea7c  1d20009d  
+I/DEBUG   (   89):     beffea80  401b33a8  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea84  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beffea88  0000f2c0  [heap]
+I/DEBUG   (   89):     beffea8c  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea90  00000001  
+I/DEBUG   (   89):     beffea94  40175877  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffea98  4086b9dd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beffea9c  4018823d  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffeaa0  401cc888  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffeaa4  0000f2c0  [heap]
+I/DEBUG   (   89):     beffeaa8  401cca10  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):     beffeaac  40175979  /system/lib/libandroid_runtime.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died

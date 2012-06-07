@@ -10,8 +10,8 @@ D/AK8975  (   98): AK8975 daemon 1.1.0 Start
 D/AK8975  (   98): (Library version : 1.2.1.1125)
 --------- beginning of /dev/log/system
 I/Vold    (   87): Vold 2.1 (the revenge) firing up
-I/Netd    (   88): Netd 1.0 starting
 D/Vold    (   87): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+I/Netd    (   88): Netd 1.0 starting
 D/Vold    (   87): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
 D/DirectVolume(   87): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 1, PARTN 1
 D/Vold    (   87): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
@@ -69,27 +69,22 @@ I/HTC Acoustic(   94): libhtc_acoustic.so version 2.0.0.6.
 I/HTC Acoustic(   94): deonvvv gingerbread test.
 I/HTC Acoustic(   94): open /system/etc/AudioPara4_WB.csv success.
 I/HTC Acoustic(   94): acoustic table version: MAL_WB_20110217
-D/libEGL  (  142): loaded /system/lib/egl/libGLES_android.so
-D/libEGL  (  142): loaded /system/lib/egl/libEGL_adreno200.so
-D/libEGL  (  142): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
-D/libEGL  (  142): loaded /system/lib/egl/libGLESv2_adreno200.so
 I/HTC Acoustic(   94): read_audio_para_from_file success.
 E/HTC Acoustic(   94): Fail to open /system/etc/AudioPara_ALL.csv -1.
 I/HTC Acoustic(   94): open /system/etc/AudioPara4.csv success.
-D/memalloc(   91): init_pmem_area: Initializing pmem area
-D/memalloc(   91): init_pmem_area_locked: Opening master pmem FD
-D/memalloc(   91): init_pmem_area_locked: Total pmem size: 16777216
-D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41600000 size:614400 offset:0 fd:26
-D/memalloc(  142): /dev/pmem: Mapped buffer base:0x407f4000 size:614400 offset:0 fd:16
 I/HTC Acoustic(   94): acoustic table version: MAL_Gerenic_20110509
+D/libEGL  (  145): loaded /system/lib/egl/libGLES_android.so
 I/HTC Acoustic(   94): read_audio_para_from_file success.
 I/HTC Acoustic(   94): get_audpp_filter
+D/libEGL  (  145): loaded /system/lib/egl/libEGL_adreno200.so
 I/HTC Acoustic(   94): open /system/etc/AudioFilter.csv success.
+D/libEGL  (  145): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
 I/HTC Acoustic(   94): MBADRC Filter MBADRC FLAG = ffff.
 E/HTC Acoustic(   94): set mbadrc filter error.
 I/HTC Acoustic(   94): failed to set audpp parameters, exiting.
 I/HTC Acoustic(   94): get_audpre_filter
 I/HTC Acoustic(   94): open /system/etc/AudioPreProcess.csv success.
+D/libEGL  (  145): loaded /system/lib/egl/libGLESv2_adreno200.so
 D/AudioHardwareMSM72XX(   94): mNumSndEndpoints = 151
 V/AudioHardwareMSM72XX(   94): constructed 151 SND endpoints)
 D/AudioHardwareMSM72XX(   94): BT MATCH HANDSET
@@ -109,6 +104,11 @@ D/AudioHardwareMSM72XX(   94): BT MATCH BT_EC_OFF
 D/AudioHardwareMSM72XX(   94): BT MATCH CURRENT
 I/AudioFlinger(   94): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
 I/AudioFlinger(   94): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+D/memalloc(   91): init_pmem_area: Initializing pmem area
+D/memalloc(   91): init_pmem_area_locked: Opening master pmem FD
+D/memalloc(   91): init_pmem_area_locked: Total pmem size: 16777216
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41584000 size:614400 offset:0 fd:26
+D/memalloc(  145): /dev/pmem: Mapped buffer base:0x407f0000 size:614400 offset:0 fd:16
 I/AudioFlinger(   94): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
 D/AudioHardwareInterface(   94): setMode(NORMAL)
 I/AudioHardwareMSM72XX(   94): Set master volume to 5.
@@ -122,87 +122,142 @@ V/AudioHardwareMSM72XX(   94): doAudioRouteOrMute() device 1, mMode 0, mMicMute 
 D/AudioHardwareMSM72XX(   94): setVoiceVolume(1.000000)
 I/AudioHardwareMSM72XX(   94): Setting in-call volume to 5 (available range is 0 to 5)
 I/AudioPolicyService(   94): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41600000 size:614400 offset:614400 fd:29
-D/memalloc(  142): /dev/pmem: Mapped buffer base:0x40df8000 size:1228800 offset:614400 fd:20
-D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41600000 size:614400 offset:1228800 fd:32
-D/memalloc(  142): /dev/pmem: Mapped buffer base:0x410e0000 size:1843200 offset:1228800 fd:23
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41584000 size:614400 offset:614400 fd:29
+D/memalloc(  145): /dev/pmem: Mapped buffer base:0x40df8000 size:1228800 offset:614400 fd:20
+D/memalloc(   91): /dev/pmem: Allocated buffer base:0x41584000 size:614400 offset:1228800 fd:32
+D/memalloc(  145): /dev/pmem: Mapped buffer base:0x410e0000 size:1843200 offset:1228800 fd:23
 D/dalvikvm(   92): DexOpt: --- BEGIN 'core.jar' (bootstrap=1) ---
-D/dalvikvm(  155): Ignoring duplicate verify attempt on Ljava/lang/Object;
-D/dalvikvm(  155): Ignoring duplicate verify attempt on Ljava/lang/Class;
-D/dalvikvm(  155): Ignoring duplicate verify attempt on Ljava/lang/ref/Reference;
-D/dalvikvm(  155): Ignoring duplicate verify attempt on Ljava/lang/ref/ReferenceQueue;
-D/dalvikvm(  155): Ignoring duplicate verify attempt on Ljava/lang/ref/FinalizerReference;
-D/dalvikvm(  155): DexOpt: load 451ms, verify+opt 5263ms
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/Object;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/Class;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/ref/Reference;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/ref/ReferenceQueue;
+D/dalvikvm(  154): Ignoring duplicate verify attempt on Ljava/lang/ref/FinalizerReference;
+D/dalvikvm(  154): DexOpt: load 473ms, verify+opt 5230ms
 D/dalvikvm(   92): DexOpt: --- END 'core.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/core.jar': unzip in 1533ms, rewrite 7137ms
+D/dalvikvm(   92): DEX prep '/system/framework/core.jar': unzip in 1516ms, rewrite 7159ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'core-junit.jar' (bootstrap=1) ---
-D/dalvikvm(  156): DexOpt: load 38ms, verify+opt 61ms
+D/dalvikvm(  155): DexOpt: load 33ms, verify+opt 39ms
 D/dalvikvm(   92): DexOpt: --- END 'core-junit.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/core-junit.jar': unzip in 4ms, rewrite 234ms
+D/dalvikvm(   92): DEX prep '/system/framework/core-junit.jar': unzip in 6ms, rewrite 190ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'bouncycastle.jar' (bootstrap=1) ---
-D/dalvikvm(  157): DexOpt: load 115ms, verify+opt 1753ms
+D/dalvikvm(  156): DexOpt: load 104ms, verify+opt 1776ms
 D/dalvikvm(   92): DexOpt: --- END 'bouncycastle.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/bouncycastle.jar': unzip in 316ms, rewrite 2456ms
+D/dalvikvm(   92): DEX prep '/system/framework/bouncycastle.jar': unzip in 335ms, rewrite 2435ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'ext.jar' (bootstrap=1) ---
-D/dalvikvm(  158): DexOpt: load 257ms, verify+opt 2827ms
+D/dalvikvm(  157): DexOpt: load 264ms, verify+opt 2824ms
 D/dalvikvm(   92): DexOpt: --- END 'ext.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/ext.jar': unzip in 513ms, rewrite 3874ms
+D/dalvikvm(   92): DEX prep '/system/framework/ext.jar': unzip in 515ms, rewrite 3898ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'framework.jar' (bootstrap=1) ---
-D/dalvikvm(  159): Note: class Landroid/opengl/GLWrapperBase; has 250 unimplemented (abstract) methods
-D/dalvikvm(  159): DexOpt: load 1149ms, verify+opt 10461ms
+D/dalvikvm(  158): Note: class Landroid/opengl/GLWrapperBase; has 250 unimplemented (abstract) methods
+D/dalvikvm(  158): DexOpt: couldn't find static field Landroid/os/SystemProperties;.QCOM_HARDWARE
+D/dalvikvm(  158): DexOpt: load 1113ms, verify+opt 10361ms
 D/dalvikvm(   92): DexOpt: --- END 'framework.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/framework.jar': unzip in 3347ms, rewrite 14241ms
+D/dalvikvm(   92): DEX prep '/system/framework/framework.jar': unzip in 3253ms, rewrite 14037ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'android.policy.jar' (bootstrap=1) ---
-D/dalvikvm(  160): DexOpt: load 87ms, verify+opt 366ms
+D/dalvikvm(  160): DexOpt: load 122ms, verify+opt 771ms
 D/dalvikvm(   92): DexOpt: --- END 'android.policy.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/android.policy.jar': unzip in 72ms, rewrite 627ms
+D/dalvikvm(   92): DEX prep '/system/framework/android.policy.jar': unzip in 137ms, rewrite 1162ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'services.jar' (bootstrap=1) ---
-D/dalvikvm(  161): DexOpt: load 130ms, verify+opt 2953ms
+D/dalvikvm(  161): DexOpt: load 130ms, verify+opt 2969ms
 D/dalvikvm(   92): DexOpt: --- END 'services.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/services.jar': unzip in 503ms, rewrite 3545ms
+D/dalvikvm(   92): DEX prep '/system/framework/services.jar': unzip in 500ms, rewrite 3596ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'apache-xml.jar' (bootstrap=1) ---
-D/dalvikvm(  162): DexOpt: load 141ms, verify+opt 1224ms
+D/dalvikvm(  162): DexOpt: load 141ms, verify+opt 1222ms
 D/dalvikvm(   92): DexOpt: --- END 'apache-xml.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/apache-xml.jar': unzip in 329ms, rewrite 1820ms
+D/dalvikvm(   92): DEX prep '/system/framework/apache-xml.jar': unzip in 327ms, rewrite 1824ms
 D/dalvikvm(   92): DexOpt: --- BEGIN 'filterfw.jar' (bootstrap=1) ---
-D/dalvikvm(  163): DexOpt: load 39ms, verify+opt 289ms
+D/dalvikvm(  163): DexOpt: load 39ms, verify+opt 280ms
 D/dalvikvm(   92): DexOpt: --- END 'filterfw.jar' (success) ---
-D/dalvikvm(   92): DEX prep '/system/framework/filterfw.jar': unzip in 64ms, rewrite 514ms
+D/dalvikvm(   92): DEX prep '/system/framework/filterfw.jar': unzip in 69ms, rewrite 501ms
 I/SamplingProfilerIntegration(   92): Profiling disabled.
 I/Zygote  (   92): Preloading classes...
-D/dalvikvm(   92): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 0ms+3ms
 D/dalvikvm(   92): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
-D/dalvikvm(   92): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
-D/dalvikvm(   92): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
-D/dalvikvm(   92): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 0ms+3ms
-D/dalvikvm(   92): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 3ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 0ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(   92): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
 D/dalvikvm(   92): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
 D/TextLayoutCache(   92): Using debug level: 0 - Debug Enabled: 0
 W/Zygote  (   92): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(   92): register_android_mtp_MtpDevice
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(   92): native_init
+E/MediaProfilesJNI(   92): After native_init lock
+E/MediaProfilesJNI(   92): Guru : native_init profiles
+E/MediaProfiles(   92): getInstance
+E/MediaProfiles(   92): Guru :Else 1
+E/MediaProfiles(   92): Guru : quality = 0, index = 1
+E/MediaProfiles(   92): Guru : quality = 1, index = 0
+E/MediaProfiles(   92): Guru : quality = 0, index = 1
+E/MediaProfiles(   92): Guru : quality = 1, index = 0
+E/MediaProfiles(   92): getInstance 1149d0
+E/MediaProfilesJNI(   92): retun sProfiles
+E/MediaProfilesJNI(   92): native_init
+E/MediaProfilesJNI(   92): After native_init lock
+E/MediaProfilesJNI(   92): retun sProfiles
+W/Zygote  (   92): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (   92): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(   92): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 3ms+2ms
+V/MediaProfilesJNI(   92): native_get_num_video_decoders
+V/MediaProfilesJNI(   92): native_get_video_decoder_type: 0
+D/dalvikvm(   92): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 2ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(   92): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+3ms
+D/dalvikvm(   92): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+4ms
+W/Zygote  (   92): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (   92): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(   92): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 3ms+7ms
+D/dalvikvm(   92): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 4ms+3ms
+I/dalvikvm(   92): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(   92): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
 E/dalvikvm(   92): ERROR: couldn't find native method
-E/dalvikvm(   92): Requested: Landroid/media/MediaRecorder;.native_start:()V
-E/JNIHelp (   92): RegisterNatives failed for 'android/media/MediaRecorder', aborting
+E/dalvikvm(   92): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (   92): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
 F/libc    (   92): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
 I/DEBUG   (   89): pid: 92, tid: 92  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4e6fc940  r7 be896708
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0369a7  r7 bec39718
 I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
-I/DEBUG   (   89):  ip ffffffff  sp be8966d0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  0008000049000000  d1  0000000040dc8000
-I/DEBUG   (   89):  d2  403b800000000000  d3  c14ac800c1322000
-I/DEBUG   (   89):  d4  0000000040dc8000  d5  000000000006e400
-I/DEBUG   (   89):  d6  4140000000000800  d7  4140000041400000
+I/DEBUG   (   89):  ip ffffffff  sp bec396e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
 I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
 I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
 I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
 I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000010
+I/DEBUG   (   89):  scr 20000010
 I/DEBUG   (   89): 
 I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
 I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
 I/DEBUG   (   89): 
 I/DEBUG   (   89): code around pc:
 I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
@@ -219,55 +274,47 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): be876000-be897000 [stack]
+I/DEBUG   (   89): bec19000-bec3a000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     be896690  00000000  
-I/DEBUG   (   89):     be896694  4da20af1  /system/usr/icu/icudt46l.dat
-I/DEBUG   (   89):     be896698  4006870c  /system/lib/libc.so
-I/DEBUG   (   89):     be89669c  4006d85c  
-I/DEBUG   (   89):     be8966a0  00000000  
-I/DEBUG   (   89):     be8966a4  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     be8966a8  4e6fc6c9  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8966ac  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     be8966b0  ffffffff  
-I/DEBUG   (   89):     be8966b4  00000000  
-I/DEBUG   (   89):     be8966b8  00000000  
-I/DEBUG   (   89):     be8966bc  4e6fc940  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8966c0  be896708  [stack]
-I/DEBUG   (   89):     be8966c4  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     be8966c8  df0027ad  
-I/DEBUG   (   89):     be8966cc  00000000  
-I/DEBUG   (   89): #00 be8966d0  0000000e  
-I/DEBUG   (   89):     be8966d4  00000100  
-I/DEBUG   (   89):     be8966d8  4e6f6141  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8966dc  4da20af1  /system/usr/icu/icudt46l.dat
-I/DEBUG   (   89):     be8966e0  2c300019  
-I/DEBUG   (   89):     be8966e4  fffffbdf  
-I/DEBUG   (   89):     be8966e8  0000f2c0  [heap]
-I/DEBUG   (   89):     be8966ec  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     be8966f0  0000f2c0  [heap]
-I/DEBUG   (   89):     be8966f4  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 be8966f8  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     be8966fc  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     be896700  4e700ca0  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be896704  00000015  
-I/DEBUG   (   89):     be896708  0000f2c0  [heap]
-I/DEBUG   (   89):     be89670c  2c400019  
-I/DEBUG   (   89):     be896710  0000f2c0  [heap]
-I/DEBUG   (   89):     be896714  4e6f4981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be896718  0010b3f0  [heap]
-I/DEBUG   (   89):     be89671c  00012828  [heap]
-I/DEBUG   (   89):     be896720  00000000  
-I/DEBUG   (   89):     be896724  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be896728  4e6f4981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be89672c  4e6f5f69  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be896730  4e6f4981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be896734  4e6f49c5  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be896738  4e6f4981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be89673c  0000f2c0  [heap]
+I/DEBUG   (   89):     bec396a0  00000001  
+I/DEBUG   (   89):     bec396a4  b5d516e2  
+I/DEBUG   (   89):     bec396a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     bec396ac  4006d85c  
+I/DEBUG   (   89):     bec396b0  00000000  
+I/DEBUG   (   89):     bec396b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     bec396b8  4f038341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bec396bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     bec396c0  ffffffff  
+I/DEBUG   (   89):     bec396c4  00000000  
+I/DEBUG   (   89):     bec396c8  00000000  
+I/DEBUG   (   89):     bec396cc  4f0369a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bec396d0  bec39718  [stack]
+I/DEBUG   (   89):     bec396d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     bec396d8  df0027ad  
+I/DEBUG   (   89):     bec396dc  00000000  
+I/DEBUG   (   89): #00 bec396e0  0000002a  
+I/DEBUG   (   89):     bec396e4  00000100  
+I/DEBUG   (   89):     bec396e8  4ed4f881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bec396ec  b5d516e2  
+I/DEBUG   (   89):     bec396f0  4f036b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bec396f4  fffffbdf  
+I/DEBUG   (   89):     bec396f8  0000f2c0  [heap]
+I/DEBUG   (   89):     bec396fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec39700  0000f2c0  [heap]
+I/DEBUG   (   89):     bec39704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 bec39708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec3970c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     bec39710  4f1c2400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bec39714  0000003c  
+I/DEBUG   (   89):     bec39718  0000f2c0  [heap]
+I/DEBUG   (   89):     bec3971c  b3600019  
+I/DEBUG   (   89):     bec39720  0000f2c0  [heap]
+I/DEBUG   (   89):     bec39724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     bec39728  0000f2c0  [heap]
+I/DEBUG   (   89):     bec3972c  4f0313ef  /system/lib/libwebcore.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
@@ -328,38 +375,92 @@ I/AudioPolicyService(  169): Loaded audio policy from LEGACY Audio Policy HAL (a
 I/SamplingProfilerIntegration(  167): Profiling disabled.
 I/Zygote  (  167): Preloading classes...
 D/dalvikvm(  167): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
-D/dalvikvm(  167): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 0ms+1ms
+D/dalvikvm(  167): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
 D/dalvikvm(  167): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
 D/dalvikvm(  167): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
 D/dalvikvm(  167): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
-D/dalvikvm(  167): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+3ms
-D/dalvikvm(  167): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
+D/dalvikvm(  167): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
+D/dalvikvm(  167): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 2ms+1ms
 D/TextLayoutCache(  167): Using debug level: 0 - Debug Enabled: 0
 W/Zygote  (  167): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  167): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  167): register_android_mtp_MtpDevice
+I/dalvikvm(  167): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  167): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  167): native_init
+E/MediaProfilesJNI(  167): After native_init lock
+E/MediaProfilesJNI(  167): Guru : native_init profiles
+E/MediaProfiles(  167): getInstance
+E/MediaProfiles(  167): Guru :Else 1
+E/MediaProfiles(  167): Guru : quality = 0, index = 1
+E/MediaProfiles(  167): Guru : quality = 1, index = 0
+E/MediaProfiles(  167): Guru : quality = 0, index = 1
+E/MediaProfiles(  167): Guru : quality = 1, index = 0
+E/MediaProfiles(  167): getInstance ea8b8
+E/MediaProfilesJNI(  167): retun sProfiles
+E/MediaProfilesJNI(  167): native_init
+E/MediaProfilesJNI(  167): After native_init lock
+E/MediaProfilesJNI(  167): retun sProfiles
+W/Zygote  (  167): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  167): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  167): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+2ms
+V/MediaProfilesJNI(  167): native_get_num_video_decoders
+V/MediaProfilesJNI(  167): native_get_video_decoder_type: 0
+D/dalvikvm(  167): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+2ms
+D/dalvikvm(  167): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 1ms+3ms
+D/dalvikvm(  167): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(  167): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+2ms
+D/dalvikvm(  167): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+4ms
+W/Zygote  (  167): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  167): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  167): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 6ms+3ms
+D/dalvikvm(  167): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+3ms
+I/dalvikvm(  167): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  167): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
 E/dalvikvm(  167): ERROR: couldn't find native method
-E/dalvikvm(  167): Requested: Landroid/media/MediaRecorder;.native_start:()V
-E/JNIHelp (  167): RegisterNatives failed for 'android/media/MediaRecorder', aborting
+E/dalvikvm(  167): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (  167): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
 F/libc    (  167): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
 I/DEBUG   (   89): pid: 167, tid: 167  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4e728940  r7 bef9a708
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0629a7  r7 beccd718
 I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
-I/DEBUG   (   89):  ip ffffffff  sp bef9a6d0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  0008000049000000  d1  0000000040dc8000
-I/DEBUG   (   89):  d2  403b800000000000  d3  c14ac800c1322000
-I/DEBUG   (   89):  d4  0000000040dc8000  d5  000000000006e400
-I/DEBUG   (   89):  d6  4140000000000800  d7  4140000041400000
+I/DEBUG   (   89):  ip ffffffff  sp beccd6e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
 I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
 I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
 I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
 I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000010
+I/DEBUG   (   89):  scr 20000010
 I/DEBUG   (   89): 
 I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
 I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
 I/DEBUG   (   89): 
 I/DEBUG   (   89): code around pc:
 I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
@@ -376,63 +477,55 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bef7a000-bef9b000 [stack]
+I/DEBUG   (   89): becad000-becce000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bef9a690  00000000  
-I/DEBUG   (   89):     bef9a694  94c90f3e  
-I/DEBUG   (   89):     bef9a698  4006870c  /system/lib/libc.so
-I/DEBUG   (   89):     bef9a69c  4006d85c  
-I/DEBUG   (   89):     bef9a6a0  00000000  
-I/DEBUG   (   89):     bef9a6a4  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bef9a6a8  4e7286c9  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a6ac  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bef9a6b0  ffffffff  
-I/DEBUG   (   89):     bef9a6b4  00000000  
-I/DEBUG   (   89):     bef9a6b8  00000000  
-I/DEBUG   (   89):     bef9a6bc  4e728940  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a6c0  bef9a708  [stack]
-I/DEBUG   (   89):     bef9a6c4  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bef9a6c8  df0027ad  
-I/DEBUG   (   89):     bef9a6cc  00000000  
-I/DEBUG   (   89): #00 bef9a6d0  0000000e  
-I/DEBUG   (   89):     bef9a6d4  00000100  
-I/DEBUG   (   89):     bef9a6d8  4e722141  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a6dc  94c90f3e  
-I/DEBUG   (   89):     bef9a6e0  2c300019  
-I/DEBUG   (   89):     bef9a6e4  fffffbdf  
-I/DEBUG   (   89):     bef9a6e8  0000f2c0  [heap]
-I/DEBUG   (   89):     bef9a6ec  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef9a6f0  0000f2c0  [heap]
-I/DEBUG   (   89):     bef9a6f4  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bef9a6f8  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef9a6fc  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bef9a700  4e72cca0  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a704  00000015  
-I/DEBUG   (   89):     bef9a708  0000f2c0  [heap]
-I/DEBUG   (   89):     bef9a70c  2c400019  
-I/DEBUG   (   89):     bef9a710  0000f2c0  [heap]
-I/DEBUG   (   89):     bef9a714  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a718  000e1270  [heap]
-I/DEBUG   (   89):     bef9a71c  00012828  [heap]
-I/DEBUG   (   89):     bef9a720  00000000  
-I/DEBUG   (   89):     bef9a724  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef9a728  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a72c  4e721f69  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a730  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a734  4e7209c5  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a738  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef9a73c  0000f2c0  [heap]
+I/DEBUG   (   89):     beccd6a0  00000001  
+I/DEBUG   (   89):     beccd6a4  425acc59  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     beccd6a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     beccd6ac  4006d85c  
+I/DEBUG   (   89):     beccd6b0  00000000  
+I/DEBUG   (   89):     beccd6b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     beccd6b8  4f064341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beccd6bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     beccd6c0  ffffffff  
+I/DEBUG   (   89):     beccd6c4  00000000  
+I/DEBUG   (   89):     beccd6c8  00000000  
+I/DEBUG   (   89):     beccd6cc  4f0629a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beccd6d0  beccd718  [stack]
+I/DEBUG   (   89):     beccd6d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     beccd6d8  df0027ad  
+I/DEBUG   (   89):     beccd6dc  00000000  
+I/DEBUG   (   89): #00 beccd6e0  0000002a  
+I/DEBUG   (   89):     beccd6e4  00000100  
+I/DEBUG   (   89):     beccd6e8  4ed7b881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beccd6ec  425acc59  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     beccd6f0  4f062b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beccd6f4  fffffbdf  
+I/DEBUG   (   89):     beccd6f8  0000f2c0  [heap]
+I/DEBUG   (   89):     beccd6fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beccd700  0000f2c0  [heap]
+I/DEBUG   (   89):     beccd704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 beccd708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beccd70c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     beccd710  4f1ee400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beccd714  0000003c  
+I/DEBUG   (   89):     beccd718  0000f2c0  [heap]
+I/DEBUG   (   89):     beccd71c  b3600019  
+I/DEBUG   (   89):     beccd720  0000f2c0  [heap]
+I/DEBUG   (   89):     beccd724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     beccd728  0000f2c0  [heap]
+I/DEBUG   (   89):     beccd72c  4f05d3ef  /system/lib/libwebcore.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  195): Netd 1.0 starting
-D/AndroidRuntime(  196): 
-D/AndroidRuntime(  196): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  196): CheckJNI is OFF
+I/Netd    (  196): Netd 1.0 starting
+D/AndroidRuntime(  195): 
+D/AndroidRuntime(  195): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  195): CheckJNI is OFF
 I/        (  197): ServiceManager: 0xf958
 I/HTC Acoustic(  197): libhtc_acoustic.so version 2.0.0.6.
 I/HTC Acoustic(  197): deonvvv gingerbread test.
@@ -473,7 +566,7 @@ I/AudioFlinger(  197): Loaded a2dp audio interface from A2DP Audio HW HAL (audio
 D/AudioHardwareInterface(  197): setMode(NORMAL)
 I/AudioHardwareMSM72XX(  197): Set master volume to 5.
 I/CameraService(  197): CameraService started (pid=197)
-I/AudioFlinger(  197): AudioFlinger's thread 0x16f90 ready to run
+I/AudioFlinger(  197): AudioFlinger's thread 0x16ff8 ready to run
 W/AudioFlinger(  197): Thread AudioOut_1 cannot connect to the power manager service
 V/AudioHardwareMSM72XX(  197): AudioStreamOutMSM72xx::setParameters() routing=2
 V/AudioHardwareMSM72XX(  197): set output routing 2
@@ -482,41 +575,95 @@ V/AudioHardwareMSM72XX(  197): doAudioRouteOrMute() device 1, mMode 0, mMicMute 
 D/AudioHardwareMSM72XX(  197): setVoiceVolume(1.000000)
 I/AudioHardwareMSM72XX(  197): Setting in-call volume to 5 (available range is 0 to 5)
 I/AudioPolicyService(  197): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/SamplingProfilerIntegration(  196): Profiling disabled.
-I/Zygote  (  196): Preloading classes...
-D/dalvikvm(  196): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 0ms+1ms
-D/dalvikvm(  196): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 0ms+1ms
-D/dalvikvm(  196): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 0ms+1ms
-D/dalvikvm(  196): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
-D/dalvikvm(  196): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
-D/dalvikvm(  196): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
-D/dalvikvm(  196): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
-D/TextLayoutCache(  196): Using debug level: 0 - Debug Enabled: 0
-W/Zygote  (  196): Class not found for preloading: android.media.AudioManager$2
-E/dalvikvm(  196): ERROR: couldn't find native method
-E/dalvikvm(  196): Requested: Landroid/media/MediaRecorder;.native_start:()V
-E/JNIHelp (  196): RegisterNatives failed for 'android/media/MediaRecorder', aborting
-F/libc    (  196): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/SamplingProfilerIntegration(  195): Profiling disabled.
+I/Zygote  (  195): Preloading classes...
+D/dalvikvm(  195): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  195): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 3ms+1ms
+D/dalvikvm(  195): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 3ms+1ms
+D/dalvikvm(  195): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 3ms+2ms
+D/dalvikvm(  195): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  195): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
+D/dalvikvm(  195): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+2ms
+D/TextLayoutCache(  195): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  195): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  195): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  195): register_android_mtp_MtpDevice
+I/dalvikvm(  195): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  195): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  195): native_init
+E/MediaProfilesJNI(  195): After native_init lock
+E/MediaProfilesJNI(  195): Guru : native_init profiles
+E/MediaProfiles(  195): getInstance
+E/MediaProfiles(  195): Guru :Else 1
+E/MediaProfiles(  195): Guru : quality = 0, index = 1
+E/MediaProfiles(  195): Guru : quality = 1, index = 0
+E/MediaProfiles(  195): Guru : quality = 0, index = 1
+E/MediaProfiles(  195): Guru : quality = 1, index = 0
+E/MediaProfiles(  195): getInstance ea878
+E/MediaProfilesJNI(  195): retun sProfiles
+E/MediaProfilesJNI(  195): native_init
+E/MediaProfilesJNI(  195): After native_init lock
+E/MediaProfilesJNI(  195): retun sProfiles
+W/Zygote  (  195): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  195): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  195): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+2ms
+V/MediaProfilesJNI(  195): native_get_num_video_decoders
+V/MediaProfilesJNI(  195): native_get_video_decoder_type: 0
+D/dalvikvm(  195): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 5ms+1ms
+D/dalvikvm(  195): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 5ms+2ms
+D/dalvikvm(  195): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(  195): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+2ms
+D/dalvikvm(  195): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+3ms
+W/Zygote  (  195): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  195): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  195): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 3ms+3ms
+D/dalvikvm(  195): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+3ms
+I/dalvikvm(  195): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  195): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+E/dalvikvm(  195): ERROR: couldn't find native method
+E/dalvikvm(  195): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (  195): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
+F/libc    (  195): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 196, tid: 196  >>> zygote <<<
+I/DEBUG   (   89): pid: 195, tid: 195  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4e728940  r7 bef1d708
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0629a7  r7 beb08718
 I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
-I/DEBUG   (   89):  ip ffffffff  sp bef1d6d0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  0008000049000000  d1  0000000040dc8000
-I/DEBUG   (   89):  d2  403b800000000000  d3  c14ac800c1322000
-I/DEBUG   (   89):  d4  0000000040dc8000  d5  000000000006e400
-I/DEBUG   (   89):  d6  4140000000000800  d7  4140000041400000
+I/DEBUG   (   89):  ip ffffffff  sp beb086e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
 I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
 I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
 I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
 I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000010
+I/DEBUG   (   89):  scr 20000010
 I/DEBUG   (   89): 
 I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
 I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
 I/DEBUG   (   89): 
 I/DEBUG   (   89): code around pc:
 I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
@@ -533,55 +680,47 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): beefd000-bef1e000 [stack]
+I/DEBUG   (   89): beae8000-beb09000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     bef1d690  00000000  
-I/DEBUG   (   89):     bef1d694  757e5541  
-I/DEBUG   (   89):     bef1d698  4006870c  /system/lib/libc.so
-I/DEBUG   (   89):     bef1d69c  4006d85c  
-I/DEBUG   (   89):     bef1d6a0  00000000  
-I/DEBUG   (   89):     bef1d6a4  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     bef1d6a8  4e7286c9  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d6ac  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     bef1d6b0  ffffffff  
-I/DEBUG   (   89):     bef1d6b4  00000000  
-I/DEBUG   (   89):     bef1d6b8  00000000  
-I/DEBUG   (   89):     bef1d6bc  4e728940  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d6c0  bef1d708  [stack]
-I/DEBUG   (   89):     bef1d6c4  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     bef1d6c8  df0027ad  
-I/DEBUG   (   89):     bef1d6cc  00000000  
-I/DEBUG   (   89): #00 bef1d6d0  0000000e  
-I/DEBUG   (   89):     bef1d6d4  00000100  
-I/DEBUG   (   89):     bef1d6d8  4e722141  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d6dc  757e5541  
-I/DEBUG   (   89):     bef1d6e0  2c300019  
-I/DEBUG   (   89):     bef1d6e4  fffffbdf  
-I/DEBUG   (   89):     bef1d6e8  0000f2c0  [heap]
-I/DEBUG   (   89):     bef1d6ec  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef1d6f0  0000f2c0  [heap]
-I/DEBUG   (   89):     bef1d6f4  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 bef1d6f8  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     bef1d6fc  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     bef1d700  4e72cca0  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d704  00000015  
-I/DEBUG   (   89):     bef1d708  0000f2c0  [heap]
-I/DEBUG   (   89):     bef1d70c  2c400019  
-I/DEBUG   (   89):     bef1d710  0000f2c0  [heap]
-I/DEBUG   (   89):     bef1d714  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d718  000e1328  [heap]
-I/DEBUG   (   89):     bef1d71c  00012828  [heap]
-I/DEBUG   (   89):     bef1d720  00000000  
-I/DEBUG   (   89):     bef1d724  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     bef1d728  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d72c  4e721f69  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d730  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d734  4e7209c5  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d738  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     bef1d73c  0000f2c0  [heap]
+I/DEBUG   (   89):     beb086a0  00000001  
+I/DEBUG   (   89):     beb086a4  7951fbce  
+I/DEBUG   (   89):     beb086a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     beb086ac  4006d85c  
+I/DEBUG   (   89):     beb086b0  00000000  
+I/DEBUG   (   89):     beb086b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     beb086b8  4f064341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb086bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     beb086c0  ffffffff  
+I/DEBUG   (   89):     beb086c4  00000000  
+I/DEBUG   (   89):     beb086c8  00000000  
+I/DEBUG   (   89):     beb086cc  4f0629a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb086d0  beb08718  [stack]
+I/DEBUG   (   89):     beb086d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     beb086d8  df0027ad  
+I/DEBUG   (   89):     beb086dc  00000000  
+I/DEBUG   (   89): #00 beb086e0  0000002a  
+I/DEBUG   (   89):     beb086e4  00000100  
+I/DEBUG   (   89):     beb086e8  4ed7b881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb086ec  7951fbce  
+I/DEBUG   (   89):     beb086f0  4f062b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb086f4  fffffbdf  
+I/DEBUG   (   89):     beb086f8  0000f2c0  [heap]
+I/DEBUG   (   89):     beb086fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beb08700  0000f2c0  [heap]
+I/DEBUG   (   89):     beb08704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 beb08708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beb0870c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     beb08710  4f1ee400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb08714  0000003c  
+I/DEBUG   (   89):     beb08718  0000f2c0  [heap]
+I/DEBUG   (   89):     beb0871c  b3600019  
+I/DEBUG   (   89):     beb08720  0000f2c0  [heap]
+I/DEBUG   (   89):     beb08724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     beb08728  0000f2c0  [heap]
+I/DEBUG   (   89):     beb0872c  4f05d3ef  /system/lib/libwebcore.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
@@ -641,39 +780,93 @@ I/AudioHardwareMSM72XX(  225): Setting in-call volume to 5 (available range is 0
 I/AudioPolicyService(  225): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
 I/SamplingProfilerIntegration(  224): Profiling disabled.
 I/Zygote  (  224): Preloading classes...
-D/dalvikvm(  224): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+4ms
-D/dalvikvm(  224): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+2ms
-D/dalvikvm(  224): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+2ms
-D/dalvikvm(  224): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 0ms+3ms
+D/dalvikvm(  224): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 0ms+1ms
+D/dalvikvm(  224): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(  224): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 0ms+1ms
+D/dalvikvm(  224): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+2ms
 D/dalvikvm(  224): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
 D/dalvikvm(  224): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
 D/dalvikvm(  224): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
 D/TextLayoutCache(  224): Using debug level: 0 - Debug Enabled: 0
 W/Zygote  (  224): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  224): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  224): register_android_mtp_MtpDevice
+I/dalvikvm(  224): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  224): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  224): native_init
+E/MediaProfilesJNI(  224): After native_init lock
+E/MediaProfilesJNI(  224): Guru : native_init profiles
+E/MediaProfiles(  224): getInstance
+E/MediaProfiles(  224): Guru :Else 1
+E/MediaProfiles(  224): Guru : quality = 0, index = 1
+E/MediaProfiles(  224): Guru : quality = 1, index = 0
+E/MediaProfiles(  224): Guru : quality = 0, index = 1
+E/MediaProfiles(  224): Guru : quality = 1, index = 0
+E/MediaProfiles(  224): getInstance ea848
+E/MediaProfilesJNI(  224): retun sProfiles
+E/MediaProfilesJNI(  224): native_init
+E/MediaProfilesJNI(  224): After native_init lock
+E/MediaProfilesJNI(  224): retun sProfiles
+W/Zygote  (  224): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  224): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  224): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+2ms
+V/MediaProfilesJNI(  224): native_get_num_video_decoders
+V/MediaProfilesJNI(  224): native_get_video_decoder_type: 0
+D/dalvikvm(  224): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 2ms+2ms
+D/dalvikvm(  224): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 6ms+2ms
+D/dalvikvm(  224): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 8ms+2ms
+D/dalvikvm(  224): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+2ms
+D/dalvikvm(  224): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+4ms
+W/Zygote  (  224): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  224): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  224): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 3ms+4ms
+D/dalvikvm(  224): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+3ms
+I/dalvikvm(  224): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  224): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
 E/dalvikvm(  224): ERROR: couldn't find native method
-E/dalvikvm(  224): Requested: Landroid/media/MediaRecorder;.native_start:()V
-E/JNIHelp (  224): RegisterNatives failed for 'android/media/MediaRecorder', aborting
+E/dalvikvm(  224): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (  224): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
 F/libc    (  224): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
 I/DEBUG   (   89): pid: 224, tid: 224  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4e728940  r7 beca3708
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0629a7  r7 beb7f718
 I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
-I/DEBUG   (   89):  ip ffffffff  sp beca36d0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  0008000049000000  d1  0000000040dc8000
-I/DEBUG   (   89):  d2  403b800000000000  d3  c14ac800c1322000
-I/DEBUG   (   89):  d4  0000000040dc8000  d5  000000000006e400
-I/DEBUG   (   89):  d6  4140000000000800  d7  4140000041400000
+I/DEBUG   (   89):  ip ffffffff  sp beb7f6e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
 I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
 I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
 I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
 I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000010
+I/DEBUG   (   89):  scr 20000010
 I/DEBUG   (   89): 
 I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
 I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
 I/DEBUG   (   89): 
 I/DEBUG   (   89): code around pc:
 I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
@@ -690,63 +883,55 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): bec83000-beca4000 [stack]
+I/DEBUG   (   89): beb5f000-beb80000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     beca3690  00000000  
-I/DEBUG   (   89):     beca3694  e57b4fe2  
-I/DEBUG   (   89):     beca3698  4006870c  /system/lib/libc.so
-I/DEBUG   (   89):     beca369c  4006d85c  
-I/DEBUG   (   89):     beca36a0  00000000  
-I/DEBUG   (   89):     beca36a4  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     beca36a8  4e7286c9  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca36ac  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     beca36b0  ffffffff  
-I/DEBUG   (   89):     beca36b4  00000000  
-I/DEBUG   (   89):     beca36b8  00000000  
-I/DEBUG   (   89):     beca36bc  4e728940  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca36c0  beca3708  [stack]
-I/DEBUG   (   89):     beca36c4  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     beca36c8  df0027ad  
-I/DEBUG   (   89):     beca36cc  00000000  
-I/DEBUG   (   89): #00 beca36d0  0000000e  
-I/DEBUG   (   89):     beca36d4  00000100  
-I/DEBUG   (   89):     beca36d8  4e722141  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca36dc  e57b4fe2  
-I/DEBUG   (   89):     beca36e0  2c300019  
-I/DEBUG   (   89):     beca36e4  fffffbdf  
-I/DEBUG   (   89):     beca36e8  0000f2c0  [heap]
-I/DEBUG   (   89):     beca36ec  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     beca36f0  0000f2c0  [heap]
-I/DEBUG   (   89):     beca36f4  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 beca36f8  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     beca36fc  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     beca3700  4e72cca0  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca3704  00000015  
-I/DEBUG   (   89):     beca3708  0000f2c0  [heap]
-I/DEBUG   (   89):     beca370c  2c400019  
-I/DEBUG   (   89):     beca3710  0000f2c0  [heap]
-I/DEBUG   (   89):     beca3714  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca3718  000e1280  [heap]
-I/DEBUG   (   89):     beca371c  00012828  [heap]
-I/DEBUG   (   89):     beca3720  00000000  
-I/DEBUG   (   89):     beca3724  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     beca3728  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca372c  4e721f69  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca3730  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca3734  4e7209c5  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca3738  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     beca373c  0000f2c0  [heap]
+I/DEBUG   (   89):     beb7f6a0  00000001  
+I/DEBUG   (   89):     beb7f6a4  472dd8e6  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     beb7f6a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     beb7f6ac  4006d85c  
+I/DEBUG   (   89):     beb7f6b0  00000000  
+I/DEBUG   (   89):     beb7f6b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     beb7f6b8  4f064341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb7f6bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     beb7f6c0  ffffffff  
+I/DEBUG   (   89):     beb7f6c4  00000000  
+I/DEBUG   (   89):     beb7f6c8  00000000  
+I/DEBUG   (   89):     beb7f6cc  4f0629a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb7f6d0  beb7f718  [stack]
+I/DEBUG   (   89):     beb7f6d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     beb7f6d8  df0027ad  
+I/DEBUG   (   89):     beb7f6dc  00000000  
+I/DEBUG   (   89): #00 beb7f6e0  0000002a  
+I/DEBUG   (   89):     beb7f6e4  00000100  
+I/DEBUG   (   89):     beb7f6e8  4ed7b881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb7f6ec  472dd8e6  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     beb7f6f0  4f062b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb7f6f4  fffffbdf  
+I/DEBUG   (   89):     beb7f6f8  0000f2c0  [heap]
+I/DEBUG   (   89):     beb7f6fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beb7f700  0000f2c0  [heap]
+I/DEBUG   (   89):     beb7f704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 beb7f708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     beb7f70c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     beb7f710  4f1ee400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     beb7f714  0000003c  
+I/DEBUG   (   89):     beb7f718  0000f2c0  [heap]
+I/DEBUG   (   89):     beb7f71c  b3600019  
+I/DEBUG   (   89):     beb7f720  0000f2c0  [heap]
+I/DEBUG   (   89):     beb7f724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     beb7f728  0000f2c0  [heap]
+I/DEBUG   (   89):     beb7f72c  4f05d3ef  /system/lib/libwebcore.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  251): Netd 1.0 starting
-D/AndroidRuntime(  252): 
-D/AndroidRuntime(  252): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
-D/AndroidRuntime(  252): CheckJNI is OFF
+I/Netd    (  252): Netd 1.0 starting
+D/AndroidRuntime(  251): 
+D/AndroidRuntime(  251): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  251): CheckJNI is OFF
 I/        (  253): ServiceManager: 0xf958
 I/HTC Acoustic(  253): libhtc_acoustic.so version 2.0.0.6.
 I/HTC Acoustic(  253): deonvvv gingerbread test.
@@ -796,41 +981,95 @@ V/AudioHardwareMSM72XX(  253): doAudioRouteOrMute() device 1, mMode 0, mMicMute 
 D/AudioHardwareMSM72XX(  253): setVoiceVolume(1.000000)
 I/AudioHardwareMSM72XX(  253): Setting in-call volume to 5 (available range is 0 to 5)
 I/AudioPolicyService(  253): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
-I/SamplingProfilerIntegration(  252): Profiling disabled.
-I/Zygote  (  252): Preloading classes...
-D/dalvikvm(  252): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 0ms+4ms
-D/dalvikvm(  252): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+2ms
-D/dalvikvm(  252): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
-D/dalvikvm(  252): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+2ms
-D/dalvikvm(  252): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
-D/dalvikvm(  252): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
-D/dalvikvm(  252): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
-D/TextLayoutCache(  252): Using debug level: 0 - Debug Enabled: 0
-W/Zygote  (  252): Class not found for preloading: android.media.AudioManager$2
-E/dalvikvm(  252): ERROR: couldn't find native method
-E/dalvikvm(  252): Requested: Landroid/media/MediaRecorder;.native_start:()V
-E/JNIHelp (  252): RegisterNatives failed for 'android/media/MediaRecorder', aborting
-F/libc    (  252): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/SamplingProfilerIntegration(  251): Profiling disabled.
+I/Zygote  (  251): Preloading classes...
+D/dalvikvm(  251): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  251): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(  251): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
+D/dalvikvm(  251): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
+D/dalvikvm(  251): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  251): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
+D/dalvikvm(  251): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 0ms+2ms
+D/TextLayoutCache(  251): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  251): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  251): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  251): register_android_mtp_MtpDevice
+I/dalvikvm(  251): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  251): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  251): native_init
+E/MediaProfilesJNI(  251): After native_init lock
+E/MediaProfilesJNI(  251): Guru : native_init profiles
+E/MediaProfiles(  251): getInstance
+E/MediaProfiles(  251): Guru :Else 1
+E/MediaProfiles(  251): Guru : quality = 0, index = 1
+E/MediaProfiles(  251): Guru : quality = 1, index = 0
+E/MediaProfiles(  251): Guru : quality = 0, index = 1
+E/MediaProfiles(  251): Guru : quality = 1, index = 0
+E/MediaProfiles(  251): getInstance ea878
+E/MediaProfilesJNI(  251): retun sProfiles
+E/MediaProfilesJNI(  251): native_init
+E/MediaProfilesJNI(  251): After native_init lock
+E/MediaProfilesJNI(  251): retun sProfiles
+W/Zygote  (  251): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  251): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  251): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+2ms
+V/MediaProfilesJNI(  251): native_get_num_video_decoders
+V/MediaProfilesJNI(  251): native_get_video_decoder_type: 0
+D/dalvikvm(  251): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 2ms+2ms
+D/dalvikvm(  251): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+2ms
+D/dalvikvm(  251): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+3ms
+D/dalvikvm(  251): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 5ms+3ms
+D/dalvikvm(  251): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+3ms
+W/Zygote  (  251): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  251): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  251): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 4ms+4ms
+D/dalvikvm(  251): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 4ms+3ms
+I/dalvikvm(  251): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  251): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+E/dalvikvm(  251): ERROR: couldn't find native method
+E/dalvikvm(  251): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (  251): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
+F/libc    (  251): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
 I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
 I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
-I/DEBUG   (   89): pid: 252, tid: 252  >>> zygote <<<
+I/DEBUG   (   89): pid: 251, tid: 251  >>> zygote <<<
 I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
 I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
-I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4e728940  r7 be8e1708
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0629a7  r7 be8ec718
 I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
-I/DEBUG   (   89):  ip ffffffff  sp be8e16d0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
-I/DEBUG   (   89):  d0  0008000049000000  d1  0000000040dc8000
-I/DEBUG   (   89):  d2  403b800000000000  d3  c14ac800c1322000
-I/DEBUG   (   89):  d4  0000000040dc8000  d5  000000000006e400
-I/DEBUG   (   89):  d6  4140000000000800  d7  4140000041400000
+I/DEBUG   (   89):  ip ffffffff  sp be8ec6e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
 I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
 I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
 I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
 I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
-I/DEBUG   (   89):  scr 60000010
+I/DEBUG   (   89):  scr 20000010
 I/DEBUG   (   89): 
 I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
 I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
 I/DEBUG   (   89): 
 I/DEBUG   (   89): code around pc:
 I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
@@ -847,116 +1086,548 @@ I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F.......
 I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
 I/DEBUG   (   89): 
 I/DEBUG   (   89): memory map around addr deadbaad:
-I/DEBUG   (   89): be8c1000-be8e2000 [stack]
+I/DEBUG   (   89): be8cc000-be8ed000 [stack]
 I/DEBUG   (   89): (no map for address)
 I/DEBUG   (   89): (no map above)
 I/DEBUG   (   89): 
 I/DEBUG   (   89): stack:
-I/DEBUG   (   89):     be8e1690  00000000  
-I/DEBUG   (   89):     be8e1694  cf7f99d5  
-I/DEBUG   (   89):     be8e1698  4006870c  /system/lib/libc.so
-I/DEBUG   (   89):     be8e169c  4006d85c  
-I/DEBUG   (   89):     be8e16a0  00000000  
-I/DEBUG   (   89):     be8e16a4  4003ff0f  /system/lib/libc.so
-I/DEBUG   (   89):     be8e16a8  4e7286c9  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e16ac  4003ec75  /system/lib/libc.so
-I/DEBUG   (   89):     be8e16b0  ffffffff  
-I/DEBUG   (   89):     be8e16b4  00000000  
-I/DEBUG   (   89):     be8e16b8  00000000  
-I/DEBUG   (   89):     be8e16bc  4e728940  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e16c0  be8e1708  [stack]
-I/DEBUG   (   89):     be8e16c4  4003f08d  /system/lib/libc.so
-I/DEBUG   (   89):     be8e16c8  df0027ad  
-I/DEBUG   (   89):     be8e16cc  00000000  
-I/DEBUG   (   89): #00 be8e16d0  0000000e  
-I/DEBUG   (   89):     be8e16d4  00000100  
-I/DEBUG   (   89):     be8e16d8  4e722141  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e16dc  cf7f99d5  
-I/DEBUG   (   89):     be8e16e0  2c300019  
-I/DEBUG   (   89):     be8e16e4  fffffbdf  
-I/DEBUG   (   89):     be8e16e8  0000f2c0  [heap]
-I/DEBUG   (   89):     be8e16ec  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     be8e16f0  0000f2c0  [heap]
-I/DEBUG   (   89):     be8e16f4  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89): #01 be8e16f8  40868ffd  /system/lib/libdvm.so
-I/DEBUG   (   89):     be8e16fc  401f865b  /system/lib/libnativehelper.so
-I/DEBUG   (   89):     be8e1700  4e72cca0  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e1704  00000015  
-I/DEBUG   (   89):     be8e1708  0000f2c0  [heap]
-I/DEBUG   (   89):     be8e170c  2c400019  
-I/DEBUG   (   89):     be8e1710  0000f2c0  [heap]
-I/DEBUG   (   89):     be8e1714  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e1718  000e1318  [heap]
-I/DEBUG   (   89):     be8e171c  00012828  [heap]
-I/DEBUG   (   89):     be8e1720  00000000  
-I/DEBUG   (   89):     be8e1724  40175877  /system/lib/libandroid_runtime.so
-I/DEBUG   (   89):     be8e1728  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e172c  4e721f69  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e1730  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e1734  4e7209c5  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e1738  4e720981  /system/lib/libmedia_jni.so
-I/DEBUG   (   89):     be8e173c  0000f2c0  [heap]
+I/DEBUG   (   89):     be8ec6a0  00000001  
+I/DEBUG   (   89):     be8ec6a4  465e33b9  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     be8ec6a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     be8ec6ac  4006d85c  
+I/DEBUG   (   89):     be8ec6b0  00000000  
+I/DEBUG   (   89):     be8ec6b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     be8ec6b8  4f064341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     be8ec6bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     be8ec6c0  ffffffff  
+I/DEBUG   (   89):     be8ec6c4  00000000  
+I/DEBUG   (   89):     be8ec6c8  00000000  
+I/DEBUG   (   89):     be8ec6cc  4f0629a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     be8ec6d0  be8ec718  [stack]
+I/DEBUG   (   89):     be8ec6d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     be8ec6d8  df0027ad  
+I/DEBUG   (   89):     be8ec6dc  00000000  
+I/DEBUG   (   89): #00 be8ec6e0  0000002a  
+I/DEBUG   (   89):     be8ec6e4  00000100  
+I/DEBUG   (   89):     be8ec6e8  4ed7b881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     be8ec6ec  465e33b9  /dev/ashmem/dalvik-heap (deleted)
+I/DEBUG   (   89):     be8ec6f0  4f062b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     be8ec6f4  fffffbdf  
+I/DEBUG   (   89):     be8ec6f8  0000f2c0  [heap]
+I/DEBUG   (   89):     be8ec6fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be8ec700  0000f2c0  [heap]
+I/DEBUG   (   89):     be8ec704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 be8ec708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     be8ec70c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     be8ec710  4f1ee400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     be8ec714  0000003c  
+I/DEBUG   (   89):     be8ec718  0000f2c0  [heap]
+I/DEBUG   (   89):     be8ec71c  b3600019  
+I/DEBUG   (   89):     be8ec720  0000f2c0  [heap]
+I/DEBUG   (   89):     be8ec724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     be8ec728  0000f2c0  [heap]
+I/DEBUG   (   89):     be8ec72c  4f05d3ef  /system/lib/libwebcore.so
 I/ServiceManager(   86): service 'media.audio_flinger' died
 I/ServiceManager(   86): service 'media.player' died
 I/ServiceManager(   86): service 'media.camera' died
 I/ServiceManager(   86): service 'media.audio_policy' died
-I/Netd    (  279): Netd 1.0 starting
+I/Netd    (  281): Netd 1.0 starting
 D/AndroidRuntime(  280): 
 D/AndroidRuntime(  280): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
 D/AndroidRuntime(  280): CheckJNI is OFF
-I/        (  281): ServiceManager: 0xf958
-I/HTC Acoustic(  281): libhtc_acoustic.so version 2.0.0.6.
-I/HTC Acoustic(  281): deonvvv gingerbread test.
-I/HTC Acoustic(  281): open /system/etc/AudioPara4_WB.csv success.
-I/HTC Acoustic(  281): acoustic table version: MAL_WB_20110217
-I/HTC Acoustic(  281): read_audio_para_from_file success.
-E/HTC Acoustic(  281): Fail to open /system/etc/AudioPara_ALL.csv -1.
-I/HTC Acoustic(  281): open /system/etc/AudioPara4.csv success.
-I/HTC Acoustic(  281): acoustic table version: MAL_Gerenic_20110509
-I/HTC Acoustic(  281): read_audio_para_from_file success.
-I/HTC Acoustic(  281): get_audpp_filter
-I/HTC Acoustic(  281): open /system/etc/AudioFilter.csv success.
-I/HTC Acoustic(  281): MBADRC Filter MBADRC FLAG = ffff.
-E/HTC Acoustic(  281): set mbadrc filter error.
-I/HTC Acoustic(  281): failed to set audpp parameters, exiting.
-I/HTC Acoustic(  281): get_audpre_filter
-I/HTC Acoustic(  281): open /system/etc/AudioPreProcess.csv success.
-D/AudioHardwareMSM72XX(  281): mNumSndEndpoints = 151
-V/AudioHardwareMSM72XX(  281): constructed 151 SND endpoints)
-D/AudioHardwareMSM72XX(  281): BT MATCH HANDSET
-D/AudioHardwareMSM72XX(  281): BT MATCH SPEAKER
-D/AudioHardwareMSM72XX(  281): BT MATCH HEADSET
-D/AudioHardwareMSM72XX(  281): BT MATCH BT
-D/AudioHardwareMSM72XX(  281): BT MATCH CARKIT
-D/AudioHardwareMSM72XX(  281): BT MATCH TTY_FULL
-D/AudioHardwareMSM72XX(  281): BT MATCH TTY_VCO
-D/AudioHardwareMSM72XX(  281): BT MATCH TTY_HCO
-D/AudioHardwareMSM72XX(  281): BT MATCH NO_MIC_HEADSET
-D/AudioHardwareMSM72XX(  281): BT MATCH FM_HEADSET
-D/AudioHardwareMSM72XX(  281): BT MATCH HEADSET_AND_SPEAKER
-D/AudioHardwareMSM72XX(  281): BT MATCH FM_SPEAKER
-D/AudioHardwareMSM72XX(  281): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  281): BT MATCH BT_EC_OFF
-D/AudioHardwareMSM72XX(  281): BT MATCH CURRENT
-I/AudioFlinger(  281): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
-I/AudioFlinger(  281): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
-I/AudioFlinger(  281): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
-D/AudioHardwareInterface(  281): setMode(NORMAL)
-I/AudioHardwareMSM72XX(  281): Set master volume to 5.
-I/CameraService(  281): CameraService started (pid=281)
-I/AudioFlinger(  281): AudioFlinger's thread 0x16f90 ready to run
-W/AudioFlinger(  281): Thread AudioOut_1 cannot connect to the power manager service
-V/AudioHardwareMSM72XX(  281): AudioStreamOutMSM72xx::setParameters() routing=2
-V/AudioHardwareMSM72XX(  281): set output routing 2
-I/AudioHardwareMSM72XX(  281): Routing audio to Speakerphone
-V/AudioHardwareMSM72XX(  281): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
-D/AudioHardwareMSM72XX(  281): setVoiceVolume(1.000000)
-I/AudioHardwareMSM72XX(  281): Setting in-call volume to 5 (available range is 0 to 5)
-I/AudioPolicyService(  281): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/        (  282): ServiceManager: 0xf958
+I/HTC Acoustic(  282): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  282): deonvvv gingerbread test.
+I/HTC Acoustic(  282): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  282): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  282): read_audio_para_from_file success.
+E/HTC Acoustic(  282): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  282): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  282): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  282): read_audio_para_from_file success.
+I/HTC Acoustic(  282): get_audpp_filter
+I/HTC Acoustic(  282): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  282): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  282): set mbadrc filter error.
+I/HTC Acoustic(  282): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  282): get_audpre_filter
+I/HTC Acoustic(  282): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  282): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  282): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  282): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  282): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  282): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  282): BT MATCH BT
+D/AudioHardwareMSM72XX(  282): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  282): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  282): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  282): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  282): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  282): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  282): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  282): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  282): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  282): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  282): BT MATCH CURRENT
+I/AudioFlinger(  282): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  282): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  282): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  282): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  282): Set master volume to 5.
+I/CameraService(  282): CameraService started (pid=282)
+I/AudioFlinger(  282): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  282): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  282): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  282): set output routing 2
+I/AudioHardwareMSM72XX(  282): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  282): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  282): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  282): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  282): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
 I/SamplingProfilerIntegration(  280): Profiling disabled.
 I/Zygote  (  280): Preloading classes...
 D/dalvikvm(  280): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
 D/dalvikvm(  280): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
-D/dalvikvm(  280): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+2ms
+D/dalvikvm(  280): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
 D/dalvikvm(  280): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
 D/dalvikvm(  280): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  280): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
+D/dalvikvm(  280): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 3ms+1ms
+D/TextLayoutCache(  280): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  280): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  280): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  280): register_android_mtp_MtpDevice
+I/dalvikvm(  280): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  280): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  280): native_init
+E/MediaProfilesJNI(  280): After native_init lock
+E/MediaProfilesJNI(  280): Guru : native_init profiles
+E/MediaProfiles(  280): getInstance
+E/MediaProfiles(  280): Guru :Else 1
+E/MediaProfiles(  280): Guru : quality = 0, index = 1
+E/MediaProfiles(  280): Guru : quality = 1, index = 0
+E/MediaProfiles(  280): Guru : quality = 0, index = 1
+E/MediaProfiles(  280): Guru : quality = 1, index = 0
+E/MediaProfiles(  280): getInstance ea848
+E/MediaProfilesJNI(  280): retun sProfiles
+E/MediaProfilesJNI(  280): native_init
+E/MediaProfilesJNI(  280): After native_init lock
+E/MediaProfilesJNI(  280): retun sProfiles
+W/Zygote  (  280): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  280): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  280): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+1ms
+V/MediaProfilesJNI(  280): native_get_num_video_decoders
+V/MediaProfilesJNI(  280): native_get_video_decoder_type: 0
+D/dalvikvm(  280): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+1ms
+D/dalvikvm(  280): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+4ms
+D/dalvikvm(  280): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+6ms
+D/dalvikvm(  280): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+3ms
+D/dalvikvm(  280): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 2ms+3ms
+W/Zygote  (  280): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  280): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  280): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 8ms+3ms
+D/dalvikvm(  280): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+4ms
+I/dalvikvm(  280): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  280): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+E/dalvikvm(  280): ERROR: couldn't find native method
+E/dalvikvm(  280): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (  280): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
+F/libc    (  280): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   89): pid: 280, tid: 280  >>> zygote <<<
+I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
+I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0629a7  r7 bece4718
+I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
+I/DEBUG   (   89):  ip ffffffff  sp bece46e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
+I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   89):  scr 20000010
+I/DEBUG   (   89): 
+I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
+I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around pc:
+I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
+I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
+I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
+I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
+I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around lr:
+I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
+I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
+I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
+I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
+I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
+I/DEBUG   (   89): 
+I/DEBUG   (   89): memory map around addr deadbaad:
+I/DEBUG   (   89): becc4000-bece5000 [stack]
+I/DEBUG   (   89): (no map for address)
+I/DEBUG   (   89): (no map above)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): stack:
+I/DEBUG   (   89):     bece46a0  00000001  
+I/DEBUG   (   89):     bece46a4  6d031d8d  
+I/DEBUG   (   89):     bece46a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     bece46ac  4006d85c  
+I/DEBUG   (   89):     bece46b0  00000000  
+I/DEBUG   (   89):     bece46b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     bece46b8  4f064341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bece46bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     bece46c0  ffffffff  
+I/DEBUG   (   89):     bece46c4  00000000  
+I/DEBUG   (   89):     bece46c8  00000000  
+I/DEBUG   (   89):     bece46cc  4f0629a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bece46d0  bece4718  [stack]
+I/DEBUG   (   89):     bece46d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     bece46d8  df0027ad  
+I/DEBUG   (   89):     bece46dc  00000000  
+I/DEBUG   (   89): #00 bece46e0  0000002a  
+I/DEBUG   (   89):     bece46e4  00000100  
+I/DEBUG   (   89):     bece46e8  4ed7b881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bece46ec  6d031d8d  
+I/DEBUG   (   89):     bece46f0  4f062b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bece46f4  fffffbdf  
+I/DEBUG   (   89):     bece46f8  0000f2c0  [heap]
+I/DEBUG   (   89):     bece46fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bece4700  0000f2c0  [heap]
+I/DEBUG   (   89):     bece4704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 bece4708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     bece470c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     bece4710  4f1ee400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     bece4714  0000003c  
+I/DEBUG   (   89):     bece4718  0000f2c0  [heap]
+I/DEBUG   (   89):     bece471c  b3600019  
+I/DEBUG   (   89):     bece4720  0000f2c0  [heap]
+I/DEBUG   (   89):     bece4724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     bece4728  0000f2c0  [heap]
+I/DEBUG   (   89):     bece472c  4f05d3ef  /system/lib/libwebcore.so
+I/ServiceManager(   86): service 'media.audio_flinger' died
+I/ServiceManager(   86): service 'media.player' died
+I/ServiceManager(   86): service 'media.camera' died
+I/ServiceManager(   86): service 'media.audio_policy' died
+I/Netd    (  308): Netd 1.0 starting
+D/AndroidRuntime(  309): 
+D/AndroidRuntime(  309): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  309): CheckJNI is OFF
+I/        (  310): ServiceManager: 0xf958
+I/HTC Acoustic(  310): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  310): deonvvv gingerbread test.
+I/HTC Acoustic(  310): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  310): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  310): read_audio_para_from_file success.
+E/HTC Acoustic(  310): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  310): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  310): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  310): read_audio_para_from_file success.
+I/HTC Acoustic(  310): get_audpp_filter
+I/HTC Acoustic(  310): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  310): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  310): set mbadrc filter error.
+I/HTC Acoustic(  310): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  310): get_audpre_filter
+I/HTC Acoustic(  310): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  310): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  310): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  310): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  310): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  310): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  310): BT MATCH BT
+D/AudioHardwareMSM72XX(  310): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  310): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  310): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  310): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  310): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  310): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  310): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  310): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  310): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  310): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  310): BT MATCH CURRENT
+I/AudioFlinger(  310): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  310): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  310): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  310): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  310): Set master volume to 5.
+I/CameraService(  310): CameraService started (pid=310)
+I/AudioFlinger(  310): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  310): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  310): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  310): set output routing 2
+I/AudioHardwareMSM72XX(  310): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  310): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  310): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  310): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  310): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/SamplingProfilerIntegration(  309): Profiling disabled.
+I/Zygote  (  309): Preloading classes...
+D/dalvikvm(  309): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  309): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(  309): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
+D/dalvikvm(  309): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
+D/dalvikvm(  309): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  309): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+2ms
+D/dalvikvm(  309): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
+D/TextLayoutCache(  309): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  309): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  309): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  309): register_android_mtp_MtpDevice
+I/dalvikvm(  309): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  309): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  309): native_init
+E/MediaProfilesJNI(  309): After native_init lock
+E/MediaProfilesJNI(  309): Guru : native_init profiles
+E/MediaProfiles(  309): getInstance
+E/MediaProfiles(  309): Guru :Else 1
+E/MediaProfiles(  309): Guru : quality = 0, index = 1
+E/MediaProfiles(  309): Guru : quality = 1, index = 0
+E/MediaProfiles(  309): Guru : quality = 0, index = 1
+E/MediaProfiles(  309): Guru : quality = 1, index = 0
+E/MediaProfiles(  309): getInstance ea878
+E/MediaProfilesJNI(  309): retun sProfiles
+E/MediaProfilesJNI(  309): native_init
+E/MediaProfilesJNI(  309): After native_init lock
+E/MediaProfilesJNI(  309): retun sProfiles
+W/Zygote  (  309): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  309): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  309): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 2ms+3ms
+V/MediaProfilesJNI(  309): native_get_num_video_decoders
+V/MediaProfilesJNI(  309): native_get_video_decoder_type: 0
+D/dalvikvm(  309): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+2ms
+D/dalvikvm(  309): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+2ms
+D/dalvikvm(  309): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(  309): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+3ms
+D/dalvikvm(  309): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 3ms+5ms
+W/Zygote  (  309): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  309): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  309): GC_EXPLICIT freed 35K, 38% free 1589K/2560K, paused 3ms+3ms
+D/dalvikvm(  309): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+3ms
+I/dalvikvm(  309): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  309): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+E/dalvikvm(  309): ERROR: couldn't find native method
+E/dalvikvm(  309): Requested: Landroid/webkit/WebViewCore;.nativeGetTextureGeneratorThreadID:()I
+E/JNIHelp (  309): RegisterNatives failed for 'android/webkit/WebViewCore', aborting
+F/libc    (  309): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1)
+I/DEBUG   (   89): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   89): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   89): pid: 309, tid: 309  >>> zygote <<<
+I/DEBUG   (   89): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
+I/DEBUG   (   89):  r0 deadbaad  r1 0000000c  r2 00000027  r3 40000000
+I/DEBUG   (   89):  r4 00000000  r5 00000080  r6 4f0629a7  r7 becd3718
+I/DEBUG   (   89):  r8 40832200  r9 00000006  10 4ba0ce08  fp fffffe50
+I/DEBUG   (   89):  ip ffffffff  sp becd36e0  lr 4003ff0f  pc 4003c6c6  cpsr 00000030
+I/DEBUG   (   89):  d0  00280000427be5a0  d1  3f50624d00193090
+I/DEBUG   (   89):  d2  bfd3441350baf6de  d3  3fe555b0aaeac752
+I/DEBUG   (   89):  d4  3fbc71c71c71c71c  d5  3fcef049fb9094d1
+I/DEBUG   (   89):  d6  49c984808800759c  d7  000000003f800000
+I/DEBUG   (   89):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   89):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   89):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   89):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   89):  scr 20000010
+I/DEBUG   (   89): 
+I/DEBUG   (   89):          #00  pc 000176c6  /system/lib/libc.so
+I/DEBUG   (   89):          #01  pc 0000c658  /system/lib/libnativehelper.so (jniRegisterNativeMethods)
+I/DEBUG   (   89):          #02  pc 005693ec  /system/lib/libwebcore.so
+I/DEBUG   (   89):          #03  pc 0005aff0  /system/lib/libdvm.so (_Z17dvmLoadNativeCodePKcP6ObjectPPc)
+I/DEBUG   (   89):          #04  pc 000729f4  /system/lib/libdvm.so
+I/DEBUG   (   89):          #05  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #06  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #07  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #08  pc 0006c616  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+I/DEBUG   (   89):          #09  pc 000769a2  /system/lib/libdvm.so (dvmInitClass)
+I/DEBUG   (   89):          #10  pc 00076b12  /system/lib/libdvm.so (_Z12dvmFindClassPKcP6Object)
+I/DEBUG   (   89):          #11  pc 0007072c  /system/lib/libdvm.so (_Z18dvmFindClassByNameP12StringObjectP6Objectb)
+I/DEBUG   (   89):          #12  pc 000726d8  /system/lib/libdvm.so
+I/DEBUG   (   89):          #13  pc 00030e8c  /system/lib/libdvm.so
+I/DEBUG   (   89):          #14  pc 000346dc  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+I/DEBUG   (   89):          #15  pc 0006c5f8  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+I/DEBUG   (   89):          #16  pc 000552ba  /system/lib/libdvm.so
+I/DEBUG   (   89):          #17  pc 00046024  /system/lib/libandroid_runtime.so
+I/DEBUG   (   89):          #18  pc 00046b6c  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+I/DEBUG   (   89):          #19  pc 00008f46  /system/bin/app_process
+I/DEBUG   (   89):          #20  pc 0001655a  /system/lib/libc.so (__libc_init)
+I/DEBUG   (   89):          #21  pc 40004eb4  /system/bin/linker
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around pc:
+I/DEBUG   (   89): 4003c6a4 1c2bd00c 2d00682d e027d1fb 2a0068da  ..+.-h.-..'..h.*
+I/DEBUG   (   89): 4003c6b4 4b16d004 447b2001 47906018 22274814  ...K. {D.`.G.H'"
+I/DEBUG   (   89): 4003c6c4 70022580 ef74f7f4 f7f62106 aa01e812  .%.p..t..!......
+I/DEBUG   (   89): 4003c6d4 05692400 60546091 20061c11 f7f59401  .$i..`T`... ....
+I/DEBUG   (   89): 4003c6e4 a905ebce 20022200 ebd6f7f5 ef60f7f4  .....". ......`.
+I/DEBUG   (   89): 
+I/DEBUG   (   89): code around lr:
+I/DEBUG   (   89): 4003feec 4b0db5f0 447bb083 681c2600 68a59001  ...K..{D.&.h...h
+I/DEBUG   (   89): 4003fefc e0086867 5ea8220c dd032800 99011c28  gh...".^.(..(...
+I/DEBUG   (   89): 4003ff0c 43064788 3f013554 6824d5f4 d1ee2c00  .G.CT5.?..$h.,..
+I/DEBUG   (   89): 4003ff1c 1c30b003 46c0bdf0 000285f2 1c0fb5f0  ..0....F........
+I/DEBUG   (   89): 4003ff2c b0891c3d a9064355 604d9103 90064914  =...UC....M`.I..
+I/DEBUG   (   89): 
+I/DEBUG   (   89): memory map around addr deadbaad:
+I/DEBUG   (   89): becb3000-becd4000 [stack]
+I/DEBUG   (   89): (no map for address)
+I/DEBUG   (   89): (no map above)
+I/DEBUG   (   89): 
+I/DEBUG   (   89): stack:
+I/DEBUG   (   89):     becd36a0  00000001  
+I/DEBUG   (   89):     becd36a4  175f5930  
+I/DEBUG   (   89):     becd36a8  4006870c  /system/lib/libc.so
+I/DEBUG   (   89):     becd36ac  4006d85c  
+I/DEBUG   (   89):     becd36b0  00000000  
+I/DEBUG   (   89):     becd36b4  4003ff0f  /system/lib/libc.so
+I/DEBUG   (   89):     becd36b8  4f064341  /system/lib/libwebcore.so
+I/DEBUG   (   89):     becd36bc  4003ec75  /system/lib/libc.so
+I/DEBUG   (   89):     becd36c0  ffffffff  
+I/DEBUG   (   89):     becd36c4  00000000  
+I/DEBUG   (   89):     becd36c8  00000000  
+I/DEBUG   (   89):     becd36cc  4f0629a7  /system/lib/libwebcore.so
+I/DEBUG   (   89):     becd36d0  becd3718  [stack]
+I/DEBUG   (   89):     becd36d4  4003f08d  /system/lib/libc.so
+I/DEBUG   (   89):     becd36d8  df0027ad  
+I/DEBUG   (   89):     becd36dc  00000000  
+I/DEBUG   (   89): #00 becd36e0  0000002a  
+I/DEBUG   (   89):     becd36e4  00000100  
+I/DEBUG   (   89):     becd36e8  4ed7b881  /system/lib/libwebcore.so
+I/DEBUG   (   89):     becd36ec  175f5930  
+I/DEBUG   (   89):     becd36f0  4f062b5d  /system/lib/libwebcore.so
+I/DEBUG   (   89):     becd36f4  fffffbdf  
+I/DEBUG   (   89):     becd36f8  0000f2c0  [heap]
+I/DEBUG   (   89):     becd36fc  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     becd3700  0000f2c0  [heap]
+I/DEBUG   (   89):     becd3704  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89): #01 becd3708  40868ffd  /system/lib/libdvm.so
+I/DEBUG   (   89):     becd370c  401f865b  /system/lib/libnativehelper.so
+I/DEBUG   (   89):     becd3710  4f1ee400  /system/lib/libwebcore.so
+I/DEBUG   (   89):     becd3714  0000003c  
+I/DEBUG   (   89):     becd3718  0000f2c0  [heap]
+I/DEBUG   (   89):     becd371c  b3600019  
+I/DEBUG   (   89):     becd3720  0000f2c0  [heap]
+I/DEBUG   (   89):     becd3724  40869f61  /system/lib/libdvm.so
+I/DEBUG   (   89):     becd3728  0000f2c0  [heap]
+I/DEBUG   (   89):     becd372c  4f05d3ef  /system/lib/libwebcore.so
+I/ServiceManager(   86): service 'media.audio_flinger' died
+I/ServiceManager(   86): service 'media.player' died
+I/ServiceManager(   86): service 'media.camera' died
+I/ServiceManager(   86): service 'media.audio_policy' died
+I/Netd    (  337): Netd 1.0 starting
+D/AndroidRuntime(  336): 
+D/AndroidRuntime(  336): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  336): CheckJNI is OFF
+I/        (  338): ServiceManager: 0xf958
+I/HTC Acoustic(  338): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  338): deonvvv gingerbread test.
+I/HTC Acoustic(  338): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  338): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  338): read_audio_para_from_file success.
+E/HTC Acoustic(  338): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  338): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  338): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  338): read_audio_para_from_file success.
+I/HTC Acoustic(  338): get_audpp_filter
+I/HTC Acoustic(  338): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  338): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  338): set mbadrc filter error.
+I/HTC Acoustic(  338): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  338): get_audpre_filter
+I/HTC Acoustic(  338): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  338): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  338): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  338): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  338): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  338): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  338): BT MATCH BT
+D/AudioHardwareMSM72XX(  338): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  338): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  338): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  338): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  338): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  338): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  338): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  338): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  338): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  338): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  338): BT MATCH CURRENT
+I/AudioFlinger(  338): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  338): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  338): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  338): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  338): Set master volume to 5.
+I/CameraService(  338): CameraService started (pid=338)
+I/AudioFlinger(  338): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  338): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  338): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  338): set output routing 2
+I/AudioHardwareMSM72XX(  338): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  338): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  338): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  338): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  338): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/SamplingProfilerIntegration(  336): Profiling disabled.
+I/Zygote  (  336): Preloading classes...
+D/dalvikvm(  336): GC_EXPLICIT freed 37K, 84% free 410K/2560K, paused 1ms+2ms
+D/dalvikvm(  336): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+2ms
+D/dalvikvm(  336): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
+D/dalvikvm(  336): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
+D/dalvikvm(  336): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  336): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+5ms
+D/dalvikvm(  336): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+2ms
+D/TextLayoutCache(  336): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  336): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  336): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  336): register_android_mtp_MtpDevice
+I/dalvikvm(  336): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  336): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  336): native_init
+E/MediaProfilesJNI(  336): After native_init lock
+E/MediaProfilesJNI(  336): Guru : native_init profiles
+E/MediaProfiles(  336): getInstance
+E/MediaProfiles(  336): Guru :Else 1
+E/MediaProfiles(  336): Guru : quality = 0, index = 1
+E/MediaProfiles(  336): Guru : quality = 1, index = 0
+E/MediaProfiles(  336): Guru : quality = 0, index = 1
+E/MediaProfiles(  336): Guru : quality = 1, index = 0
+E/MediaProfiles(  336): getInstance ea878
+E/MediaProfilesJNI(  336): retun sProfiles
+E/MediaProfilesJNI(  336): native_init
+E/MediaProfilesJNI(  336): After native_init lock
+E/MediaProfilesJNI(  336): retun sProfiles
+W/Zygote  (  336): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  336): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  336): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 2ms+2ms
+V/MediaProfilesJNI(  336): native_get_num_video_decoders
+V/MediaProfilesJNI(  336): native_get_video_decoder_type: 0
+D/dalvikvm(  336): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+1ms
+D/dalvikvm(  336): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+2ms
+D/dalvikvm(  336): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+3ms
+D/dalvikvm(  336): GC_EXPLICIT freed 23K, 51% free 1275K/2560K, paused 2ms+4ms
+D/dalvikvm(  336): GC_EXPLICIT freed 48K, 40% free 1555K/2560K, paused 2ms+3ms
+W/Zygote  (  336): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  336): Class not found for preloading: android.text.method.WordIterator$1

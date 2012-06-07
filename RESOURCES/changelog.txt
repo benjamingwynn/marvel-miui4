@@ -2,13 +2,9 @@ Here is written what's changed (a blank line represents a new build/logcat to co
 
 first build: source = CM9 alpha 2
 replaced Media and App folder with MIUI sources
-added stuff from etc from MIUI sources
-added framework-miui.res.apk, miui-framework.jar and framework.jar from MIUI
+added framework stuff
 added content-types.properties and liblbesec.so
 added busybox, invoke-as and su
-added some stuff from gapps.zip (maps, quicksearchbox, market, …)
-
-replaced MIUI services.jar
 
 replaced AssetManger.smali in android/content/res of framework.jar
 
@@ -66,6 +62,8 @@ added
     return-void
 .end method
 renamed lines to 484 and 485
+
+now smali editing done, but stuck
 
 
 

@@ -6,3 +6,5 @@ Use the ADB commands in link beneath for faster logging.
 No need to flash a rom or apply a zip, just remove/add files through recovery!
 
 http://forum.xda-developers.com/showthread.php?t=749166
+
+Build from NEXUS S port currently
