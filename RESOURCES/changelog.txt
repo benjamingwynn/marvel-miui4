@@ -66,4 +66,5 @@ renamed lines to 484 and 485
 now smali editing done, but stuck
 
 
-
+Changed Landroid/os/SystemProperties.smali to CM9's
+Added libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
