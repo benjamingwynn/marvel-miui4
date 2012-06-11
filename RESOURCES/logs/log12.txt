@@ -1,0 +1,1137 @@
+--------- beginning of /dev/log/main
+I/DEBUG   (   80): debuggerd: Jun  1 2012 20:39:36
+D/AK8975  (   89): AK8975 daemon 1.1.0 Start
+D/AK8975  (   89): (Library version : 1.2.1.1125)
+--------- beginning of /dev/log/system
+I/Vold    (   78): Vold 2.1 (the revenge) firing up
+I/Netd    (   79): Netd 1.0 starting
+D/Vold    (   78): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    (   78): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+D/DirectVolume(   78): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 1, PARTN 1
+D/Vold    (   78): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+I/        (   84): ServiceManager: 0x18910
+D/AndroidRuntime(   83): 
+D/AndroidRuntime(   83): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(   83): CheckJNI is OFF
+I/SurfaceFlinger(   82): SurfaceFlinger is starting
+I/SurfaceFlinger(   82): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+E/msm7x27.gralloc(   82): We support 3 buffers
+I/msm7x27.gralloc(   82): using (fd=12)
+I/msm7x27.gralloc(   82): id           = msmfb
+I/msm7x27.gralloc(   82): xres         = 320 px
+I/msm7x27.gralloc(   82): yres         = 480 px
+I/msm7x27.gralloc(   82): xres_virtual = 320 px
+I/msm7x27.gralloc(   82): yres_virtual = 1440 px
+I/msm7x27.gralloc(   82): bpp          = 32
+I/msm7x27.gralloc(   82): r            =  0:8
+I/msm7x27.gralloc(   82): g            =  8:8
+I/msm7x27.gralloc(   82): b            = 16:8
+I/msm7x27.gralloc(   82): width        = 51 mm (159.372543 dpi)
+I/msm7x27.gralloc(   82): height       = 76 mm (160.421051 dpi)
+I/msm7x27.gralloc(   82): refresh rate = 0.00 Hz
+D/CALCFPS (   82): DEBUG_CALC_FPS: 0
+D/CALCFPS (   82): period: 10
+D/CALCFPS (   82): ignorethresh_us: 500000
+D/CALCFPS (   82): DEBUG_CALC_FPS: 0
+D/CALCFPS (   82): period: 10
+D/CALCFPS (   82): ignorethresh_us: 500000
+D/FramebufferNativeWindow(   82): mNumBuffers = 3
+D/libEGL  (   82): loaded /system/lib/egl/libGLES_android.so
+D/libEGL  (   82): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  (   82): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  (   82): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/SurfaceFlinger(   82): EGL informations:
+I/SurfaceFlinger(   82): # of configs : 44
+I/SurfaceFlinger(   82): vendor    : Android
+I/SurfaceFlinger(   82): version   : 1.4 Android META-EGL
+I/SurfaceFlinger(   82): extensions: EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_base EGL_KHR_fence_sync EGL_ANDROID_image_native_buffer EGL_ANDROID_image_native_buffer EGL_ANDROID_get_render_buffer 
+I/SurfaceFlinger(   82): Client API: OpenGL ES
+I/SurfaceFlinger(   82): EGLSurface: 8-8-8-8, config=0x3
+I/SurfaceFlinger(   82): OpenGL informations:
+I/SurfaceFlinger(   82): vendor    : Qualcomm
+I/SurfaceFlinger(   82): renderer  : Adreno (TM) 200
+I/SurfaceFlinger(   82): version   : OpenGL ES-CM 1.1
+I/SurfaceFlinger(   82): extensions: GL_AMD_compressed_ATC_texture GL_AMD_performance_monitor GL_APPLE_texture_2D_limited_npot GL_ARB_vertex_buffer_object GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_type_2_10_10_10_REV GL_OES_blend_equation_separate GL_OES_blend_func_separate GL_OES_blend_subtract GL_OES_compressed_ETC1_RGB8_texture GL_OES_compressed_paletted_texture GL_OES_depth_texture GL_OES_depth24 GL_OES_draw_texture GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_framebuffer_object GL_OES_matrix_palette GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_read_format GL_OES_rgb8_rgba8 GL_OES_stencil_wrap GL_OES_texture_cube_map GL_OES_texture_env_crossbar GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_texture_mirrored_repeat GL_QCOM_binning_control GL_QCOM_extended_get GL_QCOM_tiled_rendering GL_AMD_compressed_3DC_texture 
+I/SurfaceFlinger(   82): GL_MAX_TEXTURE_SIZE = 4096
+I/SurfaceFlinger(   82): GL_MAX_VIEWPORT_DIMS = 4096 x 4096
+I/SurfaceFlinger(   82): flags = 00000000
+D/CALCFPS (   82): DEBUG_CALC_FPS: 0
+D/CALCFPS (   82): period: 10
+D/CALCFPS (   82): ignorethresh_us: 500000
+I/        (   85): ServiceManager: 0xf958
+I/HTC Acoustic(   85): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(   85): deonvvv gingerbread test.
+I/HTC Acoustic(   85): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(   85): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(   85): read_audio_para_from_file success.
+E/HTC Acoustic(   85): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(   85): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(   85): acoustic table version: MAL_Gerenic_20110509
+D/libEGL  (  133): loaded /system/lib/egl/libGLES_android.so
+D/libEGL  (  133): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  (  133): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  (  133): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/HTC Acoustic(   85): read_audio_para_from_file success.
+D/memalloc(   82): init_pmem_area: Initializing pmem area
+D/memalloc(   82): init_pmem_area_locked: Opening master pmem FD
+D/memalloc(   82): init_pmem_area_locked: Total pmem size: 16777216
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41584000 size:614400 offset:0 fd:26
+D/memalloc(  133): /dev/pmem: Mapped buffer base:0x408f0000 size:614400 offset:0 fd:16
+I/HTC Acoustic(   85): get_audpp_filter
+I/HTC Acoustic(   85): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(   85): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(   85): set mbadrc filter error.
+I/HTC Acoustic(   85): failed to set audpp parameters, exiting.
+I/HTC Acoustic(   85): get_audpre_filter
+I/HTC Acoustic(   85): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(   85): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(   85): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(   85): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(   85): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(   85): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(   85): BT MATCH BT
+D/AudioHardwareMSM72XX(   85): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(   85): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(   85): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(   85): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(   85): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(   85): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(   85): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(   85): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(   85): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(   85): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(   85): BT MATCH CURRENT
+I/AudioFlinger(   85): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(   85): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(   85): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(   85): setMode(NORMAL)
+I/AudioHardwareMSM72XX(   85): Set master volume to 5.
+I/CameraService(   85): CameraService started (pid=85)
+I/AudioFlinger(   85): AudioFlinger's thread 0x16fd8 ready to run
+W/AudioFlinger(   85): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(   85): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(   85): set output routing 2
+I/AudioHardwareMSM72XX(   85): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(   85): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(   85): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(   85): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(   85): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41584000 size:614400 offset:614400 fd:29
+D/memalloc(  133): /dev/pmem: Mapped buffer base:0x40ef8000 size:1228800 offset:614400 fd:20
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41584000 size:614400 offset:1228800 fd:32
+D/memalloc(  133): /dev/pmem: Mapped buffer base:0x411e0000 size:1843200 offset:1228800 fd:23
+D/dalvikvm(   83): DexOpt: --- BEGIN 'core.jar' (bootstrap=1) ---
+D/dalvikvm(  147): Ignoring duplicate verify attempt on Ljava/lang/Object;
+D/dalvikvm(  147): Ignoring duplicate verify attempt on Ljava/lang/Class;
+D/dalvikvm(  147): Ignoring duplicate verify attempt on Ljava/lang/ref/Reference;
+D/dalvikvm(  147): Ignoring duplicate verify attempt on Ljava/lang/ref/ReferenceQueue;
+D/dalvikvm(  147): Ignoring duplicate verify attempt on Ljava/lang/ref/FinalizerReference;
+D/dalvikvm(  147): DexOpt: load 475ms, verify+opt 5209ms
+D/dalvikvm(   83): DexOpt: --- END 'core.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/core.jar': unzip in 1566ms, rewrite 7148ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'core-junit.jar' (bootstrap=1) ---
+D/dalvikvm(  148): DexOpt: load 36ms, verify+opt 46ms
+D/dalvikvm(   83): DexOpt: --- END 'core-junit.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/core-junit.jar': unzip in 6ms, rewrite 196ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'bouncycastle.jar' (bootstrap=1) ---
+D/dalvikvm(  149): DexOpt: load 109ms, verify+opt 1746ms
+D/dalvikvm(   83): DexOpt: --- END 'bouncycastle.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/bouncycastle.jar': unzip in 333ms, rewrite 2433ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'ext.jar' (bootstrap=1) ---
+D/dalvikvm(  150): DexOpt: load 274ms, verify+opt 2895ms
+D/dalvikvm(   83): DexOpt: --- END 'ext.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/ext.jar': unzip in 518ms, rewrite 3986ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'framework.jar' (bootstrap=1) ---
+D/dalvikvm(  151): Note: class Landroid/opengl/GLWrapperBase; has 250 unimplemented (abstract) methods
+D/dalvikvm(  151): DexOpt: load 1148ms, verify+opt 10297ms
+D/dalvikvm(   83): DexOpt: --- END 'framework.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/framework.jar': unzip in 3283ms, rewrite 13998ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'android.policy.jar' (bootstrap=1) ---
+D/dalvikvm(  152): DexOpt: couldn't find field Lcom/android/internal/policy/impl/MiuiPhoneWindowManager;.mHapticFeedbackUtil
+D/dalvikvm(  152): DexOpt: load 126ms, verify+opt 769ms
+D/dalvikvm(   83): DexOpt: --- END 'android.policy.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/android.policy.jar': unzip in 139ms, rewrite 1167ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'services.jar' (bootstrap=1) ---
+D/dalvikvm(  153): DexOpt: load 130ms, verify+opt 2984ms
+D/dalvikvm(   83): DexOpt: --- END 'services.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/services.jar': unzip in 497ms, rewrite 3604ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'apache-xml.jar' (bootstrap=1) ---
+D/dalvikvm(  154): DexOpt: load 141ms, verify+opt 1220ms
+D/dalvikvm(   83): DexOpt: --- END 'apache-xml.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/apache-xml.jar': unzip in 323ms, rewrite 1824ms
+D/dalvikvm(   83): DexOpt: --- BEGIN 'filterfw.jar' (bootstrap=1) ---
+D/dalvikvm(  155): DexOpt: load 39ms, verify+opt 279ms
+D/dalvikvm(   83): DexOpt: --- END 'filterfw.jar' (success) ---
+D/dalvikvm(   83): DEX prep '/system/framework/filterfw.jar': unzip in 68ms, rewrite 500ms
+I/SamplingProfilerIntegration(   83): Profiling disabled.
+I/Zygote  (   83): Preloading classes...
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(   83): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(   83): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
+D/dalvikvm(   83): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+2ms
+D/dalvikvm(   83): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(   83): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+2ms
+D/dalvikvm(   83): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
+D/TextLayoutCache(   83): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (   83): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(   83): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(   83): register_android_mtp_MtpDevice
+I/dalvikvm(   83): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(   83): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(   83): native_init
+E/MediaProfilesJNI(   83): After native_init lock
+E/MediaProfilesJNI(   83): Guru : native_init profiles
+E/MediaProfiles(   83): getInstance
+E/MediaProfiles(   83): Guru :Else 1
+E/MediaProfiles(   83): Guru : quality = 0, index = 1
+E/MediaProfiles(   83): Guru : quality = 1, index = 0
+E/MediaProfiles(   83): Guru : quality = 0, index = 1
+E/MediaProfiles(   83): Guru : quality = 1, index = 0
+E/MediaProfiles(   83): getInstance 1149e8
+E/MediaProfilesJNI(   83): retun sProfiles
+E/MediaProfilesJNI(   83): native_init
+E/MediaProfilesJNI(   83): After native_init lock
+E/MediaProfilesJNI(   83): retun sProfiles
+W/Zygote  (   83): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (   83): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(   83): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 4ms+1ms
+V/MediaProfilesJNI(   83): native_get_num_video_decoders
+V/MediaProfilesJNI(   83): native_get_video_decoder_type: 0
+D/dalvikvm(   83): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 2ms+2ms
+D/dalvikvm(   83): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 3ms+2ms
+D/dalvikvm(   83): GC_EXPLICIT freed 23K, 51% free 1276K/2560K, paused 2ms+6ms
+D/dalvikvm(   83): GC_EXPLICIT freed 48K, 40% free 1556K/2560K, paused 3ms+4ms
+W/Zygote  (   83): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (   83): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 38% free 1590K/2560K, paused 4ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+4ms
+I/dalvikvm(   83): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(   83): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+D/dalvikvm(   83): GC_EXPLICIT freed 26K, 36% free 1661K/2560K, paused 3ms+8ms
+W/Zygote  (   83): Class not found for preloading: android.widget.EdgeGlow
+D/dalvikvm(   83): GC_EXPLICIT freed 25K, 34% free 1690K/2560K, paused 3ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 71K, 33% free 1736K/2560K, paused 3ms+5ms
+E/PhonePolicy(   83): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+D/dalvikvm(   83): GC_EXPLICIT freed 33K, 32% free 1757K/2560K, paused 4ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 28K, 31% free 1786K/2560K, paused 3ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 26K, 30% free 1817K/2560K, paused 4ms+7ms
+D/dalvikvm(   83): GC_EXPLICIT freed 32K, 29% free 1842K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 31K, 27% free 1870K/2560K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 71K, 25% free 1926K/2560K, paused 3ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 25% free 1942K/2560K, paused 3ms+3ms
+I/System  (   83): Loaded time zone names for  in 1087ms (1074ms in ICU)
+I/System  (   83): Loaded time zone names for en_US in 780ms (764ms in ICU)
+D/dalvikvm(   83): GC_EXPLICIT freed 325K, 20% free 2059K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 41K, 18% free 2120K/2560K, paused 4ms+3ms
+D/dalvikvm(   83): GC_EXPLICIT freed 52K, 16% free 2151K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 28K, 15% free 2183K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 15% free 2200K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 32K, 14% free 2222K/2560K, paused 4ms+4ms
+I/Zygote  (   83): ...preloaded 2297 classes in 5704ms.
+D/dalvikvm(   83): GC_EXPLICIT freed 22K, 14% free 2227K/2560K, paused 9ms+8ms
+I/Zygote  (   83): Preloading resources...
+D/dalvikvm(   83): GC_EXPLICIT freed 27K, 13% free 2251K/2560K, paused 5ms+8ms
+D/dalvikvm(   83): GC_EXPLICIT freed 47K, 12% free 2271K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 70K, 11% free 2303K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 10% free 2318K/2560K, paused 3ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 34K, 9% free 2333K/2560K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 9% free 2352K/2560K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 10% free 2370K/2627K, paused 8ms+8ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 10% free 2386K/2627K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 50K, 9% free 2409K/2627K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 51K, 10% free 2431K/2691K, paused 8ms+7ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 9% free 2449K/2691K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 9% free 2466K/2691K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 46K, 8% free 2487K/2691K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 44K, 10% free 2506K/2755K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 33K, 9% free 2530K/2755K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 8% free 2546K/2755K, paused 5ms+8ms
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 7% free 2563K/2755K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 9% free 2580K/2819K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 8% free 2596K/2819K, paused 8ms+9ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 8% free 2613K/2819K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 7% free 2630K/2819K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 9% free 2648K/2883K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 51K, 8% free 2673K/2883K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 7% free 2691K/2883K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 43K, 9% free 2710K/2947K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 8% free 2726K/2947K, paused 8ms+8ms
+D/dalvikvm(   83): GC_EXPLICIT freed 45K, 7% free 2747K/2947K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 38K, 9% free 2764K/3011K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 62K, 8% free 2798K/3011K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 9% free 2812K/3075K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 9% free 2828K/3075K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 8% free 2844K/3075K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 7% free 2860K/3075K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 38K, 7% free 2879K/3075K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 6% free 2896K/3075K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 8% free 2914K/3139K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 7% free 2931K/3139K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 7% free 2949K/3139K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 43K, 6% free 2972K/3139K, paused 7ms+7ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 7% free 2989K/3203K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 32K, 7% free 3008K/3203K, paused 3ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 6% free 3027K/3203K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 5% free 3046K/3203K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 5% free 3065K/3203K, paused 7ms+8ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 6% free 3084K/3267K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 145K, 7% free 3167K/3395K, paused 3ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 86K, 6% free 3202K/3395K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 42K, 6% free 3220K/3395K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 51K, 7% free 3243K/3459K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 38K, 6% free 3260K/3459K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 69K, 5% free 3299K/3459K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 87K, 6% free 3338K/3523K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 38K, 5% free 3362K/3523K, paused 3ms+4ms
+W/Zygote  (   83): Preloaded drawable resource #0x10803e3 (res/drawable-hdpi/menu_hardkey_panel_holo_dark.9.png) that varies with configuration!!
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 5% free 3377K/3523K, paused 4ms+4ms
+W/Zygote  (   83): Preloaded drawable resource #0x10803e4 (res/drawable-hdpi/menu_hardkey_panel_holo_light.9.png) that varies with configuration!!
+D/dalvikvm(   83): GC_EXPLICIT freed 43K, 4% free 3395K/3523K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 70K, 5% free 3428K/3587K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 80K, 6% free 3464K/3651K, paused 5ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 622K, 19% free 3739K/4611K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 19% free 3758K/4611K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 19% free 3776K/4611K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 34K, 18% free 3795K/4611K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 41K, 18% free 3813K/4611K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 45K, 17% free 3833K/4611K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 56K, 17% free 3858K/4611K, paused 3ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 36K, 16% free 3880K/4611K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 423K, 12% free 4070K/4611K, paused 6ms+9ms
+D/dalvikvm(   83): GC_EXPLICIT freed 108K, 11% free 4112K/4611K, paused 8ms+7ms
+D/dalvikvm(   83): GC_EXPLICIT freed 43K, 11% free 4133K/4611K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 15K, 9% free 5649K/6147K, paused 8ms+6ms
+D/dalvikvm(   83): GC_EXPLICIT freed 5K, 8% free 7145K/7683K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 33K, 7% free 7165K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 45K, 7% free 7185K/7683K, paused 3ms+6ms
+D/dalvikvm(   83): GC_EXPLICIT freed 34K, 7% free 7201K/7683K, paused 3ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 7% free 7222K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 38K, 6% free 7238K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 34K, 6% free 7255K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 42K, 6% free 7277K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 41K, 6% free 7295K/7683K, paused 5ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 5% free 7312K/7683K, paused 4ms+10ms
+D/dalvikvm(   83): GC_EXPLICIT freed 40K, 5% free 7330K/7683K, paused 3ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 78K, 5% free 7364K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 4% free 7379K/7683K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 47K, 4% free 7401K/7683K, paused 3ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 34K, 4% free 7416K/7683K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed 46K, 4% free 7437K/7683K, paused 5ms+9ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 3% free 7455K/7683K, paused 4ms+10ms
+D/dalvikvm(   83): GC_EXPLICIT freed 37K, 3% free 7471K/7683K, paused 3ms+7ms
+D/dalvikvm(   83): GC_EXPLICIT freed 39K, 3% free 7490K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 3% free 7507K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 44K, 3% free 7529K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 61K, 2% free 7559K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 49K, 2% free 7579K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 49K, 2% free 7603K/7683K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 49K, 2% free 7623K/7747K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 35K, 2% free 7646K/7747K, paused 4ms+5ms
+D/dalvikvm(   83): GC_EXPLICIT freed 46K, 1% free 7672K/7747K, paused 4ms+5ms
+I/Zygote  (   83): ...preloaded 379 resources in 7959ms.
+D/dalvikvm(   83): GC_EXPLICIT freed 41K, 1% free 7684K/7747K, paused 8ms+6ms
+I/Zygote  (   83): ...preloaded 31 resources in 97ms.
+D/dalvikvm(   83): GC_EXPLICIT freed 11K, 1% free 7674K/7747K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed <1K, 1% free 7674K/7747K, paused 4ms+4ms
+D/dalvikvm(   83): GC_EXPLICIT freed <1K, 1% free 7674K/7747K, paused 8ms+6ms
+I/dalvikvm(   83): System server process 159 has been created
+I/Zygote  (   83): Accepting command socket connections
+I/sysproc (  159): Entered system_init()
+I/sysproc (  159): ServiceManager: 0x21c828
+D/SensorService(  159): nuSensorService starting...
+I/SensorService(  159): BMA150 3-axis Accelerometer
+I/SensorService(  159): AK8975 3-axis Magnetic field sensor
+I/SensorService(  159): AK8975 Orientation sensor
+I/SensorService(  159): CM3602 Proximity sensor
+I/SensorService(  159): CM3602 Light sensor
+I/sysproc (  159): System server: starting Android runtime.
+I/sysproc (  159): System server: starting Android services.
+D/AK8975  (   89): Compass Start
+I/sysproc (  159): System server: entering thread pool.
+I/SystemServer(  159): Entered the Android system server!
+D/SensorService(  159): nuSensorService thread starting...
+I/SystemServer(  159): Entropy Service
+I/SystemServer(  159): Power Manager
+I/SystemServer(  159): Activity Manager
+I/ActivityManager(  159): Memory class: 48
+W/UsageStats(  159): Usage stats version changed; dropping
+D/AK8975  (   89): Compass CLOSE 
+I/SystemServer(  159): Telephony Registry
+I/SystemServer(  159): Package Manager
+I/installd(   87): new connection
+I/Installer(  159): connecting...
+D/dalvikvm(  180): DexOpt: load 38ms, verify+opt 177ms
+D/dalvikvm(  181): DexOpt: load 11ms, verify+opt 63ms
+D/dalvikvm(  182): DexOpt: load 9ms, verify+opt 8ms
+D/dalvikvm(  183): DexOpt: load 72ms, verify+opt 406ms
+D/dalvikvm(  184): DexOpt: load 10ms, verify+opt 10ms
+D/dalvikvm(  185): DexOpt: load 105ms, verify+opt 629ms
+D/dalvikvm(  186): DexOpt: load 9ms, verify+opt 11ms
+D/dalvikvm(  187): DexOpt: load 10ms, verify+opt 47ms
+D/dalvikvm(  188): DexOpt: load 17ms, verify+opt 141ms
+D/dalvikvm(  189): DexOpt: load 9ms, verify+opt 10ms
+D/dalvikvm(  190): DexOpt: load 13ms, verify+opt 8ms
+D/dalvikvm(  191): DexOpt: load 9ms, verify+opt 7ms
+D/dalvikvm(  192): DexOpt: load 9ms, verify+opt 18ms
+D/dalvikvm(  193): DexOpt: load 10ms, verify+opt 62ms
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0023
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0023
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/PackageManager(  159): Package com.miui.gallery desires unavailable shared library com.google.android.media.effects; ignoring!
+I/PackageManager(  159): /system/app/GoogleBackupTransport.apk changed; collecting certs
+W/PackageManager(  159): Signature mismatch for shared user : SharedUserSetting{412486c8 android.uid.system/1000}
+E/PackageManager(  159): Package com.google.android.backup has no signatures that match those in shared user android.uid.system; ignoring!
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/PackageParser(  159): No actions in intent filter at /system/app/Contacts.apk Binary XML file line #570
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/PackageManager(  159): Package com.android.camera desires unavailable shared library com.google.android.media.effects; ignoring!
+W/PackageParser(  159): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #112
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  159): No known package when getting value for resource number 0x030d0015
+D/PackageManager(  159): No files in app dir /vendor/app
+I/PackageManager(  159): Time to scan packages: 6.224 seconds
+W/PackageManager(  159): Removing dangling permission: com.tmobile.permission.ACCESS_DRM_THEME from package null
+W/PackageManager(  159): Unknown permission com.android.vending.permission.UPDATE_MARKET_FAILURE in package com.android.vending.updater
+W/PackageManager(  159): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+W/PackageManager(  159): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.miui.player
+W/PackageManager(  159): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+W/PackageManager(  159): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+W/PackageManager(  159): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.android.updater
+W/PackageManager(  159): Unknown permission android.permission.READ_EXTERNAL_STORAGE in package com.android.vending
+W/PackageManager(  159): Unknown permission com.google.android.voicesearch.AUDIO_FILE_ACCESS in package com.google.android.gm
+W/PackageManager(  159): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x8be45)
+W/PackageManager(  159): Unknown permission com.sonyericsson.permission.FACEBOOK in package com.sonyericsson.home
+D/dalvikvm(  159): GC_EXPLICIT freed 2047K, 27% free 9453K/12867K, paused 6ms+19ms
+I/SystemServer(  159): Account Manager
+D/PackageManager(  159): generateServicesMap(android.accounts.AccountAuthenticator): 4 services unchanged
+I/SystemServer(  159): Content Manager
+D/PackageManager(  159): generateServicesMap(android.content.SyncAdapter): 10 services unchanged
+I/ActivityThread(  159): Pub yellowpage: com.miui.providers.telocation.YellowPageProvider
+I/SystemServer(  159): System Content Providers
+D/dalvikvm(  159): DexOpt: --- BEGIN 'TelocationProvider.apk' (bootstrap=0) ---
+D/dalvikvm(  197): DexOpt: load 10ms, verify+opt 12ms
+D/dalvikvm(  159): DexOpt: --- END 'TelocationProvider.apk' (success) ---
+D/dalvikvm(  159): DEX prep '/system/app/TelocationProvider.apk': unzip in 1ms, rewrite 149ms
+I/ActivityThread(  159): Pub settings: com.android.providers.settings.SettingsProvider
+D/dalvikvm(  159): DexOpt: --- BEGIN 'SettingsProvider.apk' (bootstrap=0) ---
+D/dalvikvm(  198): DexOpt: load 13ms, verify+opt 93ms
+D/dalvikvm(  159): DexOpt: --- END 'SettingsProvider.apk' (success) ---
+D/dalvikvm(  159): DEX prep '/system/app/SettingsProvider.apk': unzip in 12ms, rewrite 249ms
+I/ActivityThread(  159): Pub telocation: com.miui.providers.telocation.TelocationProvider
+D/SettingsProvider(  159): cache for settings table 'secure' rows=33; fullycached=true
+D/SettingsProvider(  159): cache for settings table 'system' rows=47; fullycached=true
+I/SystemServer(  159): Lights Service
+I/SystemServer(  159): Battery Service
+I/SystemServer(  159): Vibrator Service
+I/power   (  159): *** set_screen_state 1
+I/SystemServer(  159): Alarm Manager
+I/SystemServer(  159): Init Watchdog
+I/SystemServer(  159): Window Manager
+D/dalvikvm(  159): DexOpt: couldn't find field Lcom/android/internal/policy/impl/MiuiPhoneWindowManager;.mHapticFeedbackUtil
+W/dalvikvm(  159): VFY: unable to resolve instance field 691
+D/dalvikvm(  159): VFY: replacing opcode 0x54 at 0x0000
+I/InputManager(  159): Initializing input manager
+W/StatusBarManager(  159): warning: no STATUS_BAR_SERVICE
+W/StatusBarManager(  159): warning: no STATUS_BAR_SERVICE
+D/AK8975  (   89): Compass Start
+I/InputManager(  159): Starting input manager
+I/SystemServer(  159): Bluetooth Service
+D/EventHub(  159): No input device configuration file found for device 'proximity'.
+D/EventHub(  159): No input device configuration file found for device 'lightsensor-level'.
+D/EventHub(  159): No input device configuration file found for device 'compass'.
+D/EventHub(  159): No input device configuration file found for device 'marvel-keypad'.
+I/EventHub(  159): New device: id=4, fd=120, path='/dev/input/event4', name='marvel-keypad', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/marvel-keypad.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=true
+E/filemap (  159): mmap(0,4096) failed: No such device
+I/EventHub(  159): New device: id=5, fd=121, path='/dev/input/event3', name='cy8c-touchscreen', classes=0x15, configuration='/system/usr/idc/cy8c-touchscreen.idc', keyLayout='/system/usr/keylayout/cy8c-touchscreen.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+D/EventHub(  159): No input device configuration file found for device 'projector-Keypad'.
+I/BluetoothProfileState(  159): Message:Entering Stable State
+I/EventHub(  159): New device: id=6, fd=122, path='/dev/input/event2', name='projector-Keypad', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+D/EventHub(  159): No input device configuration file found for device 'projector_input'.
+I/EventHub(  159): New device: id=7, fd=126, path='/dev/input/event1', name='projector_input', classes=0x145, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+D/EventHub(  159): No input device configuration file found for device 'h2w headset'.
+I/EventHub(  159): New device: id=8, fd=130, path='/dev/input/event0', name='h2w headset', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/h2w_headset.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+I/InputReader(  159): Device added: id=8, name='h2w headset', sources=0x00000101
+I/InputReader(  159):   Touch device 'projector_input' could not query the properties of its associated display 0.  The device will be inoperable until the display size becomes available.
+I/BluetoothProfileState(  159): Message:Entering Stable State
+I/BluetoothProfileState(  159): Message:Entering Stable State
+I/InputReader(  159): Device added: id=7, name='projector_input', sources=0x01002513
+I/InputReader(  159): Device added: id=6, name='projector-Keypad', sources=0x00000101
+W/InputReader(  159): Invalid value for touch.size.calibration: 'normalized'
+I/InputReader(  159):   Touch device 'cy8c-touchscreen' could not query the properties of its associated display 0.  The device will be inoperable until the display size becomes available.
+I/InputReader(  159): Device added: id=5, name='cy8c-touchscreen', sources=0x00001103
+I/InputReader(  159): Device added: id=0, name='marvel-keypad', sources=0x00000101
+D/BluetoothAdapterStateMachine(  159): PowerOff process message: 5
+I/SystemServer(  159): Input Method Service
+W/InputManagerService(  159): Couldn't create dir.: /data/system/inputmethod
+I/bluedroid(  159): Starting hciattach daemon
+E/OMXCodec(   85): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+E/OMXCodec(   85): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+I/SystemServer(  159): Accessibility Manager
+I/InputReader(  159): Reconfiguring input devices.  changes=0x00000004
+I/InputReader(  159): Device reconfigured: id=5, name='cy8c-touchscreen', surface size is now 320x480, mode is 1
+I/InputReader(  159): Device reconfigured: id=7, name='projector_input', surface size is now 320x480, mode is 3
+I/ActivityManager(  159): Config changed: {1.0 0mcc0mnc en_US layoutdir=0 sw320dp w320dp h455dp nrml port ?uimode ?night finger -keyb/v/h -nav/h s.2 themeChanged=0 themeChangedFlags=0}
+D/PermissionCache(   82): checking android.permission.ACCESS_SURFACE_FLINGER for uid=1000 => granted (2685 us)
+W/ResourceType(  159): No known package when getting value for resource number 0x0303002e
+W/dalvikvm(  159): threadid=24: thread exiting with uncaught exception (group=0x40a6a1f8)
+I/Process (  159): Sending signal. PID: 159 SIG: 9
+E/AndroidRuntime(  159): *** FATAL EXCEPTION IN SYSTEM PROCESS: WindowManagerPolicy
+E/AndroidRuntime(  159): android.content.res.Resources$NotFoundException: Resource ID #0x303002e
+E/AndroidRuntime(  159): 	at android.content.res.Resources.getValue(Resources.java:1022)
+E/AndroidRuntime(  159): 	at android.content.res.MiuiResources.getValue(MiuiResources.java:56)
+E/AndroidRuntime(  159): 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2114)
+E/AndroidRuntime(  159): 	at android.content.res.Resources.getLayout(Resources.java:861)
+E/AndroidRuntime(  159): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:394)
+E/AndroidRuntime(  159): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+E/AndroidRuntime(  159): 	at com.android.internal.policy.impl.MiuiPhoneWindowManager$6.run(MiuiPhoneWindowManager.java:616)
+E/AndroidRuntime(  159): 	at android.os.Handler.handleCallback(Handler.java:605)
+E/AndroidRuntime(  159): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime(  159): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(  159): 	at com.android.server.wm.WindowManagerService$PolicyThread.run(WindowManagerService.java:749)
+I/ServiceManager(   77): service 'window' died
+I/ServiceManager(   77): service 'package' died
+I/ServiceManager(   77): service 'activity' died
+I/ServiceManager(   77): service 'meminfo' died
+I/ServiceManager(   77): service 'cpuinfo' died
+I/ServiceManager(   77): service 'permission' died
+I/ServiceManager(   77): service 'entropy' died
+I/ServiceManager(   77): service 'gfxinfo' died
+I/ServiceManager(   77): service 'power' died
+I/ServiceManager(   77): service 'sensorservice' died
+I/ServiceManager(   77): service 'account' died
+I/ServiceManager(   77): service 'batteryinfo' died
+I/ServiceManager(   77): service 'alarm' died
+I/ServiceManager(   77): service 'content' died
+I/ServiceManager(   77): service 'vibrator' died
+I/ServiceManager(   77): service 'hardware' died
+I/ServiceManager(   77): service 'telephony.registry' died
+I/ServiceManager(   77): service 'usagestats' died
+I/ServiceManager(   77): service 'battery' died
+I/ServiceManager(   77): service 'bluetooth' died
+I/ServiceManager(   77): service 'bluetooth_a2dp' died
+I/ServiceManager(   77): service 'input_method' died
+I/ServiceManager(   77): service 'accessibility' died
+E/installd(   87): eof
+E/installd(   87): failed to read size
+I/installd(   87): closing connection
+I/Zygote  (   83): Exit zygote because system server (159) has terminated
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+I/Netd    (  223): Netd 1.0 starting
+D/AK8975  (   89): Compass CLOSE 
+D/AndroidRuntime(  222): 
+D/AndroidRuntime(  222): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  222): CheckJNI is OFF
+I/        (  224): ServiceManager: 0xf958
+I/HTC Acoustic(  224): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  224): deonvvv gingerbread test.
+I/HTC Acoustic(  224): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  224): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  224): read_audio_para_from_file success.
+E/HTC Acoustic(  224): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  224): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  224): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  224): read_audio_para_from_file success.
+I/HTC Acoustic(  224): get_audpp_filter
+I/HTC Acoustic(  224): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  224): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  224): set mbadrc filter error.
+I/HTC Acoustic(  224): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  224): get_audpre_filter
+I/HTC Acoustic(  224): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  224): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  224): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  224): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  224): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  224): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  224): BT MATCH BT
+D/AudioHardwareMSM72XX(  224): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  224): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  224): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  224): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  224): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  224): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  224): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  224): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  224): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  224): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  224): BT MATCH CURRENT
+I/AudioFlinger(  224): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  224): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  224): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  224): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  224): Set master volume to 5.
+I/CameraService(  224): CameraService started (pid=224)
+I/AudioFlinger(  224): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  224): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  224): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  224): set output routing 2
+I/AudioHardwareMSM72XX(  224): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  224): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  224): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  224): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  224): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/SamplingProfilerIntegration(  222): Profiling disabled.
+I/Zygote  (  222): Preloading classes...
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  222): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 1ms+1ms
+D/dalvikvm(  222): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 1ms+1ms
+D/dalvikvm(  222): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 1ms+1ms
+D/dalvikvm(  222): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  222): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
+D/dalvikvm(  222): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
+D/TextLayoutCache(  222): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  222): Class not found for preloading: android.media.AudioManager$2
+E/brcm_patchram_plus(  218): Done setting line discpline
+I/dalvikvm(  222): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  222): register_android_mtp_MtpDevice
+I/dalvikvm(  222): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  222): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  222): native_init
+E/MediaProfilesJNI(  222): After native_init lock
+E/MediaProfilesJNI(  222): Guru : native_init profiles
+E/MediaProfiles(  222): getInstance
+E/MediaProfiles(  222): Guru :Else 1
+E/MediaProfiles(  222): Guru : quality = 0, index = 1
+E/MediaProfiles(  222): Guru : quality = 1, index = 0
+E/MediaProfiles(  222): Guru : quality = 0, index = 1
+E/MediaProfiles(  222): Guru : quality = 1, index = 0
+E/MediaProfiles(  222): getInstance ea800
+E/MediaProfilesJNI(  222): retun sProfiles
+E/MediaProfilesJNI(  222): native_init
+E/MediaProfilesJNI(  222): After native_init lock
+E/MediaProfilesJNI(  222): retun sProfiles
+W/Zygote  (  222): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  222): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  222): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+2ms
+V/MediaProfilesJNI(  222): native_get_num_video_decoders
+V/MediaProfilesJNI(  222): native_get_video_decoder_type: 0
+D/dalvikvm(  222): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 1ms+2ms
+D/dalvikvm(  222): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 2ms+2ms
+D/dalvikvm(  222): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+2ms
+D/dalvikvm(  222): GC_EXPLICIT freed 23K, 51% free 1276K/2560K, paused 2ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 48K, 40% free 1556K/2560K, paused 3ms+4ms
+W/Zygote  (  222): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  222): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 38% free 1590K/2560K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 3ms+3ms
+I/dalvikvm(  222): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  222): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+D/dalvikvm(  222): GC_EXPLICIT freed 26K, 36% free 1661K/2560K, paused 3ms+3ms
+W/Zygote  (  222): Class not found for preloading: android.widget.EdgeGlow
+D/dalvikvm(  222): GC_EXPLICIT freed 25K, 34% free 1690K/2560K, paused 7ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 71K, 33% free 1736K/2560K, paused 3ms+4ms
+E/PhonePolicy(  222): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+D/dalvikvm(  222): GC_EXPLICIT freed 33K, 32% free 1757K/2560K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 28K, 31% free 1786K/2560K, paused 3ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 26K, 30% free 1817K/2560K, paused 3ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 32K, 29% free 1842K/2560K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 31K, 27% free 1870K/2560K, paused 4ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 71K, 25% free 1926K/2560K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 25% free 1942K/2560K, paused 4ms+3ms
+I/System  (  222): Loaded time zone names for  in 1025ms (1010ms in ICU)
+I/System  (  222): Loaded time zone names for en_US in 770ms (758ms in ICU)
+D/dalvikvm(  222): GC_EXPLICIT freed 325K, 20% free 2059K/2560K, paused 8ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 41K, 18% free 2120K/2560K, paused 7ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 52K, 16% free 2151K/2560K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 28K, 15% free 2183K/2560K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 15% free 2200K/2560K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 32K, 14% free 2222K/2560K, paused 4ms+4ms
+I/Zygote  (  222): ...preloaded 2297 classes in 4977ms.
+D/dalvikvm(  222): GC_EXPLICIT freed 22K, 14% free 2227K/2560K, paused 4ms+4ms
+I/Zygote  (  222): Preloading resources...
+D/dalvikvm(  222): GC_EXPLICIT freed 27K, 13% free 2251K/2560K, paused 5ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 47K, 12% free 2271K/2560K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 70K, 11% free 2303K/2560K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 10% free 2318K/2560K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 34K, 9% free 2333K/2560K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 9% free 2352K/2560K, paused 8ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 10% free 2370K/2627K, paused 4ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 10% free 2386K/2627K, paused 3ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 50K, 9% free 2409K/2627K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 51K, 10% free 2431K/2691K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 9% free 2449K/2691K, paused 7ms+3ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 9% free 2466K/2691K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 46K, 8% free 2487K/2691K, paused 4ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 44K, 10% free 2506K/2755K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 33K, 9% free 2530K/2755K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 8% free 2546K/2755K, paused 8ms+6ms
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 7% free 2563K/2755K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 9% free 2580K/2819K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 8% free 2596K/2819K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 8% free 2613K/2819K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 7% free 2630K/2819K, paused 7ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 9% free 2648K/2883K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 51K, 8% free 2673K/2883K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 7% free 2691K/2883K, paused 8ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 43K, 9% free 2710K/2947K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 8% free 2726K/2947K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 45K, 7% free 2747K/2947K, paused 5ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 38K, 9% free 2764K/3011K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 62K, 8% free 2798K/3011K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 9% free 2812K/3075K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 9% free 2828K/3075K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 8% free 2844K/3075K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 7% free 2860K/3075K, paused 7ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 38K, 7% free 2879K/3075K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 6% free 2896K/3075K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 8% free 2914K/3139K, paused 3ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 7% free 2931K/3139K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 7% free 2949K/3139K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 43K, 6% free 2972K/3139K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 7% free 2989K/3203K, paused 8ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 32K, 7% free 3008K/3203K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 6% free 3027K/3203K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 5% free 3046K/3203K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 5% free 3065K/3203K, paused 8ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 6% free 3084K/3267K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 145K, 7% free 3167K/3395K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 86K, 6% free 3202K/3395K, paused 3ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 42K, 6% free 3220K/3395K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 51K, 7% free 3243K/3459K, paused 8ms+7ms
+D/dalvikvm(  222): GC_EXPLICIT freed 38K, 6% free 3260K/3459K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 69K, 5% free 3299K/3459K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 87K, 6% free 3338K/3523K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 38K, 5% free 3362K/3523K, paused 4ms+5ms
+W/Zygote  (  222): Preloaded drawable resource #0x10803e3 (res/drawable-hdpi/menu_hardkey_panel_holo_dark.9.png) that varies with configuration!!
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 5% free 3377K/3523K, paused 4ms+4ms
+W/Zygote  (  222): Preloaded drawable resource #0x10803e4 (res/drawable-hdpi/menu_hardkey_panel_holo_light.9.png) that varies with configuration!!
+D/dalvikvm(  222): GC_EXPLICIT freed 43K, 4% free 3395K/3523K, paused 5ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 70K, 5% free 3428K/3587K, paused 8ms+7ms
+D/dalvikvm(  222): GC_EXPLICIT freed 80K, 6% free 3464K/3651K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 622K, 19% free 3739K/4611K, paused 8ms+9ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 19% free 3758K/4611K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 19% free 3776K/4611K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 34K, 18% free 3795K/4611K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 41K, 18% free 3813K/4611K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 45K, 17% free 3833K/4611K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 56K, 17% free 3858K/4611K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 36K, 16% free 3880K/4611K, paused 7ms+7ms
+D/dalvikvm(  222): GC_EXPLICIT freed 423K, 12% free 4070K/4611K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 108K, 11% free 4112K/4611K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 43K, 11% free 4133K/4611K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 15K, 9% free 5649K/6147K, paused 3ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 5K, 8% free 7145K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 33K, 7% free 7165K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 45K, 7% free 7185K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 34K, 7% free 7201K/7683K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 7% free 7222K/7683K, paused 5ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 38K, 6% free 7238K/7683K, paused 4ms+6ms
+D/dalvikvm(  222): GC_EXPLICIT freed 34K, 6% free 7255K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 42K, 6% free 7277K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 41K, 6% free 7295K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 5% free 7312K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 40K, 5% free 7330K/7683K, paused 8ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 78K, 5% free 7364K/7683K, paused 4ms+7ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 4% free 7379K/7683K, paused 3ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 47K, 4% free 7401K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 34K, 4% free 7416K/7683K, paused 8ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 46K, 4% free 7437K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 3% free 7455K/7683K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed 37K, 3% free 7471K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 39K, 3% free 7490K/7683K, paused 3ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 3% free 7507K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 44K, 3% free 7529K/7683K, paused 7ms+9ms
+D/dalvikvm(  222): GC_EXPLICIT freed 61K, 2% free 7559K/7683K, paused 4ms+8ms
+D/dalvikvm(  222): GC_EXPLICIT freed 49K, 2% free 7579K/7683K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 49K, 2% free 7603K/7683K, paused 3ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 49K, 2% free 7623K/7747K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 35K, 2% free 7646K/7747K, paused 4ms+5ms
+D/dalvikvm(  222): GC_EXPLICIT freed 46K, 1% free 7672K/7747K, paused 4ms+5ms
+I/Zygote  (  222): ...preloaded 379 resources in 7583ms.
+D/dalvikvm(  222): GC_EXPLICIT freed 41K, 1% free 7684K/7747K, paused 4ms+5ms
+I/Zygote  (  222): ...preloaded 31 resources in 94ms.
+D/dalvikvm(  222): GC_EXPLICIT freed 11K, 1% free 7674K/7747K, paused 4ms+4ms
+D/dalvikvm(  222): GC_EXPLICIT freed <1K, 1% free 7674K/7747K, paused 8ms+6ms
+D/dalvikvm(  222): GC_EXPLICIT freed <1K, 1% free 7674K/7747K, paused 4ms+5ms
+I/dalvikvm(  222): System server process 251 has been created
+I/Zygote  (  222): Accepting command socket connections
+I/sysproc (  251): Entered system_init()
+I/sysproc (  251): ServiceManager: 0x1eff00
+D/SensorService(  251): nuSensorService starting...
+I/SensorService(  251): BMA150 3-axis Accelerometer
+I/SensorService(  251): AK8975 3-axis Magnetic field sensor
+I/SensorService(  251): AK8975 Orientation sensor
+I/SensorService(  251): CM3602 Proximity sensor
+I/SensorService(  251): CM3602 Light sensor
+D/AK8975  (   89): Compass Start
+I/sysproc (  251): System server: starting Android runtime.
+I/sysproc (  251): System server: starting Android services.
+D/SensorService(  251): nuSensorService thread starting...
+I/sysproc (  251): System server: entering thread pool.
+I/SystemServer(  251): Entered the Android system server!
+I/SystemServer(  251): Entropy Service
+I/SystemServer(  251): Power Manager
+I/SystemServer(  251): Activity Manager
+I/ActivityManager(  251): Memory class: 48
+W/UsageStats(  251): Usage stats version changed; dropping
+I/SystemServer(  251): Telephony Registry
+I/SystemServer(  251): Package Manager
+D/AK8975  (   89): Compass CLOSE 
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0023
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0023
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0020
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/PackageManager(  251): Package com.miui.gallery desires unavailable shared library com.google.android.media.effects; ignoring!
+I/PackageManager(  251): /system/app/GoogleBackupTransport.apk changed; collecting certs
+W/PackageManager(  251): Signature mismatch for shared user : SharedUserSetting{41249d50 android.uid.system/1000}
+E/PackageManager(  251): Package com.google.android.backup has no signatures that match those in shared user android.uid.system; ignoring!
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/PackageParser(  251): No actions in intent filter at /system/app/Contacts.apk Binary XML file line #570
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/PackageManager(  251): Package com.android.camera desires unavailable shared library com.google.android.media.effects; ignoring!
+W/PackageParser(  251): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #112
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+W/ResourceType(  251): No known package when getting value for resource number 0x030d0015
+D/PackageManager(  251): No files in app dir /vendor/app
+I/installd(   87): new connection
+I/Installer(  251): connecting...
+I/PackageManager(  251): Time to scan packages: 1.472 seconds
+W/PackageManager(  251): Removing dangling permission: com.tmobile.permission.ACCESS_DRM_THEME from package null
+W/PackageManager(  251): Unknown permission com.android.vending.permission.UPDATE_MARKET_FAILURE in package com.android.vending.updater
+W/PackageManager(  251): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+W/PackageManager(  251): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.miui.player
+W/PackageManager(  251): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+W/PackageManager(  251): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+W/PackageManager(  251): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.android.updater
+W/PackageManager(  251): Unknown permission android.permission.READ_EXTERNAL_STORAGE in package com.android.vending
+W/PackageManager(  251): Unknown permission com.google.android.voicesearch.AUDIO_FILE_ACCESS in package com.google.android.gm
+W/PackageManager(  251): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x8be45)
+W/PackageManager(  251): Unknown permission com.sonyericsson.permission.FACEBOOK in package com.sonyericsson.home
+D/dalvikvm(  251): GC_EXPLICIT freed 2042K, 27% free 9447K/12867K, paused 6ms+16ms
+I/SystemServer(  251): Account Manager
+D/PackageManager(  251): generateServicesMap(android.accounts.AccountAuthenticator): 4 services unchanged
+I/SystemServer(  251): Content Manager
+D/PackageManager(  251): generateServicesMap(android.content.SyncAdapter): 10 services unchanged
+I/ActivityThread(  251): Pub yellowpage: com.miui.providers.telocation.YellowPageProvider
+I/SystemServer(  251): System Content Providers
+I/ActivityThread(  251): Pub settings: com.android.providers.settings.SettingsProvider
+I/ActivityThread(  251): Pub telocation: com.miui.providers.telocation.TelocationProvider
+D/SettingsProvider(  251): cache for settings table 'secure' rows=33; fullycached=true
+D/SettingsProvider(  251): cache for settings table 'system' rows=47; fullycached=true
+I/SystemServer(  251): Lights Service
+I/SystemServer(  251): Battery Service
+I/SystemServer(  251): Vibrator Service
+I/power   (  251): *** set_screen_state 1
+I/SystemServer(  251): Alarm Manager
+I/SystemServer(  251): Init Watchdog
+I/SystemServer(  251): Window Manager
+D/dalvikvm(  251): DexOpt: couldn't find field Lcom/android/internal/policy/impl/MiuiPhoneWindowManager;.mHapticFeedbackUtil
+W/dalvikvm(  251): VFY: unable to resolve instance field 691
+D/dalvikvm(  251): VFY: replacing opcode 0x54 at 0x0000
+I/InputManager(  251): Initializing input manager
+W/StatusBarManager(  251): warning: no STATUS_BAR_SERVICE
+W/StatusBarManager(  251): warning: no STATUS_BAR_SERVICE
+I/InputManager(  251): Starting input manager
+I/SystemServer(  251): Bluetooth Service
+D/AK8975  (   89): Compass Start
+D/EventHub(  251): No input device configuration file found for device 'proximity'.
+D/EventHub(  251): No input device configuration file found for device 'lightsensor-level'.
+D/EventHub(  251): No input device configuration file found for device 'compass'.
+D/EventHub(  251): No input device configuration file found for device 'marvel-keypad'.
+I/EventHub(  251): New device: id=4, fd=120, path='/dev/input/event4', name='marvel-keypad', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/marvel-keypad.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=true
+E/filemap (  251): mmap(0,4096) failed: No such device
+I/BluetoothProfileState(  251): Message:Entering Stable State
+I/EventHub(  251): New device: id=5, fd=124, path='/dev/input/event3', name='cy8c-touchscreen', classes=0x15, configuration='/system/usr/idc/cy8c-touchscreen.idc', keyLayout='/system/usr/keylayout/cy8c-touchscreen.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+D/EventHub(  251): No input device configuration file found for device 'projector-Keypad'.
+I/BluetoothProfileState(  251): Message:Entering Stable State
+I/BluetoothProfileState(  251): Message:Entering Stable State
+I/EventHub(  251): New device: id=6, fd=125, path='/dev/input/event2', name='projector-Keypad', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+D/EventHub(  251): No input device configuration file found for device 'projector_input'.
+D/BluetoothAdapterStateMachine(  251): PowerOff process message: 5
+I/EventHub(  251): New device: id=7, fd=132, path='/dev/input/event1', name='projector_input', classes=0x145, configuration='', keyLayout='/system/usr/keylayout/Generic.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+D/EventHub(  251): No input device configuration file found for device 'h2w headset'.
+I/SystemServer(  251): Input Method Service
+I/EventHub(  251): New device: id=8, fd=137, path='/dev/input/event0', name='h2w headset', classes=0x1, configuration='', keyLayout='/system/usr/keylayout/h2w_headset.kl', keyCharacterMap='/system/usr/keychars/Generic.kcm', builtinKeyboard=false
+I/InputReader(  251): Device added: id=8, name='h2w headset', sources=0x00000101
+I/InputReader(  251):   Touch device 'projector_input' could not query the properties of its associated display 0.  The device will be inoperable until the display size becomes available.
+I/InputReader(  251): Device added: id=7, name='projector_input', sources=0x01002513
+I/InputReader(  251): Device added: id=6, name='projector-Keypad', sources=0x00000101
+W/InputReader(  251): Invalid value for touch.size.calibration: 'normalized'
+I/InputReader(  251):   Touch device 'cy8c-touchscreen' could not query the properties of its associated display 0.  The device will be inoperable until the display size becomes available.
+I/InputReader(  251): Device added: id=5, name='cy8c-touchscreen', sources=0x00001103
+I/InputReader(  251): Device added: id=0, name='marvel-keypad', sources=0x00000101
+W/InputManagerService(  251): Couldn't create dir.: /data/system/inputmethod
+I/bluedroid(  251): Starting hciattach daemon
+E/OMXCodec(  224): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+E/OMXCodec(  224): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+I/bluedroid(  251): Starting bluetoothd deamon
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+I/SystemServer(  251): Accessibility Manager
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+I/InputReader(  251): Reconfiguring input devices.  changes=0x00000004
+I/InputReader(  251): Device reconfigured: id=5, name='cy8c-touchscreen', surface size is now 320x480, mode is 1
+I/InputReader(  251): Device reconfigured: id=7, name='projector_input', surface size is now 320x480, mode is 3
+I/ActivityManager(  251): Config changed: {1.0 0mcc0mnc en_US layoutdir=0 sw320dp w320dp h455dp nrml port ?uimode ?night finger -keyb/v/h -nav/h s.2 themeChanged=0 themeChangedFlags=0}
+E/BluetoothEventLoop.cpp(  251): get_adapter_path: D-Bus error: org.freedesktop.DBus.Error.ServiceUnknown (The name org.bluez was not provided by any .service files)
+W/ResourceType(  251): No known package when getting value for resource number 0x0303002e
+W/dalvikvm(  251): threadid=24: thread exiting with uncaught exception (group=0x40a6a1f8)
+I/Process (  251): Sending signal. PID: 251 SIG: 9
+E/AndroidRuntime(  251): *** FATAL EXCEPTION IN SYSTEM PROCESS: WindowManagerPolicy
+E/AndroidRuntime(  251): android.content.res.Resources$NotFoundException: Resource ID #0x303002e
+E/AndroidRuntime(  251): 	at android.content.res.Resources.getValue(Resources.java:1022)
+E/AndroidRuntime(  251): 	at android.content.res.MiuiResources.getValue(MiuiResources.java:56)
+E/AndroidRuntime(  251): 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2114)
+E/AndroidRuntime(  251): 	at android.content.res.Resources.getLayout(Resources.java:861)
+E/AndroidRuntime(  251): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:394)
+E/AndroidRuntime(  251): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+E/AndroidRuntime(  251): 	at com.android.internal.policy.impl.MiuiPhoneWindowManager$6.run(MiuiPhoneWindowManager.java:616)
+E/AndroidRuntime(  251): 	at android.os.Handler.handleCallback(Handler.java:605)
+E/AndroidRuntime(  251): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime(  251): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(  251): 	at com.android.server.wm.WindowManagerService$PolicyThread.run(WindowManagerService.java:749)
+E/OMXCodec(  224): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+E/OMXCodec(  224): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+I/ServiceManager(   77): service 'power' died
+I/ServiceManager(   77): service 'telephony.registry' died
+I/ServiceManager(   77): service 'activity' died
+I/ServiceManager(   77): service 'sensorservice' died
+I/ServiceManager(   77): service 'entropy' died
+I/ServiceManager(   77): service 'usagestats' died
+I/ServiceManager(   77): service 'package' died
+I/ServiceManager(   77): service 'content' died
+I/ServiceManager(   77): service 'window' died
+I/ServiceManager(   77): service 'account' died
+I/ServiceManager(   77): service 'alarm' died
+I/ServiceManager(   77): service 'cpuinfo' died
+I/ServiceManager(   77): service 'permission' died
+I/ServiceManager(   77): service 'hardware' died
+I/ServiceManager(   77): service 'battery' died
+I/ServiceManager(   77): service 'meminfo' died
+I/ServiceManager(   77): service 'gfxinfo' died
+I/ServiceManager(   77): service 'vibrator' died
+I/ServiceManager(   77): service 'batteryinfo' died
+I/ServiceManager(   77): service 'bluetooth' died
+I/ServiceManager(   77): service 'bluetooth_a2dp' died
+I/ServiceManager(   77): service 'input_method' died
+I/ServiceManager(   77): service 'accessibility' died
+E/installd(   87): eof
+E/installd(   87): failed to read size
+I/installd(   87): closing connection
+I/Zygote  (  222): Exit zygote because system server (251) has terminated
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+I/Netd    (  304): Netd 1.0 starting
+D/AK8975  (   89): Compass CLOSE 
+D/AndroidRuntime(  303): 
+D/AndroidRuntime(  303): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+D/AndroidRuntime(  303): CheckJNI is OFF
+I/        (  305): ServiceManager: 0xf958
+I/HTC Acoustic(  305): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic(  305): deonvvv gingerbread test.
+I/HTC Acoustic(  305): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic(  305): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic(  305): read_audio_para_from_file success.
+E/HTC Acoustic(  305): Fail to open /system/etc/AudioPara_ALL.csv -1.
+I/HTC Acoustic(  305): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic(  305): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic(  305): read_audio_para_from_file success.
+I/HTC Acoustic(  305): get_audpp_filter
+I/HTC Acoustic(  305): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic(  305): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic(  305): set mbadrc filter error.
+I/HTC Acoustic(  305): failed to set audpp parameters, exiting.
+I/HTC Acoustic(  305): get_audpre_filter
+I/HTC Acoustic(  305): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX(  305): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX(  305): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX(  305): BT MATCH HANDSET
+D/AudioHardwareMSM72XX(  305): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX(  305): BT MATCH HEADSET
+D/AudioHardwareMSM72XX(  305): BT MATCH BT
+D/AudioHardwareMSM72XX(  305): BT MATCH CARKIT
+D/AudioHardwareMSM72XX(  305): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX(  305): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX(  305): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX(  305): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX(  305): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX(  305): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX(  305): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX(  305): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  305): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX(  305): BT MATCH CURRENT
+I/AudioFlinger(  305): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger(  305): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger(  305): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface(  305): setMode(NORMAL)
+I/AudioHardwareMSM72XX(  305): Set master volume to 5.
+I/CameraService(  305): CameraService started (pid=305)
+I/AudioFlinger(  305): AudioFlinger's thread 0x16f90 ready to run
+W/AudioFlinger(  305): Thread AudioOut_1 cannot connect to the power manager service
+V/AudioHardwareMSM72XX(  305): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX(  305): set output routing 2
+I/AudioHardwareMSM72XX(  305): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX(  305): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX(  305): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX(  305): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService(  305): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+I/SamplingProfilerIntegration(  303): Profiling disabled.
+I/Zygote  (  303): Preloading classes...
+D/dalvikvm(  303): GC_EXPLICIT freed 36K, 84% free 410K/2560K, paused 1ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 4K, 82% free 474K/2560K, paused 0ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 20K, 81% free 510K/2560K, paused 2ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 27K, 79% free 537K/2560K, paused 2ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 15K, 78% free 577K/2560K, paused 1ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 79K, 73% free 707K/2560K, paused 1ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 31K, 72% free 731K/2560K, paused 1ms+1ms
+D/TextLayoutCache(  303): Using debug level: 0 - Debug Enabled: 0
+W/Zygote  (  303): Class not found for preloading: android.media.AudioManager$2
+I/dalvikvm(  303): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+D/MtpDeviceJNI(  303): register_android_mtp_MtpDevice
+I/dalvikvm(  303): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+I/dalvikvm(  303): threadid=1: recursive native library load attempt (/system/lib/libmedia_jni.so)
+E/MediaProfilesJNI(  303): native_init
+E/MediaProfilesJNI(  303): After native_init lock
+E/MediaProfilesJNI(  303): Guru : native_init profiles
+E/MediaProfiles(  303): getInstance
+E/MediaProfiles(  303): Guru :Else 1
+E/MediaProfiles(  303): Guru : quality = 0, index = 1
+E/MediaProfiles(  303): Guru : quality = 1, index = 0
+E/MediaProfiles(  303): Guru : quality = 0, index = 1
+E/MediaProfiles(  303): Guru : quality = 1, index = 0
+E/MediaProfiles(  303): getInstance ea800
+E/MediaProfilesJNI(  303): retun sProfiles
+E/MediaProfilesJNI(  303): native_init
+E/MediaProfilesJNI(  303): After native_init lock
+E/MediaProfilesJNI(  303): retun sProfiles
+W/Zygote  (  303): Class not found for preloading: android.media.IRemoteControlClientDispatcher
+W/Zygote  (  303): Class not found for preloading: android.media.IRemoteControlClientDispatcher$Stub
+D/dalvikvm(  303): GC_EXPLICIT freed 24K, 71% free 764K/2560K, paused 1ms+1ms
+V/MediaProfilesJNI(  303): native_get_num_video_decoders
+V/MediaProfilesJNI(  303): native_get_video_decoder_type: 0
+D/dalvikvm(  303): GC_EXPLICIT freed 262K, 56% free 1133K/2560K, paused 2ms+1ms
+D/dalvikvm(  303): GC_EXPLICIT freed 27K, 55% free 1161K/2560K, paused 4ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 8K, 53% free 1209K/2560K, paused 2ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 23K, 51% free 1276K/2560K, paused 2ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 48K, 40% free 1556K/2560K, paused 3ms+4ms
+W/Zygote  (  303): Class not found for preloading: android.text.TextDirectionHeuristics$CharCount
+W/Zygote  (  303): Class not found for preloading: android.text.method.WordIterator$1
+D/dalvikvm(  303): GC_EXPLICIT freed 35K, 38% free 1590K/2560K, paused 3ms+5ms
+D/dalvikvm(  303): GC_EXPLICIT freed 32K, 38% free 1612K/2560K, paused 7ms+4ms
+I/dalvikvm(  303): threadid=1: recursive native library load attempt (/system/lib/libwebcore.so)
+D/dalvikvm(  303): No JNI_OnLoad found in /system/lib/libchromium_net.so 0x0, skipping init
+D/dalvikvm(  303): GC_EXPLICIT freed 26K, 36% free 1661K/2560K, paused 4ms+3ms
+W/Zygote  (  303): Class not found for preloading: android.widget.EdgeGlow
+D/dalvikvm(  303): GC_EXPLICIT freed 25K, 34% free 1690K/2560K, paused 3ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 71K, 33% free 1736K/2560K, paused 3ms+4ms
+E/PhonePolicy(  303): Could not preload class for phone policy: com.android.internal.policy.impl.PhoneWindow$ContextMenuCallback
+D/dalvikvm(  303): GC_EXPLICIT freed 33K, 32% free 1757K/2560K, paused 7ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 28K, 31% free 1786K/2560K, paused 7ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 26K, 30% free 1817K/2560K, paused 3ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 32K, 29% free 1842K/2560K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 31K, 27% free 1870K/2560K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 71K, 25% free 1926K/2560K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 39K, 25% free 1942K/2560K, paused 3ms+3ms
+I/System  (  303): Loaded time zone names for  in 1021ms (1010ms in ICU)
+I/System  (  303): Loaded time zone names for en_US in 774ms (762ms in ICU)
+D/dalvikvm(  303): GC_EXPLICIT freed 325K, 20% free 2059K/2560K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 41K, 18% free 2120K/2560K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 52K, 16% free 2151K/2560K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 28K, 15% free 2183K/2560K, paused 4ms+9ms
+D/dalvikvm(  303): GC_EXPLICIT freed 37K, 15% free 2200K/2560K, paused 4ms+7ms
+D/dalvikvm(  303): GC_EXPLICIT freed 32K, 14% free 2222K/2560K, paused 3ms+9ms
+I/Zygote  (  303): ...preloaded 2297 classes in 4957ms.
+D/dalvikvm(  303): GC_EXPLICIT freed 22K, 14% free 2227K/2560K, paused 4ms+4ms
+I/Zygote  (  303): Preloading resources...
+D/dalvikvm(  303): GC_EXPLICIT freed 27K, 13% free 2251K/2560K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 47K, 12% free 2271K/2560K, paused 8ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 70K, 11% free 2303K/2560K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 35K, 10% free 2318K/2560K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 34K, 9% free 2333K/2560K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 39K, 9% free 2352K/2560K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 40K, 10% free 2370K/2627K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 37K, 10% free 2386K/2627K, paused 4ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 50K, 9% free 2409K/2627K, paused 7ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 51K, 10% free 2431K/2691K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 40K, 9% free 2449K/2691K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 37K, 9% free 2466K/2691K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 46K, 8% free 2487K/2691K, paused 4ms+3ms
+D/dalvikvm(  303): GC_EXPLICIT freed 44K, 10% free 2506K/2755K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 33K, 9% free 2530K/2755K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 36K, 8% free 2546K/2755K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 36K, 7% free 2563K/2755K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 39K, 9% free 2580K/2819K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 37K, 8% free 2596K/2819K, paused 6ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 37K, 8% free 2613K/2819K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 37K, 7% free 2630K/2819K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 39K, 9% free 2648K/2883K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 51K, 8% free 2673K/2883K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 39K, 7% free 2691K/2883K, paused 3ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 43K, 9% free 2710K/2947K, paused 4ms+4ms
+D/dalvikvm(  303): GC_EXPLICIT freed 36K, 8% free 2726K/2947K, paused 3ms+4ms

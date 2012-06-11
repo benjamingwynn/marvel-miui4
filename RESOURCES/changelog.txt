@@ -63,8 +63,11 @@ added
 .end method
 renamed lines to 484 and 485
 
-now smali editing done, but stuck
-
-
 Changed Landroid/os/SystemProperties.smali to CM9's
 Added libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
+
+thanks to a comment on xda, removed hapticfeedback references in miuiphonewindowmanager.smali in android.policy.jar (line 106)
+this gives a totally new logical, with new errors coming up (I think however it boots a little bit further).
+
+new fatal error (two but the last prevents booting). 
+modded roundedocrnerssurface.smali in services.jar (removed line 55)
