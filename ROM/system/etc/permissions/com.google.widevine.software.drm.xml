@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2009 The Android Open Source Project
+<!-- Copyright (C) 2008 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,11 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<!-- This is the standard set of features for a camera with a flash.  Note
-     that this currently requires having auto-focus as well. -->
 <permissions>
-    <feature name="android.hardware.camera" />
-    <feature name="android.hardware.camera.autofocus" />
-    <feature name="android.hardware.camera.flash" />
+    <library name="com.google.widevine.software.drm"
+        file="/system/framework/com.google.widevine.software.drm.jar"/>
 </permissions>
