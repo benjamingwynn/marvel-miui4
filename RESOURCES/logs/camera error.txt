@@ -1,0 +1,102 @@
+V/camera  (  901): surfaceChanged. w=320. h=427
+I/CameraHAL(   85): camera_set_preview_window: setting buffer count to 4
+I/CameraHAL(   85): camera_set_preview_window: preview format yuv420sp
+D/QualcommCameraHardware(   85): stopPreview: E
+D/QualcommCameraHardware(   85): stopPreviewInternal E: 1
+D/QualcommCameraHardware(   85): cancelAutoFocusInternal E
+D/QualcommCameraHardware(   85): cancelAutoFocusInternal X: 0
+I/mm-camera 7x-vfe(   85): vfe_process_QDSP_VFETASK_MSG_VFE_STOP_ACK: call mmcamera_vfe_stop_ack_callback()
+I/QualcommCameraHardware(   85): receive_vfe_stop_ack_callback: E
+I/QualcommCameraHardware(   85): receive_vfe_stop_ack: E
+I/QualcommCameraHardware(   85): receive_vfe_stop_ack: X mVfeStopped = 1
+I/QualcommCameraHardware(   85): receive_vfe_stop_ack_callback: X
+I/QualcommCameraHardware(   85): deinitPreview E
+D/QualcommCameraHardware(   85): launch_watchdog_thread:
+D/QualcommCameraHardware(   85): watchdog_thread_id = 105296
+I/QualcommCameraHardware(   85): deinitPreview X
+D/QualcommCameraHardware(   85): stopPreviewInternal X: 0
+D/QualcommCameraHardware(   85): stopPreview: X
+I/QualcommCameraHardware(   85): register_buf: camfd = 38, reg = 1 buffer = 0x423f0000
+I/QualcommCameraHardware(   85): register_buf: camfd = 38, reg = 1 buffer = 0x42430000
+I/QualcommCameraHardware(   85): register_buf: camfd = 38, reg = 1 buffer = 0x42470000
+I/QualcommCameraHardware(   85): register_buf: camfd = 38, reg = 1 buffer = 0x424b0000
+D/QualcommCameraHardware(   85): frame_thread X
+D/QualcommCameraHardware(   85): watchdog_thread_id = 105296
+D/QualcommCameraHardware(   85): release_watchdog_thread: frame_thread_released = 1
+D/QualcommCameraHardware(   85): stopPreview: E
+D/QualcommCameraHardware(   85): stopPreviewInternal E: 0
+D/QualcommCameraHardware(   85): stopPreviewInternal X: 0
+D/QualcommCameraHardware(   85): stopPreview: X
+D/QualcommCameraHardware(   85): release E
+D/QualcommCameraHardware(   85): deinitRaw E
+D/QualcommCameraHardware(   85): deinitRaw X
+D/mm-camera-ctrlcmd(   85): config_proc_CAMERA_STOP_SNAPSHOT: received CAMERA_STOP_SNAPSHOT!, ctrl->state = 7
+D/mm-camera-ctrlcmd(   85): config_proc_CAMERA_STOP_SNAPSHOT: snapshot is already stopped (state 7)
+D/QualcommCameraHardware(   85): void* watchdog(void*), frame_thread_released = 1, cnt = 0
+D/QualcommCameraHardware(   85): void* watchdog(void*), exit, frame_thread_released=1
+D/QualcommCameraHardware(   85): void release_watchdog_thread(): pthread_join succeeded on watchdog.
+E/mm-camera(   85): +++ DELETING LEAKED MEMORY AT 0x19b38 (2 REMAINING)
+E/mm-camera(   85):      6 0xa742e1c8
+E/mm-camera(   85):      5 0xa740cd12
+E/mm-camera(   85):      4 0xa740e5be
+E/mm-camera(   85):      3 0xa740e0a2
+E/mm-camera(   85):      2 0x40077ecc
+E/mm-camera(   85):      1 0x400779e0
+E/mm-camera(   85): +++ DELETING LEAKED MEMORY AT 0x28060 (1 REMAINING)
+E/mm-camera(   85):      6 0xa742e1c8
+E/mm-camera(   85):      5 0xa740cd12
+E/mm-camera(   85):      4 0xa740e5be
+E/mm-camera(   85):      3 0xa740e0a2
+E/mm-camera(   85):      2 0x40077ecc
+E/mm-camera(   85):      1 0x400779e0
+D/QualcommCameraHardware(   85): dlclose(libqcamera)
+D/QualcommCameraHardware(   85): release X
+I/CameraService(   85): Destroying camera 0
+D/QualcommCameraHardware(   85): ~QualcommCameraHardware E
+D/QualcommCameraHardware(   85): ~QualcommCameraHardware X
+D/AndroidRuntime(  901): Shutting down VM
+W/dalvikvm(  901): threadid=1: thread exiting with uncaught exception (group=0x40a6a1f8)
+W/AudioFlinger(   85): session id 5 not found for pid 85
+W/AudioFlinger(   85): session id 6 not found for pid 85
+E/AndroidRuntime(  901): FATAL EXCEPTION: main
+E/AndroidRuntime(  901): java.lang.RuntimeException: setPreviewDisplay failed
+E/AndroidRuntime(  901): 	at com.android.camera.Camera.setPreviewDisplay(Camera.java:1819)
+E/AndroidRuntime(  901): 	at com.android.camera.Camera.surfaceChanged(Camera.java:1779)
+E/AndroidRuntime(  901): 	at android.view.SurfaceView.updateWindow(SurfaceView.java:544)
+E/AndroidRuntime(  901): 	at android.view.SurfaceView.access$000(SurfaceView.java:81)
+E/AndroidRuntime(  901): 	at android.view.SurfaceView$3.onPreDraw(SurfaceView.java:169)
+E/AndroidRuntime(  901): 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:590)
+E/AndroidRuntime(  901): 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1622)
+E/AndroidRuntime(  901): 	at android.view.ViewRootImpl.handleMessage(ViewRootImpl.java:2447)
+E/AndroidRuntime(  901): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(  901): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(  901): 	at android.app.ActivityThread.main(ActivityThread.java:4429)
+E/AndroidRuntime(  901): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(  901): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(  901): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime(  901): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime(  901): 	at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(  901): Caused by: java.io.IOException: setPreviewDisplay failed
+E/AndroidRuntime(  901): 	at android.hardware.Camera.setPreviewDisplay(Native Method)
+E/AndroidRuntime(  901): 	at android.hardware.Camera.setPreviewDisplay(Camera.java:423)
+E/AndroidRuntime(  901): 	at com.android.camera.Camera.setPreviewDisplay(Camera.java:1816)
+E/AndroidRuntime(  901): 	... 15 more
+W/ActivityManager(  150):   Force finishing activity com.android.camera/.Camera
+V/PhoneStatusBar(  216): setLightsOn(true)
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41520000 size:204800 offset:1679360 fd:35
+D/memalloc(  150): /dev/pmem: Mapped buffer base:0x5346c000 size:1884160 offset:1679360 fd:236
+W/ActivityManager(  150): Activity pause timeout for ActivityRecord{417514a0 com.android.camera/.Camera}
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41520000 size:614400 offset:1884160 fd:38
+D/memalloc(  307): /dev/pmem: Mapped buffer base:0x50d58000 size:2498560 offset:1884160 fd:58
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41520000 size:614400 offset:4833280 fd:53
+D/PhoneStatusBar(  216): disable: < expand icons alerts ticker system_info back home recent clock >
+D/memalloc(  307): /dev/pmem: Mapped buffer base:0x50fbc000 size:5447680 offset:4833280 fd:61
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41520000 size:614400 offset:5447680 fd:56
+D/memalloc(  307): /dev/pmem: Mapped buffer base:0x514f0000 size:6062080 offset:5447680 fd:64
+D/memalloc(  150): /dev/pmem: Unmapping buffer base:0x555a0000 size:1064960 offset:450560
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x4158e000 size:614400 offset:450560 fd:30
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41520000 size:204800 offset:2498560 fd:30
+D/memalloc(  150): /dev/pmem: Mapped buffer base:0x555a0000 size:2703360 offset:2498560 fd:239
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41520000 size:614400 offset:450560 fd:59
+D/memalloc(  307): /dev/pmem: Mapped buffer base:0x51ab8000 size:1064960 offset:450560 fd:68
+W/ActivityManager(  150): Activity destroy timeout for ActivityRecord{417514a0 com.android.camera/.Camera}

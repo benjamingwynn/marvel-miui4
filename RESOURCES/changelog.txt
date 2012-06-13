@@ -6,7 +6,7 @@ added framework stuff
 added content-types.properties and liblbesec.so
 added busybox, invoke-as and su
 
-replaced AssetManger.smali in android/content/res of framework.jar
+modded AssetManger.smali in android/content/res of framework.jar (adding missing CM9 stuff)
 
 replaced Gles20canvas.smali in android/view of framework.jar
 
@@ -40,11 +40,7 @@ changed .line 60 to .line 55 and added:
 .method private static native nativeGetTextureGeneratorThreadID()I
 .end method
 
-replaced inputmanager.smali (4 files) in android/server/vm of services.jar
-
-UPDATE: FROM NOW CHARGING LED WORKS
-as seen in logcat10 replacing smalis gives errors, so lets mod them
-
+inputmanager.smali modded
 added 
 .method private static native nativeSetKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
 .end method
@@ -66,8 +62,5 @@ renamed lines to 484 and 485
 Changed Landroid/os/SystemProperties.smali to CM9's
 Added libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
 
-thanks to a comment on xda, removed hapticfeedback references in miuiphonewindowmanager.smali in android.policy.jar (line 106)
-this gives a totally new logical, with new errors coming up (I think however it boots a little bit further).
-
-new fatal error (two but the last prevents booting). 
+removed vibratebutton blabla references in hapticfeedback.smali
 modded roundedocrnerssurface.smali in services.jar (removed line 55)

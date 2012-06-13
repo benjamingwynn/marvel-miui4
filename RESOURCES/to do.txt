@@ -1,0 +1,27 @@
+Things to fix
+
+- Camera doesn't start
+- Headphones don't work
+- Network doesn't auto connect after airplane mode, you need to do it manually
+- Network signal halfway
+- USB mount doesn't work
+- Data start but stops immediately
+- Graphical glitches in large selecting menu's
+- Black bar in notification menu
+- Keyboard is too large, replace with CM9 keyboard
+- Compass is too large, resize pictures
+- App Icons are CM9 ones, replace with MIUI ones
+
+Not tested
+- Wifi/Bluetooth
+- All internet stuff, like Market, …
+- Calls and sms
+
+What works
+- Boots
+- Touchscreen
+- Almost all apps
+- Sound
+- Flashlight
+- Microphone
+
