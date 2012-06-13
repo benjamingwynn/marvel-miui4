@@ -1,15 +1,5 @@
-possible fix for latest error
+Possible fix for newest error.
 
-the ID links to boot_msg, found this in a smali. I haven't found it in an xml.
+Secret :)
 
-line 352 is before 394 in layoutinflater.smali in android/view of framework.jar
-
-smalis which need possible mods:
-- layoutinflater.smali
-- miuiphonewindowmanager$6.smali => not sure about this one, its probably the other one. I removed some lines from it and it became even worse. Note the run in logcat, so its very important!
-
-why not the other ones?
-the first four are needed to "read" and load all the ids stored in xmls in different locations.
-the android/os smalis are vital to load andr≤oid and shouldn't be modded I think.
-
-There isn't a difference between CM9 for layoutinflater.smali
+Will work on it further thursday evening / friday
