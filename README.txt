@@ -1,3 +1,3 @@
 Build from NEXUS S port, booting now.
 
-Built download: ...
+Cook it yourself in dsixda kitchen
