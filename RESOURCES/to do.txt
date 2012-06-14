@@ -11,6 +11,8 @@ Things to fix
 - Keyboard is too large, replace with CM9 keyboard
 - Compass is too large, resize pictures
 - App Icons are CM9 ones, replace with MIUI ones
+- add androidmediaeffects.jar and widevinesoftwaredrm.jar
+- delete nfc stuff
 
 Not tested
 - Wifi/Bluetooth
