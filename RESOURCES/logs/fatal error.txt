@@ -1,0 +1,1547 @@
+--------- beginning of /dev/log/system
+I/Vold    (   78): Vold 2.1 (the revenge) firing up
+D/Vold    (   78): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    (   78): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+D/DirectVolume(   78): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 1, PARTN 1
+D/DirectVolume(   78): DirectVolume::handlePartitionAdded -> MAJOR 179, MINOR 2, PARTN 2
+D/Vold    (   78): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+I/SystemServer(  160): Entered the Android system server!
+I/SystemServer(  160): Entropy Service
+W/EntropyService(  160): unable to load initial entropy (first boot?)
+W/EntropyService(  160): java.io.FileNotFoundException: /data/system/entropy.dat: open failed: ENOENT (No such file or directory)
+W/EntropyService(  160): 	at libcore.io.IoBridge.open(IoBridge.java:406)
+W/EntropyService(  160): 	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+W/EntropyService(  160): 	at java.io.FileInputStream.<init>(FileInputStream.java:105)
+W/EntropyService(  160): 	at com.android.server.RandomBlock.fromFile(RandomBlock.java:45)
+W/EntropyService(  160): 	at com.android.server.EntropyService.loadInitialEntropy(EntropyService.java:99)
+W/EntropyService(  160): 	at com.android.server.EntropyService.<init>(EntropyService.java:86)
+W/EntropyService(  160): 	at com.android.server.EntropyService.<init>(EntropyService.java:76)
+W/EntropyService(  160): 	at com.android.server.ServerThread.run(SystemServer.java:140)
+W/EntropyService(  160): Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+W/EntropyService(  160): 	at libcore.io.Posix.open(Native Method)
+W/EntropyService(  160): 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+W/EntropyService(  160): 	at libcore.io.IoBridge.open(IoBridge.java:390)
+W/EntropyService(  160): 	... 7 more
+I/SystemServer(  160): Power Manager
+I/SystemServer(  160): Activity Manager
+I/ActivityManager(  160): Memory class: 48
+I/SystemServer(  160): Telephony Registry
+I/SystemServer(  160): Package Manager
+I/PackageManager(  160): No settings file; creating initial state
+I/Installer(  160): connecting...
+W/PackageManager(  160): Library not found: /system/framework/com.google.android.media.effects.jar
+W/PackageManager(  160): Library not found: /system/framework/com.google.widevine.software.drm.jar
+W/PackageManager(  160): Library not found: /system/framework/com.android.nfc_extras.jar
+W/PackageManager(  160): Application package com.android.vending already installed.  Skipping duplicate.
+W/PackageParser(  160): No actions in intent filter at /system/app/Contacts.apk Binary XML file line #570
+W/PackageParser(  160): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #112
+E/PackageManager(  160): Package com.google.android.backup has no signatures that match those in shared user android.uid.system; ignoring!
+I/PackageManager(  160): Time to scan packages: 21.389 seconds
+I/PackageManager(  160): Platform changed from 0 to 15; regranting permissions for internal storage
+W/PackageManager(  160): Unknown permission com.android.vending.permission.UPDATE_MARKET_FAILURE in package com.android.vending.updater
+W/PackageManager(  160): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+W/PackageManager(  160): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.miui.player
+W/PackageManager(  160): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+W/PackageManager(  160): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+W/PackageManager(  160): Unknown permission android.permission.READ_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  160): Unknown permission android.permission.WRITE_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  160): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.android.updater
+W/PackageManager(  160): Not granting permission com.google.android.gm.permission.READ_GMAIL to package com.google.android.apps.uploader (protectionLevel=2 flags=0x8be45)
+W/PackageManager(  160): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.panoramio in package com.google.android.apps.uploader
+W/PackageManager(  160): Unknown permission com.google.android.voicesearch.SHORTCUTS_ACCESS in package com.google.android.googlequicksearchbox
+W/PackageManager(  160): Unknown permission android.permission.READ_EXTERNAL_STORAGE in package com.android.vending
+W/PackageManager(  160): Unknown permission com.google.android.voicesearch.AUDIO_FILE_ACCESS in package com.google.android.gm
+W/PackageManager(  160): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x8be45)
+W/PackageManager(  160): Unknown permission com.sonyericsson.permission.FACEBOOK in package com.sonyericsson.home
+I/SystemServer(  160): Account Manager
+I/SystemServer(  160): Content Manager
+I/SystemServer(  160): System Content Providers
+I/SystemServer(  160): Lights Service
+I/SystemServer(  160): Battery Service
+I/SystemServer(  160): Vibrator Service
+I/SystemServer(  160): Alarm Manager
+I/SystemServer(  160): Init Watchdog
+I/SystemServer(  160): Window Manager
+I/InputManager(  160): Initializing input manager
+W/StatusBarManager(  160): warning: no STATUS_BAR_SERVICE
+W/StatusBarManager(  160): warning: no STATUS_BAR_SERVICE
+I/InputManager(  160): Starting input manager
+I/SystemServer(  160): Bluetooth Service
+I/SystemServer(  160): Input Method Service
+I/InputManagerService(  160): Selected default: com.android.inputmethod.latin/.LatinIME
+I/SystemServer(  160): Accessibility Manager
+I/ActivityManager(  160): Config changed: {1.0 0mcc0mnc en_US layoutdir=0 sw320dp w320dp h455dp nrml port ?uimode ?night finger -keyb/v/h -nav/h s.2 themeChanged=0 themeChangedFlags=0}
+I/SystemServer(  160): Device Policy
+I/SystemServer(  160): Status Bar
+I/SystemServer(  160): Clipboard Service
+I/SystemServer(  160): NetworkManagement Service
+I/SystemServer(  160): Text Service Manager Service
+I/SystemServer(  160): NetworkStats Service
+I/SystemServer(  160): NetworkPolicy Service
+I/SystemServer(  160): Wi-Fi P2pService
+I/SystemServer(  160): Wi-Fi Service
+I/SystemServer(  160): Connectivity Service
+D/ConnectivityService(  160): ConnectivityService starting up
+E/ConnectivityService(  160): Ignoring protectedNetwork 10
+E/ConnectivityService(  160): Ignoring protectedNetwork 11
+E/ConnectivityService(  160): Ignoring protectedNetwork 12
+E/MobileDataStateTracker(  160): default: Ignoring feature request because could not acquire PhoneService
+E/MobileDataStateTracker(  160): default: Could not enable APN type "default"
+D/NetworkManagementService(  160): Registering observer
+D/NetworkManagementService(  160): Registering observer
+I/WifiService(  160): WifiService starting up with Wi-Fi disabled
+I/SystemServer(  160): Throttle Service
+I/SystemServer(  160): Mount Service
+D/MountService(  160): got storage path: /mnt/sdcard description: USB storage primary: true removable: false emulated: false mtpReserve: 0 allowMassStorage: true maxFileSize: 4294967296
+I/SystemServer(  160): Notification Manager
+I/SystemServer(  160): Device Storage Monitor
+I/SystemServer(  160): Location Manager
+I/SystemServer(  160): Country Detector
+I/SystemServer(  160): Search Service
+I/SystemServer(  160): DropBox Service
+D/VoldCmdListener(   78): volume list
+D/MountService(  160): volume state changed for /mnt/sdcard (null -> unmounted)
+I/SystemServer(  160): Wallpaper Service
+W/WallpaperService(  160): failed parsing /data/system/wallpaper_info.xml java.io.FileNotFoundException: /data/system/wallpaper_info.xml: open failed: ENOENT (No such file or directory)
+I/SystemServer(  160): Audio Service
+I/SystemServer(  160): Dock Observer
+I/SystemServer(  160): Wired Accessory Observer
+I/SystemServer(  160): USB Service
+I/SystemServer(  160): UI Mode Manager Service
+I/SystemServer(  160): Backup Service
+V/BackupManagerService(  160): Initializing package tracking
+V/BackupManagerService(  160): No ancestral data
+V/BackupManagerService(  160): addPackageParticipantsLocked: all
+I/BackupManagerService(  160): New app android never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.browser never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.calendar never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.inputmethod.latin never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.providers.settings never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.providers.userdictionary never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.sharedstoragebackup never backed up; scheduling
+I/BackupManagerService(  160): New app com.android.vending never backed up; scheduling
+I/BackupManagerService(  160): New app com.google.android.gm never backed up; scheduling
+I/BackupManagerService(  160): New app miui never backed up; scheduling
+V/BackupManagerService(  160): Registering transport android/com.android.internal.backup.LocalTransport = com.android.internal.backup.LocalTransport@41230df0
+V/BackupManagerService(  160): Starting with transport android/com.android.internal.backup.LocalTransport
+V/BackupManagerService(  160): Google transport not present
+I/BackupManagerService(  160): Backup enabled => false
+I/BackupManagerService(  160): Opting out of backup
+I/SystemServer(  160): AppWidget Service
+I/SystemServer(  160): Recognition Service
+I/SystemServer(  160): DiskStats Service
+I/SystemServer(  160): SamplingProfiler Service
+I/SystemServer(  160): NetworkTimeUpdateService
+D/PowerManagerService(  160): system ready!
+I/ActivityManager(  160): Sending system update to: ComponentInfo{com.android.providers.media/com.android.providers.media.MediaUpgradeReceiver}
+I/ActivityManager(  160): Sending system update to: ComponentInfo{com.google.android.gsf/com.google.android.gsf.loginservice.MigrateToAccountManagerBroadcastReceiver}
+I/ActivityManager(  160): Sending system update to: ComponentInfo{com.android.providers.contacts/com.android.providers.contacts.ContactsUpgradeReceiver}
+I/ActivityManager(  160): Sending system update to: ComponentInfo{com.android.providers.calendar/com.android.providers.calendar.CalendarUpgradeReceiver}
+I/ActivityManager(  160): Start proc android.process.media for broadcast com.android.providers.media/.MediaUpgradeReceiver: pid=326 uid=10024 gids={1015, 1023, 1024, 2001, 3003, 3007}
+I/ActivityManager(  160): Launching preboot mode app: ProcessRecord{412699b8 326:android.process.media/10024}
+I/ActivityManager(  160): Start proc com.google.process.gapps for broadcast com.google.android.gsf/.loginservice.MigrateToAccountManagerBroadcastReceiver: pid=340 uid=10005 gids={3003, 1015, 1007, 2001, 3006}
+I/ActivityManager(  160): Launching preboot mode app: ProcessRecord{4129f2a8 340:com.google.process.gapps/10005}
+I/ActivityManager(  160): Start proc android.process.acore for broadcast com.android.providers.contacts/.ContactsUpgradeReceiver: pid=355 uid=10009 gids={3003, 1015}
+I/ActivityManager(  160): Launching preboot mode app: ProcessRecord{4163a5c0 355:android.process.acore/10009}
+I/ActivityManager(  160): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarUpgradeReceiver: pid=370 uid=10043 gids={3003, 1015}
+I/ActivityManager(  160): Launching preboot mode app: ProcessRecord{41294d98 370:com.android.providers.calendar/10043}
+I/ActivityManager(  160): Writing new set of last done pre-boot receivers...
+I/ActivityManager(  160): Removing system update proc: ProcessRecord{412699b8 326:android.process.media/10024}
+I/ActivityManager(  160): Killing proc 326:android.process.media/10024: system update done
+I/ActivityManager(  160): Removing system update proc: ProcessRecord{4129f2a8 340:com.google.process.gapps/10005}
+I/ActivityManager(  160): Killing proc 340:com.google.process.gapps/10005: system update done
+I/ActivityManager(  160): Removing system update proc: ProcessRecord{4163a5c0 355:android.process.acore/10009}
+I/ActivityManager(  160): Killing proc 355:android.process.acore/10009: system update done
+I/ActivityManager(  160): Removing system update proc: ProcessRecord{41294d98 370:com.android.providers.calendar/10043}
+I/ActivityManager(  160): Killing proc 370:com.android.providers.calendar/10043: system update done
+I/ActivityManager(  160): System now ready
+I/SystemServer(  160): Making services ready
+D/SystemServer(  160): Starting service: Intent { cmp=com.android.systemui/.SystemUIService }
+I/ActivityManager(  160): Start proc com.android.systemui for service com.android.systemui/.SystemUIService: pid=384 uid=1000 gids={3003, 1015, 3002, 3001}
+D/NetworkManagementService(  160): enabling bandwidth control
+D/NetworkManagementService(  160): Registering observer
+D/NetworkManagementService(  160): Registering observer
+I/ActivityManager(  160): Config changed: {1.0 0mcc0mnc en_US layoutdir=0 sw320dp w320dp h455dp nrml port finger -keyb/v/h -nav/h s.3 themeChanged=0 themeChangedFlags=0}
+W/RecognitionManagerService(  160): no available voice recognition services found
+D/SystemUIService(  384): loading: class com.android.systemui.statusbar.phone.PhoneStatusBar
+D/SystemUIService(  384): running: com.android.systemui.statusbar.phone.PhoneStatusBar@41231248
+D/StorageNotification(  384): Startup with UMS connection false (media state unmounted)
+I/StorageNotification(  384): UMS connection changed to false (media state unmounted)
+W/AppWidgetService(  160): Failed to read state: java.io.FileNotFoundException: /data/system/appwidgets.xml: open failed: ENOENT (No such file or directory)
+W/WallpaperService(  160): Unknown component ComponentInfo{com.android.wallpaper/com.android.wallpaper.nexus.NexusWallpaper}
+W/WallpaperService(  160): Failure starting previous wallpaper
+W/WallpaperService(  160): Unknown component ComponentInfo{com.android.wallpaper/com.android.wallpaper.nexus.NexusWallpaper}
+E/WallpaperService(  160): Default wallpaper component not found!
+W/InputManagerService(  160): Ignoring setImeWindowStatus of uid 1000 token: null
+I/ActivityManager(  160): Start proc com.android.inputmethod.latin for service com.android.inputmethod.latin/.LatinIME: pid=426 uid=10026 gids={}
+D/NetworkManagementService(  160): Registering observer
+E/ThrottleService(  160): Error reading data file
+I/ActivityManager(  160): Start proc com.android.phone for added application com.android.phone: pid=438 uid=1001 gids={3002, 3001, 3003, 1015, 2001, 1007}
+I/ActivityManager(  160): Start proc com.lbe.security.miui for added application com.lbe.security.miui: pid=454 uid=10027 gids={3003}
+I/ActivityManager(  160): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.settings/.CryptKeeper} from pid 0
+I/ActivityManager(  160): Start proc com.android.settings for activity com.android.settings/.CryptKeeper: pid=467 uid=1000 gids={3003, 1015, 3002, 3001}
+W/ThrottleService(  160): unable to find stats for iface rmnet0
+W/ThrottleService(  160): unable to find stats for iface rmnet0
+E/ActivityThread(  426): Failed to find provider info for com.android.inputmethod.latin.dictionarypack
+I/ActivityManager(  160): Start proc android.process.acore for content provider com.android.providers.userdictionary/.UserDictionaryProvider: pid=508 uid=10009 gids={3003, 1015}
+I/ActivityManager(  160): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.google.android.setupwizard/.SetupWizardActivity} from pid 0
+I/ActivityManager(  160): Start proc com.google.android.setupwizard for activity com.google.android.setupwizard/.SetupWizardActivity: pid=518 uid=10000 gids={3003}
+I/ActivityManager(  160): Start proc com.google.process.gapps for service com.google.android.location/.NetworkLocationService: pid=536 uid=10005 gids={3003, 1015, 1007, 2001, 3006}
+I/StatusBarManagerService(  160): registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@41632f08
+D/PhoneStatusBar(  384): disable: < EXPAND* icons alerts TICKER* system_info BACK* HOME* RECENT* clock >
+D/SystemUIService(  384): loading: class com.android.systemui.a.e
+D/SystemUIService(  384): running: com.android.systemui.a.e@413a0ba0
+D/WifiService(  160): New client listening to asynchronous messages
+I/ActivityManager(  160): Start proc com.google.android.gsf.login for service com.google.android.gsf.login/com.google.android.gsf.loginservice.GoogleLoginService: pid=553 uid=10005 gids={3003, 1015, 1007, 2001, 3006}
+I/ActivityManager(  160): Start proc com.android.smspush for service com.android.smspush/.WapPushManager: pid=563 uid=10006 gids={}
+D/RPC     (  160): 3000008c:00020002 sending call (XID 1).
+D/RPC     (  160): 3000008c:00020002 received REPLY (XID 1), grabbing mutex to wake up client.
+D/RPC     (  160): 3000008c:00020002 call success.
+D/RPC     (  160): 3000008c:00020002 sending call (XID 2).
+D/RPC     (  160): 3000008c:00020002 received REPLY (XID 2), grabbing mutex to wake up client.
+D/RPC     (  160): 3000008c:00020002 call success.
+D/RPC     (  160): 3000008c:00020002 received CALL.
+D/RPC     (  160): 3000008c:00020002 dispatching RPC call (XID 10, xdr 0x413908) for callback client 3100008c:00020001.
+D/RPC     (  160): 3100008c:131073 sending RPC reply (XID 10)
+D/RPC     (  160): 3000008c:00020002 sending call (XID 3).
+D/RPC     (  160): 3000008c:00020002 received REPLY (XID 3), grabbing mutex to wake up client.
+D/RPC     (  160): 3000008c:00020002 call success.
+D/RPC     (  160): 3000008c:00020002 received CALL.
+D/RPC     (  160): 3000008c:00020002 dispatching RPC call (XID 11, xdr 0x413908) for callback client 3100008c:00020001.
+D/RPC     (  160): 3100008c:131073 sending RPC reply (XID 11)
+I/ActivityManager(  160): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=android/com.android.internal.app.ResolverActivity} from pid 518
+I/ActivityManager(  160): Process com.google.android.setupwizard (pid 518) has died.
+W/ActivityManager(  160): Force removing ActivityRecord{412b64e0 com.google.android.setupwizard/.SetupWizardActivity}: app died, no saved state
+I/ActivityManager(  160): Start proc com.android.vending for broadcast com.android.vending/com.google.android.finsky.receivers.PackageMonitorReceiver$RegisteredReceiver: pid=601 uid=10001 gids={3003, 1015}
+W/ActivityManager(  160): Unable to start service Intent { act=com.android.ussd.IExtendedNetworkService }: not found
+D/PhoneStatusBar(  384): disable: < EXPAND icons alerts TICKER system_info BACK HOME RECENT clock >
+D/PowerManagerService(  160): bootCompleted
+V/DevicePolicyManagerService(  160): Sending password expiration notifications for action android.intent.action.BOOT_COMPLETED
+D/VoldCmdListener(   78): volume mount /mnt/sdcard
+I/Vold    (   78): /dev/block/vold/179:1 being considered for volume sdcard
+D/Vold    (   78): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+D/MountService(  160): volume state changed for /mnt/sdcard (unmounted -> checking)
+D/MountService(  160): sendStorageIntent Intent { act=android.intent.action.MEDIA_CHECKING dat=file:///mnt/sdcard (has extras) }
+V/WiredAccessoryObserver(  160): init()
+W/WiredAccessoryObserver(  160): This kernel does not have wired headset support
+W/WiredAccessoryObserver(  160): This kernel does not have wired headset support
+I/StorageNotification(  384): Media {/mnt/sdcard} state changed from {unmounted} -> {checking}
+I/ActivityManager(  160): Start proc com.android.voicedialer for broadcast com.android.voicedialer/.VoiceDialerReceiver: pid=671 uid=10007 gids={3002}
+I/ActivityManager(  160): Start proc com.miui.gallery for broadcast com.miui.gallery/.app.PackagesMonitor: pid=688 uid=10022 gids={3003, 1015}
+I/ActivityManager(  160): START {flg=0x10000000 cmp=com.google.android.location/.ConfirmAlertActivity} from pid 536
+D/PhoneStatusBar(  384): disable: < expand* icons alerts ticker* system_info BACK HOME recent* clock >
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back* home* recent clock >
+I/ActivityManager(  160): Start proc android.process.media for content provider com.android.providers.downloads/.DownloadProvider: pid=715 uid=10024 gids={1015, 1023, 1024, 2001, 3003, 3007}
+I/ActivityManager(  160): Config changed: {1.0 0mcc0mnc en_US layoutdir=0 sw320dp w320dp h455dp nrml port finger -keyb/v/h -nav/h s.4 themeChanged=0 themeChangedFlags=0}
+I/WifiService(  160): WifiService trying to set country code to gb with persist set to true
+I/ActivityManager(  160): Config changed: {1.0 234mcc15mnc en_US layoutdir=0 sw320dp w320dp h455dp nrml port finger -keyb/v/h -nav/h s.5 themeChanged=0 themeChangedFlags=0}
+I/ActivityManager(  160): Start proc com.android.contacts for broadcast com.android.contacts/.quickcontact.PackageIntentReceiver: pid=735 uid=10009 gids={3003, 1015}
+I/ActivityManager(  160): Start proc com.google.android.partnersetup for broadcast com.google.android.partnersetup/.PhoneStateReceiver: pid=751 uid=10032 gids={3003}
+I/ActivityManager(  160): Force stopping package com.google.android.partnersetup uid=10032
+I/ActivityManager(  160): Killing proc 751:com.google.android.partnersetup/10032: force stop
+I/ActivityManager(  160): Start proc com.android.updater for broadcast com.android.updater/.receiver.DumpLogReceiver: pid=769 uid=1001 gids={3002, 3001, 3003, 1015, 2001, 1007}
+I/ActivityManager(  160): Start proc com.google.android.onetimeinitializer for broadcast com.google.android.onetimeinitializer/.OneTimeInitializerReceiver: pid=785 uid=10002 gids={}
+I/BootReceiver(  160): Copying /proc/last_kmsg to DropBox (SYSTEM_LAST_KMSG)
+I/ActivityManager(  160): Start proc com.miui.notes for broadcast com.miui.notes/.ui.AlarmInitReceiver: pid=802 uid=10016 gids={1015, 3003}
+E/ActivityThread(  785): Failed to find provider info for com.android.launcher2.settings
+W/ActivityManager(  160): Permission Denial: receiving Intent { act=android.intent.action.BOOT_COMPLETED flg=0x10 } to com.android.musicfx requires android.permission.RECEIVE_BOOT_COMPLETED due to sender null (uid 1000)
+I/ActivityManager(  160): Start proc com.android.monitor for broadcast com.android.monitor/.BootCompletedReceiver: pid=815 uid=1000 gids={3003, 1015, 3002, 3001}
+I/ActivityManager(  160): Start proc com.android.mms for broadcast com.android.mms/.transaction.SmsReceiver: pid=828 uid=10020 gids={3003, 1015}
+D/CountryDetector(  160): The first listener is added
+I/ActivityManager(  160): Start proc com.google.android.partnersetup for broadcast com.google.android.partnersetup/.GooglePartnerSetup: pid=864 uid=10032 gids={3003}
+I/ActivityManager(  160): Start proc com.google.android.talk for broadcast com.google.android.talk/.videochat.BootCompleteReceiver: pid=886 uid=10034 gids={3003, 1015, 1006, 3002}
+I/ActivityManager(  160): Force stopping package com.android.vending uid=10001
+I/ActivityManager(  160): Killing proc 601:com.android.vending/10001: force stop
+D/ConnectivityService(  160): handleInetConditionChange: no active default network - ignore
+I/ActivityManager(  160): Start proc com.google.android.gm for broadcast com.google.android.gm/.GoogleMailDeviceStartupReceiver: pid=908 uid=10035 gids={3003, 1015}
+I/ActivityManager(  160): Start proc com.android.exchange for broadcast com.android.exchange/.service.ExchangeBroadcastReceiver: pid=928 uid=10037 gids={3003, 1015}
+I/ActivityManager(  160): START {flg=0x10040000 cmp=com.google.android.gsf/.update.SystemUpdateInstallDialog} from pid 536
+I/ActivityManager(  160): START {flg=0x10040000 cmp=com.google.android.gsf/.update.SystemUpdateDownloadDialog} from pid 536
+I/ActivityManager(  160): Start proc com.android.email for broadcast com.android.email/.service.EmailBroadcastReceiver: pid=945 uid=10038 gids={3003, 1015}
+I/ActivityManager(  160): Start proc com.android.deskclock for broadcast com.android.deskclock/.AlarmInitReceiver: pid=969 uid=10039 gids={}
+W/BackupManagerService(  160): dataChanged but no participant pkg='com.android.providers.settings' uid=10039
+I/ActivityManager(  160): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarReceiver: pid=996 uid=10043 gids={3003, 1015}
+I/ActivityManager(  160): Start proc com.miui.backup for broadcast com.miui.backup/com.miui.milk.ui.AutoBackupReceiver: pid=1011 uid=1001 gids={3002, 3001, 3003, 1015, 2001, 1007}
+I/ActivityManager(  160): Start proc com.miui.antispam for broadcast com.miui.antispam/.firewall.FirewallReceiver: pid=1025 uid=1000 gids={3003, 1015, 3002, 3001}
+I/ActivityManager(  160): No longer want com.android.settings (pid 467): hidden #16
+I/ActivityManager(  160): Start proc com.android.calendar for broadcast com.android.calendar/.widget.CalendarAppWidgetService$CalendarFactory: pid=1041 uid=10044 gids={3003}
+I/ActivityManager(  160): Start proc com.android.vending for broadcast com.android.vending/com.google.android.finsky.receivers.ClearCacheReceiver: pid=1059 uid=10001 gids={3003, 1015}
+I/ActivityManager(  160): No longer want com.miui.gallery (pid 688): hidden #16
+W/WindowManager(  160): ***** BOOT TIMEOUT: forcing display enabled
+I/ActivityManager(  160): No longer want com.google.android.onetimeinitializer (pid 785): hidden #16
+I/ActivityManager(  160): No longer want com.android.voicedialer (pid 671): hidden #16
+I/ActivityManager(  160): Process com.android.vending (pid 1059) has died.
+I/ActivityManager(  160): Start proc com.android.voicedialer for broadcast com.android.voicedialer/.VoiceDialerReceiver: pid=1095 uid=10007 gids={3002}
+I/ActivityManager(  160): Start proc com.miui.gallery for broadcast com.miui.gallery/.app.PackagesMonitor: pid=1108 uid=10022 gids={3003, 1015}
+I/ActivityManager(  160): No longer want com.android.updater (pid 769): hidden #16
+I/ActivityManager(  160): Start proc com.android.settings for broadcast com.android.settings/.widget.SettingsAppWidgetProvider: pid=1122 uid=1000 gids={3003, 1015, 3002, 3001}
+I/ActivityManager(  160): Start proc com.android.vending for service com.android.vending/com.google.android.finsky.services.DailyHygiene: pid=1134 uid=10001 gids={3003, 1015}
+I/ActivityManager(  160): No longer want com.miui.notes (pid 802): hidden #16
+I/ActivityManager(  160): Start proc com.google.android.googlequicksearchbox for broadcast com.google.android.googlequicksearchbox/.SourceUpdateReceiver: pid=1165 uid=10031 gids={3003}
+I/ActivityManager(  160): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x13200000 cmp=com.miui.home/.launcher.Launcher} from pid 160
+I/ActivityManager(  160): Start proc com.miui.home for activity com.miui.home/.launcher.Launcher: pid=1191 uid=10021 gids={1015, 3003}
+I/ActivityManager(  160): No longer want com.android.monitor (pid 815): hidden #16
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  160): No longer want com.google.android.partnersetup (pid 864): hidden #16
+I/ActivityManager(  160): No longer want com.google.android.gsf.login (pid 553): hidden #16
+I/ActivityManager(  160): No longer want com.android.email (pid 945): hidden #16
+W/InputManagerService(  160): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4129b488
+I/Vold    (   78): Filesystem check completed OK
+I/Vold    (   78): Device /dev/block/vold/179:1, target /mnt/sdcard mounted @ /mnt/secure/staging
+D/Vold    (   78): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+D/MountService(  160): volume state changed for /mnt/sdcard (checking -> mounted)
+I/StorageNotification(  384): Media {/mnt/sdcard} state changed from {checking} -> {mounted}
+D/MountService(  160): sendStorageIntent Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///mnt/sdcard (has extras) }
+I/ActivityManager(  160): Start proc com.google.android.apps.uploader for broadcast com.google.android.apps.uploader/.ConnectivityBroadcastReceiver: pid=1218 uid=10010 gids={3003}
+D/VoldCmdListener(   78): asec list
+I/ActivityManager(  160): Start proc com.miui.player for broadcast com.miui.player/.ui.MediaAppWidgetProvider_1x: pid=1234 uid=10019 gids={3003, 1015}
+I/ActivityManager(  160): No longer want com.android.exchange (pid 928): hidden #16
+I/ActivityManager(  160): No longer want com.miui.antispam (pid 1025): hidden #16
+I/PackageManager(  160): Platform changed from 0 to 15; regranting permissions for external storage
+W/PackageManager(  160): Unknown permission com.android.vending.permission.UPDATE_MARKET_FAILURE in package com.android.vending.updater
+W/PackageManager(  160): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+W/PackageManager(  160): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.miui.player
+W/PackageManager(  160): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+W/PackageManager(  160): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+W/PackageManager(  160): Unknown permission android.permission.READ_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  160): Unknown permission android.permission.WRITE_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  160): Unknown permission android.permission.WRITE_INTERNAL_STORAGE in package com.android.updater
+W/PackageManager(  160): Not granting permission com.google.android.gm.permission.READ_GMAIL to package com.google.android.apps.uploader (protectionLevel=2 flags=0x8be45)
+W/PackageManager(  160): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.panoramio in package com.google.android.apps.uploader
+W/PackageManager(  160): Unknown permission com.google.android.voicesearch.SHORTCUTS_ACCESS in package com.google.android.googlequicksearchbox
+W/PackageManager(  160): Unknown permission android.permission.READ_EXTERNAL_STORAGE in package com.android.vending
+W/PackageManager(  160): Unknown permission com.google.android.voicesearch.AUDIO_FILE_ACCESS in package com.google.android.gm
+W/PackageManager(  160): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x8be45)
+W/PackageManager(  160): Unknown permission com.sonyericsson.permission.FACEBOOK in package com.sonyericsson.home
+I/ActivityManager(  160): Start proc com.android.exchange for content provider com.android.exchange/.provider.ExchangeDirectoryProvider: pid=1253 uid=10037 gids={3003, 1015}
+I/ActivityManager(  160): No longer want com.miui.backup (pid 1011): hidden #16
+W/PowerUI (  384): unknown intent: Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x10000010 }
+I/ActivityManager(  160): No longer want com.android.deskclock (pid 969): hidden #16
+W/BackupManagerService(  160): dataChanged but no participant pkg='com.android.providers.settings' uid=10024
+W/BackupManagerService(  160): dataChanged but no participant pkg='com.android.providers.settings' uid=10024
+I/ActivityManager(  160): START {flg=0x10000000 cmp=com.android.updater/.ExportDataToSDCardActivity} from pid 384
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  160): Start proc com.android.updater for activity com.android.updater/.ExportDataToSDCardActivity: pid=1270 uid=1001 gids={3002, 3001, 3003, 1015, 2001, 1007}
+W/InputManagerService(  160): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@41504488
+W/BackupManagerService(  160): dataChanged but no participant pkg='com.android.providers.settings' uid=10024
+W/InputManagerService(  160): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4146d4f8
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  160): No longer want com.android.mms (pid 828): hidden #16
+D/CountryDetector(  160): No listener is left
+I/ActivityManager(  160): START {act=android.settings.SETTINGS flg=0x10200000 cmp=com.android.settings/.MiuiSettings} from pid 1191
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+W/InputManagerService(  160): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@41368eb8 (uid=10021 pid=1191)
+I/ActivityManager(  160): START {act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras)} from pid 1122
+I/ActivityManager(  160): START {cmp=com.android.settings/.display.BrightnessActivity} from pid 1122
+W/ThrottleService(  160): unable to find stats for iface rmnet0
+E/ThrottleService(  160): Error reading data file
+I/ActivityManager(  160): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.android.systemui/.settings.ToggleArrangement (has extras)} from pid 384
+W/InputManagerService(  160): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@413f9ad8 (uid=1000 pid=1122)
+W/InputManagerService(  160): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@4158d800 (uid=1000 pid=384)
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+W/InputManagerService(  160): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@413f9ad8 (uid=1000 pid=1122)
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home RECENT* clock >
+D/PhoneStatusBar(  384): disable: < EXPAND* icons alerts TICKER* system_info back home RECENT clock >
+D/PhoneStatusBar(  384): disable: < EXPAND icons alerts TICKER system_info BACK* HOME* RECENT clock >
+D/PhoneStatusBar(  384): disable: < EXPAND icons alerts TICKER system_info BACK HOME RECENT clock >
+I/WindowManager(  160): Lock screen displayed!
+D/PhoneStatusBar(  384): disable: < expand* icons alerts ticker* system_info BACK HOME recent* clock >
+W/InputManagerService(  160): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4121a5d8
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back* home* recent clock >
+I/ActivityManager(  160): Start proc com.android.mms for broadcast com.android.mms/.util.Reminder: pid=1348 uid=10020 gids={3003, 1015}
+D/CountryDetector(  160): The first listener is added
+I/ActivityManager(  160): No longer want com.google.android.talk (pid 886): hidden #16
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home recent clock >
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back home RECENT* clock >
+D/PhoneStatusBar(  384): disable: < EXPAND* icons alerts TICKER* system_info back home RECENT clock >
+D/PhoneStatusBar(  384): disable: < EXPAND icons alerts TICKER system_info BACK* HOME* RECENT clock >
+W/ProcessStats(  160): Skipping unknown process pid 1840
+W/ProcessStats(  160): Skipping unknown process pid 1926
+W/ProcessStats(  160): Skipping unknown process pid 1973
+W/ThrottleService(  160): unable to find stats for iface rmnet0
+W/ProcessStats(  160): Skipping unknown process pid 1998
+W/ProcessStats(  160): Skipping unknown process pid 2384
+W/ProcessStats(  160): Skipping unknown process pid 2407
+W/PowerUI (  384): unknown intent: Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x10000010 }
+D/PhoneStatusBar(  384): disable: < EXPAND icons alerts TICKER system_info BACK HOME RECENT clock >
+I/WindowManager(  160): Lock screen displayed!
+D/PhoneStatusBar(  384): disable: < expand* icons alerts ticker* system_info BACK HOME recent* clock >
+D/PhoneStatusBar(  384): disable: < expand icons alerts ticker system_info back* home* recent clock >
+W/InputManagerService(  160): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@41593c68
+--------- beginning of /dev/log/main
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41596000 size:614400 offset:614400 fd:29
+D/memalloc(  160): /dev/pmem: Unmapping buffer base:0x555b4000 size:1843200 offset:1228800
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x4162c000 size:614400 offset:1228800 fd:38
+I/NotifierManager(  160): onUnregister: miui.app.screenelement.NotifierManager$BatteryNotifier@4129c050
+I/MiAdvancedView(  160): RenderThread stopped
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2441): ServiceManager: 0xf958
+I/HTC Acoustic( 2441): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2441): deonvvv gingerbread test.
+I/HTC Acoustic( 2441): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2441): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2441): read_audio_para_from_file success.
+E/HTC Acoustic( 2441): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2441): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2441): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2441): read_audio_para_from_file success.
+I/HTC Acoustic( 2441): get_audpp_filter
+I/HTC Acoustic( 2441): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2441): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2441): set mbadrc filter error.
+I/HTC Acoustic( 2441): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2441): get_audpre_filter
+I/HTC Acoustic( 2441): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2441): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2441): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2441): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2441): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2441): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2441): BT MATCH BT
+D/AudioHardwareMSM72XX( 2441): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2441): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2441): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2441): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2441): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2441): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2441): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2441): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2441): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2441): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2441): BT MATCH CURRENT
+I/AudioFlinger( 2441): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2441): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2441): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2441): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2441): Set master volume to 5.
+I/CameraService( 2441): CameraService started (pid=2441)
+E/AudioService(  160): Media server died.
+I/AudioFlinger( 2441): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2441): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2441): set output routing 2
+I/AudioHardwareMSM72XX( 2441): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2441): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2441): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2441): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2441): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2441): setParameters() restarting=true
+D/AudioHardwareInterface( 2441): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2441): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2441): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2441): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2441): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2441): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2441): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2441): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2441): setParameters() restarting=false
+F/libc    ( 2441): Fatal signal 4 (SIGILL) at 0x414f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2441, tid: 2445  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 414f9a48
+I/DEBUG   (   80):  r0 412adc08  r1 412adc14  r2 412adc10  r3 412adc0c
+I/DEBUG   (   80):  r4 412adca4  r5 40c4b004  r6 0001a6a8  r7 414f9a49
+I/DEBUG   (   80):  r8 411ae000  r9 4011df3d  10 00100000  fp 00019060
+I/DEBUG   (   80):  ip 4012d0f0  sp 412adbd0  lr 40b7ae8d  pc 414f9a48  cpsr 00000030
+I/DEBUG   (   80):  d0  3fe7819101615a87  d1  3ff0000000000000
+I/DEBUG   (   80):  d2  bebbac583349cd18  d3  3f114be22fd1fdb7
+I/DEBUG   (   80):  d4  bfd4c17cc08b4c77  d5  4000000000000000
+I/DEBUG   (   80):  d6  4002982f9811698f  d7  3fd7819101615a87
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000010
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 414f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 414f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 414f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 414f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 414f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 414f9a48:
+I/DEBUG   (   80): 413af000-414ae000 
+I/DEBUG   (   80): 414ae000-41540000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41540000-41544000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     412adb90  412adc14  
+I/DEBUG   (   80):     412adb94  0001a248  [heap]
+I/DEBUG   (   80):     412adb98  00019028  [heap]
+I/DEBUG   (   80):     412adb9c  0001a228  [heap]
+I/DEBUG   (   80):     412adba0  412adc08  
+I/DEBUG   (   80):     412adba4  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     412adba8  0000a008  [heap]
+I/DEBUG   (   80):     412adbac  00000000  
+I/DEBUG   (   80):     412adbb0  00019028  [heap]
+I/DEBUG   (   80):     412adbb4  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     412adbb8  00019028  [heap]
+I/DEBUG   (   80):     412adbbc  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     412adbc0  0001a6a8  [heap]
+I/DEBUG   (   80):     412adbc4  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     412adbc8  df0027ad  
+I/DEBUG   (   80):     412adbcc  00000000  
+I/DEBUG   (   80): #00 412adbd0  0001aff0  [heap]
+I/DEBUG   (   80):     412adbd4  412adca0  
+I/DEBUG   (   80):     412adbd8  411ae000  
+I/DEBUG   (   80):     412adbdc  412adc9c  
+I/DEBUG   (   80):     412adbe0  0001a228  [heap]
+I/DEBUG   (   80):     412adbe4  412adc14  
+I/DEBUG   (   80):     412adbe8  412adc08  
+I/DEBUG   (   80):     412adbec  414f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     412adbf0  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     412adbf4  fffff984  
+I/DEBUG   (   80):     412adbf8  00019028  [heap]
+I/DEBUG   (   80):     412adbfc  00000003  
+I/DEBUG   (   80):     412adc00  0000001b  
+I/DEBUG   (   80):     412adc04  000001b4  
+I/DEBUG   (   80):     412adc08  0001a228  [heap]
+I/DEBUG   (   80):     412adc0c  00000000  
+I/DEBUG   (   80):     412adc10  3e4ccccd  
+I/DEBUG   (   80):     412adc14  0000a018  [heap]
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2450): ServiceManager: 0xf958
+I/HTC Acoustic( 2450): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2450): deonvvv gingerbread test.
+I/HTC Acoustic( 2450): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2450): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2450): read_audio_para_from_file success.
+E/HTC Acoustic( 2450): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2450): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2450): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2450): read_audio_para_from_file success.
+I/HTC Acoustic( 2450): get_audpp_filter
+I/HTC Acoustic( 2450): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2450): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2450): set mbadrc filter error.
+I/HTC Acoustic( 2450): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2450): get_audpre_filter
+I/HTC Acoustic( 2450): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2450): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2450): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2450): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2450): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2450): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2450): BT MATCH BT
+D/AudioHardwareMSM72XX( 2450): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2450): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2450): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2450): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2450): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2450): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2450): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2450): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2450): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2450): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2450): BT MATCH CURRENT
+I/AudioFlinger( 2450): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2450): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2450): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2450): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2450): Set master volume to 5.
+I/CameraService( 2450): CameraService started (pid=2450)
+I/AudioFlinger( 2450): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2450): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2450): set output routing 2
+I/AudioHardwareMSM72XX( 2450): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2450): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2450): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2450): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2450): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server died.
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2450): setParameters() restarting=true
+D/AudioHardwareInterface( 2450): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2450): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2450): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2450): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2450): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2450): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2450): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2450): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2450): setParameters() restarting=false
+F/libc    ( 2450): Fatal signal 4 (SIGILL) at 0x413f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2450, tid: 2450  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 413f9a48
+I/DEBUG   (   80):  r0 be8d5970  r1 be8d597c  r2 be8d5978  r3 be8d5974
+I/DEBUG   (   80):  r4 be8d5a0c  r5 40c4b004  r6 0001a380  r7 413f9a49
+I/DEBUG   (   80):  r8 00000000  r9 00000000  10 00000000  fp 00000000
+I/DEBUG   (   80):  ip 4012d0f0  sp be8d5938  lr 40b7ae8d  pc 413f9a48  cpsr 80000030
+I/DEBUG   (   80):  d0  3ff43d16aee00482  d1  3ff0000000000000
+I/DEBUG   (   80):  d2  bebbb370fb6f0b05  d3  3f11504c209ef562
+I/DEBUG   (   80):  d4  3fcce748f8ed8687  d5  4000000000000000
+I/DEBUG   (   80):  d6  3ffc6316e0e24f2f  d7  3fd43d16aee00482
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000010
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 413f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 413f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 413f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 413f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 413f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 413f9a48:
+I/DEBUG   (   80): 412af000-413ae000 
+I/DEBUG   (   80): 413ae000-41440000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41440000-41444000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     be8d58f8  be8d597c  [stack]
+I/DEBUG   (   80):     be8d58fc  00019010  [heap]
+I/DEBUG   (   80):     be8d5900  0001afd8  [heap]
+I/DEBUG   (   80):     be8d5904  00018ff0  [heap]
+I/DEBUG   (   80):     be8d5908  be8d5970  [stack]
+I/DEBUG   (   80):     be8d590c  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     be8d5910  0000a008  [heap]
+I/DEBUG   (   80):     be8d5914  00000000  
+I/DEBUG   (   80):     be8d5918  0001afd8  [heap]
+I/DEBUG   (   80):     be8d591c  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     be8d5920  0001afd8  [heap]
+I/DEBUG   (   80):     be8d5924  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     be8d5928  0001a380  [heap]
+I/DEBUG   (   80):     be8d592c  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     be8d5930  df0027ad  
+I/DEBUG   (   80):     be8d5934  00000000  
+I/DEBUG   (   80): #00 be8d5938  400ad474  
+I/DEBUG   (   80):     be8d593c  be8d5a08  [stack]
+I/DEBUG   (   80):     be8d5940  00000000  
+I/DEBUG   (   80):     be8d5944  be8d5a04  [stack]
+I/DEBUG   (   80):     be8d5948  00018ff0  [heap]
+I/DEBUG   (   80):     be8d594c  be8d597c  [stack]
+I/DEBUG   (   80):     be8d5950  be8d5970  [stack]
+I/DEBUG   (   80):     be8d5954  413f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     be8d5958  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     be8d595c  fffff984  
+I/DEBUG   (   80):     be8d5960  0001afd8  [heap]
+I/DEBUG   (   80):     be8d5964  00000003  
+I/DEBUG   (   80):     be8d5968  00000023  
+I/DEBUG   (   80):     be8d596c  000001b4  
+I/DEBUG   (   80):     be8d5970  00018ff0  [heap]
+I/DEBUG   (   80):     be8d5974  00000000  
+I/DEBUG   (   80):     be8d5978  3e4ccccd  
+I/DEBUG   (   80):     be8d597c  0000a018  [heap]
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+E/AudioService(  160): Media server died.
+I/ServiceManager(  160): Waiting for service media.audio_flinger...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2456): ServiceManager: 0xf958
+I/HTC Acoustic( 2456): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2456): deonvvv gingerbread test.
+I/HTC Acoustic( 2456): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2456): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2456): read_audio_para_from_file success.
+E/HTC Acoustic( 2456): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2456): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2456): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2456): read_audio_para_from_file success.
+I/HTC Acoustic( 2456): get_audpp_filter
+I/HTC Acoustic( 2456): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2456): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2456): set mbadrc filter error.
+I/HTC Acoustic( 2456): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2456): get_audpre_filter
+I/HTC Acoustic( 2456): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2456): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2456): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2456): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2456): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2456): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2456): BT MATCH BT
+D/AudioHardwareMSM72XX( 2456): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2456): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2456): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2456): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2456): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2456): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2456): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2456): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2456): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2456): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2456): BT MATCH CURRENT
+I/AudioFlinger( 2456): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2456): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2456): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2456): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2456): Set master volume to 5.
+I/CameraService( 2456): CameraService started (pid=2456)
+I/AudioFlinger( 2456): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2456): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2456): set output routing 2
+I/AudioHardwareMSM72XX( 2456): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2456): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2456): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2456): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2456): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2456): setParameters() restarting=true
+D/AudioHardwareInterface( 2456): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2456): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2456): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2456): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2456): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2456): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2456): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2456): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2456): setParameters() restarting=false
+F/libc    ( 2456): Fatal signal 4 (SIGILL) at 0x413f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2456, tid: 2461  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 413f9a48
+I/DEBUG   (   80):  r0 413adc08  r1 413adc14  r2 413adc10  r3 413adc0c
+I/DEBUG   (   80):  r4 413adca4  r5 40c4b004  r6 0001a280  r7 413f9a49
+I/DEBUG   (   80):  r8 412ae000  r9 4011df3d  10 00100000  fp 00019d20
+I/DEBUG   (   80):  ip 4012d0f0  sp 413adbd0  lr 40b7ae8d  pc 413f9a48  cpsr 00000030
+I/DEBUG   (   80):  d0  3ff43d16aee00482  d1  3ff0000000000000
+I/DEBUG   (   80):  d2  bebbb370fb6f0b05  d3  3f11504c209ef562
+I/DEBUG   (   80):  d4  3fcce748f8ed8687  d5  4000000000000000
+I/DEBUG   (   80):  d6  3ffc6316e0e24f2f  d7  3fd43d16aee00482
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000010
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 413f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 413f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 413f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 413f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 413f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 413f9a48:
+I/DEBUG   (   80): 412af000-413ae000 
+I/DEBUG   (   80): 413ae000-41440000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41440000-41444000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     413adb90  413adc14  
+I/DEBUG   (   80):     413adb94  0001afc8  [heap]
+I/DEBUG   (   80):     413adb98  0001ac98  [heap]
+I/DEBUG   (   80):     413adb9c  0001afa8  [heap]
+I/DEBUG   (   80):     413adba0  413adc08  
+I/DEBUG   (   80):     413adba4  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     413adba8  0000a008  [heap]
+I/DEBUG   (   80):     413adbac  00000000  
+I/DEBUG   (   80):     413adbb0  0001ac98  [heap]
+I/DEBUG   (   80):     413adbb4  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbb8  0001ac98  [heap]
+I/DEBUG   (   80):     413adbbc  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbc0  0001a280  [heap]
+I/DEBUG   (   80):     413adbc4  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     413adbc8  df0027ad  
+I/DEBUG   (   80):     413adbcc  00000000  
+I/DEBUG   (   80): #00 413adbd0  400ad474  
+I/DEBUG   (   80):     413adbd4  413adca0  
+I/DEBUG   (   80):     413adbd8  412ae000  
+I/DEBUG   (   80):     413adbdc  413adc9c  
+I/DEBUG   (   80):     413adbe0  0001afa8  [heap]
+I/DEBUG   (   80):     413adbe4  413adc14  
+I/DEBUG   (   80):     413adbe8  413adc08  
+I/DEBUG   (   80):     413adbec  413f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     413adbf0  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbf4  fffff984  
+I/DEBUG   (   80):     413adbf8  0001ac98  [heap]
+I/DEBUG   (   80):     413adbfc  00000003  
+I/DEBUG   (   80):     413adc00  400ad474  
+I/DEBUG   (   80):     413adc04  000001b4  
+I/DEBUG   (   80):     413adc08  0001afa8  [heap]
+I/DEBUG   (   80):     413adc0c  00000000  
+I/DEBUG   (   80):     413adc10  3e4ccccd  
+I/DEBUG   (   80):     413adc14  0000a018  [heap]
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+E/AudioService(  160): Media server died.
+I/ServiceManager(  160): Waiting for service media.audio_flinger...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2462): ServiceManager: 0xf958
+I/HTC Acoustic( 2462): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2462): deonvvv gingerbread test.
+I/HTC Acoustic( 2462): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2462): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2462): read_audio_para_from_file success.
+E/HTC Acoustic( 2462): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2462): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2462): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2462): read_audio_para_from_file success.
+I/HTC Acoustic( 2462): get_audpp_filter
+I/HTC Acoustic( 2462): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2462): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2462): set mbadrc filter error.
+I/HTC Acoustic( 2462): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2462): get_audpre_filter
+I/HTC Acoustic( 2462): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2462): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2462): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2462): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2462): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2462): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2462): BT MATCH BT
+D/AudioHardwareMSM72XX( 2462): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2462): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2462): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2462): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2462): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2462): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2462): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2462): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2462): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2462): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2462): BT MATCH CURRENT
+I/AudioFlinger( 2462): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2462): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2462): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2462): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2462): Set master volume to 5.
+I/CameraService( 2462): CameraService started (pid=2462)
+I/AudioFlinger( 2462): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2462): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2462): set output routing 2
+I/AudioHardwareMSM72XX( 2462): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2462): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2462): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2462): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2462): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2462): setParameters() restarting=true
+D/AudioHardwareInterface( 2462): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2462): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2462): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2462): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2462): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2462): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2462): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2462): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2462): setParameters() restarting=false
+F/libc    ( 2462): Fatal signal 4 (SIGILL) at 0x413f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2462, tid: 2467  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 413f9a48
+I/DEBUG   (   80):  r0 413adc08  r1 413adc14  r2 413adc10  r3 413adc0c
+I/DEBUG   (   80):  r4 413adca4  r5 40c4b004  r6 0001a280  r7 413f9a49
+I/DEBUG   (   80):  r8 412ae000  r9 4011df3d  10 00100000  fp 00019d20
+I/DEBUG   (   80):  ip 4012d0f0  sp 413adbd0  lr 40b7ae8d  pc 413f9a48  cpsr 00000030
+I/DEBUG   (   80):  d0  0000000000000000  d1  0000000000000000
+I/DEBUG   (   80):  d2  7e37e43c8800759c  d3  0000000000000000
+I/DEBUG   (   80):  d4  0000000000000000  d5  7e37e43c8800759c
+I/DEBUG   (   80):  d6  3ff0000000000000  d7  3ff0000000000000
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000000
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 413f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 413f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 413f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 413f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 413f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 413f9a48:
+I/DEBUG   (   80): 412af000-413ae000 
+I/DEBUG   (   80): 413ae000-41440000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41440000-41444000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     413adb90  413adc14  
+I/DEBUG   (   80):     413adb94  0001afc8  [heap]
+I/DEBUG   (   80):     413adb98  0001ac98  [heap]
+I/DEBUG   (   80):     413adb9c  0001afa8  [heap]
+I/DEBUG   (   80):     413adba0  413adc08  
+I/DEBUG   (   80):     413adba4  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     413adba8  0000a008  [heap]
+I/DEBUG   (   80):     413adbac  00000000  
+I/DEBUG   (   80):     413adbb0  0001ac98  [heap]
+I/DEBUG   (   80):     413adbb4  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbb8  0001ac98  [heap]
+I/DEBUG   (   80):     413adbbc  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbc0  0001a280  [heap]
+I/DEBUG   (   80):     413adbc4  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     413adbc8  df0027ad  
+I/DEBUG   (   80):     413adbcc  00000000  
+I/DEBUG   (   80): #00 413adbd0  400ad474  
+I/DEBUG   (   80):     413adbd4  413adca0  
+I/DEBUG   (   80):     413adbd8  412ae000  
+I/DEBUG   (   80):     413adbdc  413adc9c  
+I/DEBUG   (   80):     413adbe0  0001afa8  [heap]
+I/DEBUG   (   80):     413adbe4  413adc14  
+I/DEBUG   (   80):     413adbe8  413adc08  
+I/DEBUG   (   80):     413adbec  413f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     413adbf0  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbf4  fffff984  
+I/DEBUG   (   80):     413adbf8  0001ac98  [heap]
+I/DEBUG   (   80):     413adbfc  00000003  
+I/DEBUG   (   80):     413adc00  400ad474  
+I/DEBUG   (   80):     413adc04  000001b4  
+I/DEBUG   (   80):     413adc08  0001afa8  [heap]
+I/DEBUG   (   80):     413adc0c  00000000  
+I/DEBUG   (   80):     413adc10  3e4ccccd  
+I/DEBUG   (   80):     413adc14  0000a018  [heap]
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+E/AudioService(  160): Media server died.
+I/ServiceManager(  160): Waiting for service media.audio_flinger...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2468): ServiceManager: 0xf958
+I/HTC Acoustic( 2468): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2468): deonvvv gingerbread test.
+I/HTC Acoustic( 2468): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2468): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2468): read_audio_para_from_file success.
+E/HTC Acoustic( 2468): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2468): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2468): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2468): read_audio_para_from_file success.
+I/HTC Acoustic( 2468): get_audpp_filter
+I/HTC Acoustic( 2468): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2468): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2468): set mbadrc filter error.
+I/HTC Acoustic( 2468): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2468): get_audpre_filter
+I/HTC Acoustic( 2468): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2468): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2468): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2468): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2468): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2468): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2468): BT MATCH BT
+D/AudioHardwareMSM72XX( 2468): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2468): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2468): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2468): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2468): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2468): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2468): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2468): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2468): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2468): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2468): BT MATCH CURRENT
+I/AudioFlinger( 2468): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2468): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2468): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2468): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2468): Set master volume to 5.
+I/CameraService( 2468): CameraService started (pid=2468)
+I/AudioFlinger( 2468): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2468): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2468): set output routing 2
+I/AudioHardwareMSM72XX( 2468): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2468): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2468): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2468): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2468): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2468): setParameters() restarting=true
+D/AudioHardwareInterface( 2468): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2468): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2468): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2468): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2468): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2468): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2468): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2468): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2468): setParameters() restarting=false
+F/libc    ( 2468): Fatal signal 4 (SIGILL) at 0x413f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2468, tid: 2473  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 413f9a48
+I/DEBUG   (   80):  r0 413adc08  r1 413adc14  r2 413adc10  r3 413adc0c
+I/DEBUG   (   80):  r4 413adca4  r5 40c4b004  r6 0001a2c8  r7 413f9a49
+I/DEBUG   (   80):  r8 412ae000  r9 4011df3d  10 00100000  fp 00019e98
+I/DEBUG   (   80):  ip 4012d0f0  sp 413adbd0  lr 40b7ae8d  pc 413f9a48  cpsr 00000030
+I/DEBUG   (   80):  d0  0000000000000000  d1  0000000000000000
+I/DEBUG   (   80):  d2  7e37e43c8800759c  d3  0000000000000000
+I/DEBUG   (   80):  d4  0000000000000000  d5  7e37e43c8800759c
+I/DEBUG   (   80):  d6  3ff0000000000000  d7  3ff0000000000000
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000000
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 413f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 413f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 413f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 413f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 413f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 413f9a48:
+I/DEBUG   (   80): 412af000-413ae000 
+I/DEBUG   (   80): 413ae000-41440000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41440000-41444000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     413adb90  413adc14  
+I/DEBUG   (   80):     413adb94  0001afd0  [heap]
+I/DEBUG   (   80):     413adb98  0001ac58  [heap]
+I/DEBUG   (   80):     413adb9c  0001afb0  [heap]
+I/DEBUG   (   80):     413adba0  413adc08  
+I/DEBUG   (   80):     413adba4  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     413adba8  0000a008  [heap]
+I/DEBUG   (   80):     413adbac  00000000  
+I/DEBUG   (   80):     413adbb0  0001ac58  [heap]
+I/DEBUG   (   80):     413adbb4  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbb8  0001ac58  [heap]
+I/DEBUG   (   80):     413adbbc  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbc0  0001a2c8  [heap]
+I/DEBUG   (   80):     413adbc4  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     413adbc8  df0027ad  
+I/DEBUG   (   80):     413adbcc  00000000  
+I/DEBUG   (   80): #00 413adbd0  400ad474  
+I/DEBUG   (   80):     413adbd4  413adca0  
+I/DEBUG   (   80):     413adbd8  412ae000  
+I/DEBUG   (   80):     413adbdc  413adc9c  
+I/DEBUG   (   80):     413adbe0  0001afb0  [heap]
+I/DEBUG   (   80):     413adbe4  413adc14  
+I/DEBUG   (   80):     413adbe8  413adc08  
+I/DEBUG   (   80):     413adbec  413f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     413adbf0  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbf4  fffff984  
+I/DEBUG   (   80):     413adbf8  0001ac58  [heap]
+I/DEBUG   (   80):     413adbfc  00000003  
+I/DEBUG   (   80):     413adc00  400ad474  
+I/DEBUG   (   80):     413adc04  000001b4  
+I/DEBUG   (   80):     413adc08  0001afb0  [heap]
+I/DEBUG   (   80):     413adc0c  00000000  
+I/DEBUG   (   80):     413adc10  3e4ccccd  
+I/DEBUG   (   80):     413adc14  0000a018  [heap]
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+E/AudioService(  160): Media server died.
+I/ServiceManager(  160): Waiting for service media.audio_flinger...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2474): ServiceManager: 0xf958
+I/HTC Acoustic( 2474): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2474): deonvvv gingerbread test.
+I/HTC Acoustic( 2474): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2474): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2474): read_audio_para_from_file success.
+E/HTC Acoustic( 2474): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2474): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2474): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2474): read_audio_para_from_file success.
+I/HTC Acoustic( 2474): get_audpp_filter
+I/HTC Acoustic( 2474): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2474): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2474): set mbadrc filter error.
+I/HTC Acoustic( 2474): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2474): get_audpre_filter
+I/HTC Acoustic( 2474): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2474): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2474): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2474): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2474): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2474): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2474): BT MATCH BT
+D/AudioHardwareMSM72XX( 2474): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2474): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2474): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2474): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2474): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2474): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2474): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2474): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2474): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2474): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2474): BT MATCH CURRENT
+I/AudioFlinger( 2474): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2474): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2474): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2474): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2474): Set master volume to 5.
+I/CameraService( 2474): CameraService started (pid=2474)
+I/AudioFlinger( 2474): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2474): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2474): set output routing 2
+I/AudioHardwareMSM72XX( 2474): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2474): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2474): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2474): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2474): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2474): setParameters() restarting=true
+D/AudioHardwareInterface( 2474): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2474): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2474): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2474): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2474): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2474): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2474): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2474): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2474): setParameters() restarting=false
+F/libc    ( 2474): Fatal signal 4 (SIGILL) at 0x413f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2474, tid: 2479  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 413f9a48
+I/DEBUG   (   80):  r0 413adc08  r1 413adc14  r2 413adc10  r3 413adc0c
+I/DEBUG   (   80):  r4 413adca4  r5 40c4b004  r6 0001a220  r7 413f9a49
+I/DEBUG   (   80):  r8 412ae000  r9 4011df3d  10 00100000  fp 00019d60
+I/DEBUG   (   80):  ip 4012d0f0  sp 413adbd0  lr 40b7ae8d  pc 413f9a48  cpsr 00000030
+I/DEBUG   (   80):  d0  3ff43d16aee00482  d1  3ff0000000000000
+I/DEBUG   (   80):  d2  bebbb370fb6f0b05  d3  3f11504c209ef562
+I/DEBUG   (   80):  d4  3fcce748f8ed8687  d5  4000000000000000
+I/DEBUG   (   80):  d6  3ffc6316e0e24f2f  d7  3fd43d16aee00482
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000010
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 413f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 413f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 413f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 413f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 413f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 413f9a48:
+I/DEBUG   (   80): 412af000-413ae000 
+I/DEBUG   (   80): 413ae000-41440000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41440000-41444000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     413adb90  413adc14  
+I/DEBUG   (   80):     413adb94  00019820  [heap]
+I/DEBUG   (   80):     413adb98  0001aca0  [heap]
+I/DEBUG   (   80):     413adb9c  00019800  [heap]
+I/DEBUG   (   80):     413adba0  413adc08  
+I/DEBUG   (   80):     413adba4  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     413adba8  0000a008  [heap]
+I/DEBUG   (   80):     413adbac  00000000  
+I/DEBUG   (   80):     413adbb0  0001aca0  [heap]
+I/DEBUG   (   80):     413adbb4  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbb8  0001aca0  [heap]
+I/DEBUG   (   80):     413adbbc  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbc0  0001a220  [heap]
+I/DEBUG   (   80):     413adbc4  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     413adbc8  df0027ad  
+I/DEBUG   (   80):     413adbcc  00000000  
+I/DEBUG   (   80): #00 413adbd0  400ad474  
+I/DEBUG   (   80):     413adbd4  413adca0  
+I/DEBUG   (   80):     413adbd8  412ae000  
+I/DEBUG   (   80):     413adbdc  413adc9c  
+I/DEBUG   (   80):     413adbe0  00019800  [heap]
+I/DEBUG   (   80):     413adbe4  413adc14  
+I/DEBUG   (   80):     413adbe8  413adc08  
+I/DEBUG   (   80):     413adbec  413f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     413adbf0  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbf4  fffff984  
+I/DEBUG   (   80):     413adbf8  0001aca0  [heap]
+I/DEBUG   (   80):     413adbfc  00000003  
+I/DEBUG   (   80):     413adc00  400ad474  
+I/DEBUG   (   80):     413adc04  000001b4  
+I/DEBUG   (   80):     413adc08  00019800  [heap]
+I/DEBUG   (   80):     413adc0c  00000000  
+I/DEBUG   (   80):     413adc10  3e4ccccd  
+I/DEBUG   (   80):     413adc14  0000a018  [heap]
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+E/AudioService(  160): Media server died.
+I/ServiceManager(  160): Waiting for service media.audio_flinger...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2480): ServiceManager: 0xf958
+I/HTC Acoustic( 2480): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2480): deonvvv gingerbread test.
+I/HTC Acoustic( 2480): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2480): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2480): read_audio_para_from_file success.
+E/HTC Acoustic( 2480): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2480): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2480): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2480): read_audio_para_from_file success.
+I/HTC Acoustic( 2480): get_audpp_filter
+I/HTC Acoustic( 2480): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2480): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2480): set mbadrc filter error.
+I/HTC Acoustic( 2480): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2480): get_audpre_filter
+I/HTC Acoustic( 2480): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2480): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2480): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2480): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2480): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2480): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2480): BT MATCH BT
+D/AudioHardwareMSM72XX( 2480): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2480): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2480): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2480): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2480): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2480): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2480): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2480): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2480): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2480): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2480): BT MATCH CURRENT
+I/AudioFlinger( 2480): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2480): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2480): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2480): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2480): Set master volume to 5.
+I/CameraService( 2480): CameraService started (pid=2480)
+I/AudioFlinger( 2480): AudioFlinger's thread 0x16f90 ready to run
+V/AudioHardwareMSM72XX( 2480): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2480): set output routing 2
+I/AudioHardwareMSM72XX( 2480): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2480): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2480): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2480): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2480): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2480): setParameters() restarting=true
+D/AudioHardwareInterface( 2480): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2480): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2480): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2480): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2480): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2480): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2480): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2480): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2480): setParameters() restarting=false
+F/libc    ( 2480): Fatal signal 4 (SIGILL) at 0x413f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2480, tid: 2480  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 413f9a48
+I/DEBUG   (   80):  r0 be8a4970  r1 be8a497c  r2 be8a4978  r3 be8a4974
+I/DEBUG   (   80):  r4 be8a4a0c  r5 40c4b004  r6 0001a2e0  r7 413f9a49
+I/DEBUG   (   80):  r8 00000000  r9 00000000  10 00000000  fp 00000000
+I/DEBUG   (   80):  ip 4012d0f0  sp be8a4938  lr 40b7ae8d  pc 413f9a48  cpsr 80000030
+I/DEBUG   (   80):  d0  3ff43d16aee00482  d1  3ff0000000000000
+I/DEBUG   (   80):  d2  bebbb370fb6f0b05  d3  3f11504c209ef562
+I/DEBUG   (   80):  d4  3fcce748f8ed8687  d5  4000000000000000
+I/DEBUG   (   80):  d6  3ffc6316e0e24f2f  d7  3fd43d16aee00482
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000010
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 413f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 413f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 413f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 413f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 413f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 413f9a48:
+I/DEBUG   (   80): 412af000-413ae000 
+I/DEBUG   (   80): 413ae000-41440000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41440000-41444000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     be8a48f8  be8a497c  [stack]
+I/DEBUG   (   80):     be8a48fc  0001afd0  [heap]
+I/DEBUG   (   80):     be8a4900  0001a4c8  [heap]
+I/DEBUG   (   80):     be8a4904  0001afb0  [heap]
+I/DEBUG   (   80):     be8a4908  be8a4970  [stack]
+I/DEBUG   (   80):     be8a490c  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     be8a4910  0000a008  [heap]
+I/DEBUG   (   80):     be8a4914  00000000  
+I/DEBUG   (   80):     be8a4918  0001a4c8  [heap]
+I/DEBUG   (   80):     be8a491c  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     be8a4920  0001a4c8  [heap]
+I/DEBUG   (   80):     be8a4924  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     be8a4928  0001a2e0  [heap]
+I/DEBUG   (   80):     be8a492c  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     be8a4930  df0027ad  
+I/DEBUG   (   80):     be8a4934  00000000  
+I/DEBUG   (   80): #00 be8a4938  400ad474  
+I/DEBUG   (   80):     be8a493c  be8a4a08  [stack]
+I/DEBUG   (   80):     be8a4940  00000000  
+I/DEBUG   (   80):     be8a4944  be8a4a04  [stack]
+I/DEBUG   (   80):     be8a4948  0001afb0  [heap]
+I/DEBUG   (   80):     be8a494c  be8a497c  [stack]
+I/DEBUG   (   80):     be8a4950  be8a4970  [stack]
+I/DEBUG   (   80):     be8a4954  413f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     be8a4958  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     be8a495c  fffff984  
+I/DEBUG   (   80):     be8a4960  0001a4c8  [heap]
+I/DEBUG   (   80):     be8a4964  00000003  
+I/DEBUG   (   80):     be8a4968  0001a4c0  [heap]
+I/DEBUG   (   80):     be8a496c  000001b4  
+I/DEBUG   (   80):     be8a4970  0001afb0  [heap]
+I/DEBUG   (   80):     be8a4974  00000000  
+I/DEBUG   (   80):     be8a4978  3e4ccccd  
+I/DEBUG   (   80):     be8a497c  0000a018  [heap]
+W/AudioSystem(  160): AudioFlinger server died!
+W/AudioSystem(  160): AudioPolicyService server died!
+I/ServiceManager(   77): service 'media.audio_flinger' died
+I/ServiceManager(   77): service 'media.player' died
+I/ServiceManager(   77): service 'media.camera' died
+I/ServiceManager(   77): service 'media.audio_policy' died
+W/MediaMetadataRetriever(  715): MediaMetadataRetriever server died!
+I/ServiceManager(  715): Waiting for service media.player...
+I/ServiceManager(  715): Waiting for service media.player...
+I/        ( 2490): ServiceManager: 0xf958
+I/HTC Acoustic( 2490): libhtc_acoustic.so version 2.0.0.6.
+I/HTC Acoustic( 2490): deonvvv gingerbread test.
+I/HTC Acoustic( 2490): open /system/etc/AudioPara4_WB.csv success.
+I/HTC Acoustic( 2490): acoustic table version: MAL_WB_20110217
+I/HTC Acoustic( 2490): read_audio_para_from_file success.
+E/HTC Acoustic( 2490): Fail to open /system/etc/AudioPara_HTC-WWE.csv -1.
+I/HTC Acoustic( 2490): open /system/etc/AudioPara4.csv success.
+I/HTC Acoustic( 2490): acoustic table version: MAL_Gerenic_20110509
+I/HTC Acoustic( 2490): read_audio_para_from_file success.
+I/HTC Acoustic( 2490): get_audpp_filter
+I/HTC Acoustic( 2490): open /system/etc/AudioFilter.csv success.
+I/HTC Acoustic( 2490): MBADRC Filter MBADRC FLAG = ffff.
+E/HTC Acoustic( 2490): set mbadrc filter error.
+I/HTC Acoustic( 2490): failed to set audpp parameters, exiting.
+I/HTC Acoustic( 2490): get_audpre_filter
+I/HTC Acoustic( 2490): open /system/etc/AudioPreProcess.csv success.
+D/AudioHardwareMSM72XX( 2490): mNumSndEndpoints = 151
+V/AudioHardwareMSM72XX( 2490): constructed 151 SND endpoints)
+D/AudioHardwareMSM72XX( 2490): BT MATCH HANDSET
+D/AudioHardwareMSM72XX( 2490): BT MATCH SPEAKER
+D/AudioHardwareMSM72XX( 2490): BT MATCH HEADSET
+D/AudioHardwareMSM72XX( 2490): BT MATCH BT
+D/AudioHardwareMSM72XX( 2490): BT MATCH CARKIT
+D/AudioHardwareMSM72XX( 2490): BT MATCH TTY_FULL
+D/AudioHardwareMSM72XX( 2490): BT MATCH TTY_VCO
+D/AudioHardwareMSM72XX( 2490): BT MATCH TTY_HCO
+D/AudioHardwareMSM72XX( 2490): BT MATCH NO_MIC_HEADSET
+D/AudioHardwareMSM72XX( 2490): BT MATCH FM_HEADSET
+D/AudioHardwareMSM72XX( 2490): BT MATCH HEADSET_AND_SPEAKER
+D/AudioHardwareMSM72XX( 2490): BT MATCH FM_SPEAKER
+D/AudioHardwareMSM72XX( 2490): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2490): BT MATCH BT_EC_OFF
+D/AudioHardwareMSM72XX( 2490): BT MATCH CURRENT
+I/AudioFlinger( 2490): Loaded primary audio interface from LEGACY Audio HW HAL (audio)
+I/AudioFlinger( 2490): Using 'LEGACY Audio HW HAL' (audio.primary) as the primary audio interface
+I/AudioFlinger( 2490): Loaded a2dp audio interface from A2DP Audio HW HAL (audio)
+D/AudioHardwareInterface( 2490): setMode(NORMAL)
+I/AudioHardwareMSM72XX( 2490): Set master volume to 5.
+I/CameraService( 2490): CameraService started (pid=2490)
+I/AudioFlinger( 2490): AudioFlinger's thread 0x16f90 ready to run
+E/AudioService(  160): Media server died.
+V/AudioHardwareMSM72XX( 2490): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM72XX( 2490): set output routing 2
+I/AudioHardwareMSM72XX( 2490): Routing audio to Speakerphone
+V/AudioHardwareMSM72XX( 2490): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+D/AudioHardwareMSM72XX( 2490): setVoiceVolume(1.000000)
+I/AudioHardwareMSM72XX( 2490): Setting in-call volume to 5 (available range is 0 to 5)
+I/AudioPolicyService( 2490): Loaded audio policy from LEGACY Audio Policy HAL (audio_policy)
+E/AudioService(  160): Media server started.
+V/AudioHardwareMSM72XX( 2490): setParameters() restarting=true
+D/AudioHardwareInterface( 2490): setMode(NORMAL)
+W/AudioPolicyManagerBase( 2490): setPhoneState() setting same state 0
+W/AudioPolicyManager( 2490): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2490): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2490): getDeviceForStrategy() unknown strategy: 4
+W/AudioPolicyManager( 2490): getDeviceForStrategy() unknown strategy: 4
+D/AudioHardwareMSM72XX( 2490): setVoiceVolume(0.800000)
+I/AudioHardwareMSM72XX( 2490): Setting in-call volume to 4 (available range is 0 to 5)
+V/AudioHardwareMSM72XX( 2490): setParameters() restarting=false
+F/libc    ( 2490): Fatal signal 4 (SIGILL) at 0x414f9a48 (code=1)
+I/DEBUG   (   80): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (   80): Build fingerprint: 'cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-keys'
+I/DEBUG   (   80): pid: 2490, tid: 2495  >>> /system/bin/mediaserver <<<
+I/DEBUG   (   80): signal 4 (SIGILL), code 1 (ILL_ILLOPC), fault addr 414f9a48
+I/DEBUG   (   80):  r0 413adc08  r1 413adc14  r2 413adc10  r3 413adc0c
+I/DEBUG   (   80):  r4 413adca4  r5 40c4b004  r6 0001a578  r7 414f9a49
+I/DEBUG   (   80):  r8 412ae000  r9 4011df3d  10 00100000  fp 00019918
+I/DEBUG   (   80):  ip 4012d0f0  sp 413adbd0  lr 40b7ae8d  pc 414f9a48  cpsr 00000030
+I/DEBUG   (   80):  d0  3ff30fab724a436f  d1  3ff0000000000000
+I/DEBUG   (   80):  d2  bebbb7cf4b96c96d  d3  3f115304c906e15c
+I/DEBUG   (   80):  d4  3fc5c149e20e5f98  d5  4000000000000000
+I/DEBUG   (   80):  d6  3ffd47d6c3be340d  d7  3fe30fab724a436f
+I/DEBUG   (   80):  d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (   80):  d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (   80):  d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (   80):  d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (   80):  scr 20000010
+I/DEBUG   (   80): 
+I/DEBUG   (   80):          #00  pc 0004ba48  /system/lib/libmmparser.so (_ZN7android8Sniff3G2ERKNS_2spINS_10DataSourceEEEPNS_7String8EPfPNS0_INS_8AMessageEEE)
+I/DEBUG   (   80):          #01  lr 40b7ae8d  /system/lib/libstagefright.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around pc:
+I/DEBUG   (   80): 414f9a28 3f4ccccd 00049360 fffffd6c 0003ab73  ..L?`...l...s...
+I/DEBUG   (   80): 414f9a38 0003ab86 ffffff08 0003ab3f 0003ab87  ........?.......
+I/DEBUG   (   80): 414f9a48 4ff0e92d b08d4c71 c1c4f8df af02447c  -..OqL......|D..
+I/DEBUG   (   80): 414f9a58 b08a4606 60ba2320 f8544688 a902200c  .F.. #.`.FT.. ..
+I/DEBUG   (   80): 414f9a68 6139623b 62786810 68026830 23009301  ;b9a.hxb0h.h...#
+I/DEBUG   (   80): 
+I/DEBUG   (   80): code around lr:
+I/DEBUG   (   80): 40b7ae6c 2b009107 1c18d003 f7eba90e 466febe0  ...+..........oF
+I/DEBUG   (   80): 40b7ae7c 97063738 99051c38 aa109f07 47b8ab0f  87..8..........G
+I/DEBUG   (   80): 40b7ae8c 980e1c07 d0022800 f7eb9906 2f00ebca  .....(........./
+I/DEBUG   (   80): 40b7ae9c e08ad100 98109b03 f7ec6819 2800ea46  .........h..F..(
+I/DEBUG   (   80): 40b7aeac e082d100 99059801 e87cf7ec 98109903  ..........|.....
+I/DEBUG   (   80): 
+I/DEBUG   (   80): memory map around addr 414f9a48:
+I/DEBUG   (   80): 413af000-414ae000 
+I/DEBUG   (   80): 414ae000-41540000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 41540000-41544000 /system/lib/libmmparser.so
+I/DEBUG   (   80): 
+I/DEBUG   (   80): stack:
+I/DEBUG   (   80):     413adb90  413adc14  
+I/DEBUG   (   80):     413adb94  0001a8a0  [heap]
+I/DEBUG   (   80):     413adb98  0001a140  [heap]
+I/DEBUG   (   80):     413adb9c  0001a880  [heap]
+I/DEBUG   (   80):     413adba0  413adc08  
+I/DEBUG   (   80):     413adba4  401165fd  /system/lib/libutils.so
+I/DEBUG   (   80):     413adba8  0000a008  [heap]
+I/DEBUG   (   80):     413adbac  00000000  
+I/DEBUG   (   80):     413adbb0  0001a140  [heap]
+I/DEBUG   (   80):     413adbb4  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbb8  0001a140  [heap]
+I/DEBUG   (   80):     413adbbc  40c4b004  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbc0  0001a578  [heap]
+I/DEBUG   (   80):     413adbc4  401165d5  /system/lib/libutils.so
+I/DEBUG   (   80):     413adbc8  df0027ad  
+I/DEBUG   (   80):     413adbcc  00000000  
+I/DEBUG   (   80): #00 413adbd0  400ad474  
+I/DEBUG   (   80):     413adbd4  413adca0  
+I/DEBUG   (   80):     413adbd8  412ae000  
+I/DEBUG   (   80):     413adbdc  413adc9c  
+I/DEBUG   (   80):     413adbe0  0001a880  [heap]
+I/DEBUG   (   80):     413adbe4  413adc14  
+I/DEBUG   (   80):     413adbe8  413adc08  
+I/DEBUG   (   80):     413adbec  414f9a49  /system/lib/libmmparser.so
+I/DEBUG   (   80):     413adbf0  40c51c54  /system/lib/libstagefright.so
+I/DEBUG   (   80):     413adbf4  fffff984  
+I/DEBUG   (   80):     413adbf8  0001a140  [heap]
+I/DEBUG   (   80):     413adbfc  00000003  
+I/DEBUG   (   80):     413adc00  0000001b  
+I/DEBUG   (   80):     413adc04  000001b4  
+I/DEBUG   (   80):     413adc08  0001a880  [heap]
+I/DEBUG   (   80):     413adc0c  00000000  
+I/DEBUG   (   80):     413adc10  3e4ccccd  
+I/DEBUG   (   80):     413adc14  0000a018  [heap]
