@@ -1,23 +1,20 @@
-Things to fix
-
+Not Working
 - Camera doesn't start
 - Headphones don't work
 - Network doesn't auto connect after airplane mode, you need to do it manually
 - Network signal halfway
+- Calling / Data
 - USB mount doesn't work
-- Data start but stops immediately
 - Graphical glitches in large selecting menu's
 - Black bar in notification menu
+- Light sensor
+
+To do
 - Keyboard is too large, replace with CM9 keyboard
 - Compass is too large, resize pictures
 - App Icons are CM9 ones, replace with MIUI ones
 - add androidmediaeffects.jar and widevinesoftwaredrm.jar
 - delete nfc stuff
-
-Not tested
-- Wifi/Bluetooth
-- All internet stuff, like Market, …
-- Calls and sms
 
 What works
 - Boots
@@ -26,4 +23,7 @@ What works
 - Sound
 - Flashlight
 - Microphone
-
+- Wifi / Bluetooth
+- Rotation
+- Compass
+- Keyboard
