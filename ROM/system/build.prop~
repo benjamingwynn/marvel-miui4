@@ -126,8 +126,8 @@ rild.libargs=-d /dev/smd0
 # but none are in range.
 wifi.supplicant_scan_interval = 15
 
-
 ro.com.google.locationfeatures=1
+
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
 ro.opengles.version = 131072
@@ -198,7 +198,7 @@ ro.ril.update.acoustic.table = 1
 #
 # ADDITIONAL_BUILD_PROPERTIES
 #
-ro.rommanager.developerid=wfsdev
+ro.rommanager.developerid=cyanogenmod
 keyguard.no_require_sim=true
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
@@ -207,9 +207,8 @@ ro.com.android.wifi-watchlist=GoogleGuest
 ro.setupwizard.enterprise_mode=1
 ro.com.android.dateformat=dd-MM-yyyy
 ro.com.android.dataroaming=false
-## What the actuall fuck is this here for?
-#ro.cm.version=9.0.0-RC0-marvel-UNOFFICIAL
-#ro.modversion=9.0.0-RC0-marvel-UNOFFICIAL
+ro.cm.version=9.0.0-RC0-marvel-UNOFFICIAL
+ro.modversion=9.0.0-RC0-marvel-UNOFFICIAL
 ro.config.ringtone=MI.ogg
 ro.config.notification_sound=FadeIn.ogg
 ro.config.alarm_alert=GoodMorning.ogg
