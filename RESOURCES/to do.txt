@@ -11,6 +11,7 @@ Not Working
 
 To do
 - Keyboard is too large, replace with CM9 keyboard
+- USB mount fix, probably miuisystemui.apk needs modding
 
 What works
 - Boots
