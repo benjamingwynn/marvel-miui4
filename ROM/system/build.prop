@@ -9,7 +9,7 @@ ro.build.version.release=4.0.4
 ro.build.date=Fri Jun 15 20:37:10
 ro.build.date.utc=1338575830
 ro.build.type=user
-ro.build.user=WSDev
+ro.build.user=WSdev
 ro.build.host=magrathea
 ro.build.tags=test-keys
 ro.product.model=HTC Wildfire S A510e
@@ -32,13 +32,6 @@ ro.build.fingerprint=cyanogenmod/htc_marvel/marvel:4.0.4/ASN01/0.1:user/release-
 ro.build.characteristics=default
 ro.cm.device=marvel
 # end build properties
-#
-# system.prop for marvel
-#
-
-###################
-# Graphics
-###################
 
 ###
 # When set to 1 this options lets you choose the composition type in gralloc
@@ -188,9 +181,6 @@ ro.product.wifi = 802.11 b/g/n
 # update the acoustic table for Buzz NEL lab testing
 ro.ril.update.acoustic.table = 1
 
-
-#
-# ADDITIONAL_BUILD_PROPERTIES
 #
 ro.rommanager.developerid=wfsdev
 keyguard.no_require_sim=true
