@@ -1,16 +1,16 @@
 Not Working
-- Camera doesn't start
+- Camera doesn't start - maybe fixed with new lib?
 - Headphones don't work - fixed
 - Network doesn't auto connect after airplane mode
 - Network signal halfway
 - Calling / Data
+- all maybe fixed with small modding
 - USB mount doesn't work
 - Graphical glitches in large selecting menu's
 - Black bar in notification menu
 - Light sensor
 
 To do
-- smali editing for network fix
 - USB mount fix, probably miuisystemui.apk needs modding
 - search key?
 
