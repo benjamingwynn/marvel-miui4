@@ -1,6 +1,6 @@
 Not Working
 - Camera doesn't start
-- Headphones don't work
+- Headphones don't work - fixed
 - Network doesn't auto connect after airplane mode
 - Network signal halfway
 - Calling / Data
@@ -10,8 +10,9 @@ Not Working
 - Light sensor
 
 To do
-- Keyboard is too large, replace with CM9 keyboard
+- smali editing for network fix
 - USB mount fix, probably miuisystemui.apk needs modding
+- search key?
 
 What works
 - Boots
