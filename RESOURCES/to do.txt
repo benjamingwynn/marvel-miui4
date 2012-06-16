@@ -17,7 +17,6 @@ To do
 - Fix headset - done
 - Fix camera
 - Fix soundrecorder - done
-- Themes don't apply (themes folder added but no result)
 
 What works
 - Boots
