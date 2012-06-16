@@ -12,11 +12,12 @@ Not Working
 
 To do
 - USB mount fix, probably miuisystemui.apk needs modding
-- Fix auto connect network + data
+- Fix auto connect network + data - done halfway
 - Fix graphic glitches
 - Fix headset - done
-- Fix camera
+- Fix camera - done
 - Fix soundrecorder - done
+- Fix themes
 
 What works
 - Boots

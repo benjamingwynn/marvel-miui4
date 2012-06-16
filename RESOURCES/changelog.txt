@@ -67,7 +67,10 @@ modded roundedocrnerssurface.smali in services.jar (removed line 55)
 
 END OF BOOTING LOG
 
-network fix: added htcqualcommril.smali and qualcommril.smali to framework.jar
+network fix: replaced networkmanagementservice.smali in services.jar
+headset fix: replaced wiredaccesoryobserver in services.jar
+soundrecorder fix: replace a smali in framework.jar
+camera fix: replaced some camera smalls in android/hardware of framework.jar
 
 
 
