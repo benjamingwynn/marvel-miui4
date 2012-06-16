@@ -14,15 +14,14 @@ To do
 - USB mount fix, probably miuisystemui.apk needs modding
 - Fix auto connect network + data
 - Fix graphic glitches
-- Fix headset
+- Fix headset - done
 - Fix camera
-- Fix soundrecorder
+- Fix soundrecorder - done
 - Themes don't apply (themes folder added but no result)
 
 What works
 - Boots
 - Touchscreen
-- Almost all apps
 - Sound
 - Flashlight
 - Microphone
@@ -30,4 +29,6 @@ What works
 - Rotation
 - Compass
 - Keyboard
+- Root
+- Calling / SMS
 

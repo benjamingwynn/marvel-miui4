@@ -4,12 +4,16 @@ package_extract_file("system/bin/backuptool.functions", "/tmp/backuptool.functio
 set_perm(0, 0, 0777, "/tmp/backuptool.sh");
 set_perm(0, 0, 0644, "/tmp/backuptool.functions");
 run_program("/tmp/backuptool.sh", "backup");
+ui_print("");
 ui_print("WFSdev");
 ui_print("proudly presenting ...");
-ui_print("MIUI v4");
+ui_print("");
+ui_print("MIUI V4");
+ui_print("");
 show_progress(0.300000, 10);
 format("yaffs2", "MTD", "system", "0");
 mount("yaffs2", "MTD", "system", "/system");
+ui_print("installing");
 package_extract_dir("system", "/system");
 ui_print("symlinking");
 symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
