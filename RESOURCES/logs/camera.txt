@@ -1,0 +1,950 @@
+I/ActivityManager(  159): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.camera/.Camera bnds=[9,212][89,302]} from pid 552
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  159): Start proc com.android.camera for activity com.android.camera/.Camera: pid=1337 uid=10039 gids={1006, 1015}
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 19(GSM) 16(CDMA)
+W/InputManagerService(  159): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@412251e8 (uid=10019 pid=552)
+E/AndroidRuntime( 1337): FATAL EXCEPTION: main
+E/AndroidRuntime( 1337): java.lang.NoSuchMethodError: android.os.Environment.getExternalStorageState
+E/AndroidRuntime( 1337): 	at com.android.camera.Storage.getAvailableSpace(Storage.java:110)
+E/AndroidRuntime( 1337): 	at com.android.camera.Camera.checkStorage(Camera.java:1387)
+E/AndroidRuntime( 1337): 	at com.android.camera.Camera.initializeFirstTime(Camera.java:399)
+E/AndroidRuntime( 1337): 	at com.android.camera.Camera.access$600(Camera.java:86)
+E/AndroidRuntime( 1337): 	at com.android.camera.Camera$MainHandler.handleMessage(Camera.java:305)
+E/AndroidRuntime( 1337): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1337): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1337): 	at android.app.ActivityThread.main(ActivityThread.java:4429)
+E/AndroidRuntime( 1337): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1337): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1337): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime( 1337): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime( 1337): 	at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  159):   Force finishing activity com.android.camera/.Camera
+W/ActivityManager(  159): Activity pause timeout for ActivityRecord{413643d0 com.android.camera/.Camera}
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  159): No longer want com.miui.backup (pid 1129): hidden #16
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 17(GSM) 16(CDMA)
+I/WindowManager(  159): WIN DEATH: Window{412e86e8 SurfaceView paused=false}
+I/ActivityManager(  159): Process com.android.camera (pid 1337) has died.
+I/WindowManager(  159): WIN DEATH: Window{41255ba8 com.android.camera/com.android.camera.Camera paused=false}
+I/ActivityManager(  159): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.camera/.Camera bnds=[9,212][89,302]} from pid 552
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  159): Start proc com.android.camera for activity com.android.camera/.Camera: pid=1373 uid=10039 gids={1006, 1015}
+W/InputManagerService(  159): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@412251e8 (uid=10019 pid=552)
+E/AndroidRuntime( 1373): FATAL EXCEPTION: main
+E/AndroidRuntime( 1373): java.lang.NoSuchMethodError: android.os.Environment.getExternalStorageState
+E/AndroidRuntime( 1373): 	at com.android.camera.Storage.getAvailableSpace(Storage.java:110)
+E/AndroidRuntime( 1373): 	at com.android.camera.Camera.checkStorage(Camera.java:1387)
+E/AndroidRuntime( 1373): 	at com.android.camera.Camera.initializeFirstTime(Camera.java:399)
+E/AndroidRuntime( 1373): 	at com.android.camera.Camera.access$600(Camera.java:86)
+E/AndroidRuntime( 1373): 	at com.android.camera.Camera$MainHandler.handleMessage(Camera.java:305)
+E/AndroidRuntime( 1373): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1373): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1373): 	at android.app.ActivityThread.main(ActivityThread.java:4429)
+E/AndroidRuntime( 1373): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1373): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1373): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime( 1373): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime( 1373): 	at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  159):   Force finishing activity com.android.camera/.Camera
+W/ActivityManager(  159): Activity pause timeout for ActivityRecord{41487638 com.android.camera/.Camera}
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:0 fd:42
+D/memalloc(  159): /dev/pmem: Mapped buffer base:0x50a48000 size:614400 offset:0 fd:267
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  159): Start proc com.android.camera for activity com.android.camera/.Camera: pid=1555 uid=10039 gids={1006, 1015}
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 2(GSM) 16(CDMA)
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x50e88000 size:1228800 offset:614400
+V/CameraHolder( 1555): open camera 0
+I/dalvikvm( 1555): Could not find method android.hardware.Camera.access$700, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1555): VFY: unable to resolve static method 13210: Landroid/hardware/Camera;.access$700 (Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
+D/dalvikvm( 1555): VFY: replacing opcode 0x71 at 0x00a0
+I/dalvikvm( 1555): Could not find method android.hardware.Camera.access$800, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1555): VFY: unable to resolve static method 13211: Landroid/hardware/Camera;.access$800 (Landroid/hardware/Camera;)Landroid/hardware/Camera$AutoFocusCallback;
+D/dalvikvm( 1555): VFY: replacing opcode 0x71 at 0x00bb
+I/dalvikvm( 1555): Could not find method android.hardware.Camera.access$900, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1555): VFY: unable to resolve static method 13214: Landroid/hardware/Camera;.access$900 (Landroid/hardware/Camera;)Landroid/hardware/Camera$OnZoomChangeListener;
+D/dalvikvm( 1555): VFY: replacing opcode 0x71 at 0x00d6
+I/dalvikvm( 1555): Could not find method android.hardware.Camera.access$1000, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1555): VFY: unable to resolve static method 13196: Landroid/hardware/Camera;.access$1000 (Landroid/hardware/Camera;)Landroid/hardware/Camera$FaceDetectionListener;
+D/dalvikvm( 1555): VFY: replacing opcode 0x71 at 0x00f3
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41596000 size:614400 offset:614400 fd:38
+I/dalvikvm( 1555): Could not find method android.hardware.Camera.access$1100, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1555): VFY: unable to resolve static method 13199: Landroid/hardware/Camera;.access$1100 (Landroid/hardware/Camera;)Landroid/hardware/Camera$ErrorCallback;
+D/dalvikvm( 1555): VFY: replacing opcode 0x71 at 0x0128
+I/CameraService( 1407): Opening camera 0
+I/CameraHAL( 1407): camera_device open+++
+D/QualcommCameraHardware( 1407): createInstance: E
+D/QualcommCameraHardware( 1407):  Storing the current target type as 0 
+D/QualcommCameraHardware( 1407): constructor EX
+D/QualcommCameraHardware( 1407): startCamera E
+D/QualcommCameraHardware( 1407): loading liboemcamera at 0x4001a7a4
+I/QualcommCameraHardware( 1407): Set main cam and main cam only
+I/mm-camera-mmap( 1407): set sensor selection :0
+D/OpenGLRenderer(  552): Flushing caches (mode 0)
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x51088000 size:7061504 offset:6447104
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x51744000 size:7675904 offset:7061504
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x51e98000 size:2883584 offset:2269184
+I/QualcommCameraHardware( 1407): Open Device node : /dev/msm_camera/control0
+I/mm-camera-config( 1407): cam_conf fd cfgctrl.camfd:0
+I/mm-camera-config( 1407): Open config device node : /dev/msm_camera/config0
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41bbc000 size:614400 offset:7061504 fd:62
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x4172a000 size:614400 offset:2269184 fd:44
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41b26000 size:614400 offset:6447104 fd:50
+I/        ( 1407): [AWB Calibration] from kernel: fuse_id: 0x0, 0x0, 0x1, 0x1f8bb6
+I/        ( 1407): [AWB Calibration] fuse_id : 0x0, 0x0, 0x1, 0x1f8bb6
+I/        ( 1407): [AWB Calibration] fail to read /data/awb_cal, try another file
+I/        ( 1407): [AWB Calibration] read from file OK: /sys/android_camera_awb_cal/awb_cal
+I/        ( 1407): [AWB Calibration] nandflash data: 0xc1b, 0x2d8, 0x288, 0x0, 0x0, 0x1, 0x1f8bb6, 0xca6f672d
+I/        ( 1407): [AWB Calibration] check sum=ca6f672d, OK
+I/        ( 1407): [AWB Calibration] valid bit and fuseID pass, use new white points
+I/        ( 1407): [AWB Calibration] use light version: v3
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+I/QualcommCameraHardware( 1407): startCamera: camsensor name s5k4e1gx, flash 1
+D/QualcommCameraHardware( 1407): startCamera X
+D/QualcommCameraHardware( 1407): initDefaultParameters E
+D/QualcommCameraHardware( 1407): product 12
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 1, length 32
+E/QualcommCameraHardware( 1407): native_access_parm: error (No such file or directory): fd 14, type 1, length 32, status 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 59, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 60, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 61, length 4
+D/QualcommCameraHardware( 1407): requested preview size 768 x 432
+D/QualcommCameraHardware( 1407): requested picture size 1024 x 768
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 0
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:384 y:216
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+D/QualcommCameraHardware( 1407): initDefaultParameters X
+D/QualcommCameraHardware( 1407): createInstance: X created hardware=0x1fbc8
+I/CameraHAL( 1407): camera_device_open---ok rv 0
+I/AwesomePlayer( 1407): setDataSource_l('/system/media/audio/ui/camera_click.ogg')
+E/OMXCodec( 1407): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+E/OMXCodec( 1407): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+I/AwesomePlayer( 1407): setDataSource_l('/system/media/audio/ui/VideoRecord.ogg')
+E/OMXCodec( 1407): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+E/OMXCodec( 1407): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+D/Camera  ( 1555): app passed NULL surface
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 0
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/camera  ( 1555): Preview size is 384x288
+V/MediaProfilesJNI( 1555): native_get_num_image_encoding_quality_levels
+V/MediaProfilesJNI( 1555): native_get_image_encoding_quality_level
+V/MediaProfilesJNI( 1555): native_get_image_encoding_quality_level
+V/MediaProfilesJNI( 1555): native_get_image_encoding_quality_level
+D/CameraSettings( 1555): Parameters: [antibanding-values=off,50hz,60hz,auto, antibanding=auto, brightness-def=3, brightness-max=6, brightness-min=0, brightness=3, cam-mode=0, contrast-def=5, contrast-max=10, contrast-min=0, contrast=5, effect-values=none,mono,negative,solarize,sepia,posterize,aqua, effect=none, exposure-compensation-step=0.5, exposure-compensation=0, flash-mode-values=off,auto,on,torch, flash-mode=auto, focal-length=3.53, focus-mode-values=auto,infinity, focus-mode=auto, front-camera-mode-values=mirror,reverse, front-camera-mode=mirror, horizontal-view-angle=54.8, iso-values=auto,deblur,100,200,400,800,1250, iso=auto, jpeg-quality=90, jpeg-thumbnail-height=480, jpeg-thumbnail-quality=75, jpeg-thumbnail-size-values=768x576,640x480,512x384,0x0, jpeg-thumbnail-width=640, max-exposure-compensation=4, max-zoom=5, meter-mode-values=meter-average,meter-center,meter-spot, meter-mode=meter-center, min-exposure-compensation=-4, orientation=landscape, picture-format-values=jpeg, picture-format=jpeg, picture-size-values=2592x1952,2592x1728,2560x1920,2560x1712,2048x1536,2048x1360,2016x1344,1600x1200,1584x1056,1280x960,1280x848,1248x832,1024x768,640x480,640x416,624x416,512x384,400x400,272x272, picture-size=2560x1920, preview-format-values=yuv420sp, preview-format=yuv420sp, preview-frame-rate-values=15, preview-frame-rate=15, preview-size-values=1280x720,800x480,768x432,720x480,640x480,576x432,480x320,400x240,384x288,352x288,320x240,272x272,240x240,240x160,176x144, preview-size=384x288, saturation-def=5, saturation-max=10, saturation-min=1, saturation=5, sharpness-def=10, sharpness-max=30, sharpness-min=0, sharpness=10, smart-contrast=off, taking-picture-zoom-max=40, taking-picture-zoom-min=0, taking-picture-zoom=0, vertical-view-angle=42.5, whitebalance-values=auto,incandescent,fluorescent,daylight,cloudy-daylight, whitebalance=auto, zoom-ratios=100,114,131,151,174,200, zoom-supported=true, zoom=0]
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/camera  ( 1555): startPreview
+D/QualcommCameraHardware( 1407): startPreview E
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288 videosize = 384 x 288
+I/QualcommCameraHardware( 1407): pmem pool /dev/pmem_adsp ioctl(fd = 34, PMEM_GET_SIZE) is 1048576
+D/QualcommCameraHardware( 1407): mBufferSize=165888, mAlignedBufferSize=262144
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 0 buffer = 0x41cf0000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 0 buffer = 0x41d30000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 0 buffer = 0x41d70000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 0 buffer = 0x41db0000
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 1, length 32
+D/QualcommCameraHardware( 1407): initPreview X: 1
+D/QualcommCameraHardware( 1407): frame_thread E
+I/mm-camera( 1407): Open Device node : /dev/msm_camera/frame0 
+E/mm-camera 7x-vfe( 1407): Received VFE start ACK!!! This is a user preview start.
+D/QualcommCameraHardware( 1407): startPreview X
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 15, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+I/QualcommCameraHardware( 1407): Setting Saturation is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 11, length 4
+I/QualcommCameraHardware( 1407): Setting Sharpness is 10
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 9, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/PhoneStatusBar(  380): setLightsOn(true)
+D/libEGL  ( 1555): loaded /system/lib/egl/libGLES_android.so
+D/libEGL  ( 1555): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  ( 1555): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  ( 1555): loaded /system/lib/egl/libGLESv2_adreno200.so
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:614400 fd:38
+D/memalloc( 1555): /dev/pmem: Mapped buffer base:0x506c4000 size:1228800 offset:614400 fd:55
+D/OpenGLRenderer( 1555): Enabling debug mode 0
+V/PhoneStatusBar(  380): setLightsOn(true)
+V/camera  ( 1555): surfaceChanged. w=320. h=427
+V/camera  ( 1555): stopPreview
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal E
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal X: 0
+D/QualcommCameraHardware( 1407): stopPreview: E
+D/QualcommCameraHardware( 1407): stopPreviewInternal E: 1
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal E
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal X: 0
+I/mm-camera 7x-vfe( 1407): vfe_process_QDSP_VFETASK_MSG_VFE_STOP_ACK: call mmcamera_vfe_stop_ack_callback()
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack_callback: E
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack: E
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack: X mVfeStopped = 1
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack_callback: X
+I/QualcommCameraHardware( 1407): deinitPreview E
+D/QualcommCameraHardware( 1407): launch_watchdog_thread:
+D/QualcommCameraHardware( 1407): watchdog_thread_id = 172216
+I/QualcommCameraHardware( 1407): deinitPreview X
+D/QualcommCameraHardware( 1407): stopPreviewInternal X: 0
+D/QualcommCameraHardware( 1407): stopPreview: X
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 1 buffer = 0x41cf0000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 1 buffer = 0x41d30000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 1 buffer = 0x41d70000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 32, reg = 1 buffer = 0x41db0000
+D/QualcommCameraHardware( 1407): frame_thread X
+D/QualcommCameraHardware( 1407): watchdog_thread_id = 172216
+D/QualcommCameraHardware( 1407): release_watchdog_thread: frame_thread_released = 1
+V/camera  ( 1555): Preview size is 384x288
+D/CameraSettings( 1555): Parameters: [antibanding-values=off,50hz,60hz,auto, antibanding=auto, brightness-def=3, brightness-max=6, brightness-min=0, brightness=3, cam-mode=0, contrast-def=5, contrast-max=10, contrast-min=0, contrast=5, effect-values=none,mono,negative,solarize,sepia,posterize,aqua, effect=none, exposure-compensation-step=0.5, exposure-compensation=0, flash-mode-values=off,auto,on,torch, flash-mode=auto, focal-length=3.53, focus-mode-values=auto,infinity, focus-mode=auto, front-camera-mode-values=mirror,reverse, front-camera-mode=mirror, horizontal-view-angle=54.8, iso-values=auto,deblur,100,200,400,800,1250, iso=auto, jpeg-quality=90, jpeg-thumbnail-height=480, jpeg-thumbnail-quality=75, jpeg-thumbnail-size-values=768x576,640x480,512x384,0x0, jpeg-thumbnail-width=640, max-exposure-compensation=4, max-zoom=5, meter-mode-values=meter-average,meter-center,meter-spot, meter-mode=meter-center, min-exposure-compensation=-4, orientation=landscape, picture-format-values=jpeg, picture-format=jpeg, picture-size-values=2592x1952,2592x1728,2560x1920,2560x1712,2048x1536,2048x1360,2016x1344,1600x1200,1584x1056,1280x960,1280x848,1248x832,1024x768,640x480,640x416,624x416,512x384,400x400,272x272, picture-size=2560x1920, preview-format-values=yuv420sp, preview-format=yuv420sp, preview-frame-rate-values=15, preview-frame-rate=15, preview-size-values=1280x720,800x480,768x432,720x480,640x480,576x432,480x320,400x240,384x288,352x288,320x240,272x272,240x240,240x160,176x144, preview-size=384x288, recording-hint=false, saturation-def=5, saturation-max=10, saturation-min=1, saturation=5, sharpness-def=10, sharpness-max=30, sharpness-min=0, sharpness=10, smart-contrast=off, taking-picture-zoom-max=40, taking-picture-zoom-min=0, taking-picture-zoom=0, vertical-view-angle=42.5, whitebalance-values=auto,incandescent,fluorescent,daylight,cloudy-daylight, whitebalance=auto, zoom-ratios=100,114,131,151,174,200, zoom-supported=true, zoom=0]
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/camera  ( 1555): startPreview
+I/CameraHAL( 1407): camera_set_preview_window: setting buffer count to 4
+I/CameraHAL( 1407): camera_set_preview_window: preview format yuv420sp
+D/QualcommCameraHardware( 1407): startPreview E
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288 videosize = 384 x 288
+I/QualcommCameraHardware( 1407): pmem pool /dev/pmem_adsp ioctl(fd = 36, PMEM_GET_SIZE) is 1048576
+D/QualcommCameraHardware( 1407): mBufferSize=165888, mAlignedBufferSize=262144
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41ff0000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x42030000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x42070000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x420b0000
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 1, length 32
+D/QualcommCameraHardware( 1407): initPreview X: 1
+D/QualcommCameraHardware( 1407): frame_thread E
+I/mm-camera( 1407): Open Device node : /dev/msm_camera/frame0 
+D/QualcommCameraHardware( 1407): void* watchdog(void*), frame_thread_released = 1, cnt = 0
+D/QualcommCameraHardware( 1407): void* watchdog(void*), exit, frame_thread_released=1
+D/QualcommCameraHardware( 1407): void release_watchdog_thread(): pthread_join succeeded on watchdog.
+E/mm-camera 7x-vfe( 1407): Received VFE start ACK!!! This is a user preview start.
+D/QualcommCameraHardware( 1407): startPreview X
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 15, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+I/QualcommCameraHardware( 1407): Setting Saturation is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 11, length 4
+I/QualcommCameraHardware( 1407): Setting Sharpness is 10
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 9, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x42740000 size:442368 fd:41
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x40a00, fd=40 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x40a00) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x42818000 size:442368 fd:46
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x2a0b8, fd=42 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x2a0b8) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x42884000 size:442368 fd:52
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x35cc0, fd=44 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x35cc0) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x428f0000 size:442368 fd:64
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x40290, fd=46 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x40290) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:2269184 fd:80
+D/memalloc( 1555): /dev/pmem: Mapped buffer base:0x50898000 size:2883584 offset:2269184 fd:58
+I/ActivityManager(  159): Displayed com.android.camera/.Camera: +2s719ms
+W/InputManagerService(  159): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@412251e8 (uid=10019 pid=552)
+I/dalvikvm( 1555): Could not find method android.os.Environment.getExternalStorageState, referenced from method com.android.camera.Storage.getAvailableSpace
+W/dalvikvm( 1555): VFY: unable to resolve static method 363: Landroid/os/Environment;.getExternalStorageState (Ljava/lang/String;)Ljava/lang/String;
+D/dalvikvm( 1555): VFY: replacing opcode 0x71 at 0x0002
+D/AndroidRuntime( 1555): Shutting down VM
+W/dalvikvm( 1555): threadid=1: thread exiting with uncaught exception (group=0x40a6a1f8)
+E/AndroidRuntime( 1555): FATAL EXCEPTION: main
+E/AndroidRuntime( 1555): java.lang.NoSuchMethodError: android.os.Environment.getExternalStorageState
+E/AndroidRuntime( 1555): 	at com.android.camera.Storage.getAvailableSpace(Storage.java:110)
+E/AndroidRuntime( 1555): 	at com.android.camera.Camera.checkStorage(Camera.java:1387)
+E/AndroidRuntime( 1555): 	at com.android.camera.Camera.initializeFirstTime(Camera.java:399)
+E/AndroidRuntime( 1555): 	at com.android.camera.Camera.access$600(Camera.java:86)
+E/AndroidRuntime( 1555): 	at com.android.camera.Camera$MainHandler.handleMessage(Camera.java:305)
+E/AndroidRuntime( 1555): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1555): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1555): 	at android.app.ActivityThread.main(ActivityThread.java:4429)
+E/AndroidRuntime( 1555): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1555): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1555): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime( 1555): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime( 1555): 	at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  159):   Force finishing activity com.android.camera/.Camera
+D/memalloc(  159): /dev/pmem: Unmapping buffer base:0x50a48000 size:614400 offset:0
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41500000 size:614400 offset:0 fd:42
+D/dalvikvm(  159): GC_CONCURRENT freed 7346K, 47% free 12451K/23239K, paused 22ms+14ms
+V/PhoneStatusBar(  380): setLightsOn(true)
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:204800 offset:1720320 fd:42
+D/memalloc(  159): /dev/pmem: Mapped buffer base:0x5365c000 size:1925120 offset:1720320 fd:271
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+W/ActivityManager(  159): Activity pause timeout for ActivityRecord{412a8580 com.android.camera/.Camera}
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:0 fd:83
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x50d88000 size:614400 offset:0 fd:52
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:6447104 fd:86
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x51088000 size:7061504 offset:6447104 fd:60
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:7061504 fd:89
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x51744000 size:7675904 offset:7061504 fd:63
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:204800 offset:7675904 fd:92
+D/memalloc(  159): /dev/pmem: Mapped buffer base:0x55aa8000 size:7880704 offset:7675904 fd:280
+I/ActivityManager(  159): No longer want com.android.calendar (pid 1015): hidden #16
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:7880704 fd:95
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x52e50000 size:8495104 offset:7880704 fd:66
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 2(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 2(GSM) 16(CDMA)
+W/ActivityManager(  159): Activity destroy timeout for ActivityRecord{412a8580 com.android.camera/.Camera}
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 1(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 2(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 6(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 6(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+V/PhoneStatusBar(  380): setLightsOn(true)
+V/AudioHardwareMSM72XX( 1407): open driver
+V/AudioHardwareMSM72XX( 1407): get config
+V/AudioHardwareMSM72XX( 1407): set config
+V/AudioHardwareMSM72XX( 1407): buffer_size: 4800
+V/AudioHardwareMSM72XX( 1407): buffer_count: 2
+V/AudioHardwareMSM72XX( 1407): channel_count: 2
+V/AudioHardwareMSM72XX( 1407): sample_rate: 44100
+I/Process ( 1555): Sending signal. PID: 1555 SIG: 9
+D/QualcommCameraHardware( 1407): stopPreview: E
+D/QualcommCameraHardware( 1407): stopPreviewInternal E: 1
+D/memalloc(   82): /dev/pmem_adsp: Freeing buffer base:0x42740000 size:442368 fd:41
+D/memalloc(   82): /dev/pmem_adsp: Freeing buffer base:0x42818000 size:442368 fd:46
+D/memalloc(   82): /dev/pmem_adsp: Freeing buffer base:0x428f0000 size:442368 fd:64
+I/ActivityManager(  159): Process com.android.camera (pid 1555) has died.
+I/WindowManager(  159): WIN DEATH: Window{41314f68 SurfaceView paused=false}
+W/InputDispatcher(  159): channel '412e86e8 com.android.camera/com.android.camera.Camera (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+E/InputDispatcher(  159): channel '412e86e8 com.android.camera/com.android.camera.Camera (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  159): Attempted to unregister already unregistered input channel '412e86e8 com.android.camera/com.android.camera.Camera (server)'
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x4172a000 size:614400 offset:2269184 fd:80
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41596000 size:614400 offset:614400 fd:38
+I/WindowManager(  159): WIN DEATH: Window{412e86e8 com.android.camera/com.android.camera.Camera paused=false}
+I/WindowManager(  159): WINDOW DIED Window{412e86e8 com.android.camera/com.android.camera.Camera paused=false}
+I/mm-camera 7x-vfe( 1407): vfe_process_QDSP_VFETASK_MSG_VFE_STOP_ACK: call mmcamera_vfe_stop_ack_callback()
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack_callback: E
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack: E
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack: X mVfeStopped = 1
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack_callback: X
+I/QualcommCameraHardware( 1407): deinitPreview E
+D/QualcommCameraHardware( 1407): launch_watchdog_thread:
+D/QualcommCameraHardware( 1407): watchdog_thread_id = 269528
+I/QualcommCameraHardware( 1407): deinitPreview X
+D/QualcommCameraHardware( 1407): stopPreviewInternal X: 0
+D/QualcommCameraHardware( 1407): stopPreview: X
+D/QualcommCameraHardware( 1407): release E
+D/QualcommCameraHardware( 1407): deinitRaw E
+D/QualcommCameraHardware( 1407): deinitRaw X
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x41ff0000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x42030000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x42070000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x420b0000
+D/QualcommCameraHardware( 1407): frame_thread X
+D/QualcommCameraHardware( 1407): watchdog_thread_id = 269528
+D/QualcommCameraHardware( 1407): release_watchdog_thread: frame_thread_released = 1
+D/mm-camera-ctrlcmd( 1407): config_proc_CAMERA_STOP_SNAPSHOT: received CAMERA_STOP_SNAPSHOT!, ctrl->state = 7
+D/mm-camera-ctrlcmd( 1407): config_proc_CAMERA_STOP_SNAPSHOT: snapshot is already stopped (state 7)
+D/memalloc(  159): /dev/pmem: Unmapping buffer base:0x5365c000 size:1925120 offset:1720320
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x416a4000 size:204800 offset:1720320 fd:42
+D/memalloc(  159): /dev/pmem: Unmapping buffer base:0x55aa8000 size:7880704 offset:7675904
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41c52000 size:204800 offset:7675904 fd:92
+D/QualcommCameraHardware( 1407): void* watchdog(void*), frame_thread_released = 1, cnt = 0
+D/QualcommCameraHardware( 1407): void* watchdog(void*), exit, frame_thread_released=1
+D/QualcommCameraHardware( 1407): void release_watchdog_thread(): pthread_join succeeded on watchdog.
+E/mm-camera( 1407): +++ DELETING LEAKED MEMORY AT 0x3eba0 (4 REMAINING)
+E/mm-camera( 1407):      6 0xa742e1c8
+E/mm-camera( 1407):      5 0xa740cd12
+E/mm-camera( 1407):      4 0xa740e5be
+E/mm-camera( 1407):      3 0xa740e0a2
+E/mm-camera( 1407):      2 0x40077ecc
+E/mm-camera( 1407):      1 0x400779e0
+E/mm-camera( 1407): +++ DELETING LEAKED MEMORY AT 0x41ad8 (3 REMAINING)
+E/mm-camera( 1407):      6 0xa742e1c8
+E/mm-camera( 1407):      5 0xa740cd12
+E/mm-camera( 1407):      4 0xa740e5be
+E/mm-camera( 1407):      3 0xa740e0a2
+E/mm-camera( 1407):      2 0x40077ecc
+E/mm-camera( 1407):      1 0x400779e0
+E/mm-camera( 1407): +++ DELETING LEAKED MEMORY AT 0x40348 (2 REMAINING)
+E/mm-camera( 1407):      6 0xa742e1c8
+E/mm-camera( 1407):      5 0xa740cd12
+E/mm-camera( 1407):      4 0xa740e5be
+E/mm-camera( 1407):      3 0xa740e0a2
+E/mm-camera( 1407):      2 0x40077ecc
+E/mm-camera( 1407):      1 0x400779e0
+E/mm-camera( 1407): +++ DELETING LEAKED MEMORY AT 0x35d58 (1 REMAINING)
+E/mm-camera( 1407):      6 0xa742e1c8
+E/mm-camera( 1407):      5 0xa740cd12
+E/mm-camera( 1407):      4 0xa740e5be
+E/mm-camera( 1407):      3 0xa740e0a2
+E/mm-camera( 1407):      2 0x40077ecc
+E/mm-camera( 1407):      1 0x400779e0
+D/QualcommCameraHardware( 1407): dlclose(libqcamera)
+D/QualcommCameraHardware( 1407): release X
+I/CameraService( 1407): Destroying camera 0
+D/QualcommCameraHardware( 1407): ~QualcommCameraHardware E
+D/QualcommCameraHardware( 1407): ~QualcommCameraHardware X
+W/AudioFlinger( 1407): session id 25 not found for pid 1407
+W/AudioFlinger( 1407): session id 26 not found for pid 1407
+D/memalloc(   82): /dev/pmem_adsp: Freeing buffer base:0x42884000 size:442368 fd:52
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+W/PowerUI (  380): unknown intent: Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x10000010 }
+I/ActivityManager(  159): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.camera/.Camera bnds=[9,212][89,302]} from pid 552
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:614400 fd:39
+D/memalloc(  159): /dev/pmem: Mapped buffer base:0x5365c000 size:1228800 offset:614400 fd:278
+V/AudioHardwareMSM72XX( 1407): open driver
+V/AudioHardwareMSM72XX( 1407): get config
+V/AudioHardwareMSM72XX( 1407): set config
+V/AudioHardwareMSM72XX( 1407): buffer_size: 4800
+V/AudioHardwareMSM72XX( 1407): buffer_count: 2
+V/AudioHardwareMSM72XX( 1407): channel_count: 2
+V/AudioHardwareMSM72XX( 1407): sample_rate: 44100
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+I/ActivityManager(  159): Start proc com.android.camera for activity com.android.camera/.Camera: pid=1595 uid=10039 gids={1006, 1015}
+V/CameraHolder( 1595): open camera 0
+I/dalvikvm( 1595): Could not find method android.hardware.Camera.access$700, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1595): VFY: unable to resolve static method 13210: Landroid/hardware/Camera;.access$700 (Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
+D/dalvikvm( 1595): VFY: replacing opcode 0x71 at 0x00a0
+I/dalvikvm( 1595): Could not find method android.hardware.Camera.access$800, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1595): VFY: unable to resolve static method 13211: Landroid/hardware/Camera;.access$800 (Landroid/hardware/Camera;)Landroid/hardware/Camera$AutoFocusCallback;
+D/dalvikvm( 1595): VFY: replacing opcode 0x71 at 0x00bb
+I/dalvikvm( 1595): Could not find method android.hardware.Camera.access$900, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1595): VFY: unable to resolve static method 13214: Landroid/hardware/Camera;.access$900 (Landroid/hardware/Camera;)Landroid/hardware/Camera$OnZoomChangeListener;
+D/dalvikvm( 1595): VFY: replacing opcode 0x71 at 0x00d6
+I/dalvikvm( 1595): Could not find method android.hardware.Camera.access$1000, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1595): VFY: unable to resolve static method 13196: Landroid/hardware/Camera;.access$1000 (Landroid/hardware/Camera;)Landroid/hardware/Camera$FaceDetectionListener;
+D/dalvikvm( 1595): VFY: replacing opcode 0x71 at 0x00f3
+I/dalvikvm( 1595): Could not find method android.hardware.Camera.access$1100, referenced from method android.hardware.Camera$EventHandler.handleMessage
+W/dalvikvm( 1595): VFY: unable to resolve static method 13199: Landroid/hardware/Camera;.access$1100 (Landroid/hardware/Camera;)Landroid/hardware/Camera$ErrorCallback;
+D/dalvikvm( 1595): VFY: replacing opcode 0x71 at 0x0128
+I/CameraService( 1407): Opening camera 0
+I/CameraHAL( 1407): camera_device open+++
+D/QualcommCameraHardware( 1407): createInstance: E
+D/QualcommCameraHardware( 1407):  Storing the current target type as 0 
+D/QualcommCameraHardware( 1407): constructor EX
+D/QualcommCameraHardware( 1407): startCamera E
+D/QualcommCameraHardware( 1407): loading liboemcamera at 0x4001ae34
+I/QualcommCameraHardware( 1407): Set main cam and main cam only
+I/mm-camera-mmap( 1407): set sensor selection :0
+D/OpenGLRenderer(  552): Flushing caches (mode 1)
+I/QualcommCameraHardware( 1407): Open Device node : /dev/msm_camera/control0
+I/mm-camera-config( 1407): cam_conf fd cfgctrl.camfd:0
+I/mm-camera-config( 1407): Open config device node : /dev/msm_camera/config0
+I/        ( 1407): [AWB Calibration] from kernel: fuse_id: 0x0, 0x0, 0x1, 0x1f8bb6
+I/        ( 1407): [AWB Calibration] fuse_id : 0x0, 0x0, 0x1, 0x1f8bb6
+I/        ( 1407): [AWB Calibration] fail to read /data/awb_cal, try another file
+I/        ( 1407): [AWB Calibration] read from file OK: /sys/android_camera_awb_cal/awb_cal
+I/        ( 1407): [AWB Calibration] nandflash data: 0xc1b, 0x2d8, 0x288, 0x0, 0x0, 0x1, 0x1f8bb6, 0xca6f672d
+I/        ( 1407): [AWB Calibration] check sum=ca6f672d, OK
+I/        ( 1407): [AWB Calibration] valid bit and fuseID pass, use new white points
+I/        ( 1407): [AWB Calibration] use light version: v3
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+I/QualcommCameraHardware( 1407): startCamera: camsensor name s5k4e1gx, flash 1
+D/QualcommCameraHardware( 1407): startCamera X
+D/QualcommCameraHardware( 1407): initDefaultParameters E
+D/QualcommCameraHardware( 1407): product 12
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 1, length 32
+E/QualcommCameraHardware( 1407): native_access_parm: error (No such file or directory): fd 14, type 1, length 32, status 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 59, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 60, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 61, length 4
+D/QualcommCameraHardware( 1407): requested preview size 768 x 432
+D/QualcommCameraHardware( 1407): requested picture size 1024 x 768
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 0
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:384 y:216
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+D/QualcommCameraHardware( 1407): initDefaultParameters X
+D/QualcommCameraHardware( 1407): createInstance: X created hardware=0x358f0
+I/CameraHAL( 1407): camera_device_open---ok rv 0
+I/AwesomePlayer( 1407): setDataSource_l('/system/media/audio/ui/camera_click.ogg')
+E/OMXCodec( 1407): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x51088000 size:7061504 offset:6447104
+E/OMXCodec( 1407): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+I/AwesomePlayer( 1407): setDataSource_l('/system/media/audio/ui/VideoRecord.ogg')
+E/OMXCodec( 1407): Attempting to allocate OMX node 'OMX.google.vorbis.decoder'
+E/OMXCodec( 1407): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41b26000 size:614400 offset:6447104 fd:86
+D/Camera  ( 1595): app passed NULL surface
+D/OpenGLRenderer(  552): Flushing caches (mode 0)
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 0
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/camera  ( 1595): Preview size is 384x288
+V/MediaProfilesJNI( 1595): native_get_num_image_encoding_quality_levels
+V/MediaProfilesJNI( 1595): native_get_image_encoding_quality_level
+V/MediaProfilesJNI( 1595): native_get_image_encoding_quality_level
+V/MediaProfilesJNI( 1595): native_get_image_encoding_quality_level
+D/CameraSettings( 1595): Parameters: [antibanding-values=off,50hz,60hz,auto, antibanding=auto, brightness-def=3, brightness-max=6, brightness-min=0, brightness=3, cam-mode=0, contrast-def=5, contrast-max=10, contrast-min=0, contrast=5, effect-values=none,mono,negative,solarize,sepia,posterize,aqua, effect=none, exposure-compensation-step=0.5, exposure-compensation=0, flash-mode-values=off,auto,on,torch, flash-mode=auto, focal-length=3.53, focus-mode-values=auto,infinity, focus-mode=auto, front-camera-mode-values=mirror,reverse, front-camera-mode=mirror, horizontal-view-angle=54.8, iso-values=auto,deblur,100,200,400,800,1250, iso=auto, jpeg-quality=90, jpeg-thumbnail-height=480, jpeg-thumbnail-quality=75, jpeg-thumbnail-size-values=768x576,640x480,512x384,0x0, jpeg-thumbnail-width=640, max-exposure-compensation=4, max-zoom=5, meter-mode-values=meter-average,meter-center,meter-spot, meter-mode=meter-center, min-exposure-compensation=-4, orientation=landscape, picture-format-values=jpeg, picture-format=jpeg, picture-size-values=2592x1952,2592x1728,2560x1920,2560x1712,2048x1536,2048x1360,2016x1344,1600x1200,1584x1056,1280x960,1280x848,1248x832,1024x768,640x480,640x416,624x416,512x384,400x400,272x272, picture-size=2560x1920, preview-format-values=yuv420sp, preview-format=yuv420sp, preview-frame-rate-values=15, preview-frame-rate=15, preview-size-values=1280x720,800x480,768x432,720x480,640x480,576x432,480x320,400x240,384x288,352x288,320x240,272x272,240x240,240x160,176x144, preview-size=384x288, saturation-def=5, saturation-max=10, saturation-min=1, saturation=5, sharpness-def=10, sharpness-max=30, sharpness-min=0, sharpness=10, smart-contrast=off, taking-picture-zoom-max=40, taking-picture-zoom-min=0, taking-picture-zoom=0, vertical-view-angle=42.5, whitebalance-values=auto,incandescent,fluorescent,daylight,cloudy-daylight, whitebalance=auto, zoom-ratios=100,114,131,151,174,200, zoom-supported=true, zoom=0]
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/camera  ( 1595): startPreview
+D/QualcommCameraHardware( 1407): startPreview E
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288 videosize = 384 x 288
+I/QualcommCameraHardware( 1407): pmem pool /dev/pmem_adsp ioctl(fd = 36, PMEM_GET_SIZE) is 1048576
+D/QualcommCameraHardware( 1407): mBufferSize=165888, mAlignedBufferSize=262144
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41cf8000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41d38000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41d78000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41db8000
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 1, length 32
+D/QualcommCameraHardware( 1407): initPreview X: 1
+D/QualcommCameraHardware( 1407): frame_thread E
+I/mm-camera( 1407): Open Device node : /dev/msm_camera/frame0 
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x50d88000 size:614400 offset:0
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x51744000 size:7675904 offset:7061504
+D/memalloc(  552): /dev/pmem: Unmapping buffer base:0x52e50000 size:8495104 offset:7880704
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41500000 size:614400 offset:0 fd:83
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41bbc000 size:614400 offset:7061504 fd:89
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41c84000 size:614400 offset:7880704 fd:95
+E/mm-camera 7x-vfe( 1407): Received VFE start ACK!!! This is a user preview start.
+D/QualcommCameraHardware( 1407): startPreview X
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 15, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+I/QualcommCameraHardware( 1407): Setting Saturation is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 11, length 4
+I/QualcommCameraHardware( 1407): Setting Sharpness is 10
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 9, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/PhoneStatusBar(  380): setLightsOn(true)
+D/libEGL  ( 1595): loaded /system/lib/egl/libGLES_android.so
+D/libEGL  ( 1595): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  ( 1595): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  ( 1595): loaded /system/lib/egl/libGLESv2_adreno200.so
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:0 fd:38
+D/memalloc( 1595): /dev/pmem: Mapped buffer base:0x506c4000 size:614400 offset:0 fd:55
+D/OpenGLRenderer( 1595): Enabling debug mode 0
+V/PhoneStatusBar(  380): setLightsOn(true)
+V/camera  ( 1595): surfaceChanged. w=320. h=427
+V/camera  ( 1595): stopPreview
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal E
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal X: 0
+D/QualcommCameraHardware( 1407): stopPreview: E
+D/QualcommCameraHardware( 1407): stopPreviewInternal E: 1
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal E
+D/QualcommCameraHardware( 1407): cancelAutoFocusInternal X: 0
+I/QualcommCameraHardware( 1407): deinitPreview E
+D/QualcommCameraHardware( 1407): launch_watchdog_thread:
+D/QualcommCameraHardware( 1407): watchdog_thread_id = 264480
+I/QualcommCameraHardware( 1407): deinitPreview X
+D/QualcommCameraHardware( 1407): stopPreviewInternal X: 0
+D/QualcommCameraHardware( 1407): stopPreview: X
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x41cf8000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x41d38000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x41d78000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 1 buffer = 0x41db8000
+D/QualcommCameraHardware( 1407): frame_thread X
+D/QualcommCameraHardware( 1407): watchdog_thread_id = 264480
+D/QualcommCameraHardware( 1407): release_watchdog_thread: frame_thread_released = 1
+I/mm-camera 7x-vfe( 1407): vfe_process_QDSP_VFETASK_MSG_VFE_STOP_ACK: call mmcamera_vfe_stop_ack_callback()
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack_callback: E
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack: E
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack: X mVfeStopped = 1
+I/QualcommCameraHardware( 1407): receive_vfe_stop_ack_callback: X
+V/camera  ( 1595): Preview size is 384x288
+D/CameraSettings( 1595): Parameters: [antibanding-values=off,50hz,60hz,auto, antibanding=auto, brightness-def=3, brightness-max=6, brightness-min=0, brightness=3, cam-mode=0, contrast-def=5, contrast-max=10, contrast-min=0, contrast=5, effect-values=none,mono,negative,solarize,sepia,posterize,aqua, effect=none, exposure-compensation-step=0.5, exposure-compensation=0, flash-mode-values=off,auto,on,torch, flash-mode=auto, focal-length=3.53, focus-mode-values=auto,infinity, focus-mode=auto, front-camera-mode-values=mirror,reverse, front-camera-mode=mirror, horizontal-view-angle=54.8, iso-values=auto,deblur,100,200,400,800,1250, iso=auto, jpeg-quality=90, jpeg-thumbnail-height=480, jpeg-thumbnail-quality=75, jpeg-thumbnail-size-values=768x576,640x480,512x384,0x0, jpeg-thumbnail-width=640, max-exposure-compensation=4, max-zoom=5, meter-mode-values=meter-average,meter-center,meter-spot, meter-mode=meter-center, min-exposure-compensation=-4, orientation=landscape, picture-format-values=jpeg, picture-format=jpeg, picture-size-values=2592x1952,2592x1728,2560x1920,2560x1712,2048x1536,2048x1360,2016x1344,1600x1200,1584x1056,1280x960,1280x848,1248x832,1024x768,640x480,640x416,624x416,512x384,400x400,272x272, picture-size=2560x1920, preview-format-values=yuv420sp, preview-format=yuv420sp, preview-frame-rate-values=15, preview-frame-rate=15, preview-size-values=1280x720,800x480,768x432,720x480,640x480,576x432,480x320,400x240,384x288,352x288,320x240,272x272,240x240,240x160,176x144, preview-size=384x288, recording-hint=false, saturation-def=5, saturation-max=10, saturation-min=1, saturation=5, sharpness-def=10, sharpness-max=30, sharpness-min=0, sharpness=10, smart-contrast=off, taking-picture-zoom-max=40, taking-picture-zoom-min=0, taking-picture-zoom=0, vertical-view-angle=42.5, whitebalance-values=auto,incandescent,fluorescent,daylight,cloudy-daylight, whitebalance=auto, zoom-ratios=100,114,131,151,174,200, zoom-supported=true, zoom=0]
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+V/camera  ( 1595): startPreview
+I/CameraHAL( 1407): camera_set_preview_window: setting buffer count to 4
+I/CameraHAL( 1407): camera_set_preview_window: preview format yuv420sp
+D/QualcommCameraHardware( 1407): startPreview E
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288
+D/QualcommCameraHardware( 1407): initPreview E: preview size=384x288 videosize = 384 x 288
+I/QualcommCameraHardware( 1407): pmem pool /dev/pmem_adsp ioctl(fd = 36, PMEM_GET_SIZE) is 1048576
+D/QualcommCameraHardware( 1407): mBufferSize=165888, mAlignedBufferSize=262144
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41cf8000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41d38000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41d78000
+I/QualcommCameraHardware( 1407): register_buf: camfd = 34, reg = 0 buffer = 0x41db8000
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 1, length 32
+D/QualcommCameraHardware( 1407): initPreview X: 1
+D/QualcommCameraHardware( 1407): frame_thread E
+I/mm-camera( 1407): Open Device node : /dev/msm_camera/frame0 
+D/QualcommCameraHardware( 1407): void* watchdog(void*), frame_thread_released = 1, cnt = 0
+D/QualcommCameraHardware( 1407): void* watchdog(void*), exit, frame_thread_released=1
+D/QualcommCameraHardware( 1407): void release_watchdog_thread(): pthread_join succeeded on watchdog.
+E/mm-camera 7x-vfe( 1407): Received VFE start ACK!!! This is a user preview start.
+D/QualcommCameraHardware( 1407): startPreview X
+D/QualcommCameraHardware( 1407): requested preview size 384 x 288
+D/QualcommCameraHardware( 1407): requested picture size 2560 x 1920
+D/QualcommCameraHardware( 1407): value:20620, country value:206, country code:206
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 21, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 15, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 14, length 4
+D/QualcommCameraHardware( 1407): setFlash 1
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 49, length 4
+D/mm-camera-ctrlcmd( 1407): In config_proc_CAMERA_SET_PARM_LED_MODE: 1
+I/QualcommCameraHardware( 1407): Set zoom=0 40
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 2, length 4
+I/QualcommCameraHardware( 1407): Setting Contrast is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 6, length 4
+I/QualcommCameraHardware( 1407): Setting Brightness is 3
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 7, length 4
+I/QualcommCameraHardware( 1407): Setting Saturation is 5
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 11, length 4
+I/QualcommCameraHardware( 1407): Setting Sharpness is 10
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 9, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 12, length 4
+I/mm-camera-ctrlcmd( 1407): md.d.aec_mode.aec_mode:1
+I/mm-camera-aec( 1407): Touch AEC  == numRegions:256
+I/mm-camera-aec( 1407): Touch AEC aecCtrl->aec_state.aec_algo:1
+D/QualcommCameraHardware( 1407): not defined touch-focus yet, or AP without touch-focus function
+I/QualcommCameraHardware( 1407): Before Setting coordinate x:192 y:144
+I/QualcommCameraHardware( 1407): Setting coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 55, length 28
+I/mm-camera 7x-vfe( 1407): vfe_set_coordinate x:2 y:2
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 26, length 4
+D/mm-camera-ctrlcmd( 1407): md.d.aec_iso_mode = 0
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 57, length 4
+D/QualcommCameraHardware( 1407): native_access_parm: fd 14, type 8, length 4
+D/QualcommCameraHardware( 1407): virtual android::status_t android::QualcommCameraHardware::setParameters(const android::CameraParameters&), final_rc=0
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x42740000 size:442368 fd:44
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x40920, fd=40 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x40920) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x42818000 size:442368 fd:50
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x268b0, fd=42 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x268b0) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x42884000 size:442368 fd:62
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x26978, fd=44 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x26978) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem_adsp: Allocated buffer base:0x428f0000 size:442368 fd:74
+E/memalloc( 1407): /dev/pmem_adsp: Failed to map memory in the client: Invalid argument
+E/msm7x27.gralloc( 1407): Could not mmap handle 0x26a40, fd=46 (Invalid argument)
+E/msm7x27.gralloc( 1407): gralloc_register_buffer: gralloc_map failed
+W/GraphicBufferMapper( 1407): registerBuffer(0x26a40) failed -22 (Invalid argument)
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:2269184 fd:80
+D/memalloc( 1595): /dev/pmem: Mapped buffer base:0x50804000 size:2883584 offset:2269184 fd:58
+I/ActivityManager(  159): Displayed com.android.camera/.Camera: +2s331ms
+W/InputManagerService(  159): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@412251e8 (uid=10019 pid=552)
+I/dalvikvm( 1595): Could not find method android.os.Environment.getExternalStorageState, referenced from method com.android.camera.Storage.getAvailableSpace
+W/dalvikvm( 1595): VFY: unable to resolve static method 363: Landroid/os/Environment;.getExternalStorageState (Ljava/lang/String;)Ljava/lang/String;
+D/dalvikvm( 1595): VFY: replacing opcode 0x71 at 0x0002
+D/AndroidRuntime( 1595): Shutting down VM
+W/dalvikvm( 1595): threadid=1: thread exiting with uncaught exception (group=0x40a6a1f8)
+E/AndroidRuntime( 1595): FATAL EXCEPTION: main
+E/AndroidRuntime( 1595): java.lang.NoSuchMethodError: android.os.Environment.getExternalStorageState
+E/AndroidRuntime( 1595): 	at com.android.camera.Storage.getAvailableSpace(Storage.java:110)
+E/AndroidRuntime( 1595): 	at com.android.camera.Camera.checkStorage(Camera.java:1387)
+E/AndroidRuntime( 1595): 	at com.android.camera.Camera.initializeFirstTime(Camera.java:399)
+E/AndroidRuntime( 1595): 	at com.android.camera.Camera.access$600(Camera.java:86)
+E/AndroidRuntime( 1595): 	at com.android.camera.Camera$MainHandler.handleMessage(Camera.java:305)
+E/AndroidRuntime( 1595): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1595): 	at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1595): 	at android.app.ActivityThread.main(ActivityThread.java:4429)
+E/AndroidRuntime( 1595): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1595): 	at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1595): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime( 1595): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime( 1595): 	at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  159):   Force finishing activity com.android.camera/.Camera
+D/memalloc(  159): /dev/pmem: Unmapping buffer base:0x5365c000 size:1228800 offset:614400
+D/memalloc(   82): /dev/pmem: Freeing buffer base:0x41596000 size:614400 offset:614400 fd:39
+V/PhoneStatusBar(  380): setLightsOn(true)
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:204800 offset:1720320 fd:39
+D/memalloc(  159): /dev/pmem: Mapped buffer base:0x5365c000 size:1925120 offset:1720320 fd:271
+W/ActivityManager(  159): Activity pause timeout for ActivityRecord{41311de0 com.android.camera/.Camera}
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:614400 fd:83
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x508d0000 size:1228800 offset:614400 fd:52
+D/PhoneStatusBar(  380): disable: < expand icons alerts ticker system_info back home recent clock >
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:6447104 fd:86
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x51088000 size:7061504 offset:6447104 fd:60
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:614400 offset:7061504 fd:89
+D/memalloc(  552): /dev/pmem: Mapped buffer base:0x51744000 size:7675904 offset:7061504 fd:63
+D/memalloc(   82): /dev/pmem: Allocated buffer base:0x41500000 size:204800 offset:7675904 fd:92
+D/memalloc(  159): /dev/pmem: Mapped buffer base:0x55aa8000 size:7880704 offset:7675904 fd:280

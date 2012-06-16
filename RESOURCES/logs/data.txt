@@ -1,0 +1,61 @@
+D/ConnectivityService(  159): ConnectivityChange for mobile: DISCONNECTED/DISCONNECTED
+D/ConnectivityService(  159): Attempting to switch to wifi
+D/ConnectivityService(  159): Attempting to switch to BLUETOOTH_TETHER
+E/ConnectivityService(  159): Exception trying to remove a route: java.lang.IllegalStateException: Unable to communicate with native dameon to add routes - com.android.server.NativeDaemonConnectorException: Cmd {interface route remove rmnet0 default 10.48.19.209 32 0.0.0.0} failed with code 400 : {Failed to remove route from default table (No such process)}
+E/ConnectivityService(  159): Exception trying to remove a route: java.lang.IllegalStateException: Unable to communicate with native dameon to add routes - com.android.server.NativeDaemonConnectorException: Cmd {interface route remove rmnet0 default 0.0.0.0 0 10.48.19.209} failed with code 400 : {Failed to remove route from default table (No such process)}
+D/NetUtils(  159): android_net_utils_resetConnections in env=0x355480 clazz=0x46b00001 iface=rmnet0 mask=0x3
+D/ConnectivityService(  159): resetConnections(rmnet0, 3)
+
+
+
+
+
+W/WindowManager(  159): Failed looking up window
+W/WindowManager(  159): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@4158f820 does not exist
+W/WindowManager(  159): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7169)
+W/WindowManager(  159): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7160)
+W/WindowManager(  159): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1545)
+W/WindowManager(  159): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:417)
+W/WindowManager(  159): 	at dalvik.system.NativeStart.run(Native Method)
+I/WindowManager(  159): WIN DEATH: null
+
+
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 17(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 16(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 18(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 20(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 19(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 20(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 19(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 20(GSM) 16(CDMA)
+W/ThrottleService(  159): unable to find stats for iface rmnet0
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 19(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 18(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 19(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 19(GSM) 16(CDMA)
+V/Mms     ( 1422): [1] MmsSystemEventReceiver.java(130): Intent received: Intent { act=android.intent.action.SERVICE_STATE flg=0x10 (has extras) }
+V/Mms     ( 1422): [1] MmsSystemEventReceiver.java(139): ACTION_SERVICE_STATE_CHANGED: 0
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 4(GSM) 16(CDMA)
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 5(GSM) 16(CDMA)
+
+E/ConnectivityService(  159): Exception trying to remove a route: java.lang.IllegalStateException: Unable to communicate with native dameon to add routes - com.android.server.NativeDaemonConnectorException: Cmd {interface route remove rmnet0 default 10.44.89.153 32 0.0.0.0} failed with code 400 : {Failed to remove route from default table (No such process)}
+D/NetUtils(  159): android_net_utils_resetConnections in env=0x355480 clazz=0x2e200001 iface=rmnet0 mask=0x3
+E/ConnectivityService(  159): Exception trying to remove a route: java.lang.IllegalStateException: Unable to communicate with native dameon to add routes - com.android.server.NativeDaemonConnectorException: Cmd {interface route remove rmnet0 default 0.0.0.0 0 10.44.89.153} failed with code 400 : {Failed to remove route from default table (No such process)}
+D/ConnectivityService(  159): resetConnections(rmnet0, 3)
+D/Tethering(  159): MasterInitialState.processMessage what=3
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+D/ConnectivityService(  159): handleInetConditionChange: no active default network - ignore
+E/GTalkService(  574): getAccountForAndroidId: get ANDROID_ID returned 0!
+D/ConnectivityService(  159): handleInetConditionChange: no active default network - ignore
+D/Tethering(  159): MasterInitialState.processMessage what=3
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 3(GSM) 16(CDMA)
+D/ConnectivityService(  159): handleInetConditionChange: no active default network - ignore
+I/NetworkPolicy(  159): no policy for active mobile network; generating default policy
+D/StatusBar.NetworkController(  380): updateTelephonySignalStrength: mSignalStrength == 2(GSM) 16(CDMA)
+D/ConnectivityService(  159): ConnectivityChange for mobile: CONNECTED/CONNECTED
+D/NetworkPolicy(  159): applying policy NetworkPolicy[NetworkTemplate: matchRule=MOBILE_ALL, subscriberId=valid]: cycleDay=16, warningBytes=2147483648, limitBytes=-1, lastSnooze=-1 to ifaces [rmnet0]
+D/ConnectivityService(  159): setMobileDataEnabled(false)
+

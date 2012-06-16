@@ -64,3 +64,12 @@ Added libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
 
 removed vibratebutton blabla references in hapticfeedback.smali
 modded roundedocrnerssurface.smali in services.jar (removed line 55)
+
+END OF BOOTING LOG
+
+network fix: added htcqualcommril.smali and qualcommril.smali to framework.jar
+
+
+
+
+

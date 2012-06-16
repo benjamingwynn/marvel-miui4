@@ -1,18 +1,23 @@
 Not Working
-- Camera doesn't start - maybe fixed with new lib?
-- Headphones don't work - fixed
+- Camera doesn't start
+- Headphones don't work
 - Network doesn't auto connect after airplane mode
 - Network signal halfway
-- Calling / Data
-- all maybe fixed with small modding
-- USB mount doesn't work
+- Data
+- USB mount
 - Graphical glitches in large selecting menu's
 - Black bar in notification menu
 - Light sensor
+- Sound recorder
 
 To do
 - USB mount fix, probably miuisystemui.apk needs modding
-- search key?
+- Fix auto connect network + data
+- Fix graphic glitches
+- Fix headset
+- Fix camera
+- Fix soundrecorder
+- Themes don't apply (themes folder added but no result)
 
 What works
 - Boots
@@ -25,3 +30,4 @@ What works
 - Rotation
 - Compass
 - Keyboard
+
