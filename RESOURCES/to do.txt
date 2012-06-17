@@ -13,7 +13,7 @@ Not Working
 To do
 - USB mount fix, probably miuisystemui.apk needs modding
 - Fix auto connect network + data - done halfway
-- Fix graphic glitches - gles20canvas.smali fixes
+- Fix graphic glitches - done
 - Fix headset - done
 - Fix camera - done
 - Fix soundrecorder - done
