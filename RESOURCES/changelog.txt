@@ -71,6 +71,8 @@ network fix: replaced networkmanagementservice.smali in services.jar
 headset fix: replaced wiredaccesoryobserver in services.jar
 soundrecorder fix: replace a smali in framework.jar
 camera fix: replaced some camera smalls in android/hardware of framework.jar
+theme fix: replaced asynctask$2.smali in android/os of framework.jar
+graphic fixes: replace hardwarerenderergl20renderer.smali and hardwarerendererglrenderer.smali
 
 
 
