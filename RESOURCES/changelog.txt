@@ -67,13 +67,13 @@ modded roundedocrnerssurface.smali in services.jar (removed line 55)
 
 END OF BOOTING LOG
 
-network fix: replaced networkmanagementservice.smali in services.jar
-headset fix: replaced wiredaccesoryobserver in services.jar
-soundrecorder fix: replace a smali in framework.jar
-camera fix: replaced some camera smalls in android/hardware of framework.jar
-theme fix: replaced asynctask$2.smali in android/os of framework.jar
+network fix: replaced networkmanagementservice.smali in services.jar - not fixed
+headset fix: replaced wiredaccesoryobserver in services.jar - fixed
+soundrecorder fix: replaced MediaRecorder$AudioEncoder.smali in framework.jar - not fixed
+camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os - fixed
+theme fix: no idea yet
 graphic fixes: replace hardwarerenderergl20renderer.smali and hardwarerendererglrenderer.smali
-
+usb mount fix: replace mountservice.smali in services.jar and storage_list.xml in framework-res.apk - doesnt work: systemui force close
 
 
 
