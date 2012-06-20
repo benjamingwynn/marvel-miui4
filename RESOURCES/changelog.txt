@@ -67,14 +67,17 @@ modded roundedocrnerssurface.smali in services.jar (removed line 55)
 
 END OF BOOTING LOG
 
-network fix: replaced RIL smalis in com/android/internal/telephony in framework.jar
+network fix: replaced RIL smalis in com/android/internal/telephony lin framework.jar and phonebase and phonefactory smalis
 headset fix: replaced wiredaccesoryobserver in services.jar - fixed
-soundrecorder fix: replaced systemproperties.smali in framework.jar - fixed
 camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os - fixed
-theme fix: no idea yet
-graphic fixes: replace gles20texturelayer.smali and other gles20 files in android/view of framework.jar
-usb mount fix: replace mountservice.smali in services.jar and storage_list.xml in framework-res.apk - doesnt work: systemui force close
 
+To Fix
+
+soundrecorder fix: replaced systemproperties.smali in framework.jar - not fixed
+theme fix: no idea yet
+graphic fixes: replace gles20 and window smalis in android/view of framework.jar - no result
+usb mount fix: replace mountservice.smali in services.jar and storage_list.xml in framework-res.apk - doesnt work: systemui force close
+auto connect fix: replaced icccard*.smalis and simcard.smali in framework.jar - no result
 
 
 
