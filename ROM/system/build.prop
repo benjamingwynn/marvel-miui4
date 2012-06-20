@@ -51,7 +51,7 @@ debug.sf.hw=1
 # c2d if you have c2d support
 # dyn use copybit
 # asn upcoming kernel interface
-#debug.composition.type=
+debug.composition.type=mdp
 
 ###
 # Disable vsync
@@ -61,11 +61,15 @@ debug.sf.hw=1
 # Number of framebuffers
 #
 # You need at least 2 for page flipping. The limit is what the kernel provides.
-#debug.gr.numframebuffers=2
+debug.gr.numframebuffers=2
 
-#debug.enabletr=true
+debug.enabletr=false
 debug.qctwa.statusbar=1
 debug.qctwa.preservebuf=1
+
+hwui.render_dirty_regions=false
+hwui.disable_vsync=true
+hwui.print_config=choice
 
 # cm qcom build lub
 com.qc.hardware=true
