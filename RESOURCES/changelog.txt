@@ -71,12 +71,13 @@ network fix: replaced RIL smalis in com/android/internal/telephony lin framework
 headset fix: replaced wiredaccesoryobserver in services.jar
 camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os
 soundrecorder fix: replaced systemproperties.smali in framework.jar and add some lines to media_profiles.xml
+graphic fixes: modded build.prop
+theme fix: took the wrong theme, now some small editing to make the theme better
 
 To Fix
 
-theme fix: no idea yet
-graphic fixes: replace gles20 and window smalis in android/view of framework.jar - no result
-usb mount fix: replace mountservice.smali in services.jar and storage_list.xml in framework-res.apk - doesnt work
-auto connect fix: telephonymanager.smali (add some missing methods)
+black bar in notifications: no idea yetgraphic fixes: replace gles20 and window smalis in android/view of framework.jar - no result
+usb mount fix: replace mountservice.smali in services.jar and storage_list.xml in framework-res.apk - doesn't work
+auto connect fix: no idea yet
 
 

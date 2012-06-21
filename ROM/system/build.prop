@@ -51,7 +51,7 @@ debug.sf.hw=1
 # c2d if you have c2d support
 # dyn use copybit
 # asn upcoming kernel interface
-debug.composition.type=mdp
+#debug.composition.type=mdp
 
 ###
 # Disable vsync
