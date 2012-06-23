@@ -1,0 +1,20 @@
+AROMA config visual
+
+Screen 1:
+ROM info
+
+Screen 2:
+Choose your mods (only 1 option possible)
+- stock or 3 way reboot menu
+- MIUI launcher or Xperia launcher
+- MIUI GB Camera or CM9 Camera
+
+Screen 3:
+Debloating (selection)
+- Backup
+- Firewall
+- Compass
+- Notes
+
+Screen 4:
+installation
