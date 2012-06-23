@@ -131,7 +131,7 @@ selectbox(
 	    "Xperia", "Smooth, fast, app drawer",                                0,      #-- selected.2 = 2
   "Camera",                "",                                                   2,  #-- Group 3. key = "selected.3"
 	    "MIUI GB",   "MIUI style, but older",                                0,      #-- selected.3 = 1
-	    "CM9",       "The newest one",                                       1,      #-- selected.3 = 2
+	    "CM9",       "The newest one",                                       1      #-- selected.3 = 2
 
 );
 
@@ -158,7 +158,7 @@ checkbox(
  "Backup",          "MIUI backup solution, also to the MI cloud",                         0,      #-- item.1
  "Firewall",        "MIUI firewall blocks internet access to certain applications",       0,      #-- item.2
  "Compass",         "Simple nice compass with location feature",                          0,      #-- item.3
- "Notes",           "Take fast notes with the beautiful MIUI notes app",                  0,      #-- item.4
+ "Notes",           "Take fast notes with the beautiful MIUI notes app",                  0      #-- item.4
 
 );
 
