@@ -43,9 +43,21 @@ then
   package_extract_file("stuff/Camera.apk", "/system/app");
 endif;
 if
-  file_getprop("/tmp/aroma/stuff.prop","selected.3") == "2"
+  file_getprop("/tmp/aroma/stuff.prop","selected.4") == "2"
 then
   ui_print("installing CM9 camera");
+endif;
+if
+  file_getprop("/tmp/aroma/stuff.prop","selected.4") == "2"
+then
+  ui_print("installing GB bootanimation");
+  delete("/system/media/bootanimation.zip");
+  package_extract_file("stuff/bootanimation.zip", "/system/media");
+endif;
+if
+  file_getprop("/tmp/aroma/stuff.prop","selected.4") == "1"
+then
+  ui_print("installing ICS bootanimation");
 endif;
 #debloating
 if

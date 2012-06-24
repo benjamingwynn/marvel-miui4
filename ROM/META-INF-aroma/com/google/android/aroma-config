@@ -131,7 +131,10 @@ selectbox(
 	    "Xperia", "Smooth, fast, app drawer",                                0,      #-- selected.2 = 2
   "Camera",                "",                                                   2,  #-- Group 3. key = "selected.3"
 	    "MIUI GB",   "MIUI style, but older",                                0,      #-- selected.3 = 1
-	    "CM9",       "The newest one",                                       1      #-- selected.3 = 2
+	    "CM9",       "The newest one",                                       1,      #-- selected.3 = 2
+  "Bootanimation",           "",                                                 2,  #-- Group 4. key = "selected.4"
+	    "ICS",   "Clean and simple",                                         1,      #-- selected.4 = 1
+	    "GB",    "Older version",                                            0       #-- selected.4 = 2
 
 );
 
