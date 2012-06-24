@@ -43,7 +43,7 @@ then
   package_extract_file("stuff/Camera.apk", "/system/app");
 endif;
 if
-  file_getprop("/tmp/aroma/stuff.prop","selected.4") == "2"
+  file_getprop("/tmp/aroma/stuff.prop","selected.3") == "2"
 then
   ui_print("installing CM9 camera");
 endif;
