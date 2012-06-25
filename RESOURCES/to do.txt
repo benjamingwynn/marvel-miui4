@@ -6,3 +6,6 @@ To do
 - Fix light sensor
 - Bugs from CM9, but we cant fix them
 
+For the network issue I will make different framework.jars.
+Up to you to test if it works and help creating those files.
+
