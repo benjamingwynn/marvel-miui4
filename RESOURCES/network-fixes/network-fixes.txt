@@ -1,0 +1,13 @@
+Here you can find all the framework.jars to fix the network bugs.
+Just test a framework.jar by installing it. 
+If your phone boots and everything else works then test your network for some hours. 
+
+- Check if the network connects after entering the pin code.
+- Check if the signal goes away after a certain time (half hour or more).
+
+framework1 = the original
+framework2 = telephonymanager.smali in android/telephony modded to add missing CM9 stuff without breaking MIUI stuff
+now looking into com/android/internal/telephony
+framework3 = 2 + simregioncache.smali added
+framework4 = 3 + semcril smalies
+framework5 = 4 + icc smalies 
