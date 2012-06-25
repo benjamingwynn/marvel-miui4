@@ -1,4 +1,5 @@
 Build from NEXUS S port.
 
-Cook it yourself in dsixda kitchen.
-No need to add a folder, this happens automatic!
+Official first release!
+
+Stay tuned for new builds, this repo will have a break now!

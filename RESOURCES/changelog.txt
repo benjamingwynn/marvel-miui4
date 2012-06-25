@@ -1,30 +1,25 @@
-Here is written what's changed (a blank line represents a new build/logcat to come)
+How to build MIUI v4 for the HTC Wildfire S
 
-first build: source = CM9 alpha 2
-replaced Media and App folder with MIUI sources
-added framework stuff
-added content-types.properties and liblbesec.so
-added busybox, invoke-as and su
+replace Media and App folder with MIUI sources
+add framework apes and android.policy.jar, services.jar and framework.jar
+add content-types.properties and liblbesec.so
+add busybox, invoke-as and su
+add libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
 
-modded AssetManger.smali in android/content/res of framework.jar (adding missing CM9 stuff)
+replace Gles20canvas.smali in android/view of framework.jar
+replace Power.smali in android/os of framework.jar
+replace WifiNative.smali in android/net/wifi of framework.jar
+replace Camera.smali in android/hardware of framework.jar
+replace BluetoothA2dpService.smali (2 files) in android/server of framework.jar
+replace MediaRecorder.smali in android/media of framework.jar
+replace systemproperties.smali Landroid/os/ of framework.jar
 
-replaced Gles20canvas.smali in android/view of framework.jar
+add packageredirectionmap.smali (2 files) in android/content.res of framework.jar
+add Performance.smali from org/codeaurora of framework.jar
 
-replaced Power.smali in android/os of framework.jar
-
-added packageredirectionmap.smali (2 files) in android/content.res of framework.jar
-replaced WifiNative.smali in android/net/wifi of framework.jar
-
-replaced Camera.smali in android/hardware of framework.jar
-added Performance.smali from org/codeaurora of framework.jar
-
-replaced BluetoothA2dpService.smali (2 files) in android/server of framework.jar
-
-replaced MediaRecorder.smali in android/media of framework.jar
-
-added this to WebviewCore.smali
-
-.method static synthetic access$800()I
+mod AssetManger.smali in android/content/res of framework.jar: add missing methods
+mod WebviewCore.smali in framework.jar
+".method static synthetic access$800()I
     .registers 1
 
     .prologue
@@ -38,11 +33,10 @@ added this to WebviewCore.smali
 
 changed .line 60 to .line 55 and added:
 .method private static native nativeGetTextureGeneratorThreadID()I
-.end method
+.end method"
 
-inputmanager.smali modded
-added 
-.method private static native nativeSetKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
+mod inputmanager.smali 
+".method private static native nativeSetKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
 .method private setKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
@@ -57,27 +51,15 @@ added
     .line 505
     return-void
 .end method
-renamed lines to 484 and 485
-
-Changed Landroid/os/SystemProperties.smali to CM9's
-Added libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
+renamed lines to 484 and 485"
 
 removed vibratebutton blabla references in hapticfeedback.smali
 modded roundedocrnerssurface.smali in services.jar (removed line 55)
 
-END OF BOOTING LOG
-
 network fix: replaced RIL smalis in com/android/internal/telephony lin framework.jar and phonebase and phonefactory smalis
 headset fix: replaced wiredaccesoryobserver in services.jar
-camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os
+camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os + camera.apk
 soundrecorder fix: replaced systemproperties.smali in framework.jar and add some lines to media_profiles.xml
 graphic fixes: modded build.prop
-theme fix: took the wrong theme, now some small editing to make the theme better
-
-To Fix
-
-black bar in notifications: no idea yetgraphic fixes: replace gles20 and window smalis in android/view of framework.jar - no result
-usb mount fix: replace mountservice.smali in services.jar and storage_list.xml in framework-res.apk - doesn't work
-auto connect fix: no idea yet
 
 

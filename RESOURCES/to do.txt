@@ -1,31 +1,7 @@
-Not Working
-- Camera doesn't start
-- Headphones don't work
-- Network doesn't auto connect after airplane mode
-- Network signal halfway
-- Data
-- USB mount
-- Graphical glitches in large selecting menu's
-- Black bar in notification menu
-- Light sensor
-- Sound recorder
-
 To do
-- USB mount fix, probably miuisystemui.apk needs modding
+- USB mount fix. Temporary app enabled
 - Fix auto connect
+- Fix network disconnect
 - Fix graphic glitches
-- Fix themes
 
-What works
-- Boots
-- Touchscreen
-- Sound
-- Flashlight
-- Microphone
-- Wifi / Bluetooth
-- Rotation
-- Compass
-- Keyboard
-- Root
-- Calling / SMS
 
