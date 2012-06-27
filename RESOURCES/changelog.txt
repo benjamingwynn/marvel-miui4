@@ -61,5 +61,6 @@ headset fix: replaced wiredaccesoryobserver in services.jar
 camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os + camera.apk
 soundrecorder fix: replaced systemproperties.smali in framework.jar and add some lines to media_profiles.xml
 graphic fixes: modded build.prop
+lose off network fix: add semcril smalis and simnetworklocator.smali to framework.jar
 
 
