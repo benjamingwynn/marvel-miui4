@@ -63,4 +63,25 @@ soundrecorder fix: replaced systemproperties.smali in framework.jar and add some
 graphic fixes: modded build.prop
 lose off network fix: add semcril smalis and simnetworklocator.smali to framework.jar
 
+music fix: replaced mediascanner smalies and mediaplayer smalis
+delete libdivxdrm.so libfrsdk.so libmmosal.so
 
+deep sleep fix: in framework-res.apk: bools.xml change "config_bluetooth_adapter_quick_switch" to false
+gps + location fix: replace location folder and smalis in services.jar
+
+fix usb:
+in framework-res.apk: values/strings.xml to add
+Code:
+    <string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>
+which is supposed to support old kind usb lun file(path linked to sdcard which mounts to pc)
+
+replace storage_list.xml
+
+build.prop to add 
+Code:
+ persist.sys.usb.config= mass_storage,adb
+services.jar:
+com/android/server/usb - replace
+
+smoother UI:
+not yet available, some changes in an xml in framework-res.apk
