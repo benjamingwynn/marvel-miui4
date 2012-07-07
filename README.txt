@@ -1,3 +1,3 @@
-Build from NEXUS S port.
+This holds the place for work on MIUI v4.
 
-Next build from HTC Desire.
+Current build is based on HTC Desire MIUI v4 2.6.29
