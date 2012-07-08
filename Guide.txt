@@ -1,4 +1,5 @@
 Build MIUI v4 for WFS
+* means done
 
 - replace media folder and app folder with MIUI
 - add framework apks and android.policy.jar, services.jar and framework jar from MIUI
@@ -6,29 +7,30 @@ Build MIUI v4 for WFS
 - add libmmparser.so and remove libfrsdk.so if it's there
 - add yellowpage.db telocation.db and unicode_py_index.td to etc folder
 - add miui-framework.xml google xmls and remove cm xmls in permissions folder
-
+*
 smali modding:
 
 - replace following smalis in framework.jar
-Gles20canvas Power WifiNative Camera BluetoothA2dpService (2 ones) MediaRecorder Systemproperties
+Gles20canvas Power WifiNative Camera BluetoothA2dpService (2 ones) MediaRecorder Systemproperties *
 
 replace RIL smalis and phonebase and phonefactory smalis = network fix
 also add semcril smalis to leave network connected
 replace wiredaccesoryobserver in services jar = headset fix
-replace camera smalls in android/hardware + environment + camera.apk = camera fix
-replace systemproperties + modding media_profiles.xml = soundrecorder fix
+replace camera smalis in android/hardware + camera.apk = camera fix *
+replace systemproperties + modding media_profiles.xml = soundrecorder fix *
+replace webviewcore smalis *
 
 - add following smalis in framework.jar
-packageredirectionmap performance
+packageredirectionmap performance *
 
 - mod following smalis in framework.jar
-assetmanager.smali: add missing methods
-webviewocre.smali: replace or add method nativegettexturegeneratorthreadid
+assetmanager.smali: add missing methods *
 inputmanager.smali: add method nativesetkeylayout
-hapticfeedbackutil: remove vibratebutton reference: see logs
+hapticfeedbackutil: remove vibratebutton reference: see logs * voorlopig zo gelaten
 rounedcornerssurface in services.jar: remove some references
+powermanagerservice: rename nativestartsufraceflingeranimation to …offanimation and add onanimation method 
 
-- fix graphic glitches: build.prop modding
+- fix graphic glitches: build.prop modding *
 - fix locations: replace location folder and smalis in services.jar
 - fix deep sleep: framework-res.apk - bools.xml - "config_bluetooth_adapter_quick_switch" to false
 - fix usb mounting: 	replace storage_xml in framework-res.apk
