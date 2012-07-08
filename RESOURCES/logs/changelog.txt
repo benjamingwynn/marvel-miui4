@@ -1,0 +1,87 @@
+How to build MIUI v4 for the HTC Wildfire S
+
+replace Media and App folder with MIUI sources
+add framework apes and android.policy.jar, services.jar and framework.jar
+add content-types.properties and liblbesec.so
+add busybox, invoke-as and su
+add libDivxDrm.so, libmmosal.so and libmmparser.so to /system/lib
+
+replace Gles20canvas.smali in android/view of framework.jar
+replace Power.smali in android/os of framework.jar
+replace WifiNative.smali in android/net/wifi of framework.jar
+replace Camera.smali in android/hardware of framework.jar
+replace BluetoothA2dpService.smali (2 files) in android/server of framework.jar
+replace MediaRecorder.smali in android/media of framework.jar
+replace systemproperties.smali Landroid/os/ of framework.jar
+
+add packageredirectionmap.smali (2 files) in android/content.res of framework.jar
+add Performance.smali from org/codeaurora of framework.jar
+
+mod AssetManger.smali in android/content/res of framework.jar: add missing methods
+mod WebviewCore.smali in framework.jar
+".method static synthetic access$800()I
+    .registers 1
+
+    .prologue
+    .line 60
+    invoke-static {}, Landroid/webkit/WebViewCore;->nativeGetTextureGeneratorThreadID()I
+
+    move-result v0
+
+    return v0
+.end method
+
+changed .line 60 to .line 55 and added:
+.method private static native nativeGetTextureGeneratorThreadID()I
+.end method"
+
+mod inputmanager.smali 
+".method private static native nativeSetKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method private setKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
+    .registers 3
+    .parameter "deviceName"
+    .parameter "keyLayout"
+
+    .prologue
+    .line 504
+    invoke-static {p1, p2}, Lcom/android/server/wm/InputManager;->nativeSetKeyLayout(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 505
+    return-void
+.end method
+renamed lines to 484 and 485"
+
+removed vibratebutton blabla references in hapticfeedback.smali
+modded roundedocrnerssurface.smali in services.jar (removed line 55)
+
+network fix: replaced RIL smalis in com/android/internal/telephony lin framework.jar and phonebase and phonefactory smalis
+headset fix: replaced wiredaccesoryobserver in services.jar
+camera fix: replaced camera smalis in android/hardware of framework.jar and Environment.smali in android/os + camera.apk
+soundrecorder fix: replaced systemproperties.smali in framework.jar and add some lines to media_profiles.xml
+graphic fixes: modded build.prop
+lose off network fix: add semcril smalis and simnetworklocator.smali to framework.jar
+
+music fix: replaced mediascanner smalies and mediaplayer smalis
+delete libdivxdrm.so libfrsdk.so libmmosal.so
+
+deep sleep fix: in framework-res.apk: bools.xml change "config_bluetooth_adapter_quick_switch" to false
+gps + location fix: replace location folder and smalis in services.jar
+
+fix usb:
+in framework-res.apk: values/strings.xml to add
+Code:
+    <string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>
+which is supposed to support old kind usb lun file(path linked to sdcard which mounts to pc)
+
+replace storage_list.xml
+
+build.prop to add 
+Code:
+ persist.sys.usb.config= mass_storage,adb
+services.jar:
+com/android/server/usb - replace
+
+smoother UI:
+not yet available, some changes in an xml in framework-res.apk
