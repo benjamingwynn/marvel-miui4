@@ -40,7 +40,3 @@ powermanagerservice: rename nativestartsufraceflingeranimation to …offanimatio
 this supports old loon files, mod the resource ids if necessary to match
 
 - smoother UI: add some lines to xml in framework-res.apk * niet nodig
-
-
-
-
