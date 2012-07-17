@@ -1,6 +1,0 @@
-To do
-- USB mount fix. Temporary app enabled
-- Fix auto connect
-- Fix black bar
-- Fix light sensor
-- Bugs from CM9, but we cant fix them

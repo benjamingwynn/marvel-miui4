@@ -1,3 +1,1 @@
-This holds the place for work on MIUI v4.
-
-Current build is based on HTC Desire MIUI v4
+Here you can find a tutorial how to build MIUI v4.
