@@ -1,0 +1,2 @@
+echo "patching android.policy.jar"
+echo "add 3 way reboot menu"

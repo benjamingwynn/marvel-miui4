@@ -1,0 +1,25 @@
+echo "patching services.jar"
+cd CM9-files
+baksmali services.jar
+echo "rename folder to services-jar"
+cd MIUI-files
+baksmali services.jar
+echo "rename folder to services-jar"
+cd /Volumes/Cooking
+cp -v CM9-files/services-jar/.../wiredaccesory*.smali MIUI-files/services-jar/...
+cp -v CM9-files/services-jar/.../USB MIUI-files/services-jar/...
+cp -v CM9-files/services-jar/.../locationservices MIUI-files/services-jar/...
+cp -v CM9-files/services-jar/.../usb*.smali MIUI-files/services-jar/...
+cp -v CM9-files/services-jar/.../location*.smali MIUI-files/services-jar/...
+echo "more files to come here, may be incorrect for now ..."
+echo "manual patch following files"
+scipt/press_enter
+cd MIUI-files
+smali services-jar
+echo "put classes.dex file in services.jar original"
+cd /Volumes/Cooking
+cp -v MIUI-files/framework.jar WORKING_MIUI/system/framework
+echo "patching done"
+rmdir -rf CM9-files/services-jar
+rmdir -rf MIUI-files/services-jar
+

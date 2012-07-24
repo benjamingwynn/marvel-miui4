@@ -1,0 +1,26 @@
+echo "patching framework.jar"
+cd CM9-files
+baksmali framework.jar
+echo "rename folder to framework-jar"
+cd MIUI-files
+baksmali framework.jar
+echo "rename folder to framework-jar"
+cd /Volumes/Cooking
+cp -v CM9-files/framework-jar/android/view/gles20canvas.smali MIUI-files/framework-jar/android/view
+cp -v CM9-files/framework-jar/android/os/Power.smali MIUI-files/framework-jar/android/os
+cp -v CM9-files/framework-jar/android/hardware/Camera*.smali MIUI-files/framework-jar/android/hardware
+cp -v CM9-files/framework-jar/android/net/Webview*.smali MIUI-files/framework-jar/android/net
+cp -v CM9-files/framework-jar/android/net/WifiNative.smali MIUI-files/framework-jar/android/net
+cp -v CM9-files/framework-jar/android/codeaurora/Performance.smali MIUI-files/framework-jar/codeaurora
+echo "more files to come here ..."
+echo "manual patch following files"
+scipt/press_enter
+cd MIUI-files
+smali framework-jar
+echo "put classes.dex file in framework.jar original"
+cd /Volumes/Cooking
+cp -v MIUI-files/framework.jar WORKING_MIUI/system/framework
+echo "patching done"
+rmdir -rf CM9-files/framework-jar
+rmdir -rf MIUI-files/framework-jar
+
