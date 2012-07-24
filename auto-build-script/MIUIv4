@@ -1,0 +1,28 @@
+#!/bin/bash
+chmod 755 MIUI-scripts/*
+while :
+do
+clear
+echo "install your Working ROM first with the kitchen"
+echo "rename te working folder to WORKING_MIUI"
+echo ""
+echo "============================================"
+echo "     MIUI v4 auto builder - by Henry_01     "
+echo "============================================"
+echo "  1 - Start from CM9 ROM"
+echo "  2 - Update current MIUI ROM"
+echo "  3 - About"
+echo "  4 - Exit"
+    
+echo -n "Enter option: "
+  read opt
+
+case $opt in
+      1) clear; MIUI-scripts/start;;
+      2) clear; MIUI-scripts/upgrade;;
+      3) clear; MIUI-scripts/about;;
+      4) clear; exit 1;;
+      *) echo "Invalid option"; continue;;
+esac
+scripts/press_enter
+done

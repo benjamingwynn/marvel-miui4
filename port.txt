@@ -1,0 +1,58 @@
+* framework.jar
+
+method splitthemepackage toevoegen aan assetmanager.smali
+method detachthemepath toevoegen aan assetmanager.smali
+methode attachtehempath toevoegen aan assetmanager.smali
+methoden getbasepackage toevoegen aan assetmanater.smali
+Methoden addredirectionsnative en clearredirectionsnateive toevoegen aan assetmanager.smali
+methode generatestylredirections toegevoegd aan assetmanager.smali
+
+gles20canvas.smali vervangen
+power.smali vervangen
+wifinative.smali vervangen
+camera.smali in android/hardware vervangen
+bluetootha2dpservice.smali vervangen
+packagerdirectionmap.smali toevoegen
+peroframnce.smali toevoegen
+mediarecorder.smali vervangen
+systemproperties.smali vervangen
+
+methode nativegettexturegeneratorthreadid toevoegen aan webviewcore.smali
+
+* services.jar
+
+powermanagerservice.smali nativesurfaceflingeranimation to offanimation en onamination method toevoegen
+
+methode nativesetkeylayout toevoegen aan inputmanager.smali
+methode nativesestylusiconenabled toevoegen aan inputmanager.smali
+
+location smalies toevoegen.
+
+------booting now-------
+
+fixed headset
+fixed camera
+fixed usb mount + usb tethering zie guide
+fixed browser (webview smalis)
+radio fixed (ril smalis)
+
+framework-res.apk
+bools.xml
+<bool name="skip_restoring_network_selection">false</bool>
+bluetooth … to false (deep sleep)
+
+fix black bar in notifications menu:
+drawables.xml: remove line notification_header_bg 
+
+add old networklocationprovider.apk
+
+TO DO
+- nieuwe kernel *
+- toetsenbord aanpassen bijna gedaan
+- bools.xml mods in settings.apk true vow led, volume wake en button light
+- init.d script chmod toevoegen *
+- goo hosting (build.prop + apk)
+- nieuwste market + updater weg
+- lockscreen versnellen
+- niet locationprovider.apk vervangen
+- rotation toevoegen? MiHome rotation or 360 % rotation

@@ -1,0 +1,3 @@
+echo "This script allows you to build MIUI v4 from Nexus S Source."
+echo "You can either choose to start from frech or update an existing MIUI ROM."
+echo "Originally designed for the HTC Wildfire S, but should work for others too."

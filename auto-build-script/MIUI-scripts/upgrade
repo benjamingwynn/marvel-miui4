@@ -1,0 +1,24 @@
+echo "backup some stuff ..."
+mkdir -p MIUI-original
+cp -v WORKING_MIUI/system/app/Settings.apk MIUI-original
+echo "clean up folders ..."
+echo ""
+rm -rf CM9-files
+rm -rf MIUI-files
+mkdir CM9-files
+mkdir MIUI-files
+echo "Put framework-res.apk, framework.jar and services.jar in CM9-files folder"
+echo "Put new base in MIUI-files folder: app and framework folder"
+
+scripts/press_enter
+MIUI-scripts/framework
+MIUI-scripts/services
+MIUI-scipts/policy
+MIUI-scipts/apks
+echo "all patching done, you are ready to cook!"
+
+rm -rf CM9-files
+rm -rf MIUI-files
+rm -rf MIUI-original
+
+
