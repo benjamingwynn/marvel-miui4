@@ -7,18 +7,23 @@ cd /Volumes/Cooking
 cp -v Temporary-old/framework-jar/android/view/gles20canvas.smali Temporary-new/framework-jar/android/view
 cp -v Temporary-old/framework-jar/android/os/Power.smali Temporary-new/framework-jar/android/os
 cp -v Temporary-old/framework-jar/android/hardware/Camera*.smali Temporary-new/framework-jar/android/hardware
-cp -v Temporary-old/framework-jar/android/net/Webview*.smali Temporary-new/framework-jar/android/net
+cp -v Temporary-old/framework-jar/android/webkit/Webview*.smali Temporary-new/framework-jar/android/webkit
 cp -v Temporary-old/framework-jar/android/net/WifiNative.smali Temporary-new/framework-jar/android/net
 cp -v Temporary-old/framework-jar/android/codeaurora/Performance.smali Temporary-new/framework-jar/codeaurora
+cp -v Temporary-old/framework-jar/android/media/MediaRecoder.smali Temporary-new/framework-jar/media
+cp -v Temporary-old/framework-jar/android/os/Systemproperties.smali Temporary-new/framework-jar/os
+cp -v Temporary-old/framework-jar/com/android/internal/telephony/RIL*.smali Temporary-new/framework-jar/com/android/internal/telephony
+cp -v Temporary-old/framework-jar/com/android/telephony/SemcRIL*.smali Temporary-new/framework-jar/com/android/telephony
+echo "add missing methods to assetmanager.smali"
+scripts/press_enter
 echo "more files to come here ..."
 echo "manual patch following files"
-scipt/press_enter
+scipts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex framework
 zip -m framework.jar classes.dex
+rm classes.dex
 cd /Volumes/Cooking
-cp -v MIUI-files/framework.jar WORKING_MIUI/system/framework
+cp -v Temporary-new/framework.jar WORKING_MIUI/system/framework
 echo "patching done"
-rmdir -rf CM9-files/framework-jar
-rmdir -rf MIUI-files/framework-jar
 
