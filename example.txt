@@ -1,0 +1,23 @@
+example for smali and xml molding
+
+BEFORE
+
+.method private native nativeStartSurfaceFlingerAnimation(I)V
+.end method
+
+AFTER
+
+.method private native nativeStartSurfaceFlingerOffAnimation(I)V
+.end method
+
+.method private native nativeStartSurfaceFlingerOnAnimation(I)V
+.end method
+
+
+BEFORE
+
+invoke-direct {p0, p1}, Lcom/android/server/PowerManagerService;->nativeStartSurfaceFlingerAnimation(I)V
+
+AFTER
+
+invoke-direct {p0, p1}, Lcom/android/server/PowerManagerService;->nativeStartSurfaceFlingerOffAnimation(I)V
