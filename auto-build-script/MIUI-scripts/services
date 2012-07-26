@@ -1,25 +1,22 @@
 echo "patching services.jar"
-cd CM9-files
-baksmali services.jar
-echo "rename folder to services-jar"
-cd MIUI-files
-baksmali services.jar
-echo "rename folder to services-jar"
+cd /Volumes/Cooking/Temporary-old
+baksmali -o services services.jar
+cd /Volumes/Cooking/Temporary-new
+baksmali -o services services.jar
 cd /Volumes/Cooking
-cp -v CM9-files/services-jar/.../wiredaccesory*.smali MIUI-files/services-jar/...
-cp -v CM9-files/services-jar/.../USB MIUI-files/services-jar/...
-cp -v CM9-files/services-jar/.../locationservices MIUI-files/services-jar/...
-cp -v CM9-files/services-jar/.../usb*.smali MIUI-files/services-jar/...
-cp -v CM9-files/services-jar/.../location*.smali MIUI-files/services-jar/...
-echo "more files to come here, may be incorrect for now ..."
+cp -v Temporary-old/services/com/android/server/WiredAccessoryObserver*.smali Temporary-new/services/com/android/server
+cp -v Temporary-old/services/com/android/server/usb Temporary-new/services/com/android/server
+cp -v Temporary-old/services/com/android/server/location Temporary-new/services/com/android/server
+cp -v Temporary-old/services/com/android/server/LocationManagerService*.smali Temporary-new/services/com/android/server
 echo "manual patch following files"
-scipt/press_enter
-cd MIUI-files
-smali services-jar
-echo "put classes.dex file in services.jar original"
+echo "add methods nativesetkeylayout and nativesetstylusiconenabled to inputmanager.smali"
+scipts/press_enter
+echo "add methods nativesurfaceflingeroffanimation/onanimation to powermanagerservice.smali"
+scipts/press_enter
+cd /Volumes/Cooking/Temporary-new
+smali -o classes.dex services
+zip -m services.jar classes.dex
+rm classes.dex
 cd /Volumes/Cooking
-cp -v MIUI-files/framework.jar WORKING_MIUI/system/framework
+cp -v Temporary-new/services.jar WORKING_MIUI/system/framework
 echo "patching done"
-rmdir -rf CM9-files/services-jar
-rmdir -rf MIUI-files/services-jar
-

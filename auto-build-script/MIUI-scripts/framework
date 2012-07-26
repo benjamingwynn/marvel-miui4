@@ -1,8 +1,8 @@
 echo "patching framework.jar"
 cd /Volumes/Cooking/Temporary-old
-baksmali -o framework  framework.jar
+baksmali -o framework framework.jar
 cd /Volumes/Cooking/Temporary-new
-baksmali -o framework  framework.jar
+baksmali -o framework framework.jar
 cd /Volumes/Cooking
 cp -v Temporary-old/framework-jar/android/view/gles20canvas.smali Temporary-new/framework-jar/android/view
 cp -v Temporary-old/framework-jar/android/os/Power.smali Temporary-new/framework-jar/android/os
@@ -15,9 +15,6 @@ cp -v Temporary-old/framework-jar/android/os/Systemproperties.smali Temporary-ne
 cp -v Temporary-old/framework-jar/com/android/internal/telephony/RIL*.smali Temporary-new/framework-jar/com/android/internal/telephony
 cp -v Temporary-old/framework-jar/com/android/telephony/SemcRIL*.smali Temporary-new/framework-jar/com/android/telephony
 echo "add missing methods to assetmanager.smali"
-scripts/press_enter
-echo "more files to come here ..."
-echo "manual patch following files"
 scipts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex framework
