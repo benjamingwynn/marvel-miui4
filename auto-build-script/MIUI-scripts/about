@@ -19,3 +19,7 @@ case $opt in
       3) clear; MIUI-scripts/profile2
       4) clear; MIUIv4
       *) echo "Invalid option"; continue;;
+
+esac
+scripts/press_enter
+done
