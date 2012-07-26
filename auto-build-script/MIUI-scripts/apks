@@ -1,1 +1,6 @@
 echo "patching Settings, SystemUI and Framework-res"
+echo "installing frameworks for apktool"
+
+
+cd /Volumes/Cooking/Temporary-new
+apktool d Settings.apk

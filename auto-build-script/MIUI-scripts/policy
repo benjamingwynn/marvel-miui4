@@ -1,2 +1,15 @@
-echo "patching android.policy.jar"
-echo "add 3 way reboot menu"
+echo "no patching needed, adding 3 way reboot menu"
+cd /Volumes/Cooking/Temporary-new
+baksmali -o services android.policy.jar
+cd /Volumes/Cooking
+cp -v MIUI-resources/MiuiGlobalActions$9*.smali Temporary-new/policy/com/android/internal/policy/impl
+echo "manual patch following files"
+echo "too lazy, sorry"
+scipts/press_enter
+cd /Volumes/Cooking/Temporary-new
+smali -o classes.dex policy
+zip -m android.policy.jar classes.dex
+rm classes.dex
+cd /Volumes/Cooking
+cp -v Temporary-new/android.policy.jar WORKING_MIUI/system/framework
+echo "done"
