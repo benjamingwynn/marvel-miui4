@@ -3,15 +3,16 @@ chmod 755 MIUI-scripts/*
 while :
 do
 clear
-echo "============================================"
-echo "     MIUI v4 auto builder - by Henry_01     "
-echo "============================================"
+@title MIUI v4 auto builder - by Henry_01 & rezo609
+echo "===================================================="
+echo "     MIUI v4 auto builder - by Henry_01 & rezo609    "
+echo "===================================================="
 echo "  1 - Start from CM9 ROM"
 echo "  2 - Update current MIUI ROM"
 echo "  3 - About"
 echo "  4 - Exit"
     
-echo -n "Enter option: "
+echo -n "Please enter an option: "
   read opt
 
 case $opt in
