@@ -3,9 +3,6 @@ chmod 755 MIUI-scripts/*
 while :
 do
 clear
-echo "install your Working ROM first with the kitchen"
-echo "rename te working folder to WORKING_MIUI"
-echo ""
 echo "============================================"
 echo "     MIUI v4 auto builder - by Henry_01     "
 echo "============================================"

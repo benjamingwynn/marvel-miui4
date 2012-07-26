@@ -1,1 +1,11 @@
+echo "deleting current working folder"
+rmdir -rf WORKING_*
+echo "put your base CM9 ROM and an update MIUI ROM in the original_update folder"
+echo "install the updated MIUI ROM"
+script press_enter
+mv WORKING_* UPDATE_MIUI
+echo "install your CM9 base ROM"
+script press_enter
+mv WORKING_* WORKING_Final
 echo "under construction"
+script press_enter

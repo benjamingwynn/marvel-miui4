@@ -1,23 +1,21 @@
 echo "patching framework.jar"
-cd CM9-files
-baksmali framework.jar
-echo "rename folder to framework-jar"
-cd MIUI-files
-baksmali framework.jar
-echo "rename folder to framework-jar"
+cd /Volumes/Cooking/Temporary-old
+baksmali -o framework  framework.jar
+cd /Volumes/Cooking/Temporary-new
+baksmali -o framework  framework.jar
 cd /Volumes/Cooking
-cp -v CM9-files/framework-jar/android/view/gles20canvas.smali MIUI-files/framework-jar/android/view
-cp -v CM9-files/framework-jar/android/os/Power.smali MIUI-files/framework-jar/android/os
-cp -v CM9-files/framework-jar/android/hardware/Camera*.smali MIUI-files/framework-jar/android/hardware
-cp -v CM9-files/framework-jar/android/net/Webview*.smali MIUI-files/framework-jar/android/net
-cp -v CM9-files/framework-jar/android/net/WifiNative.smali MIUI-files/framework-jar/android/net
-cp -v CM9-files/framework-jar/android/codeaurora/Performance.smali MIUI-files/framework-jar/codeaurora
+cp -v Temporary-old/framework-jar/android/view/gles20canvas.smali Temporary-new/framework-jar/android/view
+cp -v Temporary-old/framework-jar/android/os/Power.smali Temporary-new/framework-jar/android/os
+cp -v Temporary-old/framework-jar/android/hardware/Camera*.smali Temporary-new/framework-jar/android/hardware
+cp -v Temporary-old/framework-jar/android/net/Webview*.smali Temporary-new/framework-jar/android/net
+cp -v Temporary-old/framework-jar/android/net/WifiNative.smali Temporary-new/framework-jar/android/net
+cp -v Temporary-old/framework-jar/android/codeaurora/Performance.smali Temporary-new/framework-jar/codeaurora
 echo "more files to come here ..."
 echo "manual patch following files"
 scipt/press_enter
-cd MIUI-files
-smali framework-jar
-echo "put classes.dex file in framework.jar original"
+cd /Volumes/Cooking/Temporary-new
+smali -o classes.dex framework
+zip -m framework.jar classes.dex
 cd /Volumes/Cooking
 cp -v MIUI-files/framework.jar WORKING_MIUI/system/framework
 echo "patching done"

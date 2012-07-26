@@ -1,25 +1,43 @@
-echo "backup previous ROM apps for re-use"
-mkdir -p MIUI-original
-cp -v WORKING_MIUI/system/app/Settings.apk MIUI-original
-cp -v WORKING_MIUI/system/app/Camera.apk MIUI-original
-cp -v WORKING_MIUI/system/app/LatinIME.apk MIUI-original
-echo "clean up old working folders ..."
-echo ""
-rm -rf CM9-files
-rm -rf MIUI-files
-mkdir CM9-files
-mkdir MIUI-files
-echo "Do the following:"
-echo "Add to CM9-files: framework-res.apk framework.jar services.jar"
-echo "Add to MIUI-files: framework-miui-res.apk framework-res.apk framework.jar services.jar android.policy.jar"
-echo "Add to MIUI-files: app folder"
-scripts/press_enter
-echo "check here if files are added"
+echo "deleting current working folder"
+rmdir -rf WORKING_*
+echo "put your base MIUI ROM and an update MIUI ROM in the original_update folder"
+echo "install the updated MIUI ROM"
+scripts press_enter
+mv WORKING_* UPDATE_MIUI
+echo "install your working base ROM"
+scripts press_enter
+mv WORKING_* WORKING_Final
+echo "backing up previous Apps for re-use"
+mkdir -p Backup
+cp -v WORKING_Final/system/app/PlayStore.apk Backup
+cp -v WORKING_Final/system/app/Camera.apk Backup
+cp -v WORKING_Final/system/app/LatinIME.apk Backup
+cp -v WORKING_Final/system/app/LocationProvider.apk Backup
+echo "creating temporary folders"
+rm -rf Temporary-old
+rm -rf Temporary-new
+mkdir Temporary-old
+mkdir Temporary-new
+cp -v WORKING_Final/system/framework/framework-res.apk Temporary-old
+cp -v WORKING_Final/system/framework/framework.jar Temporary-old
+cp -v WORKING_Final/system/framework/services.jar Temporary-old
+cp -v WORKING_Final/system/framework/android.policy.jar Temporary-old
+cp -v WORKING_Final/system/app/Settings.apk Temporary-old
+echo "created old sources"
+cp -v UPDATE_MIUI/system/framework/framework-res.apk Temporary-new
+cp -v UPDATE_MIUI/system/framework/framework-miui-res.apk Temporary-new
+cp -v UPDATE_MIUI/system/framework/framework.jar Temporary-new
+cp -v UPDATE_MIUI/system/framework/services.jar Temporary-new
+cp -v UPDATE_MIUI/system/framework/android.policy.jar Temporary-new
+cp -v UPDATE_MIUI/system/app/Settings.apk Temporary-new
+mv -v UPDATE_MIUI/system/app Temporary-new/app
+echo "created new sources"
+rmdir -rf UPDATE_MIUI
 MIUI-scripts/framework
 MIUI-scripts/services
 MIUI-scipts/policy
 MIUI-scipts/apks
 echo "all patching done, you are ready to cook!"
-echo "link now to start building"
+scripts press_enter
 
 
