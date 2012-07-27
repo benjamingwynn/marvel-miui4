@@ -3,7 +3,6 @@ chmod 755 MIUI-scripts/*
 while :
 do
 clear
-@title MIUI v4 auto builder - by Henry_01 & rezo609
 echo "===================================================="
 echo "     MIUI v4 auto builder - by Henry_01 & rezo609    "
 echo "===================================================="
