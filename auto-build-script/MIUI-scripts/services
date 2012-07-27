@@ -14,7 +14,8 @@ echo "Adding missing animations to PowerManagerService.smali"
 cd /Volumes/Cooking/Temporary-new/services/com/android/server
 cat PowerManagerservice.smali | sed -e 's/PowerManagerService;->nativeStartSurfaceFlingerAnimation/PowerManagerService;->nativeStartSurfaceFlingerOffAnimation/' > PowerManagerservice.smali
 cat PowerManagerservice.smali | sed -e 's/private native nativeStartSurfaceFlingerAnimation/private native nativeStartSurfaceFlingerOffAnimation/' > PowerManagerservice.smali
-echo "here the code for adding onanimation text/need to find it"
+echo "here the code for adding onanimation text"
+echo "this comes after offanimation text"
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex services
 zip -m services.jar classes.dex

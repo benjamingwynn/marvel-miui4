@@ -14,7 +14,7 @@ cp -v Temporary-old/framework-jar/android/media/MediaRecoder.smali Temporary-new
 cp -v Temporary-old/framework-jar/android/os/Systemproperties.smali Temporary-new/framework-jar/os
 cp -v Temporary-old/framework-jar/com/android/internal/telephony/RIL*.smali Temporary-new/framework-jar/com/android/internal/telephony
 cp -v Temporary-old/framework-jar/com/android/telephony/SemcRIL*.smali Temporary-new/framework-jar/com/android/telephony
-echo "add missing methods to assetmanager.smali"
+echo "add missing methods to assetmanager.smali yourself"
 scripts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex framework

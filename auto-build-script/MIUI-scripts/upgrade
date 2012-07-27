@@ -18,11 +18,9 @@ rm -rf Temporary-old
 rm -rf Temporary-new
 mkdir Temporary-old
 mkdir Temporary-new
-cp -v WORKING_Final/system/framework/framework-res.apk Temporary-old
 cp -v WORKING_Final/system/framework/framework.jar Temporary-old
 cp -v WORKING_Final/system/framework/services.jar Temporary-old
 cp -v WORKING_Final/system/framework/android.policy.jar Temporary-old
-cp -v WORKING_Final/system/app/Settings.apk Temporary-old
 echo "created old sources"
 cp -v UPDATE_MIUI/system/framework/framework-res.apk Temporary-new
 cp -v UPDATE_MIUI/system/framework/framework-miui-res.apk Temporary-new

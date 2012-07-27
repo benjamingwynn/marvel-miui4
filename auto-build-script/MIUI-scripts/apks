@@ -1,18 +1,10 @@
 echo "patching Settings, SystemUI and Framework-res"
 echo "for apktool to work, get apks 2 to 5. You can find them on github.com/miui"
 scripts/press_enter
-echo "decompiling old stuff"
-apktool if /Volumes/Cooking/Temporary-old/framework-res.apk
-apktool if /Volumes/Cooking/Temporary-old/framework-miui-res.apk
-echo "install frameworks"
-cd /Volumes/Cooking/Temporary-old
-apktool d Settings.apk
-apktool d Framework-res.apk
-apktool d SystemUI.apk
-echo "decompiling new stuff"
-apktool if /Volumes/Cooking/Temporary-new/framework-res.apk
-apktool if /Volumes/Cooking/Temporary-new/framework-miui-res.apk
-echo "install frameworks"
+echo "installing apktool stuff"
+cd /
+mv Volumes/Cooking/Temporary-new/framework-res.apk Users/Developer/apktool/framework/1.apk
+mv Volumes/Cooking/Temporary-new/framework-miui-res.apk Users/Developer/apktool/framework/6.apk
 cd /Volumes/Cooking/Temporary-new
 apktool d Settings.apk
 apktool d Framework-res.apk
@@ -27,4 +19,3 @@ apktool b SystemUI
 zip -m Settings.apk Settings/build/apk/resources.arcs
 zip -m SystemUI.apk SystemUI/build/apk/resources.arcs
 zip -m Framework-res.apk Framework-res/build/apk/resources.arcs
-

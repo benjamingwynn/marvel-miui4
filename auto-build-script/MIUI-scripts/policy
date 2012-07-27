@@ -3,8 +3,9 @@ cd /Volumes/Cooking/Temporary-new
 baksmali -o services android.policy.jar
 cd /Volumes/Cooking
 cp -v MIUI-resources/MiuiGlobalActions$9*.smali Temporary-new/policy/com/android/internal/policy/impl
-echo "manual patch following files"
-echo "too lazy, sorry"
+sed -e '/hello/r MIUI-resources/globalactions1.txt' Temporary-new/policy/com/android/internal/policy/impl/MiuiGlobalActions$SinglePressAction.smali
+echo "here code to add text to certain files"
+echo "source for this is in the text files MIUI-resources"
 scipts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex policy
