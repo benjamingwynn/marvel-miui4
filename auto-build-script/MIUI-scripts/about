@@ -5,21 +5,29 @@ echo "Originally designed for the HTC Wildfire S, but should work for others too
 echo "==========================================="
 echo "Choose an Option below for more Information"
 echo "==========================================="
-echo " 1 - View thread on xda developers "
-echo " 2 - View Henry_01 profile on xda developers "
-echo " 3 - View rezo609 profile on xda developers "
-echo " 4 - Back to Main Menu
 
-echo -n "Please enter an option: "
-  read opt
+:menuLOOP
+  ::Load up our menu selections
+	for /f "tokens=1,2,* delims=_ " %%A in ('"findstr /b /c:":menu_" "%~f0""') do echo.  %%B  %%C
+	
 
-case $opt in
-      1) clear; MIUI-scripts/thread
-      2) clear; MIUI-scripts/profile
-      3) clear; MIUI-scripts/profile2
-      4) clear; MIUIv4
-      *) echo "Invalid option"; continue;;
+	set choice=
+	echo.&set /p choice=Enter Selection/ENTER to exit: ||GOTO:EOF
+	echo.&call:menu_%choice%
+GOTO:menuLOOP
 
-esac
-scripts/press_enter
-done
+:menu_1    - View thread on xda developers
+start /d "C:\Program Files\Internet Explorer" explorer.exe explorer.exe
+start 
+GOTO:EOF
+:menu_2    - View Henry_01 profile on xda developers
+start /d "C:\Program Files\Internet Explorer" explorer.exe explorer.exe
+start http://www.forum.xda-developers.com/member.php?u=4425351
+GOTO:EOF
+:menu_3    - View rezo609 profile on xda developers
+start /d "C:\Program Files\Internet Explorer" explorer.exe explorer.exe
+start http://www.forum.xda-developers.com/member.php?u=4645796
+GOTO:EOF
+:menu_4    - Back
+./MIUIv4
+GOTO:EOF
