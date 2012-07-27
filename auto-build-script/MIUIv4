@@ -4,7 +4,7 @@ while :
 do
 clear
 echo "===================================================="
-echo "     MIUI v4 auto builder - by Henry_01 & rezo609    "
+echo "       MIUI v4 auto builder - by WFSdev Team        "
 echo "===================================================="
 echo "  1 - Start from CM9 ROM"
 echo "  2 - Update current MIUI ROM"

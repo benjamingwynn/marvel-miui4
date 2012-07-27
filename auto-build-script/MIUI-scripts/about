@@ -1,7 +1,35 @@
+############################################################################
+#
+# Copyright (c) 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
+while :
+do
+clear
 echo "This script allows you to build MIUI v4 from a Nexus S Source."
 echo "You can either choose to start from CM9 or update an existing MIUI ROM."
 echo "Originally designed for the HTC Wildfire S, but should work for others too."
+echo ""
+echo "===================================================="
+echo "          Created by Henry_01 and rezo609           "
+echo "===================================================="
+echo "  1 - View Henry_01's XDA profile"
+echo "  2 - View rezo609's XDA profile"
+echo "  3 - Check for updates/source code"
+echo "  4 - Go Back"
+    
+echo -n "Please enter an option: "
+  read opt
 
-echo "==========================================="
-echo "Choose an Option below for more Information"
-echo "==========================================="
+case $opt in
+      1) clear; open http://forum.xda-developers.com/member.php?u=4425351;;
+      2) clear; open http://forum.xda-developers.com/member.php?u=4645796;;
+      3) clear; open http://www.github.com/wfsdev/marvel-miui4-source;;
+      4) clear; exit 1;;
+      *) echo "Invalid option"; continue;;
+esac
+done

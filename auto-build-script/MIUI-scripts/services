@@ -12,7 +12,7 @@ echo "manual patch following files"
 echo "Add methods nativesetkeylayout and nativesetstylusiconenabled to inputmanager.smali"
 scipts/press_enter
 echo "Add methods nativesurfaceflingeroffanimation/onanimation to powermanagerservice.smali"
-scipts/press_enter
+scripts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex services
 zip -m services.jar classes.dex
