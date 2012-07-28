@@ -19,8 +19,9 @@ echo "          Created by Henry_01 and rezo609           "
 echo "===================================================="
 echo "  1 - View Henry_01's XDA profile"
 echo "  2 - View rezo609's XDA profile"
-echo "  3 - Check for updates/source code"
-echo "  4 - Go Back"
+echo "  3 - View XDA thread
+echo "  4 - Check for updates/source code"
+echo "  5 - Go Back"
     
 echo -n "Please enter an option: "
   read opt
@@ -28,8 +29,9 @@ echo -n "Please enter an option: "
 case $opt in
       1) clear; open http://forum.xda-developers.com/member.php?u=4425351;;
       2) clear; open http://forum.xda-developers.com/member.php?u=4645796;;
-      3) clear; open http://www.github.com/wfsdev/marvel-miui4-source;;
-      4) clear; exit 1;;
+      3) clear; open http://a fill-in-when-released;;
+      4) clear; open http://www.github.com/wfsdev/marvel-miui4-source;;
+      5) clear; exit 1;;
       *) echo "Invalid option"; continue;;
 esac
 done
