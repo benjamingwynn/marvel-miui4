@@ -21,15 +21,16 @@ mkdir Temporary-new
 cp -v WORKING_Final/system/framework/framework.jar Temporary-old
 cp -v WORKING_Final/system/framework/services.jar Temporary-old
 cp -v WORKING_Final/system/framework/android.policy.jar Temporary-old
-echo "created old sources"
+echo "created old sources (smali sources)"
+cp -v UPDATE_MIUI/system/app/Mms.apk Temporary-new
 cp -v UPDATE_MIUI/system/framework/framework-res.apk Temporary-new
 cp -v UPDATE_MIUI/system/framework/framework-miui-res.apk Temporary-new
 cp -v UPDATE_MIUI/system/framework/framework.jar Temporary-new
 cp -v UPDATE_MIUI/system/framework/services.jar Temporary-new
 cp -v UPDATE_MIUI/system/framework/android.policy.jar Temporary-new
 cp -v UPDATE_MIUI/system/app/Settings.apk Temporary-new
-mv -v UPDATE_MIUI/system/app Temporary-new/app
-echo "created new sources"
+mv -v UPDATE_MIUI/system/app Temporary-new
+echo "created new sources (smali + xml patching)"
 rm -rf UPDATE_MIUI
 MIUI-scripts/framework
 cd /Volumes/Cooking
@@ -47,6 +48,7 @@ cp -v Temporary-new/android.policy.jar WORKING_Final/system/framework
 cp -v Temporary-new/app WORKIGNG_Final/system
 cp -v Temporary-new/MiuiSystemUI.apk WORKING_Final/system/app
 cp -v Temporary-new/Settings.apk WORKING_Final/system/app
+cp -v Temporary-new/Mms.apk WORKING_Final/system/app
 cp -v Backup/Playstore.apk WORKING_Final/system/app
 cp -v Backup/Camera.apk WORKING_Final/system/app
 cp -v Backup/LatinIME.apk WORKING_Final/system/app
