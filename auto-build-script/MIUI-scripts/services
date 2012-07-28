@@ -19,7 +19,6 @@ echo "this comes after offanimation text"
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex services
 zip -m services.jar classes.dex
-rm classes.dex
 cd /Volumes/Cooking
 cp -v Temporary-new/services.jar WORKING_MIUI/system/framework
 echo "Patching Done"

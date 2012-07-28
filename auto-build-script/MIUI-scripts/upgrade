@@ -32,9 +32,25 @@ mv -v UPDATE_MIUI/system/app Temporary-new/app
 echo "created new sources"
 rm -rf UPDATE_MIUI
 MIUI-scripts/framework
+cd /Volumes/Cooking
 MIUI-scripts/services
+cd /Volumes/Cooking
 MIUI-scipts/policy
+cd /Volumes/Cooking
 MIUI-scipts/apks
+cd /Volumes/Cooking
+cp -v Temporary-new/framework-res.apk WORKING_Final/system/framework
+cp -v Temporary-new/framework-miui-res.apk WORKING_Final/system/framework
+cp -v Temporary-new/framework.jar WORKING_Final/system/framework
+cp -v Temporary-new/services.jar WORKING_Final/system/framework
+cp -v Temporary-new/android.policy.jar WORKING_Final/system/framework
+cp -v Temporary-new/app WORKIGNG_Final/system
+cp -v Temporary-new/MiuiSystemUI.apk WORKING_Final/system/app
+cp -v Temporary-new/Settings.apk WORKING_Final/system/app
+cp -v Backup/Playstore.apk WORKING_Final/system/app
+cp -v Backup/Camera.apk WORKING_Final/system/app
+cp -v Backup/LatinIME.apk WORKING_Final/system/app
+rm "hier nog dingen weg die niet nodig zijn"
 echo "all patching done, you are ready to cook!"
 scripts press_enter
 

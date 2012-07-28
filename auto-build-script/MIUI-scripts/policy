@@ -9,7 +9,6 @@ scipts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex policy
 zip -m android.policy.jar classes.dex
-rm classes.dex
 cd /Volumes/Cooking
 cp -v Temporary-new/android.policy.jar WORKING_MIUI/system/framework
 echo "done"

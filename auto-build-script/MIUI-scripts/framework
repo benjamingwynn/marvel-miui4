@@ -19,7 +19,6 @@ scripts/press_enter
 cd /Volumes/Cooking/Temporary-new
 smali -o classes.dex framework
 zip -m framework.jar classes.dex
-rm classes.dex
 cd /Volumes/Cooking
 cp -v Temporary-new/framework.jar WORKING_MIUI/system/framework
 echo "patching done"

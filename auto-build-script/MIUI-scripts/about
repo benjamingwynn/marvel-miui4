@@ -29,7 +29,7 @@ echo -n "Please enter an option: "
 case $opt in
       1) clear; open http://forum.xda-developers.com/member.php?u=4425351;;
       2) clear; open http://forum.xda-developers.com/member.php?u=4645796;;
-      3) clear; open http://a fill-in-when-released;;
+      3) clear; open http://wfsdev.net23.net/releases;;
       4) clear; open http://www.github.com/wfsdev/marvel-miui4-source;;
       5) clear; exit 1;;
       *) echo "Invalid option"; continue;;

@@ -1,14 +1,22 @@
-echo "patching Settings, SystemUI and Framework-res"
+echo "patching MMS, Settings, SystemUI and Framework-res"
 echo "for apktool to work, get apks 2 to 5. You can find them on github.com/miui"
 scripts/press_enter
 echo "installing apktool stuff"
 cd /
-mv Volumes/Cooking/Temporary-new/framework-res.apk Users/Developer/apktool/framework/1.apk
-mv Volumes/Cooking/Temporary-new/framework-miui-res.apk Users/Developer/apktool/framework/6.apk
+cp Volumes/Cooking/Temporary-new/framework-res.apk Users/Developer/apktool/framework/1.apk
+cp Volumes/Cooking/Temporary-new/framework-miui-res.apk Users/Developer/apktool/framework/6.apk
 cd /Volumes/Cooking/Temporary-new
 apktool d Settings.apk
 apktool d framework-res.apk
-apktool d miuisystemui.apk
+apktool d MiuiSystemUI.apk
+apktool d Mms.apk
+echo "fixing mms settings"
+cd /Volumes/Cooking
+cp MIUI-resources/mms_config.xml Temporary-new/Mms/res/xml
+echo "fixing some framework xmls"
+cp MIUI-resources/eri.xml Temporary-new/framework-res/res/xml
+cp MIUI-resources/storage_list.xml Temporary-new/framework-res/res/xml
+cp MIUI-resources/power_profile.xml Temporary-new/framework-res/res/xml
 echo "fixing bools"
 cd /Volumes/Cooking/Temporary-new/framework-res/res/values
 cat bools.xml | sed -e 's/skip_restoring_network_selection">true/skip_restoring_network_selection">false/' > bools.xml
@@ -29,8 +37,9 @@ echo "<item>mobile_ims,11,0,2,60000,true</item>"
 echo "<item>mobile_cbs,12,0,2,60000,true</item>"
 open arrays.xml
 scripts/press_enter
+#testing something
+#sed "/wimax/astring name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>" strings.xml
 echo "add following string after wimax:"
-
 echo "<string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>"
 open strings.xml
 scripts/press_enter
@@ -38,7 +47,7 @@ cd /Volumes/Cooking
 cp MIUI-resources/storage_list.xml Temporary-new/framework-res/res/xml
 cd /Volumes/Cooking/Temporary-new/miuisystemui/res/values
 echo "remove the first line to remove the black bar"
-open ...
+open colors.xml
 scripts/press_enter
 cd /Volumes/Cooking/Temporary-new/Settings/res/values
 echo "fixing bools of settings"
@@ -48,12 +57,12 @@ echo "adding custom about logo"
 cp MIUI-resources/miui_logo.9.png Temporary-new/Settings/res/drawable-hdpi
 cp MIUI-resources/miui_logo.9.png Temporary-new/Settings/res/drawable-en-hdpi
 cd /Volumes/Cooking/Temporary-new
-apktool b Framework-res
+apktool b framework-res
 apktool b Settings
-apktool b SystemUI
+apktool b MiuiSystemUI
 zip -m Settings.apk Settings/build/apk/resources.arcs
-zip -m Settings.apk Settings/build/apk/res/drawable-hdpi/miui_logo.9.png
-zip -m Settings.apk Settings/build/apk/res/drawable-en-hdpi/miui_logo.9.png
+zip -m Settings.apk Settings/build/apk/res/drawable-hdpi
+zip -m Settings.apk Settings/build/apk/res/drawable-en-hdpi
 zip -m SystemUI.apk SystemUI/build/apk/resources.arcs
 zip -m Framework-res.apk Framework-res/build/apk/resources.arcs
 echo "decompiling framework again to fix resource ids"
