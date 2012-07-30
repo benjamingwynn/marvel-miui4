@@ -1,37 +1,17 @@
 echo "deleting current working folder"
 rm -rf WORKING_*
 echo "put your base MIUI ROM and an update MIUI ROM in the original_update folder"
-echo "install the updated MIUI ROM"
+echo "they should be named as *crespo* and *marvel* ROMS, rename if needed"
 scripts/press_enter
-mv WORKING_* UPDATE_MIUI
-echo "install your working base ROM"
-scripts/press_enter
-mv WORKING_* WORKING_Final
-echo "backing up previous Apps for re-use"
-mkdir -p Backup
-cp -v WORKING_Final/system/app/PlayStore.apk Backup
-cp -v WORKING_Final/system/app/Camera.apk Backup
-cp -v WORKING_Final/system/app/LatinIME.apk Backup
-cp -v WORKING_Final/system/app/LocationProvider.apk Backup
-echo "creating temporary folders"
-rm -rf Temporary-old
-rm -rf Temporary-new
-mkdir Temporary-old
-mkdir Temporary-new
-cp -v WORKING_Final/system/framework/framework.jar Temporary-old
-cp -v WORKING_Final/system/framework/services.jar Temporary-old
-cp -v WORKING_Final/system/framework/android.policy.jar Temporary-old
-echo "created old sources (smali sources)"
-cp -v UPDATE_MIUI/system/app/Mms.apk Temporary-new
-cp -v UPDATE_MIUI/system/framework/framework-res.apk Temporary-new
-cp -v UPDATE_MIUI/system/framework/framework-miui-res.apk Temporary-new
-cp -v UPDATE_MIUI/system/framework/framework.jar Temporary-new
-cp -v UPDATE_MIUI/system/framework/services.jar Temporary-new
-cp -v UPDATE_MIUI/system/framework/android.policy.jar Temporary-new
-cp -v UPDATE_MIUI/system/app/Settings.apk Temporary-new
-mv -v UPDATE_MIUI/system/app Temporary-new
-echo "created new sources (smali + xml patching)"
-rm -rf UPDATE_MIUI
+echo "installing your working base ROM"
+unzip -q original_update/*marvel*.zip -d WORKING_Final
+echo "backing up apps for re-use later"
+cp -v WORKING_Final/system/app/PlayStore.apk MIUI-resources/apks
+cp -v WORKING_Final/system/app/Camera.apk MIUI-resources/apks
+cp -v WORKING_Final/system/app/LatinIME.apk MIUI-resources/apks
+rm -rf Temporary
+echo "installing updated ROM"
+unzip -Cq original_update/*crespo*.zip system/framework/framework.jar system/framework/services.jar system/framework/android.policy.jar system/framework/*.apk system/app/*.apk -d Temporary
 MIUI-scripts/framework
 cd /Volumes/Cooking
 MIUI-scripts/services
@@ -40,19 +20,18 @@ MIUI-scipts/policy
 cd /Volumes/Cooking
 MIUI-scipts/apks
 cd /Volumes/Cooking
-cp -v Temporary-new/framework-res.apk WORKING_Final/system/framework
-cp -v Temporary-new/framework-miui-res.apk WORKING_Final/system/framework
-cp -v Temporary-new/framework.jar WORKING_Final/system/framework
-cp -v Temporary-new/services.jar WORKING_Final/system/framework
-cp -v Temporary-new/android.policy.jar WORKING_Final/system/framework
-cp -v Temporary-new/app WORKIGNG_Final/system
-cp -v Temporary-new/MiuiSystemUI.apk WORKING_Final/system/app
-cp -v Temporary-new/Settings.apk WORKING_Final/system/app
-cp -v Temporary-new/Mms.apk WORKING_Final/system/app
-cp -v Backup/Playstore.apk WORKING_Final/system/app
-cp -v Backup/Camera.apk WORKING_Final/system/app
-cp -v Backup/LatinIME.apk WORKING_Final/system/app
-rm "hier nog dingen weg die niet nodig zijn"
+cp Temporary/system/framework/*.apk WORKING_Final/system/framework
+cp Temporary/system/app/*.apk WORKING_Final/system/framework
+cp Temporary/system/framework/framework.jar WORKING_Final/system/framework
+cp Temporary/system/framework/services.jar WORKING_Final/system/framework
+cp Temporary/system/framework/android.policy.jar WORKING_Final/system/framework
+cp Temporary/app WORKIGNG_Final/system
+cd WORKING_Final/system/app
+rm Tag.apk Talk.apk NFC.apk Maps.apk YouTube.apk Play*.apk GMail.apk
+cd /Volumes/Cooking
+cp MIUI-resources/apks/Playstore.apk WORKING_Final/system/app
+cp MIUI-resources/apks/Camera.apk WORKING_Final/system/app
+cp MIUI-resources/apks/LatinIME.apk WORKING_Final/system/app
 echo "all patching done, you are ready to cook!"
 scripts press_enter
 

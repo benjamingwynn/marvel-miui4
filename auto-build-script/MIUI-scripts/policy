@@ -1,14 +1,15 @@
-echo "no patching needed, adding 3 way reboot menu"
-cd /Volumes/Cooking/Temporary-new
-baksmali -o services android.policy.jar
+echo "No patching needed, adding 3 way reboot menu"
+cd /Volumes/Cooking/Temporary
+mv Temporary/system/framework/android.policy.jar Temporary
+baksmali -o policy android.policy.jar
 cd /Volumes/Cooking
-cp -v MIUI-resources/MiuiGlobalActions$9*.smali Temporary-new/policy/com/android/internal/policy/impl
+cp -v MIUI-resources/MiuiGlobalActions$9*.smali Temporary/policy/com/android/internal/policy/impl
 echo "here code to add text to certain files"
 echo "source for this is in the text files MIUI-resources"
 scipts/press_enter
-cd /Volumes/Cooking/Temporary-new
+cd /Volumes/Cooking/Temporary
 smali -o classes.dex policy
 zip -m android.policy.jar classes.dex
 cd /Volumes/Cooking
-cp -v Temporary-new/android.policy.jar WORKING_MIUI/system/framework
-echo "done"
+mv android.policy.jar system/framework
+echo "Patching done"

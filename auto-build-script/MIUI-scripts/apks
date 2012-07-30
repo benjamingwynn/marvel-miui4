@@ -1,24 +1,28 @@
 echo "patching MMS, Settings, SystemUI and Framework-res"
-echo "for apktool to work, get apks 2 to 5. You can find them on github.com/miui"
+echo "for apktool to work, get apks 2 to 5. You can find them on github.com/micode/patchrom_tools"
 scripts/press_enter
 echo "installing apktool stuff"
 cd /
-cp Volumes/Cooking/Temporary-new/framework-res.apk Users/Developer/apktool/framework/1.apk
-cp Volumes/Cooking/Temporary-new/framework-miui-res.apk Users/Developer/apktool/framework/6.apk
-cd /Volumes/Cooking/Temporary-new
+cp Volumes/Cooking/Temporary/system/framework/framework-res.apk Users/Developer/apktool/framework/1.apk
+cp Volumes/Cooking/Temporary/system/framework/framework-miui-res.apk Users/Developer/apktool/framework/6.apk
+cd /Volumes/Cooking/Temporary
+mv Temporary/system/framework/framework-res.apk Temporary
+mv Temporary/system/app/Mms.apk Temporary
+mv Temporary/system/app/Settings.apk Temporary
+mv Temporary/system/app/MiuiSystemUI.apk Temporary
 apktool d Settings.apk
 apktool d framework-res.apk
 apktool d MiuiSystemUI.apk
 apktool d Mms.apk
 echo "fixing mms settings"
 cd /Volumes/Cooking
-cp MIUI-resources/mms_config.xml Temporary-new/Mms/res/xml
+cp MIUI-resources/mms_config.xml Temporary/Mms/res/xml
 echo "fixing some framework xmls"
-cp MIUI-resources/eri.xml Temporary-new/framework-res/res/xml
-cp MIUI-resources/storage_list.xml Temporary-new/framework-res/res/xml
-cp MIUI-resources/power_profile.xml Temporary-new/framework-res/res/xml
+cp MIUI-resources/eri.xml Temporary/framework-res/res/xml
+cp MIUI-resources/storage_list.xml Temporary/framework-res/res/xml
+cp MIUI-resources/power_profile.xml Temporary/framework-res/res/xml
 echo "fixing bools"
-cd /Volumes/Cooking/Temporary-new/framework-res/res/values
+cd /Volumes/Cooking/Temporary/framework-res/res/values
 cat bools.xml | sed -e 's/skip_restoring_network_selection">true/skip_restoring_network_selection">false/' > bools.xml
 cat bools.xml | sed -e 's/bluetooth_adapter_quick_switch">true/bluetooth_adapter_quick_switch">false/' > bools.xml
 cat bools.xml | sed -e 's/bluetooth_wide_band_speech">false/bluetooth_wide_band_speech">true/' > bools.xml
@@ -44,19 +48,19 @@ echo "<string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_stor
 open strings.xml
 scripts/press_enter
 cd /Volumes/Cooking
-cp MIUI-resources/storage_list.xml Temporary-new/framework-res/res/xml
-cd /Volumes/Cooking/Temporary-new/miuisystemui/res/values
+cp MIUI-resources/storage_list.xml Temporary/framework-res/res/xml
+cd /Volumes/Cooking/Temporary/miuisystemui/res/values
 echo "remove the first line to remove the black bar"
 open colors.xml
 scripts/press_enter
-cd /Volumes/Cooking/Temporary-new/Settings/res/values
+cd /Volumes/Cooking/Temporary/Settings/res/values
 echo "fixing bools of settings"
 cat bools.xml | sed -e 's/has_led">false/has_led">true/' > bools.xml
 cat bools.xml | sed -e 's/has_multi_touch">false/has_multi_touch">true/' > bools.xml
 echo "adding custom about logo"
-cp MIUI-resources/miui_logo.9.png Temporary-new/Settings/res/drawable-hdpi
-cp MIUI-resources/miui_logo.9.png Temporary-new/Settings/res/drawable-en-hdpi
-cd /Volumes/Cooking/Temporary-new
+cp MIUI-resources/miui_logo.9.png Temporary/Settings/res/drawable-hdpi
+cp MIUI-resources/miui_logo.9.png Temporary/Settings/res/drawable-en-hdpi
+cd /Volumes/Cooking/Temporary
 apktool b framework-res
 apktool b Settings
 apktool b MiuiSystemUI
@@ -71,7 +75,11 @@ apktool d framework-res.apk
 open framework-res/res/values/strings.xml
 cd /Volumes/Cooking
 open MIUI-resources/strings.xml
-cd /Volumes/Cooking/Temporary-new
+cd /Volumes/Cooking/Temporary
 apktool b Framework-res
 zip -m Framework-res.apk Framework-res/build/apk/resources.arcs
+mv framework-res.apk system/framework
+mv Mms.apk system/app
+mv MiuiSystemUI.apk system/app
+mv Settings.apk system/app
 echo "patching done"

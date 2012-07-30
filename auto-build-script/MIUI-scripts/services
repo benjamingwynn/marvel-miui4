@@ -1,24 +1,22 @@
 echo "Patching services.jar"
-cd /Volumes/Cooking/Temporary-old
-baksmali -o services services.jar
-cd /Volumes/Cooking/Temporary-new
+cd /Volumes/Cooking
+mv Temporary/system/framework/services.jar Temporary
 baksmali -o services services.jar
 cd /Volumes/Cooking
-cp -v Temporary-old/services/com/android/server/WiredAccessoryObserver*.smali Temporary-new/services/com/android/server
-cp -v Temporary-old/services/com/android/server/usb Temporary-new/services/com/android/server
-cp -v Temporary-old/services/com/android/server/location Temporary-new/services/com/android/server
-cp -v Temporary-old/services/com/android/server/LocationManagerService*.smali Temporary-new/services/com/android/server
+cp -v MIUI-resources/services-jar/WiredAccessoryObserver*.smali Temporary/services/com/android/server
+cp -v MIUI-resources/services-jar/usb Temporary/services/com/android/server
+cp -v MIUI-resources/services-jar/location Temporary/services/com/android/server
+cp -v MIUI-resources/services-jar/LocationManagerService*.smali Temporary/services/com/android/server
 echo "Add methods nativesetkeylayout and nativesetstylusiconenabled to inputmanager.smali yourself"
 scipts/press_enter
 echo "Adding missing animations to PowerManagerService.smali"
-cd /Volumes/Cooking/Temporary-new/services/com/android/server
+cd /Volumes/Cooking/Temporary/services/com/android/server
 cat PowerManagerservice.smali | sed -e 's/PowerManagerService;->nativeStartSurfaceFlingerAnimation/PowerManagerService;->nativeStartSurfaceFlingerOffAnimation/' > PowerManagerservice.smali
 cat PowerManagerservice.smali | sed -e 's/private native nativeStartSurfaceFlingerAnimation/private native nativeStartSurfaceFlingerOffAnimation/' > PowerManagerservice.smali
 echo "here the code for adding onanimation text"
 echo "this comes after offanimation text"
-cd /Volumes/Cooking/Temporary-new
+cd /Volumes/Cooking/Temporary
 smali -o classes.dex services
 zip -m services.jar classes.dex
-cd /Volumes/Cooking
-cp -v Temporary-new/services.jar WORKING_MIUI/system/framework
+mv services.jar system/framework
 echo "Patching Done"

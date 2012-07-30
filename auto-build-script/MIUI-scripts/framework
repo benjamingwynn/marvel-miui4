@@ -1,25 +1,23 @@
 echo "patching framework.jar"
-cd /Volumes/Cooking/Temporary-old
-baksmali -o framework framework.jar
-cd /Volumes/Cooking/Temporary-new
+cd /Volumes/Cooking
+mv Temporary/system/framework/framework.jar Temporary
 baksmali -o framework framework.jar
 cd /Volumes/Cooking
-cp -v Temporary-old/framework-jar/android/view/gles20canvas.smali Temporary-new/framework-jar/android/view
-cp -v Temporary-old/framework-jar/android/os/Power.smali Temporary-new/framework-jar/android/os
-cp -v Temporary-old/framework-jar/android/hardware/Camera*.smali Temporary-new/framework-jar/android/hardware
-cp -v Temporary-old/framework-jar/android/webkit/Webview*.smali Temporary-new/framework-jar/android/webkit
-cp -v Temporary-old/framework-jar/android/net/WifiNative.smali Temporary-new/framework-jar/android/net
-cp -v Temporary-old/framework-jar/android/codeaurora/Performance.smali Temporary-new/framework-jar/codeaurora
-cp -v Temporary-old/framework-jar/android/media/MediaRecoder.smali Temporary-new/framework-jar/media
-cp -v Temporary-old/framework-jar/android/os/Systemproperties.smali Temporary-new/framework-jar/os
-cp -v Temporary-old/framework-jar/com/android/internal/telephony/RIL*.smali Temporary-new/framework-jar/com/android/internal/telephony
-cp -v Temporary-old/framework-jar/com/android/telephony/SemcRIL*.smali Temporary-new/framework-jar/com/android/telephony
+cp -v MIUI-resources/framework-jar/gles20canvas.smali Temporary/framework/android/view
+cp -v MIUI-resources/framework-jar/Power.smali Temporary/framework/android/os
+cp -v MIUI-resources/framework-jar/Camera*.smali Temporary/framework/android/hardware
+cp -v MIUI-resources/framework-jar/Webview*.smali Temporary/framework/android/webkit
+cp -v MIUI-resources/framework-jar/WifiNative.smali Temporary/framework/android/net
+cp -v MIUI-resources/framework-jar/Performance.smali Temporary/framework/codeaurora
+cp -v MIUI-resources/framework-jar/MediaRecoder.smali Temporary/framework/media
+cp -v MIUI-resources/framework-jar/Systemproperties.smali Temporary/framework/os
+cp -v MIUI-resources/framework-jar/telephony/RIL*.smali Temporary/framework/com/android/internal/telephony
+cp -v MIUI-resources/framework-jar/SemcRIL*.smali Temporary/framework/com/android/telephony
 echo "add missing methods to assetmanager.smali yourself"
 scripts/press_enter
-cd /Volumes/Cooking/Temporary-new
+cd /Volumes/Cooking/Temporary	
 smali -o classes.dex framework
 zip -m framework.jar classes.dex
-cd /Volumes/Cooking
-cp -v Temporary-new/framework.jar WORKING_MIUI/system/framework
+mv framework.jar system/framework
 echo "patching done"
 
