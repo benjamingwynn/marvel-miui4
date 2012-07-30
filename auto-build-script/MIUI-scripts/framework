@@ -7,7 +7,7 @@
 # benefit or any other purpose without the permission of the developer.
 #
 ############################################################################
-echo "patching framework.jar"
+echo "Patching framework.jar..."
 cd /Volumes/Cooking
 mv Temporary/system/framework/framework.jar Temporary
 baksmali -o framework framework.jar
@@ -22,11 +22,11 @@ cp -v MIUI-resources/framework/MediaRecoder.smali Temporary/framework/media
 cp -v MIUI-resources/framework/Systemproperties.smali Temporary/framework/os
 cp -v MIUI-resources/framework/RIL*.smali Temporary/framework/com/android/internal/telephony
 cp -v MIUI-resources/framework/SemcRIL*.smali Temporary/framework/com/android/telephony
-echo "add missing methods to assetmanager.smali yourself"
+echo "Please add missing methods to assetmanager.smali yourself"
 scripts/press_enter
 cd /Volumes/Cooking/Temporary	
 smali -o classes.dex framework
 zip -m framework.jar classes.dex
 mv framework.jar system/framework
-echo "patching done"
+echo "Patching done"
 
