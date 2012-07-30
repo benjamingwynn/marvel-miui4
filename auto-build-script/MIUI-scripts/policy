@@ -7,7 +7,7 @@
 # benefit or any other purpose without the permission of the developer.
 #
 ############################################################################
-echo "No patching needed, adding 3 way reboot menu"
+echo "No patching needed, just adding a 3 way reboot menu"
 cd /Volumes/Cooking/Temporary
 mv Temporary/system/framework/android.policy.jar Temporary
 baksmali -o policy android.policy.jar
@@ -15,8 +15,8 @@ cd /Volumes/Cooking
 cp -v MIUI-resources/policy/MiuiGlobalActions$9*.smali Temporary/policy/com/android/internal/policy/impl
 cd /Volumes/Cooking/Temporary/policy/com/android/internal/policy/impl
 cat MiuiGlobalActions$SinglePressAction.smali | sed -e 's/MiuiGlobalActions$3/MiuiGlobalActions$9/' > MiuiGlobalActions$SinglePressAction.smali
-echo "now add missing text to MiuiGlobalActions$SinglePressAction.smali"
-echo "see resource folder for whats need to be added"
+echo "Now add missing text to MiuiGlobalActions$SinglePressAction.smali"
+echo "Please see resource folder for what is needed to be added"
 scipts/press_enter
 cd /Volumes/Cooking/Temporary
 smali -o classes.dex policy
