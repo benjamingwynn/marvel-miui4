@@ -90,3 +90,4 @@ mv Mms.apk system/app
 mv MiuiSystemUI.apk system/app
 mv Settings.apk system/app
 echo "Patching done"
+scripts/press_enter
