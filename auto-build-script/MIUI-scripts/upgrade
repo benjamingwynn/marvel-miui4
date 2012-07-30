@@ -7,9 +7,9 @@
 # benefit or any other purpose without the permission of the developer.
 #
 ############################################################################
-echo "deleting current working folder"
+echo "Deleting your current working folder"
 rm -rf WORKING_*
-echo "put your base MIUI ROM and an update MIUI ROM in the original_update folder"
+echo "Copy your base MIUI ROM and an update MIUI ROM in the original_update folder"
 echo "they should be named as *crespo* and *marvel* ROMS, rename if needed"
 scripts/press_enter
 echo "installing your working base ROM"
@@ -18,7 +18,7 @@ echo "backing up apps for re-use later"
 cp -v WORKING_Final/system/app/Camera.apk MIUI-resources/apks
 cp -v WORKING_Final/system/app/LatinIME.apk MIUI-resources/apks
 rm -rf Temporary
-echo "installing updated ROM"
+echo "Installing updated ROM..."
 unzip -Cq original_update/*crespo*.zip system/framework/framework.jar system/framework/services.jar system/framework/android.policy.jar system/framework/*.apk system/app/*.apk -d Temporary
 MIUI-scripts/framework
 cd /Volumes/Cooking
@@ -40,7 +40,7 @@ cd /Volumes/Cooking
 cp MIUI-resources/apks/Play*.apk WORKING_Final/system/app
 cp MIUI-resources/apks/Camera.apk WORKING_Final/system/app
 cp MIUI-resources/apks/LatinIME.apk WORKING_Final/system/app
-echo "all patching done, you are ready to cook!"
+echo "All patching done, you are ready to cook!"
 scripts press_enter
 
 
