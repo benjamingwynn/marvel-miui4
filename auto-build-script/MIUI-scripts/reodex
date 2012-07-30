@@ -1,0 +1,30 @@
+############################################################################
+#
+# Copyright 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
+echo "Be sure you have the ROM you want to reodex in the working folder."
+echo "The ROM also has to be running on your phone."
+echo "For safety reasons, take a nandroid backup."
+scripts/press_enter
+adb reboot recovery
+adb shell
+mount /system
+mount /data
+exit
+echo "starting reodexing of current ROM"
+cd  /Volumes/Cooking/MIUI-resources/reodex
+chmod 755 reodex.sh
+reodex.sh
+echo "getting reodexed apks and jars from your device"
+adb pull system/app cd /Volumes/Cooking/WORKING_Final/system
+adb pull system/framework cd /Volumes/Cooking/WORKING_Final/system
+adb reboot
+echo "Done, cook the odexed version."
+
+
+

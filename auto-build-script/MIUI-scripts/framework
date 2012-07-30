@@ -16,7 +16,7 @@ cp -v MIUI-resources/framework/gles20canvas.smali Temporary/framework/android/vi
 cp -v MIUI-resources/framework/Power.smali Temporary/framework/android/os
 cp -v MIUI-resources/framework/Camera*.smali Temporary/framework/android/hardware
 cp -v MIUI-resources/framework/Webview*.smali Temporary/framework/android/webkit
-cp -v MIUI-resources/framework/WifiNative.smali Temporary/framework/android/net
+cp -v MIUI-resources/framework/WifiNative.smali Temporary/framework/android/net/wifi
 cp -v MIUI-resources/framework/Performance.smali Temporary/framework/codeaurora
 cp -v MIUI-resources/framework/MediaRecoder.smali Temporary/framework/media
 cp -v MIUI-resources/framework/Systemproperties.smali Temporary/framework/os

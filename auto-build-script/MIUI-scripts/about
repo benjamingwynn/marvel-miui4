@@ -1,6 +1,6 @@
 ############################################################################
 #
-# Copyright 2012 - Henry_01 and rezo609
+# Copyright 2012 - Henry_01 / rezo609 / Tearsdontfalls
 #
 # MIUIv4 auto builder is 100% free.  This script file is intended for personal
 # and/or educational use only.  It may not be duplicated for monetary
@@ -10,10 +10,9 @@
 while :
 do
 clear
-echo "This script allows you to build MIUI v4 from a Nexus S Source."
-echo "You can either choose to start from CM9 or update an existing MIUI ROM."
-echo "Originally designed for the HTC Wildfire S, but it should work for other devices too."
-echo "All the resources are in MIUI-resources folder, you need to replace them with your device ones."
+echo "This script allows you to update MIUI v4 from Nexus S Source."
+echo "Designed for the HTC Wildfire S, but it should work for other devices too."
+echo "The resources are in MIUI-resources folder, replace them with your device ones."
 echo ""
 echo "===================================================="
 echo "          Created by Henry_01 and rezo609           "

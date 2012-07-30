@@ -6,8 +6,8 @@ clear
 echo "===================================================="
 echo "       MIUI v4 auto builder - by WFSdev Team        "
 echo "===================================================="
-echo "  1 - Start from CM9 ROM"
-echo "  2 - Update current MIUI ROM"
+echo "  1 - Update current MIUI ROM"
+echo "  2 - Reodex current MIUI ROM"
 echo "  3 - About"
 echo "  4 - Exit"
     
@@ -15,8 +15,8 @@ echo -n "Please enter an option: "
   read opt
 
 case $opt in
-      1) clear; MIUI-scripts/start;;
-      2) clear; MIUI-scripts/upgrade;;
+      1) clear; MIUI-scripts/upgrade;;
+      2) clear; MIUI-scripts/reodex;;
       3) clear; MIUI-scripts/about;;
       4) clear; exit 1;;
       *) echo "Invalid option"; continue;;
