@@ -1,5 +1,0 @@
-# static fields
-.field protected static rebootMode:I
-
-.field protected static final rebootOptions:[Ljava/lang/String;
-

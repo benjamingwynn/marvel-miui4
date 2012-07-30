@@ -1,3 +1,12 @@
+############################################################################
+#
+# Copyright 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
 echo "deleting current working folder"
 rm -rf WORKING_*
 echo "put your base MIUI ROM and an update MIUI ROM in the original_update folder"
@@ -6,7 +15,6 @@ scripts/press_enter
 echo "installing your working base ROM"
 unzip -q original_update/*marvel*.zip -d WORKING_Final
 echo "backing up apps for re-use later"
-cp -v WORKING_Final/system/app/PlayStore.apk MIUI-resources/apks
 cp -v WORKING_Final/system/app/Camera.apk MIUI-resources/apks
 cp -v WORKING_Final/system/app/LatinIME.apk MIUI-resources/apks
 rm -rf Temporary
@@ -27,9 +35,9 @@ cp Temporary/system/framework/services.jar WORKING_Final/system/framework
 cp Temporary/system/framework/android.policy.jar WORKING_Final/system/framework
 cp Temporary/app WORKIGNG_Final/system
 cd WORKING_Final/system/app
-rm Tag.apk Talk.apk NFC.apk Maps.apk YouTube.apk Play*.apk GMail.apk
+rm Tag.apk Talk.apk NFC.apk Maps.apk YouTube.apk Play*.apk GMail.apk Latin*.apk
 cd /Volumes/Cooking
-cp MIUI-resources/apks/Playstore.apk WORKING_Final/system/app
+cp MIUI-resources/apks/Play*.apk WORKING_Final/system/app
 cp MIUI-resources/apks/Camera.apk WORKING_Final/system/app
 cp MIUI-resources/apks/LatinIME.apk WORKING_Final/system/app
 echo "all patching done, you are ready to cook!"

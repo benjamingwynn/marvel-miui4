@@ -1,11 +1,13 @@
+############################################################################
+# not yet finished, maybe we should remove this option because its a trial and error process ...
+# Copyright 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
 echo "Deleting current working folder"
 rm -rf WORKING_*
-echo "Copy your base CM9 ROM and an update MIUI ROM in the original_update folder"
-echo "install the updated MIUI ROM"
-scripts/press_enter
-mv WORKING_* UPDATE_MIUI
-echo "Install your CM9 base ROM"
-scripts/press_enter
-mv WORKING_* WORKING_Final
-echo "Under Construction, please wait..."
+echo "under construction, better port manually"
 scripts/press_enter

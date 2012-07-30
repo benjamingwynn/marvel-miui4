@@ -1,11 +1,22 @@
+############################################################################
+#
+# Copyright 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
 echo "No patching needed, adding 3 way reboot menu"
 cd /Volumes/Cooking/Temporary
 mv Temporary/system/framework/android.policy.jar Temporary
 baksmali -o policy android.policy.jar
 cd /Volumes/Cooking
-cp -v MIUI-resources/MiuiGlobalActions$9*.smali Temporary/policy/com/android/internal/policy/impl
-echo "here code to add text to certain files"
-echo "source for this is in the text files MIUI-resources"
+cp -v MIUI-resources/policy/MiuiGlobalActions$9*.smali Temporary/policy/com/android/internal/policy/impl
+cd /Volumes/Cooking/Temporary/policy/com/android/internal/policy/impl
+cat MiuiGlobalActions$SinglePressAction.smali | sed -e 's/MiuiGlobalActions$3/MiuiGlobalActions$9/' > MiuiGlobalActions$SinglePressAction.smali
+echo "now add missing text to MiuiGlobalActions$SinglePressAction.smali"
+echo "see resource folder for whats need to be added"
 scipts/press_enter
 cd /Volumes/Cooking/Temporary
 smali -o classes.dex policy

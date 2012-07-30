@@ -1,3 +1,13 @@
+/start
+# static fields
+.field protected static rebootMode:I
+
+.field protected static final rebootOptions:[Ljava/lang/String;
+
+
+/end
+
+/start
 method static constructor <clinit>()V
     .registers 3
 
@@ -27,3 +37,4 @@ method static constructor <clinit>()V
 
     return-void
 .end method
+/end

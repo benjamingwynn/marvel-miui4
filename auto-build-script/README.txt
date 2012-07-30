@@ -1,4 +1,7 @@
-This script is used as an add-on to dsixda kitchen. It will only work with it.
-Originally designed for porting MIUIv4 to the HTC Wildfire S.
-You should create a virtual disk image named Cooking.
-Put the kitchen, the add-ons and all you ROMs in there.
+This script is an add-on for dsixda's kitchen.
+To let it work, make a virtual disk image named "Cooking".
+Put the kitchen in there and also the stuff in this folder.
+Then put your base ROMS in the original_update folder.
+Follow the onscreen instructions and modify the script/change resources if necessary.
+
+The script works out of the box for the HTC Wildfire S only. No support is given for other devices.

@@ -1,3 +1,12 @@
+############################################################################
+#
+# Copyright 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
 echo "Patching services.jar"
 cd /Volumes/Cooking
 mv Temporary/system/framework/services.jar Temporary
@@ -13,8 +22,7 @@ echo "Adding missing animations to PowerManagerService.smali"
 cd /Volumes/Cooking/Temporary/services/com/android/server
 cat PowerManagerservice.smali | sed -e 's/PowerManagerService;->nativeStartSurfaceFlingerAnimation/PowerManagerService;->nativeStartSurfaceFlingerOffAnimation/' > PowerManagerservice.smali
 cat PowerManagerservice.smali | sed -e 's/private native nativeStartSurfaceFlingerAnimation/private native nativeStartSurfaceFlingerOffAnimation/' > PowerManagerservice.smali
-echo "here the code for adding onanimation text"
-echo "this comes after offanimation text"
+echo "add missing onanimation text here"
 cd /Volumes/Cooking/Temporary
 smali -o classes.dex services
 zip -m services.jar classes.dex

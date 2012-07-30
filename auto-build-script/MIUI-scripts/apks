@@ -1,3 +1,12 @@
+############################################################################
+# not yet finished
+# Copyright 2012 - Henry_01 and rezo609
+#
+# MIUIv4 auto builder is 100% free.  This script file is intended for personal
+# and/or educational use only.  It may not be duplicated for monetary
+# benefit or any other purpose without the permission of the developer.
+#
+############################################################################
 echo "patching MMS, Settings, SystemUI and Framework-res"
 echo "for apktool to work, get apks 2 to 5. You can find them on github.com/micode/patchrom_tools"
 scripts/press_enter
@@ -18,9 +27,9 @@ echo "fixing mms settings"
 cd /Volumes/Cooking
 cp MIUI-resources/mms_config.xml Temporary/Mms/res/xml
 echo "fixing some framework xmls"
-cp MIUI-resources/eri.xml Temporary/framework-res/res/xml
-cp MIUI-resources/storage_list.xml Temporary/framework-res/res/xml
-cp MIUI-resources/power_profile.xml Temporary/framework-res/res/xml
+cp MIUI-resources/framework/eri.xml Temporary/framework-res/res/xml
+cp MIUI-resources/framework/storage_list.xml Temporary/framework-res/res/xml
+cp MIUI-resources/framework/power_profile.xml Temporary/framework-res/res/xml
 echo "fixing bools"
 cd /Volumes/Cooking/Temporary/framework-res/res/values
 cat bools.xml | sed -e 's/skip_restoring_network_selection">true/skip_restoring_network_selection">false/' > bools.xml
@@ -47,8 +56,6 @@ echo "add following string after wimax:"
 echo "<string name="config_legacyUmsLunFile">/sys/devices/platform/usb_mass_storage/lun0/file</string>"
 open strings.xml
 scripts/press_enter
-cd /Volumes/Cooking
-cp MIUI-resources/storage_list.xml Temporary/framework-res/res/xml
 cd /Volumes/Cooking/Temporary/miuisystemui/res/values
 echo "remove the first line to remove the black bar"
 open colors.xml
