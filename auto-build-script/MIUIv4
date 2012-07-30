@@ -19,7 +19,7 @@ case $opt in
       2) clear; MIUI-scripts/reodex;;
       3) clear; MIUI-scripts/about;;
       4) clear; exit 1;;
-      *) echo "Invalid option"; continue;;
+      *) echo "Invalid Option"; continue;;
 esac
 scripts/press_enter
 done
