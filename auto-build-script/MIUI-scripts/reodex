@@ -9,22 +9,25 @@
 ############################################################################
 echo "Be sure you have the ROM you want to reodex in the working folder."
 echo "The ROM also has to be running on your phone."
-echo "For safety reasons, take a nandroid backup."
+echo "For safety reasons, make a nandroid backup."
 scripts/press_enter
+adb kill-server
+adb start-server
+adb wait-for-device
 adb reboot recovery
 adb shell
 mount /system
 mount /data
 exit
-echo "starting reodexing of current ROM"
+echo "Starting to reodex current ROM..."
 cd  /Volumes/Cooking/MIUI-resources/reodex
 chmod 755 reodex.sh
 reodex.sh
-echo "getting reodexed apks and jars from your device"
+echo "Copying reodexed apks and jars from your device..."
 adb pull system/app cd /Volumes/Cooking/WORKING_Final/system
 adb pull system/framework cd /Volumes/Cooking/WORKING_Final/system
 adb reboot
-echo "Done, cook the odexed version."
+echo "Done, now you can cook the odexed version."
 
 
 
