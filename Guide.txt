@@ -1,4 +1,4 @@
-Build MIUI v4 for WFS
+Build MIUI v4 for WFS.
 * means done
 
 - replace media folder and app folder with MIUI
