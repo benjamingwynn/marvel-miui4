@@ -1,1 +1,3 @@
-Here you can find a tutorial how to build MIUI v4.
+This readme is out of date. Go fix it or else
+
+- Benjamin <3
